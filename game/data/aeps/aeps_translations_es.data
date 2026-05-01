@@ -1,0 +1,832 @@
+{
+  "columns": [
+    {
+      "type": "text",
+      "name": "id",
+      "title": "id",
+      "width": "114",
+      "align": "center"
+    },
+    {
+      "type": "text",
+      "name": "title_en",
+      "title": "title_en",
+      "width": "390",
+      "align": "left",
+      "readOnly": false
+    },
+    {
+      "type": "text",
+      "width": "417",
+      "title": "title",
+      "align": "center",
+      "name": "title"
+    },
+    {
+      "type": "text",
+      "name": "description_en",
+      "title": "description_en",
+      "width": "297",
+      "align": "left",
+      "readOnly": false
+    },
+    {
+      "type": "text",
+      "name": "description",
+      "title": "description",
+      "width": "297",
+      "align": "left"
+    }
+  ],
+  "data": [
+    {
+      "id": "C.1.1",
+      "title_en": "Conventional tillage",
+      "title": "Labranza convencional (LC)",
+      "description_en": "The “traditional” method of farming in which soil is prepared for planting by completely inverting it with a moldboard plow.",
+      "description": "Método de cultivo «tradicional» en el que se prepara la tierra para la plantación dándole la vuelta completamente con la ayuda de un arado metálico."
+    },
+    {
+      "id": "C.1.2",
+      "title_en": "Reduced tillage",
+      "title": "Labranza reducida (LR)",
+      "description_en": "Use of only superficial tillage without soil inversion.",
+      "description": "Solo labranza superficial, sin volteo."
+    },
+    {
+      "id": "C.1.3",
+      "title_en": "No tillage",
+      "title": "Cultivo sin labranza (NT)",
+      "description_en": "Planting of crops directly (no tillage) in preceding cover crop (living or destroyed, i.e. mulched) or crop residues.",
+      "description": "Siembra directa (sin labranza) en el cultivo de cobertura anterior (vivo o destruido, es decir, paja) o en los residuos del cultivo."
+    },
+    {
+      "id": "C.2.1",
+      "title_en": "Fall cover crop destructed before winter",
+      "title": "Cultivo de cobertura de otoño destruido antes del invierno",
+      "description_en": "The cover crop is terminated before winter and the soil is left bare until the spring crop is well established.",
+      "description": "El cultivo de cobertura finaliza antes del invierno y el suelo se deja al descubierto hasta que el cultivo de primavera esté bien establecido."
+    },
+    {
+      "id": "C.2.2",
+      "title_en": "Fall cover crop destructed early spring",
+      "title": "Cultivo de cobertura de otoño destruido a principios de la primavera",
+      "description_en": "The fall cover crop is left during winter, covering the soil and is terminated early spring.",
+      "description": "El cultivo de cobertura de otoño se deja durante el invierno, cubre el suelo y desaparece a principios de la primavera."
+    },
+    {
+      "id": "C.2.3",
+      "title_en": "Permanent soil cover",
+      "title": "Cobertura permanente del suelo",
+      "description_en": "Implementing this practice means that the soil is never left bare across the whole rotation.",
+      "description": "La aplicación de esta práctica implica que el suelo nunca se deja desnudo durante toda la rotación."
+    },
+    {
+      "id": "C.3.1",
+      "title_en": "Straw removal",
+      "title": "Eliminación de la paja",
+      "description_en": "Crop residues are exported from the crop system and used for livestock bedding and/or exported from the farm by selling it.",
+      "description": "Se eliminan los residuos del sistema de cultivo y se utilizan para la cama del ganado y/o se sacan de la granja a través de la venta."
+    },
+    {
+      "id": "C.3.2",
+      "title_en": "Straw left on soil",
+      "title": "Paja que se deja en el suelo",
+      "description_en": "Crop residues are left on the soil and are either incorporated into the soil when tilling or are left as mulch when implementing direct seeding.",
+      "description": "Los residuos del cultivo se dejan en el suelo y se incorporan a este mediante el arado o se dejan como mantillo cuando no hay labranza."
+    },
+    {
+      "id": "C.4.1",
+      "title_en": "On-farm organic fertilizers + input of mineral fertilizer",
+      "title": "Fertilizantes orgánicos agrícolas derivados + insumos de fertilizantes minerales",
+      "description_en": "The slurry and/or manure produced by animals is used as organic fertilizer and completed by mineral fertiliser.",
+      "description": "Los purines y/o el estiércol producidos por los animales se utilizan como fertilizante orgánico y se complementan con un fertilizante mineral."
+    },
+    {
+      "id": "C.4.2",
+      "title_en": "On-farm organic fertilizers only",
+      "title": "Solo fertilizantes orgánicos de la granja",
+      "description_en": "The slurry and/or manure produced by animals is used as organic fertilizer and not complemented.",
+      "description": "Los purines y/o el estiércol producidos por los animales se utilizan como fertilizante orgánico y no se complementan."
+    },
+    {
+      "id": "C.5.1",
+      "title_en": "Systematic use of chemical fungicides",
+      "title": "Uso sistemático de fungicidas químicos",
+      "description_en": "Chemical fungicides are systematically used. ",
+      "description": "Se utilizan fungicidas químicos sistemáticamente. "
+    },
+    {
+      "id": "C.5.2",
+      "title_en": "Sound approach of chemical fungicides",
+      "title": "Enfoque racional de los fungicidas químicos",
+      "description_en": "The use of chemical fungicides whenever and only if it is absolutely required.",
+      "description": "Uso de fungicidas químicos siempre que sea absolutamente necesario."
+    },
+    {
+      "id": "C.5.3",
+      "title_en": "Biocontrol products against diseases",
+      "title": "Productos de biocontrol contra las enfermedades",
+      "description_en": "‘Integrated pest management’ strategy without chemicals.",
+      "description": "Estrategia de Manejo integrado de plagas sin productos químicos."
+    },
+    {
+      "id": "C.5.4",
+      "title_en": "No direct protection against diseases",
+      "title": "No hay protección directa contra las enfermedades",
+      "description_en": "No fungicide is applied.",
+      "description": "No se utiliza ningún fungicida."
+    },
+    {
+      "id": "C.6.1",
+      "title_en": "Systematic and sole use of chemical herbicides",
+      "title": "Uso sistemático y único de herbicidas químicos",
+      "description_en": "Chemical herbicides are systematically used.",
+      "description": "Se utilizan herbicidas químicos sistemáticamente."
+    },
+    {
+      "id": "C.6.2",
+      "title_en": "Sound approach of chemical herbicides + mechanical weed control",
+      "title": "Enfoque racional de los herbicidas químicos + deshierbe mecánico",
+      "description_en": "The use of chemical herbicides whenever and only if it is absolutely required.",
+      "description": "Uso de herbicidas químicos siempre y solo si es absolutamente necesario."
+    },
+    {
+      "id": "C.6.3",
+      "title_en": "Sole use of mechanical weed control",
+      "title": "Uso exclusivo del desmalezado mecánico",
+      "description_en": "No herbicide is applied, weed populations are managed through physical methods (e.g. hoeing, harrowing).",
+      "description": "No se aplican herbicidas, las malas hierbas se manejan utilizando métodos físicos (por ejemplo, con azadones o gradas)."
+    },
+    {
+      "id": "C.7.1",
+      "title_en": "Systematic use of chemical insecticides / molluscicides / nematicides",
+      "title": "Uso sistemático de insecticidas molusquicidas/nematicidas químicos",
+      "description_en": "Chemical insecticides / molluscicides / nematicides are systematically used to avoid pests, even if the pressure is low.",
+      "description": "Los insecticidas/molusquicidas/nematicidas químicos se utilizan de forma rutinaria para evitar las plagas, incluso si la amenaza es baja."
+    },
+    {
+      "id": "C.7.2",
+      "title_en": "Sound approach of chemical insecticides / molluscicides / nematicides",
+      "title": "Enfoque racional de los insecticidas/molusquicidas/nematicidas químicos",
+      "description_en": "Chemical insecticides / molluscicides / nematicides  are applied only if pests are monitored in the field and sprays or other control methods are carried out only when the action threshold is exceeded (Integrated Pest Management).",
+      "description": "Los insecticidas/molusquicidas/nematicidas químicos solo se utilizan si se vigilan plagas sobre el terreno y se aplican pulverizaciones u otros métodos de control solo cuando se supera el umbral de acción (manejo integrado de plagas)."
+    },
+    {
+      "id": "C.7.3",
+      "title_en": "Biocontrol products (incl. pyrethrin) and other natural control techniques against pests",
+      "title": "Productos de biocontrol (incluidas las piretrinas) y otras técnicas naturales de control de plagas",
+      "description_en": "Biocontrol products / biopesticides will be applied using a sprayer.",
+      "description": "Los productos de biocontrol/biopesticidas se aplicarán mediante un pulverizador."
+    },
+    {
+      "id": "C.7.4",
+      "title_en": "No direct protection against animal pests",
+      "title": "No hay protección directa contra las plagas",
+      "description_en": "No Insecticide / Molluscicide / Nematicide is applied.",
+      "description": "No se aplican insecticidas/molusquicidas/nematicidas."
+    },
+    {
+      "id": "C.8.1",
+      "title_en": "High yielding cultivars",
+      "title": "Variedades de alto rendimiento.",
+      "description_en": "Use of one cultivar selected for its high yield in controled conditions.",
+      "description": "Utilización de una variedad seleccionada para un alto rendimiento en condiciones controladas."
+    },
+    {
+      "id": "C.8.2",
+      "title_en": "Resistant cultivars and/or mix of varieties",
+      "title": "Cultivos resistentes y/o mezclas de variedades.",
+      "description_en": "Use of one or more cultivars selected for their resistance/tolerance to pests and diseases, but with lower yield in controled conditions.",
+      "description": "Utilización de uno o más cultivares seleccionados por su resistencia/tolerancia a las plagas y enfermedades, pero con un rendimiento menor en condiciones controladas."
+    },
+    {
+      "id": "C.9.1",
+      "title_en": "Temporary grassland composed of grass",
+      "title": "Pradera temporal compuesta de hierba.",
+      "description_en": "Land on which the vegetation is dominated by grass such as perennial ryegrass or sheep's fescue.",
+      "description": "Tierra donde la vegetación está dominada por la hierba, como la cizaña perenne o la cañuela de oveja."
+    },
+    {
+      "id": "C.9.2",
+      "title_en": "Temporary grassland composed of simple grass/legume mixtures",
+      "title": "Pradera temporal compuesta de mezclas simples de una hierba y una planta.",
+      "description_en": "Land on which the vegetation is dominated by two species, one grass and one legume such as perennial ryegrass and white clover.",
+      "description": "Tierra en la que la vegetación está dominada por dos especies, una hierba y otra planta, como la cizaña perenne y el trébol blanco."
+    },
+    {
+      "id": "C.9.3",
+      "title_en": "Temporary grassland composed of complex grass/legume mixtures",
+      "title": "Pradera temporal compuesta de mezclas complejas de hierbas y plantas.",
+      "description_en": "Land on which the vegetation is dominated by various species, grasses, legumes, etc.",
+      "description": "Tierra en la que la vegetación está dominada por varias especies, hierbas, plantas, etc."
+    },
+    {
+      "id": "C.10.1",
+      "title_en": "No permanent grassland",
+      "title": "No hay praderas permanentes",
+      "description_en": "No permanent grassland on the farm.",
+      "description": "No hay praderas permanentes en la granja."
+    },
+    {
+      "id": "C.10.2",
+      "title_en": "Permanent grassland occupy a small percentage of the farm area",
+      "title": "Las praderas permanentes ocupan un pequeño porcentaje de la superficie agrícola.",
+      "description_en": "Permanent grassland occupy 10% of farm area. It can be used to feed livestock and promote biodiversity.",
+      "description": "Las praderas permanentes ocupan el 10 % de la superficie agrícola. Pueden utilizarse para alimentar al ganado y promover la biodiversidad."
+    },
+    {
+      "id": "C.10.3",
+      "title_en": "Permanent grassland occupy a high percentage of the farm area",
+      "title": "Las praderas permanentes ocupan un gran porcentaje de la superficie agrícola.",
+      "description_en": "Permanent grassland occupy 20% of farm area. It can be used to feed livestock and promote biodiversity.",
+      "description": "Las praderas permanentes ocupan el 20 % de la superficie agrícola. Pueden utilizarse para alimentar al ganado y promover la biodiversidad."
+    },
+    {
+      "id": "C.11.1",
+      "title_en": "Sole crops",
+      "title": "Monocultivos",
+      "description_en": "Each crop is grown alone in the field.",
+      "description": "Solo se desarrolla un cultivo en cada campo."
+    },
+    {
+      "id": "C.11.2",
+      "title_en": "Wheat/pea intercrops",
+      "title": "Cultivos en asociación de trigo/arvejas.",
+      "description_en": "Coexistence of the two crops (wheat, pea) on the same field at the same time. Yield of the intercrop will be higher than the average of individual crops on the same area. Intercrops can be valorized as animal feeding. Selling the crops will require additional sorting costs (not considered in the game).",
+      "description": "Coexistencia de los dos cultivos (trigo, arvejas) en el mismo campo al mismo tiempo. El rendimiento del cultivo en asociación será mayor que el promedio de los monocultivos en la misma superficie. Los cultivos en asociación pueden utilizarse para la alimentación de los animales. La venta de las cosechas dará lugar a gastos de clasificación adicionales (no considerados en el juego)."
+    },
+    {
+      "id": "C.12.1",
+      "title_en": "CS #1: maize - wheat",
+      "title": "SC N.º 1: maíz - trigo",
+      "description_en": "Simple but low diversity cropping plan.",
+      "description": "Plan de cultivo sencillo pero poco diversificado."
+    },
+    {
+      "id": "C.12.2",
+      "title_en": "CS #1: rapeseed - wheat - maize - wheat",
+      "title": "SC N.º 1: canola - trigo - maíz - trigo",
+      "description_en": "Medium diversity cropping plan.",
+      "description": "Plan de cultivo de diversidad media."
+    },
+    {
+      "id": "C.12.3",
+      "title_en": "CS #1: maize - wheat - maize - barley",
+      "title": "SC N.º 1: maíz - trigo - maíz - cebada",
+      "description_en": "Medium diversity cropping plan.",
+      "description": "Plan de cultivo de diversidad media."
+    },
+    {
+      "id": "C.12.4",
+      "title_en": "CS #1: alfalfa (3 years) - maize - wheat",
+      "title": "SC N.º 1: alfalfa (3 años) - maíz - trigo",
+      "description_en": "Medium diversity cropping plan, with legume crop.",
+      "description": "Plan de cultivo de diversidad media, con cultivo de legumbres."
+    },
+    {
+      "id": "C.12.5",
+      "title_en": "CS #1: faba bean - wheat - rapeseed - maize",
+      "title": "SC N.º 1: habas - trigo - canola - maíz",
+      "description_en": "Medium diversity cropping plan, with legume crop.",
+      "description": "Plan de cultivo de diversidad media, con cultivo de legumbres."
+    },
+    {
+      "id": "C.12.6",
+      "title_en": "CS #1: grassland (4 years) - maize - maize",
+      "title": "SC N.º 1: pradera (4 años) - maíz - maíz",
+      "description_en": "Low diversity cropping plan, with grassland.",
+      "description": "Plan de cultivo de baja diversidad con praderas."
+    },
+    {
+      "id": "C.12.7",
+      "title_en": "CS #1: grassland (3 years) - maize - wheat - barley",
+      "title": "SC N.º 1: praderas (3 años) - maíz - trigo - cebada",
+      "description_en": "Medium diversity cropping plan, with grassland.",
+      "description": "Plan de cultivo de diversidad media, con praderas."
+    },
+    {
+      "id": "C.12.8",
+      "title_en": "CS #1: faba bean - wheat - maize - alfalfa (3 years) - barley - maize",
+      "title": "SC N.º 1: habas - trigo - maíz - alfalfa (3 años) - cebada - maíz",
+      "description_en": "High diversity cropping plan, with legume crops and grassland.",
+      "description": "Plan de cultivo muy diverso, con cultivos de leguminosas y praderas."
+    },
+    {
+      "id": "C.12.9",
+      "title_en": "CS #1: grassland (3 years) - maize - wheat - faba bean - rapeseed",
+      "title": "SC N.º 1: praderas (3 años) - maíz - trigo - haba - canola",
+      "description_en": "High diversity cropping plan, with legume crop and grassland.",
+      "description": "Plan de cultivo muy diverso, con cultivos de leguminosas y praderas."
+    },
+    {
+      "id": "C.13.1",
+      "title_en": "CS #2: maize - wheat",
+      "title": "SC N.º 2: maíz - trigo",
+      "description_en": "Simple but low diversity cropping plan.",
+      "description": "Plan de cultivo sencillo pero poco diversificado."
+    },
+    {
+      "id": "C.13.2",
+      "title_en": "CS #2: rapeseed - wheat - maize - wheat",
+      "title": "SC N.º 2: canola - trigo - maíz - trigo",
+      "description_en": "Medium diversity cropping plan.",
+      "description": "Plan de cultivo de diversidad media."
+    },
+    {
+      "id": "C.13.3",
+      "title_en": "CS #2: maize - wheat - maize - barley",
+      "title": "SC N.º 2: maíz - trigo - maíz - cebada",
+      "description_en": "Medium diversity cropping plan.",
+      "description": "Plan de cultivo de diversidad media."
+    },
+    {
+      "id": "C.13.4",
+      "title_en": "CS #2: alfalfa (3 years) - maize - wheat",
+      "title": "SC N.º 2: alfalfa (3 años) - maíz - trigo",
+      "description_en": "Medium diversity cropping plan, with legume crop.",
+      "description": "Plan de cultivo de diversidad media, con cultivo de legumbres."
+    },
+    {
+      "id": "C.13.5",
+      "title_en": "CS #2: faba bean - wheat - rapeseed - maize",
+      "title": "SC N.º 2: habas - trigo - canola - maíz",
+      "description_en": "Medium diversity cropping plan, with legume crop.",
+      "description": "Plan de cultivo de diversidad media, con cultivo de legumbres."
+    },
+    {
+      "id": "C.13.6",
+      "title_en": "CS #2: grassland (4 years) - maize - maize",
+      "title": "SC N.º 2: pradera (4 años) - maíz - maíz",
+      "description_en": "Low diversity cropping plan, with grassland.",
+      "description": "Plan de cultivo de baja diversidad con praderas."
+    },
+    {
+      "id": "C.13.7",
+      "title_en": "CS #2: grassland (3 years) - maize - wheat - barley",
+      "title": "SC N.º 2: praderas (3 años) - maíz - trigo - cebada",
+      "description_en": "Medium diversity cropping plan, with grassland.",
+      "description": "Plan de cultivo de diversidad media, con praderas."
+    },
+    {
+      "id": "C.13.8",
+      "title_en": "CS #2: faba bean - wheat - maize - alfalfa (3 years) - barley - maize",
+      "title": "SC N.º 2: habas - trigo - maíz - alfalfa (3 años) - cebada - maíz",
+      "description_en": "High diversity cropping plan, with legume crops and grassland.",
+      "description": "Plan de cultivo muy diverso, con cultivos de leguminosas y praderas."
+    },
+    {
+      "id": "C.13.9",
+      "title_en": "CS #2: grassland (3 years) - maize - wheat - faba bean - rapeseed",
+      "title": "SC N.º 2: praderas (3 años) - maíz - trigo - haba - canola",
+      "description_en": "High diversity cropping plan, with legume crop and grassland.",
+      "description": "Plan de cultivo muy diverso, con cultivos de leguminosas y praderas."
+    },
+    {
+      "id": "C.14.1",
+      "title_en": "No particular green infrastructure elements",
+      "title": "No hay ningún elemento específico de infraestructura verde.",
+      "description_en": "No particular green infrastructure elements.",
+      "description": "No hay ningún elemento específico de infraestructura verde."
+    },
+    {
+      "id": "C.14.2",
+      "title_en": "Sown field margins as green infrastructures: wildflowers strip",
+      "title": "Perímetros de campos sembrados como infraestructura verde: franja de flores silvestres",
+      "description_en": "A mix of flowering plants.",
+      "description": "Mezcla de plantas con flores."
+    },
+    {
+      "id": "C.14.3",
+      "title_en": "Sown field margins as green infrastructures: beetle bank (for birds and polyphagous predator)",
+      "title": "Perímetros de campos sembrados como infraestructura verde: banco de coleópteros (para aves y depredadores polífagos).",
+      "description_en": "Raised grassy banks, typically 2-3 m wide, sown with tussock forming grasses.",
+      "description": "Terraplén herboso plantado con pastos que forman penachos de hierba, normalmente de 2 a 3 m de ancho."
+    },
+    {
+      "id": "C.14.4",
+      "title_en": "Semi-natural field margins as green infrastructures: hedgerows ",
+      "title": "Perímetros de los campos seminaturales como infraestructuras verdes: setos. ",
+      "description_en": "Common trees and shrubs present on the edge of the fields.",
+      "description": "Árboles y arbustos comunes que se encuentran en el perímetro de los campos."
+    },
+    {
+      "id": "C.14.5",
+      "title_en": "Semi-natural field margins as green infrastructures: grass margins",
+      "title": "Perímetros de los campos seminaturales como infraestructura verde: Terraplén herboso. ",
+      "description_en": "Grassland in the edges of the fields.",
+      "description": "Hierba en el perímetro de los campos."
+    },
+    {
+      "id": "C.15.1",
+      "title_en": "No agroforestry",
+      "title": "No hay agroforestería.",
+      "description_en": "No agroforestry on the farm.",
+      "description": "No hay agroforestería en la granja."
+    },
+    {
+      "id": "C.15.2",
+      "title_en": "In-field agroforestry",
+      "title": "Agroforestería en el campo.",
+      "description_en": "A sustainable management system that integrate trees, crops and livestock on the same plot of land. Farm area for crops and temporary grasslands is reduced by 16%.",
+      "description": "Un sistema de gestión sostenible que combina árboles, cultivos y ganado en la misma parcela. La superficie agrícola utilizada para cultivos y praderas temporales se reduce en un 16 %."
+    },
+    {
+      "id": "E.1.1",
+      "title_en": "Balanced strategy between farmer income and investment",
+      "title": "Estrategia equilibrada entre los ingresos del agricultor y las inversiones.",
+      "description_en": "Farm profit is equally shared between farmer income and investment capacity.",
+      "description": "Las utilidades agrícolas se reparten equitativamente entre los ingresos del agricultor y su capacidad de inversión."
+    },
+    {
+      "id": "E.1.2",
+      "title_en": "Investment-oriented strategy",
+      "title": "Estrategia orientada a la inversión",
+      "description_en": "Farm profit is 80% distributed to investment capacity.",
+      "description": "El 80 % de las utilidades agrícolas se dedican a la capacidad de inversión."
+    },
+    {
+      "id": "E.1.3",
+      "title_en": "Income-oriented strategy",
+      "title": "Estrategia orientada a los ingresos",
+      "description_en": "Farm profit is 80% distributed to farmer income.",
+      "description": "El 80 % de las utilidades agrícolas se destinan a los ingresos del agricultor."
+    },
+    {
+      "id": "G.1.1",
+      "title_en": "Conventional farming",
+      "title": "Agricultura convencional",
+      "description_en": "It corresponds to the most widespread farm management, with no particular specifications (except the compliance with the Good Agricultural and Environmental conditions of the CAP). Input and output prices are 25% lower than in organic farming.",
+      "description": "Corresponde a la gestión agrícola más extendida, sin especificaciones particulares (salvo el cumplimiento de las Buenas condiciones agrícolas y medioambientales de la PAC). Los precios de los insumos y la producción son un 25 % más bajos que los de la agricultura orgánica."
+    },
+    {
+      "id": "G.1.2",
+      "title_en": "Organic farming",
+      "title": "Agricultura orgánica",
+      "description_en": "Specifications of organic farming rely mainly on no chemical input use. Input and output prices are 25% higher in conventional farming.",
+      "description": "Las especificaciones de la agricultura orgánica se basan principalmente en la ausencia del uso de productos químicos. Los precios de los insumos y la producción son un 25 % más altos que los de la agricultura orgánica."
+    },
+    {
+      "id": "A.1.1",
+      "title_en": "Cattle breed is Holstein",
+      "title": "El ganado es de la raza Holstein",
+      "description_en": "Holstein is a breed of dairy cattle used for high milk production.",
+      "description": "Holstein es una raza de ganado lechero utilizada para la producción intensiva de leche."
+    },
+    {
+      "id": "A.1.2",
+      "title_en": "Cattle breed is Siemmental",
+      "title": "El ganado es de la raza Siemmental",
+      "description_en": "Siemmental is a dual purpose breed for milk and meat.",
+      "description": "Siemmental es una raza de doble propósito para leche y carne."
+    },
+    {
+      "id": "A.1.3",
+      "title_en": "Cattle breed is Montbéliarde",
+      "title": "El ganado es de la raza Montbéliarde",
+      "description_en": "Montbéliarde cattle are a dairy breed, but have better beef characteristics than Holstein cattle.",
+      "description": "Montbeliarde es una raza lechera, pero tiene mejores características bovinas que la Holstein."
+    },
+    {
+      "id": "A.2.1",
+      "title_en": "Initial herd size",
+      "title": "Tamaño inicial del ganado",
+      "description_en": "No modification of the number of cows.",
+      "description": "No hay cambios en el número de vacas."
+    },
+    {
+      "id": "A.2.2",
+      "title_en": "15% increase of initial herd size (no building modification)",
+      "title": "Incremento de 15 % del tamaño original del ganado (sin cambios en las instalaciones)",
+      "description_en": "The number of cows is increased by 15% of initial number, without building modification. The cow density is increased.",
+      "description": "El número de vacas se incrementa en un 15 % sobre el número inicial, sin ninguna modificación en las instalaciones. La densidad de vacas ha aumentado."
+    },
+    {
+      "id": "A.2.3",
+      "title_en": "15% increase of initial herd size (building modification)",
+      "title": "Incremento del 15 % en comparación con el tamaño inicial del ganado (modificación de edificios)",
+      "description_en": "The number of cows is increased by 15% of initial number AND the barn size is increased by 15%. This practice requires investment capacity for building extension (once per game).",
+      "description": "El número de vacas se incrementa en un 15 % sobre el número original y el tamaño del establo se incrementa en un 15 %. Esta práctica requiere una capacidad de inversión para la construcción de una extensión (una vez por juego)."
+    },
+    {
+      "id": "A.2.4",
+      "title_en": "30% increase of initial herd size (building modification)",
+      "title": "Incremento del 30 % en comparación con el tamaño inicial del ganado (modificación de edificios)",
+      "description_en": "The number of cows is increased by 30% of initial number AND the barn size is increased by 30%. The milking parlour is also modified. This practice requires investment capacity for building extension (once per game).",
+      "description": "El número de vacas se incrementa en un 30 % del número original y el tamaño del establo se incrementa en un 30 %. La sala de ordeño también se ha modificado. Esta práctica requiere una capacidad de inversión para la expansión de los establos (una vez por juego)."
+    },
+    {
+      "id": "A.2.5",
+      "title_en": "15% decrease of initial herd size",
+      "title": "Reducción del 15 % del tamaño inicial del ganado",
+      "description_en": "The number of cows is decreased by 15% of initial number.",
+      "description": "El número de vacas se reduce en un 15 % del número inicial."
+    },
+    {
+      "id": "A.2.6",
+      "title_en": "30% decrease of initial herd size",
+      "title": "Reducción del 30 % del tamaño inicial del ganado",
+      "description_en": "The number of cows is decreased by 30% of initial number.",
+      "description": "El número de vacas se reduce en un 30 % con respecto al número inicial."
+    },
+    {
+      "id": "A.3.1",
+      "title_en": "Bulls fattened up to 18 months",
+      "title": "Toros cebados hasta los 18 meses de edad",
+      "description_en": "Indoor feeding based on high density diet (mainly, maize silage, soybean supplement, wheat).",
+      "description": "Alimentación en interiores basada en una dieta de alta densidad (principalmente ensilado de maíz, suplemento de soja, trigo)."
+    },
+    {
+      "id": "A.3.2",
+      "title_en": "Castrated males fattened up to 36 months (steer)",
+      "title": "Machos castrados cebados hasta 36 meses (novillo)",
+      "description_en": "Extensive feeding based on hay and grass silage (small soybean supplement) during winter and outside grazing during summer.",
+      "description": "Alimentación extensiva con heno y ensilado de hierba (pequeño suplemento de soja) en invierno y pastoreo al aire libre en verano."
+    },
+    {
+      "id": "A.3.3",
+      "title_en": "Male calves sold at 8 days",
+      "title": "Terneros machos vendidos a los 8 días",
+      "description_en": "Sale non-weaned calves to fattening farms.",
+      "description": "Venta de terneros no destetados a granjas de engorde."
+    },
+    {
+      "id": "A.4.1",
+      "title_en": "Cows are tied on straw bedding",
+      "title": "Las vacas están contenidas en camas de paja",
+      "description_en": "Due to geographical constraints, cows are tied on straw bedding.",
+      "description": "Debido a las limitaciones geográficas, las vacas están contenidas en camas de paja."
+    },
+    {
+      "id": "A.4.2",
+      "title_en": "Housing of cows is cubicles with straw (shallow bedding)",
+      "title": "La estabulación de las vacas se realiza en establos de paja (camas poco profundas)",
+      "description_en": "Cows can rest on individual places. You need to invest if you want to change to this cow housing system. It requires straw and produces manure.",
+      "description": "Las vacas pueden descansar en corrales individuales. Debe hacer inversiones si desea cambiar a este sistema de estabulación. Requiere paja y produce estiércol."
+    },
+    {
+      "id": "A.4.3",
+      "title_en": "Housing of cows is cubicles with slatted floor",
+      "title": "La estabulación de las vacas se hace en establos emparrillados.",
+      "description_en": "Cows can rest on individual places. You need to invest if you want to change to this cow housing system. It produces slurry.",
+      "description": "Las vacas pueden descansar en corrales individuales. Debe hacer inversiones si desea cambiar a este sistema de estabulación. Producción de estiércol."
+    },
+    {
+      "id": "A.4.4",
+      "title_en": "Housing of cows is free-stall (deep bedding)",
+      "title": "Las vacas se mantienen en estabulación libre (cama gruesa).",
+      "description_en": "You need to invest if you want to change to this cow housing system. Deeper beeding requires more straw; this building produces manure. This system improves the animal welfare.",
+      "description": "Debe hacer inversiones si desea cambiar a este sistema de estabulación. La cama gruesa requiere más paja; este tipo de cría produce estiércol. Este sistema mejora el bienestar de los animales."
+    },
+    {
+      "id": "A.4.5",
+      "title_en": "Housing of cows is free-stall slatted floor",
+      "title": "Las vacas se mantienen en estabulación libre sobre suelo emparrillados.",
+      "description_en": "You need to invest if you want to change to this cow housing system. It produces slurry.",
+      "description": "Debe hacer inversiones si desea cambiar a este sistema de estabulación. Producción de estiércol."
+    },
+    {
+      "id": "A.5.1",
+      "title_en": "Housing of heifer, bulls and steers is slatted floor",
+      "title": "La estabulación de vaquillas, toros y novillos se realiza sobre suelos emparrillados.",
+      "description_en": "You need to invest if you want to change to this housing system for heifers, bulls and steers. This type of building produces slurry.",
+      "description": "Tiene que invertir si quiere cambiar a este sistema de estabulación para vaquillas, toros y novillos. Este tipo de granero produce estiércol."
+    },
+    {
+      "id": "A.5.2",
+      "title_en": "Housing of heifer, bulls and steers is shallow bedding",
+      "title": "La estabulación de vaquillas, toros y novillos se realiza sobre suelos emparrillados.",
+      "description_en": "You need to invest if you want to change to this housing system for heifers, bulls and steers. This type of building requires straw and produces manure.",
+      "description": "Tiene que invertir si quiere cambiar a este sistema de estabulación para vaquillas, toros y novillos. Este tipo de granero requiere paja y produce estiércol."
+    },
+    {
+      "id": "A.5.3",
+      "title_en": "Housing of heifer, bulls and steers is deep bedding",
+      "title": "La estabulación de novillas, toros y novillos se realiza en camas gruesas.",
+      "description_en": "You need to invest if you want to change to this housing system for heifers, bulls and steers. Deeper beeding requires more straw; this building produces manure.",
+      "description": "Tiene que invertir si quiere cambiar a este sistema de estabulación para vaquillas, toros y novillos. La cama gruesa requiere más paja; este tipo de cría produce estiércol."
+    },
+    {
+      "id": "A.6.1",
+      "title_en": "Cow feeding system: all year indoor, maize silage & soybean meal supplement",
+      "title": "Sistema de alimentación de las vacas: sin pastoreo, ensilado de maíz y suplemento de harina de soya",
+      "description_en": "All year indoor, cows are mainly fed with maize silage & soybean meal supplement.",
+      "description": "Sin pastoreo, las vacas se alimentan principalmente con ensilado de maíz y harina de soya extra."
+    },
+    {
+      "id": "A.6.2",
+      "title_en": "Cow feeding system: all year indoor, sorghum silage & soybean meal supplement",
+      "title": "Sistema de alimentación de las vacas: sin pastoreo, ensilado de sorgo y suplemento de harina de soya.",
+      "description_en": "All year indoor, cows are mainly fed with sorghum silage & soybean meal supplement.",
+      "description": "Sin pastoreo, las vacas se alimentan principalmente con ensilado de sorgo y harina de soya extra."
+    },
+    {
+      "id": "A.6.3",
+      "title_en": "Cow feeding system: all year indoor, sorghum & alfalfa silage",
+      "title": "Sistema de alimentación de las vacas: sin pastoreo, ensilado de sorgo y alfalfa",
+      "description_en": "All year indoor, cows are mainly fed with sorghum & alfalfa silage.",
+      "description": "Sin pastoreo, las vacas se alimentan principalmente de ensilado de sorgo y alfalfa."
+    },
+    {
+      "id": "A.6.4",
+      "title_en": "Cow feeding system: all year indoor, maize silage, alfalfa silage & soybean meal supplement",
+      "title": "Sistema de alimentación de las vacas: sin pastoreo, ensilado de maíz, ensilado de alfalfa y suplemento de harina de soya",
+      "description_en": "All year indoor, cows are mainly fed with maize silage, alfalfa silage & soybean meal supplement.",
+      "description": "Sin pastoreo, las vacas se alimentan principalmente con ensilado de maíz, ensilado de alfalfa y un suplemento de harina de soya."
+    },
+    {
+      "id": "A.6.5",
+      "title_en": "Cow feeding system: 4 months grazing / maize silage & soybean meal supplement",
+      "title": "Sistema de alimentación de las vacas: 4 meses de pasto y suplemento de harina de soya",
+      "description_en": "As cows are outside 4 months a year, you need a sufficient grazing area. Soybean meal is purchased.",
+      "description": "Dado que las vacas están al aire libre 4 meses al año, necesita suficiente área de pastoreo. Se compra harina de soya."
+    },
+    {
+      "id": "A.6.6",
+      "title_en": "Cow feeding system: 4 months grazing / maize silage & rapeseed meal supplement",
+      "title": "Sistema de alimentación de las vacas: 4 meses de pastoreo y suplemento de harina de canola",
+      "description_en": "As cows are outside 4 months a year, you need a sufficient grazing area. Rapeseed meal is purchased.",
+      "description": "Dado que las vacas están al aire libre 4 meses al año, necesita suficiente área de pastoreo. Se compra harina de canola."
+    },
+    {
+      "id": "A.6.7",
+      "title_en": "Cow feeding system: 5 months grazing / maize silage & rapeseed meal supplement",
+      "title": "Sistema de alimentación de las vacas: 5 meses de pastoreo y suplemento de harina de canola",
+      "description_en": "As cows are outside 5 months a year, you need a sufficient grazing area. Rapeseed meal is purchased.",
+      "description": "Dado que las vacas están al aire libre 5 meses al año, necesita suficiente área de pastoreo. Se compra harina de canola."
+    },
+    {
+      "id": "A.6.8",
+      "title_en": "Cow feeding system: 7 months grazing / maize silage & rapeseed meal supplement",
+      "title": "Sistema de alimentación de las vacas: 7 meses de pastoreo y suplemento de harina de canola",
+      "description_en": "As cows are outside 7 months a year, you need a sufficient grazing area. Rapeseed meal is purchased.",
+      "description": "Dado que las vacas están al aire libre 7 meses al año, necesita suficiente área de pastoreo. Se compra harina de canola."
+    },
+    {
+      "id": "A.6.9",
+      "title_en": "Cow feeding system: 8 months grazing / grass silage & faba bean supplement",
+      "title": "Sistema de alimentación de las vacas: 8 meses de pastoreo y suplemento de harina de haba.",
+      "description_en": "As cows are outside 8 months a year, you need a sufficient grazing area.",
+      "description": "Dado que las vacas están al aire libre 8 meses al año, necesita suficiente área de pastoreo."
+    },
+    {
+      "id": "A.6.10",
+      "title_en": "Cow feeding system: all year indoor, hay & rapeseed meal supplement",
+      "title": "Sistema de alimentación de las vacas: cero pastoreo, suplemento de harina de heno y canola",
+      "description_en": "Rapeseed meal is purchased; feeding without silage, milk proper for particular cheese production.",
+      "description": "Compra de harina de canola; alimentación sin ensilado, leche adecuada para una producción de queso particular."
+    },
+    {
+      "id": "A.6.11",
+      "title_en": "Cow feeding system: 9 months grazing / grass silage",
+      "title": "Sistema de alimentación de las vacas: 9 meses de pasto, sin suplemento de alimento proteínico",
+      "description_en": "As cows are outside 9 months a year, you need a sufficient grazing area.",
+      "description": "Dado que las vacas están al aire libre 9 meses al año, necesita suficiente área de pastoreo."
+    },
+    {
+      "id": "A.7.1",
+      "title_en": "No concentrate supply for lactating dairy cows",
+      "title": "No hay suministro de concentrado a las vacas lecheras lactantes",
+      "description_en": "No concentrate is supplied for lactating dairy cows.",
+      "description": "No se suministra ningún concentrado a las vacas lecheras lactantes."
+    },
+    {
+      "id": "A.7.2",
+      "title_en": "+1000 kg milk / cow / year (with soybean meal and cereals)",
+      "title": "+1000 kg /vaca/ año con harina de soya y cereales.",
+      "description_en": "In order to increase milk production, concentrates (soybean meal and cereals) are given to the cows. Soybean meal is purchased.",
+      "description": "Con el fin de aumentar la producción de leche, se alimenta a las vacas con concentrados (harina de soya y cereales). Se compra harina de soya."
+    },
+    {
+      "id": "A.7.3",
+      "title_en": "+500 kg milk / cow / year (with soybean meal and cereals)",
+      "title": "+500 kg /vaca/ año con harina de soya y cereales.",
+      "description_en": "In order to increase milk production, concentrates (soybean meal and cereals) are given to the cows. Soybean meal is purchased.",
+      "description": "Con el fin de aumentar la producción de leche, se alimenta a las vacas con concentrados (harina de soya y cereales). Se compra harina de soya."
+    },
+    {
+      "id": "A.7.4",
+      "title_en": "+500 kg milk / cow / year (with faba bean and cereals)",
+      "title": "+500 kg /vaca/ año con harina de habas y cereales.",
+      "description_en": "In order to increase milk production, concentrates (faba bean and cereals) are given to the cows.",
+      "description": "Con el fin de aumentar la producción de leche, se alimenta a las vacas con concentrados (harina de habas y cereales)."
+    },
+    {
+      "id": "A.8.1",
+      "title_en": "Heifer feeding system: zero grazing / maize silage & soybean meal | Age at first calving: 24 months",
+      "title": "Sistema de alimentación de las vaquillas: cero pastoreo/ensilado maíz + harina de soya | Edad al primer parto: 24 meses",
+      "description_en": "Heifers calve at 24 months (more intensive feeding). Soybean meal is purchased.",
+      "description": "Las vaquillas dan a luz a los 24 meses (alimentación más intensiva). Se compra harina de soya."
+    },
+    {
+      "id": "A.8.2",
+      "title_en": "Heifer feeding system: 4 months grazing / 8 months maize silage, hay & soybean meal | Age at first calving: 24 months",
+      "title": "Sistema de alimentación para las vaquillas: 4 meses de pasto/8 meses de ensilado de maíz + heno + harina de soya | Edad al primer parto: 24 meses",
+      "description_en": "Heifers calve at 24 months (more intensive feeding). Soybean meal is purchased. As cows are outside 4 months a year, you need a sufficient grazing area.",
+      "description": "Las vaquillas dan a luz a los 24 meses (alimentación más intensiva). Se compra harina de soya. Dado que las vacas están al aire libre 4 meses al año, necesita suficiente área de pastoreo."
+    },
+    {
+      "id": "A.8.3",
+      "title_en": "Heifer feeding system: 6 months grazing / 6 months maize silage, grass silage & soybean meal | Age at first calving: 24 months",
+      "title": "Sistema de alimentación para las vaquillas: 6 meses de pasto/6 meses de ensilado de maíz + ensilado de hierba (o heno) + harina de soya | Edad al primer parto: 24 meses",
+      "description_en": "Heifers calve at 24 months (more intensive feeding). Soybean meal is purchased. As cows are outside 6 months a year, you need a sufficient grazing area.",
+      "description": "Las vaquillas dan a luz a los 24 meses (alimentación más intensiva). Se compra harina de soya. Dado que las vacas están al aire libre 6 meses al año, necesita suficiente área de pastoreo."
+    },
+    {
+      "id": "A.8.4",
+      "title_en": "Heifer feeding system: 6 months grazing / 6 months grass silage, cereals & soybean meal | Age at first calving: 24 months",
+      "title": "Sistema de alimentación para las vaquillas: 6 meses de pasto/6 meses de ensilado de hierba (o heno) + cereales + harina de soja | Edad del primer parto: 24 meses",
+      "description_en": "Heifers calve at 24 months (more intensive feeding). Soybean meal is purchased. As cows are outside 6 months a year, you need a sufficient grazing area.",
+      "description": "Las vaquillas dan a luz a los 24 meses (alimentación más intensiva). Se compra harina de soya. Dado que las vacas están al aire libre 6 meses al año, necesita suficiente área de pastoreo."
+    },
+    {
+      "id": "A.8.5",
+      "title_en": "Heifer feeding system: zero grazing / maize silage & soybean meal | Age at first calving: 29 months",
+      "title": "Sistema de alimentación de las vaquillas: cero pastoreo/ensilado maíz + harina de soya | Edad al primer parto: 29 meses",
+      "description_en": "Heifers calve at 29 months (less intensive feeding). Soybean meal is purchased.",
+      "description": "Las vaquillas dan a luz a los 29 meses (alimentación menos intensiva). Se compra harina de soya."
+    },
+    {
+      "id": "A.8.6",
+      "title_en": "Heifer feeding system: 4 months grazing / 8 months maize silage, hay & soybean meal | Age at first calving: 29 months",
+      "title": "Sistema de alimentación para las vaquillas: 4 meses de pasto/8 meses de ensilado de maíz + heno + harina de soya | Edad al primer parto: 29 meses",
+      "description_en": "Heifers calve at 29 months (less intensive feeding). Soybean meal is purchased. As cows are outside 4 months a year, you need a sufficient grazing area.",
+      "description": "Las vaquillas dan a luz a los 29 meses (alimentación menos intensiva). Se compra harina de soya. Dado que las vacas están al aire libre 4 meses al año, necesita suficiente área de pastoreo."
+    },
+    {
+      "id": "A.8.7",
+      "title_en": "Heifer feeding system: 6 months grazing / 6 months maize silage, grass silage (or hay) & soybean meal | Age at first calving: 29 months",
+      "title": "Sistema de alimentación para las vaquillas: 6 meses de pasto/6 meses de ensilado de maíz + ensilado de hierba (o heno) + harina de soya | Edad al primer parto: 29 meses",
+      "description_en": "Heifers calve at 29 months (less intensive feeding). Soybean meal is purchased. As cows are outside 6 months a year, you need a sufficient grazing area.",
+      "description": "Las vaquillas dan a luz a los 29 meses (alimentación menos intensiva). Se compra harina de soya. Dado que las vacas están al aire libre 6 meses al año, necesita suficiente área de pastoreo."
+    },
+    {
+      "id": "A.8.8",
+      "title_en": "Heifer feeding system: 6 months grazing / 6 months grass silage (or hay), cereals & soybean meal | Age at first calving: 29 months",
+      "title": "Sistema de alimentación para las vaquillas: 6 meses de pasto/6 meses de ensilado de hierba (o heno) + cereales + harina de soja | Edad del primer parto: 29 meses",
+      "description_en": "Heifers calve at 29 months (less intensive feeding). Soybean meal is purchased. As cows are outside 6 months a year, you need a sufficient grazing area.",
+      "description": "Las vaquillas dan a luz a los 29 meses (alimentación menos intensiva). Se compra harina de soya. Dado que las vacas están al aire libre 6 meses al año, necesita suficiente área de pastoreo."
+    },
+    {
+      "id": "A.9.1",
+      "title_en": "Systematic antibiotic treatment of cows",
+      "title": "Tratamiento antibiótico sistemático de las vacas",
+      "description_en": "All cows are treated with antibiotics at the dry period.",
+      "description": "Todas las vacas se tratan con antibióticos durante el período seco."
+    },
+    {
+      "id": "A.9.2",
+      "title_en": "Selective antibiotic treatment of cows",
+      "title": "Tratamiento antibiótico selectivo de las vacas ",
+      "description_en": "Only cows with an intramammary infection are treated with antibiotics.",
+      "description": "Solo las vacas con una infección intramamaria se tratan con antibióticos."
+    },
+    {
+      "id": "A.9.3",
+      "title_en": "Preventive measures of hygiene (no treatment of cows)",
+      "title": "Medidas higiénicas preventivas en las condiciones de estabulación (sin tratamiento a las vacas)",
+      "description_en": "None of the cows are treated with antibiotics at drying off.",
+      "description": "Ninguna de las vacas se trata con antibióticos en el momento del secado."
+    },
+    {
+      "id": "A.10.1",
+      "title_en": "Systematic anti-parasitic treatment of heifers",
+      "title": "Tratamiento sistemático de las vaquillas contra los parásitos",
+      "description_en": "Systematic treatment of heifers is implemented.",
+      "description": "Se aplica un tratamiento sistemático de las vaquillas."
+    },
+    {
+      "id": "A.10.2",
+      "title_en": "Selective treatment of heifers",
+      "title": "Tratamiento selectivo/específico de las vaquillas con grandes cantidades de parásitos",
+      "description_en": "Only one treatment per year is implemented, only on the heifers displaying growth retardations.",
+      "description": "Solo se utiliza un tratamiento por año, sólo en vaquillas con retraso de crecimiento."
+    },
+    {
+      "id": "A.10.3",
+      "title_en": "Immunization against internal parasites by low exposure grazing of heifers (no treatment)",
+      "title": "Vacunas contra los parásitos internos mediante el pastoreo de novillas a baja exposición (sin tratamiento)",
+      "description_en": "None of the heifers are treated with anthelmintic treatment. Immunity is enhanced by controlled exposure to parasites. It requires longer grazing rotations.",
+      "description": "Ninguna de las vaquillas se trata con medicamentos antiinflamatorios. La inmunidad se refuerza con la exposición controlada a los parásitos. Requiere rotaciones de pastoreo más largas."
+    },
+    {
+      "id": "A.11.1",
+      "title_en": "Milk replacer is fed to calves",
+      "title": "A los terneros se les da un sustituto de leche.",
+      "description_en": "Purchased milk replacer is fed to calves.",
+      "description": "Se alimenta a los terneros con la leche de sustitución que se compró. ."
+    },
+    {
+      "id": "A.11.2",
+      "title_en": "Milk is fed to calves",
+      "title": "Se suministra la leche a los terneros",
+      "description_en": "Milk produced on-farm is fed to calves.",
+      "description": "Se alimenta a los terneros con la leche que se produce en la granja."
+    }
+  ],
+  "style": {},
+  "infos": {
+    "version": 2,
+    "comment": ""
+  }
+}

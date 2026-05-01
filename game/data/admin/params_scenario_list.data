@@ -1,0 +1,411 @@
+{
+  "columns": [
+    {
+      "type": "text",
+      "name": "id",
+      "title": "id",
+      "width": "145",
+      "align": "left"
+    },
+    {
+      "type": "text",
+      "name": "description",
+      "title": "description",
+      "width": "620",
+      "align": "left"
+    },
+    {
+      "type": "text",
+      "width": "270",
+      "align": "left",
+      "title": "category",
+      "name": "category"
+    },
+    {
+      "type": "numeric",
+      "width": "85",
+      "align": "right",
+      "title": "precision",
+      "name": "precision"
+    }
+  ],
+  "data": [
+    {
+      "id": "paramF1",
+      "description": "Farm area (ha)",
+      "category": "Farm parameters",
+      "precision": 0
+    },
+    {
+      "id": "paramF2",
+      "description": "Area of farmland #1 (%)",
+      "category": "Farm parameters",
+      "precision": 0
+    },
+    {
+      "id": "indF91",
+      "description": "Initial cumulated investment capacity (₸)",
+      "category": "Farm parameters",
+      "precision": 0
+    },
+    {
+      "id": "paramF6",
+      "description": "Number of permanent workers (unitless)",
+      "category": "Farm parameters",
+      "precision": 1
+    },
+    {
+      "id": "paramF4",
+      "description": "Cost of hiring a worker (₸ / h)",
+      "category": "Farm parameters",
+      "precision": 1
+    },
+    {
+      "id": "indCr1",
+      "description": "Wheat yield (grain) (t DM / ha)",
+      "category": "Crop production",
+      "precision": 2
+    },
+    {
+      "id": "indCr2",
+      "description": "Wheat yield (straw) (t DM / ha)",
+      "category": "Crop production",
+      "precision": 2
+    },
+    {
+      "id": "indCr3",
+      "description": "Barley yield (grain) (t DM / ha)",
+      "category": "Crop production",
+      "precision": 2
+    },
+    {
+      "id": "indCr4",
+      "description": "Barley yield (straw) (t DM / ha)",
+      "category": "Crop production",
+      "precision": 2
+    },
+    {
+      "id": "indCr5",
+      "description": "Sugar beet yield (root) (t / ha)",
+      "category": "Crop production",
+      "precision": 2
+    },
+    {
+      "id": "indCr6",
+      "description": "Potato yield (tuber) (t / ha)",
+      "category": "Crop production",
+      "precision": 2
+    },
+    {
+      "id": "indCr7",
+      "description": "Rapeseed yield (grain) (t DM / ha)",
+      "category": "Crop production",
+      "precision": 2
+    },
+    {
+      "id": "indCr8",
+      "description": "Pea yield (grain) (t DM / ha)",
+      "category": "Crop production",
+      "precision": 2
+    },
+    {
+      "id": "indCr9",
+      "description": "Faba bean yield (grain) (t DM / ha)",
+      "category": "Crop production",
+      "precision": 2
+    },
+    {
+      "id": "indCr10",
+      "description": "Maize yield (silage) (t DM / ha)",
+      "category": "Crop production",
+      "precision": 2
+    },
+    {
+      "id": "indCr11",
+      "description": "Alfalfa yield (silage) (t DM / ha)",
+      "category": "Crop production",
+      "precision": 2
+    },
+    {
+      "id": "indCr12",
+      "description": "Sorghum yield (silage) (t DM / ha)",
+      "category": "Crop production",
+      "precision": 2
+    },
+    {
+      "id": "indCr13",
+      "description": "Temporary grassland yield (t DM / ha)",
+      "category": "Crop production",
+      "precision": 2
+    },
+    {
+      "id": "indCr16",
+      "description": "Permanent grassland yield (t DM / ha)",
+      "category": "Crop production",
+      "precision": 2
+    },
+    {
+      "id": "indAn158",
+      "description": "Initial cow number (unitless)",
+      "category": "Animal production",
+      "precision": 0
+    },
+    {
+      "id": "indAn10",
+      "description": "Cow culling rate (unitless)",
+      "category": "Animal production",
+      "precision": 2
+    },
+    {
+      "id": "indAn19",
+      "description": "Annual milk production per dairy cow (L)",
+      "category": "Animal production",
+      "precision": 0
+    },
+    {
+      "id": "indAn16",
+      "description": "Meat of culled cows (kg / animal)",
+      "category": "Animal production",
+      "precision": 0
+    },
+    {
+      "id": "indAn17",
+      "description": "Meat of bulls and steers (kg / animal)",
+      "category": "Animal production",
+      "precision": 0
+    },
+    {
+      "id": "indAn18",
+      "description": "Meat of non pregnant heifers (kg / animal)",
+      "category": "Animal production",
+      "precision": 0
+    },
+    {
+      "id": "paramCr9",
+      "description": "Wheat selling price (₸ / t DM)",
+      "category": "Conventional selling prices of crops",
+      "precision": 2
+    },
+    {
+      "id": "paramCr7",
+      "description": "Barley selling price (₸ / t DM)",
+      "category": "Conventional selling prices of crops",
+      "precision": 2
+    },
+    {
+      "id": "paramCr10",
+      "description": "Straw selling price (₸ / t DM)",
+      "category": "Conventional selling prices of crops",
+      "precision": 2
+    },
+    {
+      "id": "paramCr25",
+      "description": "Sugar beet selling price (₸ / t)",
+      "category": "Conventional selling prices of crops",
+      "precision": 2
+    },
+    {
+      "id": "paramCr28",
+      "description": "Potatoe selling price (₸ / t)",
+      "category": "Conventional selling prices of crops",
+      "precision": 2
+    },
+    {
+      "id": "paramCr26",
+      "description": "Rapeseed selling price (₸ / t DM)",
+      "category": "Conventional selling prices of crops",
+      "precision": 2
+    },
+    {
+      "id": "paramCr27",
+      "description": "Pea selling price (₸ / t DM)",
+      "category": "Conventional selling prices of crops",
+      "precision": 2
+    },
+    {
+      "id": "paramCr8",
+      "description": "Faba bean selling price (₸ / t DM)",
+      "category": "Conventional selling prices of crops",
+      "precision": 2
+    },
+    {
+      "id": "paramCr1",
+      "description": "Maize silage price (₸ / t DM)",
+      "category": "Conventional selling prices of crops",
+      "precision": 2
+    },
+    {
+      "id": "paramCr3",
+      "description": "Alfalfa silage selling price (₸ / t DM)",
+      "category": "Conventional selling prices of crops",
+      "precision": 2
+    },
+    {
+      "id": "paramCr4",
+      "description": "Sorghum silage selling price (₸ / t DM)",
+      "category": "Conventional selling prices of crops",
+      "precision": 2
+    },
+    {
+      "id": "paramCr2",
+      "description": "Grass selling price (₸ / t DM)",
+      "category": "Conventional selling prices of crops",
+      "precision": 2
+    },
+    {
+      "id": "paramAn28",
+      "description": "Wheat price (₸ / t DM)",
+      "category": "Conventional feed prices",
+      "precision": 2
+    },
+    {
+      "id": "paramAn26",
+      "description": "Barley price (₸ / t DM)",
+      "category": "Conventional feed prices",
+      "precision": 2
+    },
+    {
+      "id": "paramAn31",
+      "description": "Straw price (₸ / t DM)",
+      "category": "Conventional feed prices",
+      "precision": 2
+    },
+    {
+      "id": "paramAn18",
+      "description": "Rapeseed meal price (₸ / t DM)",
+      "category": "Conventional feed prices",
+      "precision": 2
+    },
+    {
+      "id": "paramAn19",
+      "description": "Soyabean meal price (₸ / t DM)",
+      "category": "Conventional feed prices",
+      "precision": 2
+    },
+    {
+      "id": "paramAn27",
+      "description": "Faba bean price (₸ / t DM)",
+      "category": "Conventional feed prices",
+      "precision": 2
+    },
+    {
+      "id": "paramAn20",
+      "description": "Maize silage price (₸ / t DM)",
+      "category": "Conventional feed prices",
+      "precision": 2
+    },
+    {
+      "id": "paramAn22",
+      "description": "Alfalfa silage price (₸ / t DM)",
+      "category": "Conventional feed prices",
+      "precision": 2
+    },
+    {
+      "id": "paramAn23",
+      "description": "Sorghum silage price (₸ / t DM)",
+      "category": "Conventional feed prices",
+      "precision": 2
+    },
+    {
+      "id": "paramAn21",
+      "description": "Grass price (₸ / t DM)",
+      "category": "Conventional feed prices",
+      "precision": 2
+    },
+    {
+      "id": "paramAn1",
+      "description": "Conventional milk price (₸ / 1000 L)",
+      "category": "Conventional selling prices of animal products",
+      "precision": 0
+    },
+    {
+      "id": "paramAn7",
+      "description": "Bull and steer & non pregnant heifer price - Holstein (₸ / kg meat)",
+      "category": "Conventional selling prices of animal products",
+      "precision": 2
+    },
+    {
+      "id": "paramAn11",
+      "description": "Bull and steer & non pregnant heifer price - Siemmental (₸ /kg meat)",
+      "category": "Conventional selling prices of animal products",
+      "precision": 2
+    },
+    {
+      "id": "paramAn15",
+      "description": "Bull and steer & non pregnant heifer price - Montbéliarde (₸ / kg meat)",
+      "category": "Conventional selling prices of animal products",
+      "precision": 2
+    },
+    {
+      "id": "paramCr11",
+      "description": "Cost of one crop treatment (₸ / ha)",
+      "category": "Costs of crop production",
+      "precision": 0
+    },
+    {
+      "id": "paramCr12",
+      "description": "Artificial nitrogen price (ammonitrate 33.5%) (₸ / t)",
+      "category": "Costs of crop production",
+      "precision": 0
+    },
+    {
+      "id": "paramF23",
+      "description": "Cost of in-field agroforestry, with subsidies (₸ / ha)",
+      "category": "Costs of crop production",
+      "precision": 0
+    },
+    {
+      "id": "paramAn34",
+      "description": "Building costs due to increase in herd size (₸ / animal)",
+      "category": "Building costs",
+      "precision": 0
+    },
+    {
+      "id": "paramF55",
+      "description": "Building costs due to modification of milking parlour (₸)",
+      "category": "Building costs",
+      "precision": 0
+    },
+    {
+      "id": "paramAn35",
+      "description": "Building costs of heifer and fattening cattle housing system - slatted floor (₸ / animal)",
+      "category": "Building costs",
+      "precision": 0
+    },
+    {
+      "id": "paramAn36",
+      "description": "Building costs of heifer and fattening cattle housing system - bedding (₸ / animal)",
+      "category": "Building costs",
+      "precision": 0
+    },
+    {
+      "id": "indEc2",
+      "description": "CAP subsidies - 1st Pillar (₸ / ha)",
+      "category": "Subsidies",
+      "precision": 0
+    },
+    {
+      "id": "paramAn2",
+      "description": "Organic milk price premium (₸ / 1000 L)",
+      "category": "Subsidies",
+      "precision": 0
+    },
+    {
+      "id": "paramF57",
+      "description": "Number of changes allowed in a round",
+      "category": "Game parameters",
+      "precision": 0
+    },
+    {
+      "id": "paramBackground",
+      "description": "Farm background (France: 0, Belgium: 1, Italy: 2, Poland: 3)",
+      "category": "Game parameters",
+      "precision": 0
+    }
+  ],
+  "style": {},
+  "infos": {
+    "version": 2,
+    "comment": "Mis à jour le 12 mai 2021 - MC"
+  }
+}

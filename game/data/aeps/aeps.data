@@ -1,0 +1,1215 @@
+{
+  "columns": [
+    {
+      "type": "text",
+      "name": "id",
+      "title": "id",
+      "width": "114",
+      "align": "center"
+    },
+    {
+      "type": "text",
+      "name": "title",
+      "title": "title",
+      "width": "718",
+      "align": "left"
+    },
+    {
+      "type": "text",
+      "name": "category",
+      "title": "category",
+      "width": "549",
+      "align": "left"
+    },
+    {
+      "type": "checkbox",
+      "width": "137",
+      "align": "center",
+      "title": "active_at_start",
+      "name": "active_at_start"
+    },
+    {
+      "type": "text",
+      "name": "description",
+      "title": "description",
+      "width": "675",
+      "align": "left"
+    }
+  ],
+  "data": [
+    {
+      "id": "C.1.1",
+      "title": "Conventional tillage",
+      "category": "tillage_management",
+      "active_at_start": true,
+      "description": "The “traditional” method of farming in which soil is prepared for planting by completely inverting it with a moldboard plow."
+    },
+    {
+      "id": "C.1.2",
+      "title": "Reduced tillage",
+      "category": "tillage_management",
+      "active_at_start": false,
+      "description": "Use of only superficial tillage without soil inversion."
+    },
+    {
+      "id": "C.1.3",
+      "title": "No tillage",
+      "category": "tillage_management",
+      "active_at_start": false,
+      "description": "Planting of crops directly (no tillage) in preceding cover crop (living or destroyed, i.e. mulched) or crop residues."
+    },
+    {
+      "id": "C.2.1",
+      "title": "Fall cover crop destructed before winter",
+      "category": "soil_cover",
+      "active_at_start": false,
+      "description": "The cover crop is terminated before winter and the soil is left bare until the spring crop is well established."
+    },
+    {
+      "id": "C.2.2",
+      "title": "Fall cover crop destructed early spring",
+      "category": "soil_cover",
+      "active_at_start": true,
+      "description": "The fall cover crop is left during winter, covering the soil and is terminated early spring."
+    },
+    {
+      "id": "C.2.3",
+      "title": "Permanent soil cover",
+      "category": "soil_cover",
+      "active_at_start": false,
+      "description": "Implementing this practice means that the soil is never left bare across the whole rotation."
+    },
+    {
+      "id": "C.3.1",
+      "title": "Straw removal",
+      "category": "residues_management",
+      "active_at_start": true,
+      "description": "Crop residues are exported from the crop system and used for livestock bedding and/or exported from the farm by selling it."
+    },
+    {
+      "id": "C.3.2",
+      "title": "Straw left on soil",
+      "category": "residues_management",
+      "active_at_start": false,
+      "description": "Crop residues are left on the soil and are either incorporated into the soil when tilling or are left as mulch when implementing direct seeding."
+    },
+    {
+      "id": "C.4.1",
+      "title": "On-farm organic fertilizers + input of mineral fertilizer",
+      "category": "fertilisation",
+      "active_at_start": true,
+      "description": "The slurry and/or manure produced by animals is used as organic fertilizer and completed by mineral fertiliser."
+    },
+    {
+      "id": "C.4.2",
+      "title": "On-farm organic fertilizers only",
+      "category": "fertilisation",
+      "active_at_start": false,
+      "description": "The slurry and/or manure produced by animals is used as organic fertilizer and not complemented."
+    },
+    {
+      "id": "C.5.1",
+      "title": "Systematic use of chemical fungicides",
+      "category": "crop_protection_against_diseases",
+      "active_at_start": true,
+      "description": "Chemical fungicides are systematically used. "
+    },
+    {
+      "id": "C.5.2",
+      "title": "Sound approach of chemical fungicides",
+      "category": "crop_protection_against_diseases",
+      "active_at_start": false,
+      "description": "The use of chemical fungicides whenever and only if it is absolutely required."
+    },
+    {
+      "id": "C.5.3",
+      "title": "Biocontrol products against diseases",
+      "category": "crop_protection_against_diseases",
+      "active_at_start": false,
+      "description": "‘Integrated pest management’ strategy without chemicals."
+    },
+    {
+      "id": "C.5.4",
+      "title": "No direct protection against diseases",
+      "category": "crop_protection_against_diseases",
+      "active_at_start": false,
+      "description": "No fungicide is applied."
+    },
+    {
+      "id": "C.6.1",
+      "title": "Systematic and sole use of chemical herbicides",
+      "category": "weed_control",
+      "active_at_start": true,
+      "description": "Chemical herbicides are systematically used."
+    },
+    {
+      "id": "C.6.2",
+      "title": "Sound approach of chemical herbicides + mechanical weed control",
+      "category": "weed_control",
+      "active_at_start": false,
+      "description": "The use of chemical herbicides whenever and only if it is absolutely required."
+    },
+    {
+      "id": "C.6.3",
+      "title": "Sole use of mechanical weed control",
+      "category": "weed_control",
+      "active_at_start": false,
+      "description": "No herbicide is applied, weed populations are managed through physical methods (e.g. hoeing, harrowing)."
+    },
+    {
+      "id": "C.7.1",
+      "title": "Systematic use of chemical insecticides / molluscicides / nematicides",
+      "category": "crop_protection_against_animal_pests",
+      "active_at_start": true,
+      "description": "Chemical insecticides / molluscicides / nematicides are systematically used to avoid pests, even if the pressure is low."
+    },
+    {
+      "id": "C.7.2",
+      "title": "Sound approach of chemical insecticides / molluscicides / nematicides",
+      "category": "crop_protection_against_animal_pests",
+      "active_at_start": false,
+      "description": "Chemical insecticides / molluscicides / nematicides  are applied only if pests are monitored in the field and sprays or other control methods are carried out only when the action threshold is exceeded (Integrated Pest Management)."
+    },
+    {
+      "id": "C.7.3",
+      "title": "Biocontrol products (incl. pyrethrin) and other natural control techniques against pests",
+      "category": "crop_protection_against_animal_pests",
+      "active_at_start": false,
+      "description": "Biocontrol products / biopesticides will be applied using a sprayer."
+    },
+    {
+      "id": "C.7.4",
+      "title": "No direct protection against animal pests",
+      "category": "crop_protection_against_animal_pests",
+      "active_at_start": false,
+      "description": "No Insecticide / Molluscicide / Nematicide is applied."
+    },
+    {
+      "id": "C.8.1",
+      "title": "High yielding cultivars",
+      "category": "cash_crop_cultivars",
+      "active_at_start": true,
+      "description": "Use of one cultivar selected for its high yield in controled conditions."
+    },
+    {
+      "id": "C.8.2",
+      "title": "Resistant cultivars and/or mix of varieties",
+      "category": "cash_crop_cultivars",
+      "active_at_start": false,
+      "description": "Use of one or more cultivars selected for their resistance/tolerance to pests and diseases, but with lower yield in controled conditions."
+    },
+    {
+      "id": "C.9.1",
+      "title": "Temporary grassland composed of grass",
+      "category": "temporary_grassland_composition",
+      "active_at_start": true,
+      "description": "Land on which the vegetation is dominated by grass such as perennial ryegrass or sheep's fescue."
+    },
+    {
+      "id": "C.9.2",
+      "title": "Temporary grassland composed of simple grass/legume mixtures",
+      "category": "temporary_grassland_composition",
+      "active_at_start": false,
+      "description": "Land on which the vegetation is dominated by two species, one grass and one legume such as perennial ryegrass and white clover."
+    },
+    {
+      "id": "C.9.3",
+      "title": "Temporary grassland composed of complex grass/legume mixtures",
+      "category": "temporary_grassland_composition",
+      "active_at_start": false,
+      "description": "Land on which the vegetation is dominated by various species, grasses, legumes, etc."
+    },
+    {
+      "id": "C.10.1",
+      "title": "No permanent grassland",
+      "category": "permanent_grassland_area",
+      "active_at_start": false,
+      "description": "No permanent grassland on the farm."
+    },
+    {
+      "id": "C.10.2",
+      "title": "Permanent grassland occupy a small percentage of the farm area",
+      "category": "permanent_grassland_area",
+      "active_at_start": true,
+      "description": "Permanent grassland occupy 10% of farm area. It can be used to feed livestock and promote biodiversity."
+    },
+    {
+      "id": "C.10.3",
+      "title": "Permanent grassland occupy a high percentage of the farm area",
+      "category": "permanent_grassland_area",
+      "active_at_start": false,
+      "description": "Permanent grassland occupy 20% of farm area. It can be used to feed livestock and promote biodiversity."
+    },
+    {
+      "id": "C.11.1",
+      "title": "Sole crops",
+      "category": "spatial_distribution_of_cash_crops",
+      "active_at_start": true,
+      "description": "Each crop is grown alone in the field."
+    },
+    {
+      "id": "C.11.2",
+      "title": "Wheat/pea intercrops",
+      "category": "spatial_distribution_of_cash_crops",
+      "active_at_start": false,
+      "description": "Coexistence of the two crops (wheat, pea) on the same field at the same time. Yield of the intercrop will be higher than the average of individual crops on the same area. Intercrops can be valorized as animal feeding. Selling the crops will require additional sorting costs (not considered in the game)."
+    },
+    {
+      "id": "C.12.1",
+      "title": "CS #1: maize - wheat",
+      "category": "cropping_system_1",
+      "active_at_start": true,
+      "description": "Simple but low diversity cropping plan."
+    },
+    {
+      "id": "C.12.2",
+      "title": "CS #1: rapeseed - wheat - maize - wheat",
+      "category": "cropping_system_1",
+      "active_at_start": false,
+      "description": "Medium diversity cropping plan."
+    },
+    {
+      "id": "C.12.3",
+      "title": "CS #1: maize - wheat - maize - barley",
+      "category": "cropping_system_1",
+      "active_at_start": false,
+      "description": "Medium diversity cropping plan."
+    },
+    {
+      "id": "C.12.4",
+      "title": "CS #1: alfalfa (3 years) - maize - wheat",
+      "category": "cropping_system_1",
+      "active_at_start": false,
+      "description": "Medium diversity cropping plan, with legume crop."
+    },
+    {
+      "id": "C.12.5",
+      "title": "CS #1: faba bean - wheat - rapeseed - maize",
+      "category": "cropping_system_1",
+      "active_at_start": false,
+      "description": "Medium diversity cropping plan, with legume crop."
+    },
+    {
+      "id": "C.12.6",
+      "title": "CS #1: grassland (4 years) - maize - maize",
+      "category": "cropping_system_1",
+      "active_at_start": false,
+      "description": "Low diversity cropping plan, with grassland."
+    },
+    {
+      "id": "C.12.7",
+      "title": "CS #1: grassland (3 years) - maize - wheat - barley",
+      "category": "cropping_system_1",
+      "active_at_start": false,
+      "description": "Medium diversity cropping plan, with grassland."
+    },
+    {
+      "id": "C.12.8",
+      "title": "CS #1: faba bean - wheat - maize - alfalfa (3 years) - barley - maize",
+      "category": "cropping_system_1",
+      "active_at_start": false,
+      "description": "High diversity cropping plan, with legume crops and grassland."
+    },
+    {
+      "id": "C.12.9",
+      "title": "CS #1: grassland (3 years) - maize - wheat - faba bean - rapeseed",
+      "category": "cropping_system_1",
+      "active_at_start": false,
+      "description": "High diversity cropping plan, with legume crop and grassland."
+    },
+    {
+      "id": "C.13.1",
+      "title": "CS #2: maize - wheat",
+      "category": "cropping_system_2",
+      "active_at_start": false,
+      "description": "Simple but low diversity cropping plan."
+    },
+    {
+      "id": "C.13.2",
+      "title": "CS #2: rapeseed - wheat - maize - wheat",
+      "category": "cropping_system_2",
+      "active_at_start": false,
+      "description": "Medium diversity cropping plan."
+    },
+    {
+      "id": "C.13.3",
+      "title": "CS #2: maize - wheat - maize - barley",
+      "category": "cropping_system_2",
+      "active_at_start": false,
+      "description": "Medium diversity cropping plan."
+    },
+    {
+      "id": "C.13.4",
+      "title": "CS #2: alfalfa (3 years) - maize - wheat",
+      "category": "cropping_system_2",
+      "active_at_start": false,
+      "description": "Medium diversity cropping plan, with legume crop."
+    },
+    {
+      "id": "C.13.5",
+      "title": "CS #2: faba bean - wheat - rapeseed - maize",
+      "category": "cropping_system_2",
+      "active_at_start": false,
+      "description": "Medium diversity cropping plan, with legume crop."
+    },
+    {
+      "id": "C.13.6",
+      "title": "CS #2: grassland (4 years) - maize - maize",
+      "category": "cropping_system_2",
+      "active_at_start": true,
+      "description": "Low diversity cropping plan, with grassland."
+    },
+    {
+      "id": "C.13.7",
+      "title": "CS #2: grassland (3 years) - maize - wheat - barley",
+      "category": "cropping_system_2",
+      "active_at_start": false,
+      "description": "Medium diversity cropping plan, with grassland."
+    },
+    {
+      "id": "C.13.8",
+      "title": "CS #2: faba bean - wheat - maize - alfalfa (3 years) - barley - maize",
+      "category": "cropping_system_2",
+      "active_at_start": false,
+      "description": "High diversity cropping plan, with legume crops and grassland."
+    },
+    {
+      "id": "C.13.9",
+      "title": "CS #2: grassland (3 years) - maize - wheat - faba bean - rapeseed",
+      "category": "cropping_system_2",
+      "active_at_start": false,
+      "description": "High diversity cropping plan, with legume crop and grassland."
+    },
+    {
+      "id": "C.14.1",
+      "title": "No particular green infrastructure elements",
+      "category": "green_infrastructures",
+      "active_at_start": true,
+      "description": "No particular green infrastructure elements."
+    },
+    {
+      "id": "C.14.2",
+      "title": "Sown field margins as green infrastructures: wildflowers strip",
+      "category": "green_infrastructures",
+      "active_at_start": false,
+      "description": "A mix of flowering plants."
+    },
+    {
+      "id": "C.14.3",
+      "title": "Sown field margins as green infrastructures: beetle bank (for birds and polyphagous predator)",
+      "category": "green_infrastructures",
+      "active_at_start": false,
+      "description": "Raised grassy banks, typically 2-3 m wide, sown with tussock forming grasses."
+    },
+    {
+      "id": "C.14.4",
+      "title": "Semi-natural field margins as green infrastructures: hedgerows ",
+      "category": "green_infrastructures",
+      "active_at_start": false,
+      "description": "Common trees and shrubs present on the edge of the fields."
+    },
+    {
+      "id": "C.14.5",
+      "title": "Semi-natural field margins as green infrastructures: grass margins",
+      "category": "green_infrastructures",
+      "active_at_start": false,
+      "description": "Grassland in the edges of the fields."
+    },
+    {
+      "id": "C.15.1",
+      "title": "No agroforestry",
+      "category": "agroforestry",
+      "active_at_start": true,
+      "description": "No agroforestry on the farm."
+    },
+    {
+      "id": "C.15.2",
+      "title": "In-field agroforestry",
+      "category": "agroforestry",
+      "active_at_start": false,
+      "description": "A sustainable management system that integrate trees, crops and livestock on the same plot of land. Farm area for crops and temporary grasslands is reduced by 16%."
+    },
+    {
+      "id": "E.1.1",
+      "title": "Balanced strategy between farmer income and investment",
+      "category": "distribution_of_farm_profit",
+      "active_at_start": true,
+      "description": "Farm profit is equally shared between farmer income and investment capacity."
+    },
+    {
+      "id": "E.1.2",
+      "title": "Investment-oriented strategy",
+      "category": "distribution_of_farm_profit",
+      "active_at_start": false,
+      "description": "Farm profit is 80% distributed to investment capacity."
+    },
+    {
+      "id": "E.1.3",
+      "title": "Income-oriented strategy",
+      "category": "distribution_of_farm_profit",
+      "active_at_start": false,
+      "description": "Farm profit is 80% distributed to farmer income."
+    },
+    {
+      "id": "G.1.1",
+      "title": "Conventional farming",
+      "category": "type_of_agriculture",
+      "active_at_start": true,
+      "description": "It corresponds to the most widespread farm management, with no particular specifications (except the compliance with the Good Agricultural and Environmental conditions of the CAP). Input and output prices are 25% lower than in organic farming."
+    },
+    {
+      "id": "G.1.2",
+      "title": "Organic farming",
+      "category": "type_of_agriculture",
+      "active_at_start": false,
+      "description": "Specifications of organic farming rely mainly on no chemical input use. Input and output prices are 25% higher in conventional farming."
+    },
+    {
+      "id": "A.1.1",
+      "title": "Cattle breed is Holstein",
+      "category": "cattle_breed",
+      "active_at_start": true,
+      "description": "Holstein is a breed of dairy cattle used for high milk production."
+    },
+    {
+      "id": "A.1.2",
+      "title": "Cattle breed is Siemmental",
+      "category": "cattle_breed",
+      "active_at_start": false,
+      "description": "Siemmental is a dual purpose breed for milk and meat."
+    },
+    {
+      "id": "A.1.3",
+      "title": "Cattle breed is Montbéliarde",
+      "category": "cattle_breed",
+      "active_at_start": false,
+      "description": "Montbéliarde cattle are a dairy breed, but have better beef characteristics than Holstein cattle."
+    },
+    {
+      "id": "A.2.1",
+      "title": "Initial herd size",
+      "category": "herd_size",
+      "active_at_start": true,
+      "description": "No modification of the number of cows."
+    },
+    {
+      "id": "A.2.2",
+      "title": "15% increase of initial herd size (no building modification)",
+      "category": "herd_size",
+      "active_at_start": false,
+      "description": "The number of cows is increased by 15% of initial number, without building modification. The cow density is increased."
+    },
+    {
+      "id": "A.2.3",
+      "title": "15% increase of initial herd size (building modification)",
+      "category": "herd_size",
+      "active_at_start": false,
+      "description": "The number of cows is increased by 15% of initial number AND the barn size is increased by 15%. This practice requires investment capacity for building extension (once per game)."
+    },
+    {
+      "id": "A.2.4",
+      "title": "30% increase of initial herd size (building modification)",
+      "category": "herd_size",
+      "active_at_start": false,
+      "description": "The number of cows is increased by 30% of initial number AND the barn size is increased by 30%. The milking parlour is also modified. This practice requires investment capacity for building extension (once per game)."
+    },
+    {
+      "id": "A.2.5",
+      "title": "15% decrease of initial herd size",
+      "category": "herd_size",
+      "active_at_start": false,
+      "description": "The number of cows is decreased by 15% of initial number."
+    },
+    {
+      "id": "A.2.6",
+      "title": "30% decrease of initial herd size",
+      "category": "herd_size",
+      "active_at_start": false,
+      "description": "The number of cows is decreased by 30% of initial number."
+    },
+    {
+      "id": "A.3.1",
+      "title": "Bulls fattened up to 18 months",
+      "category": "male_management",
+      "active_at_start": false,
+      "description": "Indoor feeding based on high density diet (mainly, maize silage, soybean supplement, wheat)."
+    },
+    {
+      "id": "A.3.2",
+      "title": "Castrated males fattened up to 36 months (steer)",
+      "category": "male_management",
+      "active_at_start": false,
+      "description": "Extensive feeding based on hay and grass silage (small soybean supplement) during winter and outside grazing during summer."
+    },
+    {
+      "id": "A.3.3",
+      "title": "Male calves sold at 8 days",
+      "category": "male_management",
+      "active_at_start": true,
+      "description": "Sale non-weaned calves to fattening farms."
+    },
+    {
+      "id": "A.4.1",
+      "title": "Cows are tied on straw bedding",
+      "category": "cow_housing_system",
+      "active_at_start": false,
+      "description": "Due to geographical constraints, cows are tied on straw bedding."
+    },
+    {
+      "id": "A.4.2",
+      "title": "Housing of cows is cubicles with straw (shallow bedding)",
+      "category": "cow_housing_system",
+      "active_at_start": true,
+      "description": "Cows can rest on individual places. You need to invest if you want to change to this cow housing system. It requires straw and produces manure."
+    },
+    {
+      "id": "A.4.3",
+      "title": "Housing of cows is cubicles with slatted floor",
+      "category": "cow_housing_system",
+      "active_at_start": false,
+      "description": "Cows can rest on individual places. You need to invest if you want to change to this cow housing system. It produces slurry."
+    },
+    {
+      "id": "A.4.4",
+      "title": "Housing of cows is free-stall (deep bedding)",
+      "category": "cow_housing_system",
+      "active_at_start": false,
+      "description": "You need to invest if you want to change to this cow housing system. Deeper beeding requires more straw; this building produces manure. This system improves the animal welfare."
+    },
+    {
+      "id": "A.4.5",
+      "title": "Housing of cows is free-stall slatted floor",
+      "category": "cow_housing_system",
+      "active_at_start": false,
+      "description": "You need to invest if you want to change to this cow housing system. It produces slurry."
+    },
+    {
+      "id": "A.5.1",
+      "title": "Housing of heifer, bulls and steers is slatted floor",
+      "category": "heifers_bulls_and_steers_housing_system",
+      "active_at_start": false,
+      "description": "You need to invest if you want to change to this housing system for heifers, bulls and steers. This type of building produces slurry."
+    },
+    {
+      "id": "A.5.2",
+      "title": "Housing of heifer, bulls and steers is shallow bedding",
+      "category": "heifers_bulls_and_steers_housing_system",
+      "active_at_start": false,
+      "description": "You need to invest if you want to change to this housing system for heifers, bulls and steers. This type of building requires straw and produces manure."
+    },
+    {
+      "id": "A.5.3",
+      "title": "Housing of heifer, bulls and steers is deep bedding",
+      "category": "heifers_bulls_and_steers_housing_system",
+      "active_at_start": true,
+      "description": "You need to invest if you want to change to this housing system for heifers, bulls and steers. Deeper beeding requires more straw; this building produces manure."
+    },
+    {
+      "id": "A.6.1",
+      "title": "Cow feeding system: all year indoor, maize silage & soybean meal supplement",
+      "category": "feeding_system_for_cows",
+      "active_at_start": false,
+      "description": "All year indoor, cows are mainly fed with maize silage & soybean meal supplement."
+    },
+    {
+      "id": "A.6.2",
+      "title": "Cow feeding system: all year indoor, sorghum silage & soybean meal supplement",
+      "category": "feeding_system_for_cows",
+      "active_at_start": false,
+      "description": "All year indoor, cows are mainly fed with sorghum silage & soybean meal supplement."
+    },
+    {
+      "id": "A.6.3",
+      "title": "Cow feeding system: all year indoor, sorghum & alfalfa silage",
+      "category": "feeding_system_for_cows",
+      "active_at_start": false,
+      "description": "All year indoor, cows are mainly fed with sorghum & alfalfa silage."
+    },
+    {
+      "id": "A.6.4",
+      "title": "Cow feeding system: all year indoor, maize silage, alfalfa silage & soybean meal supplement",
+      "category": "feeding_system_for_cows",
+      "active_at_start": false,
+      "description": "All year indoor, cows are mainly fed with maize silage, alfalfa silage & soybean meal supplement."
+    },
+    {
+      "id": "A.6.5",
+      "title": "Cow feeding system: 4 months grazing / maize silage & soybean meal supplement",
+      "category": "feeding_system_for_cows",
+      "active_at_start": true,
+      "description": "As cows are outside 4 months a year, you need a sufficient grazing area. Soybean meal is purchased."
+    },
+    {
+      "id": "A.6.6",
+      "title": "Cow feeding system: 4 months grazing / maize silage & rapeseed meal supplement",
+      "category": "feeding_system_for_cows",
+      "active_at_start": false,
+      "description": "As cows are outside 4 months a year, you need a sufficient grazing area. Rapeseed meal is purchased."
+    },
+    {
+      "id": "A.6.7",
+      "title": "Cow feeding system: 5 months grazing / maize silage & rapeseed meal supplement",
+      "category": "feeding_system_for_cows",
+      "active_at_start": false,
+      "description": "As cows are outside 5 months a year, you need a sufficient grazing area. Rapeseed meal is purchased."
+    },
+    {
+      "id": "A.6.8",
+      "title": "Cow feeding system: 7 months grazing / maize silage & rapeseed meal supplement",
+      "category": "feeding_system_for_cows",
+      "active_at_start": false,
+      "description": "As cows are outside 7 months a year, you need a sufficient grazing area. Rapeseed meal is purchased."
+    },
+    {
+      "id": "A.6.9",
+      "title": "Cow feeding system: 8 months grazing / grass silage & faba bean supplement",
+      "category": "feeding_system_for_cows",
+      "active_at_start": false,
+      "description": "As cows are outside 8 months a year, you need a sufficient grazing area."
+    },
+    {
+      "id": "A.6.10",
+      "title": "Cow feeding system: all year indoor, hay & rapeseed meal supplement",
+      "category": "feeding_system_for_cows",
+      "active_at_start": false,
+      "description": "Rapeseed meal is purchased; feeding without silage, milk proper for particular cheese production."
+    },
+    {
+      "id": "A.6.11",
+      "title": "Cow feeding system: 9 months grazing / grass silage",
+      "category": "feeding_system_for_cows",
+      "active_at_start": false,
+      "description": "As cows are outside 9 months a year, you need a sufficient grazing area."
+    },
+    {
+      "id": "A.7.1",
+      "title": "No concentrate supply for lactating dairy cows",
+      "category": "concentrate_supply_for_lactating_dairy_cows",
+      "active_at_start": false,
+      "description": "No concentrate is supplied for lactating dairy cows."
+    },
+    {
+      "id": "A.7.2",
+      "title": "+1000 kg milk / cow / year (with soybean meal and cereals)",
+      "category": "concentrate_supply_for_lactating_dairy_cows",
+      "active_at_start": true,
+      "description": "In order to increase milk production, concentrates (soybean meal and cereals) are given to the cows. Soybean meal is purchased."
+    },
+    {
+      "id": "A.7.3",
+      "title": "+500 kg milk / cow / year (with soybean meal and cereals)",
+      "category": "concentrate_supply_for_lactating_dairy_cows",
+      "active_at_start": false,
+      "description": "In order to increase milk production, concentrates (soybean meal and cereals) are given to the cows. Soybean meal is purchased."
+    },
+    {
+      "id": "A.7.4",
+      "title": "+500 kg milk / cow / year (with faba bean and cereals)",
+      "category": "concentrate_supply_for_lactating_dairy_cows",
+      "active_at_start": false,
+      "description": "In order to increase milk production, concentrates (faba bean and cereals) are given to the cows."
+    },
+    {
+      "id": "A.8.1",
+      "title": "Heifer feeding system: zero grazing / maize silage & soybean meal | Age at first calving: 24 months",
+      "category": "feeding_system_for_heifers_age_at_first_calving",
+      "active_at_start": false,
+      "description": "Heifers calve at 24 months (more intensive feeding). Soybean meal is purchased."
+    },
+    {
+      "id": "A.8.2",
+      "title": "Heifer feeding system: 4 months grazing / 8 months maize silage, hay & soybean meal | Age at first calving: 24 months",
+      "category": "feeding_system_for_heifers_age_at_first_calving",
+      "active_at_start": true,
+      "description": "Heifers calve at 24 months (more intensive feeding). Soybean meal is purchased. As cows are outside 4 months a year, you need a sufficient grazing area."
+    },
+    {
+      "id": "A.8.3",
+      "title": "Heifer feeding system: 6 months grazing / 6 months maize silage, grass silage & soybean meal | Age at first calving: 24 months",
+      "category": "feeding_system_for_heifers_age_at_first_calving",
+      "active_at_start": false,
+      "description": "Heifers calve at 24 months (more intensive feeding). Soybean meal is purchased. As cows are outside 6 months a year, you need a sufficient grazing area."
+    },
+    {
+      "id": "A.8.4",
+      "title": "Heifer feeding system: 6 months grazing / 6 months grass silage, cereals & soybean meal | Age at first calving: 24 months",
+      "category": "feeding_system_for_heifers_age_at_first_calving",
+      "active_at_start": false,
+      "description": "Heifers calve at 24 months (more intensive feeding). Soybean meal is purchased. As cows are outside 6 months a year, you need a sufficient grazing area."
+    },
+    {
+      "id": "A.8.5",
+      "title": "Heifer feeding system: zero grazing / maize silage & soybean meal | Age at first calving: 29 months",
+      "category": "feeding_system_for_heifers_age_at_first_calving",
+      "active_at_start": false,
+      "description": "Heifers calve at 29 months (less intensive feeding). Soybean meal is purchased."
+    },
+    {
+      "id": "A.8.6",
+      "title": "Heifer feeding system: 4 months grazing / 8 months maize silage, hay & soybean meal | Age at first calving: 29 months",
+      "category": "feeding_system_for_heifers_age_at_first_calving",
+      "active_at_start": false,
+      "description": "Heifers calve at 29 months (less intensive feeding). Soybean meal is purchased. As cows are outside 4 months a year, you need a sufficient grazing area."
+    },
+    {
+      "id": "A.8.7",
+      "title": "Heifer feeding system: 6 months grazing / 6 months maize silage, grass silage (or hay) & soybean meal | Age at first calving: 29 months",
+      "category": "feeding_system_for_heifers_age_at_first_calving",
+      "active_at_start": false,
+      "description": "Heifers calve at 29 months (less intensive feeding). Soybean meal is purchased. As cows are outside 6 months a year, you need a sufficient grazing area."
+    },
+    {
+      "id": "A.8.8",
+      "title": "Heifer feeding system: 6 months grazing / 6 months grass silage (or hay), cereals & soybean meal | Age at first calving: 29 months",
+      "category": "feeding_system_for_heifers_age_at_first_calving",
+      "active_at_start": false,
+      "description": "Heifers calve at 29 months (less intensive feeding). Soybean meal is purchased. As cows are outside 6 months a year, you need a sufficient grazing area."
+    },
+    {
+      "id": "A.9.1",
+      "title": "Systematic antibiotic treatment of cows",
+      "category": "management_of_the_risk_of_mastitis_at_the_dry_period",
+      "active_at_start": true,
+      "description": "All cows are treated with antibiotics at the dry period."
+    },
+    {
+      "id": "A.9.2",
+      "title": "Selective antibiotic treatment of cows",
+      "category": "management_of_the_risk_of_mastitis_at_the_dry_period",
+      "active_at_start": false,
+      "description": "Only cows with an intramammary infection are treated with antibiotics."
+    },
+    {
+      "id": "A.9.3",
+      "title": "Preventive measures of hygiene (no treatment of cows)",
+      "category": "management_of_the_risk_of_mastitis_at_the_dry_period",
+      "active_at_start": false,
+      "description": "None of the cows are treated with antibiotics at drying off."
+    },
+    {
+      "id": "A.10.1",
+      "title": "Systematic anti-parasitic treatment of heifers",
+      "category": "anti_parasitic_management",
+      "active_at_start": true,
+      "description": "Systematic treatment of heifers is implemented."
+    },
+    {
+      "id": "A.10.2",
+      "title": "Selective treatment of heifers",
+      "category": "anti_parasitic_management",
+      "active_at_start": false,
+      "description": "Only one treatment per year is implemented, only on the heifers displaying growth retardations."
+    },
+    {
+      "id": "A.10.3",
+      "title": "Immunization against internal parasites by low exposure grazing of heifers (no treatment)",
+      "category": "anti_parasitic_management",
+      "active_at_start": false,
+      "description": "None of the heifers are treated with anthelmintic treatment. Immunity is enhanced by controlled exposure to parasites. It requires longer grazing rotations."
+    },
+    {
+      "id": "A.11.1",
+      "title": "Milk replacer is fed to calves",
+      "category": "feeding_system_for_calves",
+      "active_at_start": false,
+      "description": "Purchased milk replacer is fed to calves."
+    },
+    {
+      "id": "A.11.2",
+      "title": "Milk is fed to calves",
+      "category": "feeding_system_for_calves",
+      "active_at_start": true,
+      "description": "Milk produced on-farm is fed to calves."
+    },
+    {
+      "id": null,
+      "title": null,
+      "category": null,
+      "active_at_start": false,
+      "description": null
+    },
+    {
+      "id": "C.12.1.be",
+      "title": "CS #1: maize - wheat - barley",
+      "category": null,
+      "active_at_start": false,
+      "description": null
+    },
+    {
+      "id": "C.12.2.be",
+      "title": "CS #1: sugar beet - wheat - potato - wheat",
+      "category": null,
+      "active_at_start": false,
+      "description": null
+    },
+    {
+      "id": "C.12.3.be",
+      "title": "CS #1: potato - wheat - rapeseed - wheat",
+      "category": null,
+      "active_at_start": false,
+      "description": null
+    },
+    {
+      "id": "C.12.4.be",
+      "title": "CS #1: alfalfa (3 years) - maize - wheat",
+      "category": null,
+      "active_at_start": false,
+      "description": null
+    },
+    {
+      "id": "C.12.5.be",
+      "title": "CS #1: potato - wheat - rapeseed - faba bean - wheat",
+      "category": null,
+      "active_at_start": false,
+      "description": null
+    },
+    {
+      "id": "C.12.6.be",
+      "title": "CS #1: grassland (3 years) - maize - wheat",
+      "category": null,
+      "active_at_start": false,
+      "description": null
+    },
+    {
+      "id": "C.12.7.be",
+      "title": "CS #1: grassland (3 years) - wheat - sugar beet - wheat",
+      "category": null,
+      "active_at_start": false,
+      "description": null
+    },
+    {
+      "id": "C.12.8.be",
+      "title": "CS #1: alfalfa (3 years) - maize - wheat - sugar beet - wheat - barley",
+      "category": null,
+      "active_at_start": false,
+      "description": null
+    },
+    {
+      "id": "C.12.9.be",
+      "title": "CS #1: grassland (3 years) - maize - wheat - faba bean - wheat - rapeseed - wheat",
+      "category": null,
+      "active_at_start": false,
+      "description": null
+    },
+    {
+      "id": "C.13.1.be",
+      "title": "CS #2: maize - wheat - barley",
+      "category": null,
+      "active_at_start": false,
+      "description": null
+    },
+    {
+      "id": "C.13.2.be",
+      "title": "CS #2: sugar beet - wheat - potato - wheat",
+      "category": null,
+      "active_at_start": false,
+      "description": null
+    },
+    {
+      "id": "C.13.3.be",
+      "title": "CS #2: potato - wheat - rapeseed - wheat",
+      "category": null,
+      "active_at_start": false,
+      "description": null
+    },
+    {
+      "id": "C.13.4.be",
+      "title": "CS #2: alfalfa (3 years) - maize - wheat",
+      "category": null,
+      "active_at_start": false,
+      "description": null
+    },
+    {
+      "id": "C.13.5.be",
+      "title": "CS #2: potato - wheat - rapeseed - faba bean - wheat",
+      "category": null,
+      "active_at_start": false,
+      "description": null
+    },
+    {
+      "id": "C.13.6.be",
+      "title": "CS #2: grassland (3 years) - maize - wheat",
+      "category": null,
+      "active_at_start": false,
+      "description": null
+    },
+    {
+      "id": "C.13.7.be",
+      "title": "CS #2: grassland (3 years) - wheat - sugar beet - wheat",
+      "category": null,
+      "active_at_start": false,
+      "description": null
+    },
+    {
+      "id": "C.13.8.be",
+      "title": "CS #2: alfalfa (3 years) - maize - wheat - sugar beet - wheat - barley",
+      "category": null,
+      "active_at_start": false,
+      "description": null
+    },
+    {
+      "id": "C.13.9.be",
+      "title": "CS #2: grassland (3 years) - maize - wheat - faba bean - wheat - rapeseed - wheat",
+      "category": null,
+      "active_at_start": false,
+      "description": null
+    },
+    {
+      "id": "C.12.1.it",
+      "title": "CS #1: maize - wheat",
+      "category": null,
+      "active_at_start": false,
+      "description": null
+    },
+    {
+      "id": "C.12.2.it",
+      "title": "CS #1: sorghum - wheat - potato",
+      "category": null,
+      "active_at_start": false,
+      "description": null
+    },
+    {
+      "id": "C.12.3.it",
+      "title": "CS #1: rapeseed - sorghum - wheat",
+      "category": null,
+      "active_at_start": false,
+      "description": null
+    },
+    {
+      "id": "C.12.4.it",
+      "title": "CS #1: alfalfa (3 years) - maize - wheat",
+      "category": null,
+      "active_at_start": false,
+      "description": null
+    },
+    {
+      "id": "C.12.5.it",
+      "title": "CS #1: faba bean - wheat - rapeseed - maize",
+      "category": null,
+      "active_at_start": false,
+      "description": null
+    },
+    {
+      "id": "C.12.6.it",
+      "title": "CS #1: grassland (3 years) - maize - wheat",
+      "category": null,
+      "active_at_start": false,
+      "description": null
+    },
+    {
+      "id": "C.12.7.it",
+      "title": "CS #1: grassland (3 years) - sorghum - wheat",
+      "category": null,
+      "active_at_start": false,
+      "description": null
+    },
+    {
+      "id": "C.12.8.it",
+      "title": "CS #1: alfalfa (3 years) - maize - barley - faba bean - wheat",
+      "category": null,
+      "active_at_start": false,
+      "description": null
+    },
+    {
+      "id": "C.12.9.it",
+      "title": "CS #1: alfalfa (3 years) - sorghum - barley - faba bean - rapeseed - wheat",
+      "category": null,
+      "active_at_start": false,
+      "description": null
+    },
+    {
+      "id": "C.13.1.it",
+      "title": "CS #2: maize - wheat",
+      "category": null,
+      "active_at_start": false,
+      "description": null
+    },
+    {
+      "id": "C.13.2.it",
+      "title": "CS #2: sorghum - wheat - potato",
+      "category": null,
+      "active_at_start": false,
+      "description": null
+    },
+    {
+      "id": "C.13.3.it",
+      "title": "CS #2: rapeseed - sorghum - wheat",
+      "category": null,
+      "active_at_start": false,
+      "description": null
+    },
+    {
+      "id": "C.13.4.it",
+      "title": "CS #2: alfalfa (3 years) - maize - wheat",
+      "category": null,
+      "active_at_start": false,
+      "description": null
+    },
+    {
+      "id": "C.13.5.it",
+      "title": "CS #2: faba bean - wheat - rapeseed - maize",
+      "category": null,
+      "active_at_start": false,
+      "description": null
+    },
+    {
+      "id": "C.13.6.it",
+      "title": "CS #2: grassland (3 years) - maize - wheat",
+      "category": null,
+      "active_at_start": false,
+      "description": null
+    },
+    {
+      "id": "C.13.7.it",
+      "title": "CS #2: grassland (3 years) - sorghum - wheat",
+      "category": null,
+      "active_at_start": false,
+      "description": null
+    },
+    {
+      "id": "C.13.8.it",
+      "title": "CS #2: alfalfa (3 years) - maize - barley - faba bean - wheat",
+      "category": null,
+      "active_at_start": false,
+      "description": null
+    },
+    {
+      "id": "C.13.9.it",
+      "title": "CS #2: alfalfa (3 years) - sorghum - barley - faba bean - rapeseed - wheat",
+      "category": null,
+      "active_at_start": false,
+      "description": null
+    },
+    {
+      "id": "C.12.1.pl",
+      "title": "CS #1: maize - wheat",
+      "category": null,
+      "active_at_start": false,
+      "description": null
+    },
+    {
+      "id": "C.12.2.pl",
+      "title": "CS #1: rapeseed - wheat - maize - barley",
+      "category": null,
+      "active_at_start": false,
+      "description": null
+    },
+    {
+      "id": "C.12.3.pl",
+      "title": "CS #1: potato - wheat - maize - barley",
+      "category": null,
+      "active_at_start": false,
+      "description": null
+    },
+    {
+      "id": "C.12.4.pl",
+      "title": "CS #1: alfalfa (3 years) - maize - wheat",
+      "category": null,
+      "active_at_start": false,
+      "description": null
+    },
+    {
+      "id": "C.12.5.pl",
+      "title": "CS #1: faba bean - wheat - rapeseed - maize",
+      "category": null,
+      "active_at_start": false,
+      "description": null
+    },
+    {
+      "id": "C.12.6.pl",
+      "title": "CS #1: grassland (3 years) - maize - potato - wheat",
+      "category": null,
+      "active_at_start": false,
+      "description": null
+    },
+    {
+      "id": "C.12.7.pl",
+      "title": "CS #1: grassland (3 years) - maize - rapeseed - wheat",
+      "category": null,
+      "active_at_start": false,
+      "description": null
+    },
+    {
+      "id": "C.12.8.pl",
+      "title": "CS #1: faba bean - potato - wheat - alfalfa (3 years) - maize - wheat",
+      "category": null,
+      "active_at_start": false,
+      "description": null
+    },
+    {
+      "id": "C.12.9.pl",
+      "title": "CS #1: grassland (3 years) - maize - wheat - faba bean - rapeseed",
+      "category": null,
+      "active_at_start": false,
+      "description": null
+    },
+    {
+      "id": "C.13.1.pl",
+      "title": "CS #2: maize - wheat",
+      "category": null,
+      "active_at_start": false,
+      "description": null
+    },
+    {
+      "id": "C.13.2.pl",
+      "title": "CS #2: rapeseed - wheat - maize - barley",
+      "category": null,
+      "active_at_start": false,
+      "description": null
+    },
+    {
+      "id": "C.13.3.pl",
+      "title": "CS #2: potato - wheat - maize - barley",
+      "category": null,
+      "active_at_start": false,
+      "description": null
+    },
+    {
+      "id": "C.13.4.pl",
+      "title": "CS #2: alfalfa (3 years) - maize - wheat",
+      "category": null,
+      "active_at_start": false,
+      "description": null
+    },
+    {
+      "id": "C.13.5.pl",
+      "title": "CS #2: faba bean - wheat - rapeseed - maize",
+      "category": null,
+      "active_at_start": false,
+      "description": null
+    },
+    {
+      "id": "C.13.6.pl",
+      "title": "CS #2: grassland (3 years) - maize - potato - wheat",
+      "category": null,
+      "active_at_start": false,
+      "description": null
+    },
+    {
+      "id": "C.13.7.pl",
+      "title": "CS #2: grassland (3 years) - maize - rapeseed - wheat",
+      "category": null,
+      "active_at_start": false,
+      "description": null
+    },
+    {
+      "id": "C.13.8.pl",
+      "title": "CS #2: faba bean - potato - wheat - alfalfa (3 years) - maize - wheat",
+      "category": null,
+      "active_at_start": false,
+      "description": null
+    },
+    {
+      "id": "C.13.9.pl",
+      "title": "CS #2: grassland (3 years) - maize - wheat - faba bean - rapeseed",
+      "category": null,
+      "active_at_start": false,
+      "description": null
+    }
+  ],
+  "style": {},
+  "infos": {
+    "version": 2,
+    "comment": "La colonne active_at_start détermine les aep actives PAR DEFAUT. Ces valeurs peuvent être écrasées dans les fichiers de scénario. Si non spécifiées dans le scénario, ce sont celles-ci qui seront utilisées."
+  }
+}

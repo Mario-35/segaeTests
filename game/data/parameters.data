@@ -1,0 +1,4112 @@
+{
+  "columns": [
+    {
+      "type": "text",
+      "name": "id",
+      "title": "id",
+      "width": "130",
+      "align": "left"
+    },
+    {
+      "type": "text",
+      "name": "description",
+      "title": "description",
+      "width": "333",
+      "align": "left"
+    },
+    {
+      "type": "numeric",
+      "name": "min",
+      "title": "min",
+      "width": "70",
+      "align": "center"
+    },
+    {
+      "type": "numeric",
+      "name": "def",
+      "title": "def",
+      "width": "121",
+      "align": "center"
+    },
+    {
+      "type": "numeric",
+      "name": "max",
+      "title": "max",
+      "width": "146",
+      "align": "center"
+    }
+  ],
+  "data": [
+    {
+      "id": "indCr1",
+      "description": "Yield wheat (grain) (t DM / ha)",
+      "min": null,
+      "def": 6.264,
+      "max": null
+    },
+    {
+      "id": "indCr2",
+      "description": "Yield wheat (straw) (t DM / ha)",
+      "min": null,
+      "def": 3.132,
+      "max": null
+    },
+    {
+      "id": "indCr3",
+      "description": "Yield barley (grain) (t DM / ha)",
+      "min": null,
+      "def": 5.829,
+      "max": null
+    },
+    {
+      "id": "indCr4",
+      "description": "Yield barley (straw) (t DM / ha)",
+      "min": null,
+      "def": 2.9145,
+      "max": null
+    },
+    {
+      "id": "indCr5",
+      "description": "Yield sugar beet (root) (t / ha)",
+      "min": null,
+      "def": 90,
+      "max": null
+    },
+    {
+      "id": "indCr6",
+      "description": "Yield potato (tuber) (t / ha)",
+      "min": null,
+      "def": 22.8,
+      "max": null
+    },
+    {
+      "id": "indCr7",
+      "description": "Yield rapeseed (grain) (t DM / ha)",
+      "min": null,
+      "def": 3.0459,
+      "max": null
+    },
+    {
+      "id": "indCr8",
+      "description": "Yield pea (grain) (t DM / ha)",
+      "min": null,
+      "def": 3.5465,
+      "max": null
+    },
+    {
+      "id": "indCr9",
+      "description": "Yield faba bean (grain) (t DM / ha)",
+      "min": null,
+      "def": 2.8578,
+      "max": null
+    },
+    {
+      "id": "indCr10",
+      "description": "Yield maize (silage) (t DM / ha)",
+      "min": null,
+      "def": 12.6,
+      "max": null
+    },
+    {
+      "id": "indCr11",
+      "description": "Yield alfalfa (silage) (t DM / ha)",
+      "min": null,
+      "def": 10,
+      "max": null
+    },
+    {
+      "id": "indCr12",
+      "description": "Yield sorghum (silage) (t DM / ha)",
+      "min": null,
+      "def": 11,
+      "max": null
+    },
+    {
+      "id": "indCr13",
+      "description": "Yield TG (t DM / ha)",
+      "min": null,
+      "def": 7.75,
+      "max": null
+    },
+    {
+      "id": "indCr16",
+      "description": "Yield PG (t DM / ha)",
+      "min": null,
+      "def": 5.55,
+      "max": null
+    },
+    {
+      "id": "indCr19",
+      "description": "Area wheat (ha)",
+      "min": null,
+      "def": 1,
+      "max": null
+    },
+    {
+      "id": "indCr20",
+      "description": "Area barley (ha)",
+      "min": null,
+      "def": 1,
+      "max": null
+    },
+    {
+      "id": "indCr21",
+      "description": "Area sugar beet (ha)",
+      "min": null,
+      "def": 1,
+      "max": null
+    },
+    {
+      "id": "indCr22",
+      "description": "Area potato (ha)",
+      "min": null,
+      "def": 1,
+      "max": null
+    },
+    {
+      "id": "indCr23",
+      "description": "Area rapeseed (ha)",
+      "min": null,
+      "def": 1,
+      "max": null
+    },
+    {
+      "id": "indCr24",
+      "description": "Area pea (ha)",
+      "min": null,
+      "def": 1,
+      "max": null
+    },
+    {
+      "id": "indCr25",
+      "description": "Area faba bean (ha)",
+      "min": null,
+      "def": 1,
+      "max": null
+    },
+    {
+      "id": "indCr26",
+      "description": "Area maize (ha)",
+      "min": null,
+      "def": 1,
+      "max": null
+    },
+    {
+      "id": "indCr27",
+      "description": "Area alfalfa (ha)",
+      "min": null,
+      "def": 1,
+      "max": null
+    },
+    {
+      "id": "indCr28",
+      "description": "Area sorghum (ha)",
+      "min": null,
+      "def": 1,
+      "max": null
+    },
+    {
+      "id": "indCr29",
+      "description": "Area TG (ha)",
+      "min": null,
+      "def": 1,
+      "max": null
+    },
+    {
+      "id": "indCr30",
+      "description": "Area PG (%)",
+      "min": null,
+      "def": 10,
+      "max": null
+    },
+    {
+      "id": "indCr31",
+      "description": "N supply wheat (soil and atm.) (kg N / ha)",
+      "min": null,
+      "def": 60,
+      "max": null
+    },
+    {
+      "id": "indCr32",
+      "description": "N supply barley (soil and atm.) (kg N / ha)",
+      "min": null,
+      "def": 35,
+      "max": null
+    },
+    {
+      "id": "indCr33",
+      "description": "N supply sugar beet (soil and atm.) (kg N / ha)",
+      "min": null,
+      "def": 70,
+      "max": null
+    },
+    {
+      "id": "indCr34",
+      "description": "N supply potato (soil and atm.) (kg N / ha)",
+      "min": null,
+      "def": 70,
+      "max": null
+    },
+    {
+      "id": "indCr35",
+      "description": "N supply rapeseed (soil and atm.) (kg N / ha)",
+      "min": null,
+      "def": 50,
+      "max": null
+    },
+    {
+      "id": "indCr36",
+      "description": "N supply pea (soil and atm.) (kg N / ha)",
+      "min": null,
+      "def": null,
+      "max": null
+    },
+    {
+      "id": "indCr37",
+      "description": "N supply faba bean (soil and atm.) (kg N / ha)",
+      "min": null,
+      "def": null,
+      "max": null
+    },
+    {
+      "id": "indCr38",
+      "description": "N supply maize (soil and atm.) (kg N / ha)",
+      "min": null,
+      "def": 70,
+      "max": null
+    },
+    {
+      "id": "indCr39",
+      "description": "N supply alfalfa (soil and atm.) (kg N / ha)",
+      "min": null,
+      "def": null,
+      "max": null
+    },
+    {
+      "id": "indCr40",
+      "description": "N supply sorghum (soil and atm.) (kg N / ha)",
+      "min": null,
+      "def": 70,
+      "max": null
+    },
+    {
+      "id": "indCr41",
+      "description": "N supply TG (soil and atm.) (kg N / ha)",
+      "min": null,
+      "def": 100,
+      "max": null
+    },
+    {
+      "id": "indCr42",
+      "description": "N supply PG (soil and atm.) (kg N / ha)",
+      "min": null,
+      "def": 100,
+      "max": null
+    },
+    {
+      "id": "indCr43",
+      "description": "TFI wheat (unitless)",
+      "min": null,
+      "def": 0,
+      "max": null
+    },
+    {
+      "id": "indCr44",
+      "description": "TFI barley (unitless)",
+      "min": null,
+      "def": 0,
+      "max": null
+    },
+    {
+      "id": "indCr45",
+      "description": "TFI sugar beet (unitless)",
+      "min": null,
+      "def": 0,
+      "max": null
+    },
+    {
+      "id": "indCr46",
+      "description": "TFI potato (unitless)",
+      "min": null,
+      "def": 0,
+      "max": null
+    },
+    {
+      "id": "indCr47",
+      "description": "TFI rapeseed (unitless)",
+      "min": null,
+      "def": 0,
+      "max": null
+    },
+    {
+      "id": "indCr48",
+      "description": "TFI pea (unitless)",
+      "min": null,
+      "def": 0,
+      "max": null
+    },
+    {
+      "id": "indCr49",
+      "description": "TFI faba bean (unitless)",
+      "min": null,
+      "def": 0,
+      "max": null
+    },
+    {
+      "id": "indCr50",
+      "description": "TFI maize (unitless)",
+      "min": null,
+      "def": 0,
+      "max": null
+    },
+    {
+      "id": "indCr51",
+      "description": "TFI alfalfa (unitless)",
+      "min": null,
+      "def": 0,
+      "max": null
+    },
+    {
+      "id": "indCr52",
+      "description": "TFI sorghum (unitless)",
+      "min": null,
+      "def": 0,
+      "max": null
+    },
+    {
+      "id": "indCr53",
+      "description": "TFI TG (unitless)",
+      "min": null,
+      "def": 0,
+      "max": null
+    },
+    {
+      "id": "indCr54",
+      "description": "TFI PG (unitless)",
+      "min": null,
+      "def": 0,
+      "max": null
+    },
+    {
+      "id": "indCr55",
+      "description": "Natural enemies UAA (unitless)",
+      "min": 0.7,
+      "def": 1.56,
+      "max": 3.5
+    },
+    {
+      "id": "indCr56",
+      "description": "Natural enemies PG (unitless)",
+      "min": 0.7,
+      "def": 2.1,
+      "max": 3.5
+    },
+    {
+      "id": "indCr57",
+      "description": "Microbial biomass UAA (unitless)",
+      "min": 0,
+      "def": 6,
+      "max": 19
+    },
+    {
+      "id": "indCr58",
+      "description": "Microbial biomass PG (unitless)",
+      "min": 14.5,
+      "def": 15.5,
+      "max": 19
+    },
+    {
+      "id": "indCr59",
+      "description": "Soil meso-fauna - nematodes UAA (unitless)",
+      "min": 0.7,
+      "def": 1.56,
+      "max": 3.5
+    },
+    {
+      "id": "indCr60",
+      "description": "Soil meso-fauna - nematodes PG (unitless)",
+      "min": 0.7,
+      "def": 2.1,
+      "max": 3.5
+    },
+    {
+      "id": "indCr61",
+      "description": "Earthworm abundance UAA (unitless)",
+      "min": 0,
+      "def": 6,
+      "max": 20
+    },
+    {
+      "id": "indCr62",
+      "description": "Earthworm abundance PG (unitless)",
+      "min": 15.5,
+      "def": 16.5,
+      "max": 20
+    },
+    {
+      "id": "indCr63",
+      "description": "Pollinators UAA (unitless)",
+      "min": 0.7,
+      "def": 1.56,
+      "max": 3.5
+    },
+    {
+      "id": "indCr64",
+      "description": "Pollinators PG (unitless)",
+      "min": 0.7,
+      "def": 2.1,
+      "max": 3.5
+    },
+    {
+      "id": "indCr65",
+      "description": "Soil Organic Carbon (SOC) UAA (unitless)",
+      "min": 0,
+      "def": 0,
+      "max": 6.5
+    },
+    {
+      "id": "indCr66",
+      "description": "Soil Organic Carbon (SOC) PG (unitless)",
+      "min": 0,
+      "def": 6.5,
+      "max": 6.5
+    },
+    {
+      "id": "indCr67",
+      "description": "N content UAA (unitless)",
+      "min": 0,
+      "def": 3,
+      "max": 4
+    },
+    {
+      "id": "indCr68",
+      "description": "N content PG (unitless)",
+      "min": 0,
+      "def": 2,
+      "max": 4
+    },
+    {
+      "id": "indCr69",
+      "description": "P content UAA (unitless)",
+      "min": 0,
+      "def": 2,
+      "max": 4
+    },
+    {
+      "id": "indCr70",
+      "description": "P content PG (unitless)",
+      "min": 0,
+      "def": 2,
+      "max": 4
+    },
+    {
+      "id": "indCr71",
+      "description": "Soil water holding capacity UAA (unitless)",
+      "min": 0,
+      "def": 2,
+      "max": 4
+    },
+    {
+      "id": "indCr72",
+      "description": "Soil water holding capacity PG (unitless)",
+      "min": 0,
+      "def": 2,
+      "max": 4
+    },
+    {
+      "id": "indCr73",
+      "description": "Soil water infiltration UAA (unitless)",
+      "min": 0,
+      "def": 3,
+      "max": 4
+    },
+    {
+      "id": "indCr74",
+      "description": "Soil water infiltration PG (unitless)",
+      "min": 0,
+      "def": 2,
+      "max": 4
+    },
+    {
+      "id": "indCr75",
+      "description": "Resistance of soil to erosion UAA (unitless)",
+      "min": 0,
+      "def": 0,
+      "max": 5
+    },
+    {
+      "id": "indCr76",
+      "description": "Resistance of soil to erosion PG (unitless)",
+      "min": 0,
+      "def": 5,
+      "max": 5
+    },
+    {
+      "id": "indCr77",
+      "description": "Fuel consumption wheat (L / ha)",
+      "min": null,
+      "def": 26.09,
+      "max": null
+    },
+    {
+      "id": "indCr78",
+      "description": "Fuel consumption barley (L / ha)",
+      "min": null,
+      "def": 26.09,
+      "max": null
+    },
+    {
+      "id": "indCr79",
+      "description": "Fuel consumption sugar beet (L / ha)",
+      "min": null,
+      "def": 40,
+      "max": null
+    },
+    {
+      "id": "indCr80",
+      "description": "Fuel consumption potato (L / ha)",
+      "min": null,
+      "def": 82.5,
+      "max": null
+    },
+    {
+      "id": "indCr81",
+      "description": "Fuel consumption rapeseed (L / ha)",
+      "min": null,
+      "def": 26.09,
+      "max": null
+    },
+    {
+      "id": "indCr82",
+      "description": "Fuel consumption pea (L / ha)",
+      "min": null,
+      "def": 26.09,
+      "max": null
+    },
+    {
+      "id": "indCr83",
+      "description": "Fuel consumption faba bean (L / ha)",
+      "min": null,
+      "def": 26.09,
+      "max": null
+    },
+    {
+      "id": "indCr84",
+      "description": "Fuel consumption maize (L / ha)",
+      "min": null,
+      "def": 64.16,
+      "max": null
+    },
+    {
+      "id": "indCr85",
+      "description": "Fuel consumption alfalfa (L / ha)",
+      "min": null,
+      "def": 89.58,
+      "max": null
+    },
+    {
+      "id": "indCr86",
+      "description": "Fuel consumption sorghum (L / ha)",
+      "min": null,
+      "def": 64.16,
+      "max": null
+    },
+    {
+      "id": "indCr87",
+      "description": "Fuel consumption TG (L / ha)",
+      "min": null,
+      "def": 68.36,
+      "max": null
+    },
+    {
+      "id": "indCr88",
+      "description": "Fuel consumption PG (L / ha)",
+      "min": null,
+      "def": 29.72,
+      "max": null
+    },
+    {
+      "id": "indCr89",
+      "description": "Work time wheat Jan (h / ha)",
+      "min": null,
+      "def": 0,
+      "max": null
+    },
+    {
+      "id": "indCr90",
+      "description": "Work time wheat Feb (h / ha)",
+      "min": null,
+      "def": 0,
+      "max": null
+    },
+    {
+      "id": "indCr91",
+      "description": "Work time wheat March (h / ha)",
+      "min": null,
+      "def": 0,
+      "max": null
+    },
+    {
+      "id": "indCr92",
+      "description": "Work time wheat Apr (h / ha)",
+      "min": null,
+      "def": 0,
+      "max": null
+    },
+    {
+      "id": "indCr93",
+      "description": "Work time wheat May (h / ha)",
+      "min": null,
+      "def": 0,
+      "max": null
+    },
+    {
+      "id": "indCr94",
+      "description": "Work time wheat June (h / ha)",
+      "min": null,
+      "def": 0,
+      "max": null
+    },
+    {
+      "id": "indCr95",
+      "description": "Work time wheat July (h / ha)",
+      "min": null,
+      "def": 1.34,
+      "max": null
+    },
+    {
+      "id": "indCr96",
+      "description": "Work time wheat Aug (h / ha)",
+      "min": null,
+      "def": 0,
+      "max": null
+    },
+    {
+      "id": "indCr97",
+      "description": "Work time wheat Sept (h / ha)",
+      "min": null,
+      "def": 0,
+      "max": null
+    },
+    {
+      "id": "indCr98",
+      "description": "Work time wheat Oct (h / ha)",
+      "min": null,
+      "def": 0,
+      "max": null
+    },
+    {
+      "id": "indCr99",
+      "description": "Work time wheat Nov (h / ha)",
+      "min": null,
+      "def": 0,
+      "max": null
+    },
+    {
+      "id": "indCr100",
+      "description": "Work time wheat Dec (h / ha)",
+      "min": null,
+      "def": 0,
+      "max": null
+    },
+    {
+      "id": "indCr101",
+      "description": "Work time barley Jan (h / ha)",
+      "min": null,
+      "def": 0,
+      "max": null
+    },
+    {
+      "id": "indCr102",
+      "description": "Work time barley Feb (h / ha)",
+      "min": null,
+      "def": 0,
+      "max": null
+    },
+    {
+      "id": "indCr103",
+      "description": "Work time barley March (h / ha)",
+      "min": null,
+      "def": 0,
+      "max": null
+    },
+    {
+      "id": "indCr104",
+      "description": "Work time barley Apr (h / ha)",
+      "min": null,
+      "def": 0,
+      "max": null
+    },
+    {
+      "id": "indCr105",
+      "description": "Work time barley May (h / ha)",
+      "min": null,
+      "def": 0,
+      "max": null
+    },
+    {
+      "id": "indCr106",
+      "description": "Work time barley June (h / ha)",
+      "min": null,
+      "def": 0,
+      "max": null
+    },
+    {
+      "id": "indCr107",
+      "description": "Work time barley July (h / ha)",
+      "min": null,
+      "def": 1.34,
+      "max": null
+    },
+    {
+      "id": "indCr108",
+      "description": "Work time barley Aug (h / ha)",
+      "min": null,
+      "def": 0,
+      "max": null
+    },
+    {
+      "id": "indCr109",
+      "description": "Work time barley Sept (h / ha)",
+      "min": null,
+      "def": 0,
+      "max": null
+    },
+    {
+      "id": "indCr110",
+      "description": "Work time barley Oct (h / ha)",
+      "min": null,
+      "def": 0,
+      "max": null
+    },
+    {
+      "id": "indCr111",
+      "description": "Work time barley Nov (h / ha)",
+      "min": null,
+      "def": 0,
+      "max": null
+    },
+    {
+      "id": "indCr112",
+      "description": "Work time barley Dec (h / ha)",
+      "min": null,
+      "def": 0,
+      "max": null
+    },
+    {
+      "id": "indCr113",
+      "description": "Work time sugar beet Jan (h / ha)",
+      "min": null,
+      "def": 0,
+      "max": null
+    },
+    {
+      "id": "indCr114",
+      "description": "Work time sugar beet Feb (h / ha)",
+      "min": null,
+      "def": 0,
+      "max": null
+    },
+    {
+      "id": "indCr115",
+      "description": "Work time sugar beet March (h / ha)",
+      "min": null,
+      "def": 0,
+      "max": null
+    },
+    {
+      "id": "indCr116",
+      "description": "Work time sugar beet Apr (h / ha)",
+      "min": null,
+      "def": 0,
+      "max": null
+    },
+    {
+      "id": "indCr117",
+      "description": "Work time sugar beet May (h / ha)",
+      "min": null,
+      "def": 0,
+      "max": null
+    },
+    {
+      "id": "indCr118",
+      "description": "Work time sugar beet June (h / ha)",
+      "min": null,
+      "def": 0,
+      "max": null
+    },
+    {
+      "id": "indCr119",
+      "description": "Work time sugar beet July (h / ha)",
+      "min": null,
+      "def": 0,
+      "max": null
+    },
+    {
+      "id": "indCr120",
+      "description": "Work time sugar beet Aug (h / ha)",
+      "min": null,
+      "def": 0,
+      "max": null
+    },
+    {
+      "id": "indCr121",
+      "description": "Work time sugar beet Sept (h / ha)",
+      "min": null,
+      "def": 0,
+      "max": null
+    },
+    {
+      "id": "indCr122",
+      "description": "Work time sugar beet Oct (h / ha)",
+      "min": null,
+      "def": 1,
+      "max": null
+    },
+    {
+      "id": "indCr123",
+      "description": "Work time sugar beet Nov (h / ha)",
+      "min": null,
+      "def": 0,
+      "max": null
+    },
+    {
+      "id": "indCr124",
+      "description": "Work time sugar beet Dec (h / ha)",
+      "min": null,
+      "def": 0,
+      "max": null
+    },
+    {
+      "id": "indCr125",
+      "description": "Work time potato Jan (h / ha)",
+      "min": null,
+      "def": 0,
+      "max": null
+    },
+    {
+      "id": "indCr126",
+      "description": "Work time potato Feb (h / ha)",
+      "min": null,
+      "def": 0,
+      "max": null
+    },
+    {
+      "id": "indCr127",
+      "description": "Work time potato March (h / ha)",
+      "min": null,
+      "def": 0,
+      "max": null
+    },
+    {
+      "id": "indCr128",
+      "description": "Work time potato Apr (h / ha)",
+      "min": null,
+      "def": 0,
+      "max": null
+    },
+    {
+      "id": "indCr129",
+      "description": "Work time potato May (h / ha)",
+      "min": null,
+      "def": 0,
+      "max": null
+    },
+    {
+      "id": "indCr130",
+      "description": "Work time potato June (h / ha)",
+      "min": null,
+      "def": 0,
+      "max": null
+    },
+    {
+      "id": "indCr131",
+      "description": "Work time potato July (h / ha)",
+      "min": null,
+      "def": 0,
+      "max": null
+    },
+    {
+      "id": "indCr132",
+      "description": "Work time potato Aug (h / ha)",
+      "min": null,
+      "def": 0,
+      "max": null
+    },
+    {
+      "id": "indCr133",
+      "description": "Work time potato Sept (h / ha)",
+      "min": null,
+      "def": 0,
+      "max": null
+    },
+    {
+      "id": "indCr134",
+      "description": "Work time potato Oct (h / ha)",
+      "min": null,
+      "def": 6,
+      "max": null
+    },
+    {
+      "id": "indCr135",
+      "description": "Work time potato Nov (h / ha)",
+      "min": null,
+      "def": 0,
+      "max": null
+    },
+    {
+      "id": "indCr136",
+      "description": "Work time potato Dec (h / ha)",
+      "min": null,
+      "def": 0,
+      "max": null
+    },
+    {
+      "id": "indCr137",
+      "description": "Work time rapeseed Jan (h / ha)",
+      "min": null,
+      "def": 0,
+      "max": null
+    },
+    {
+      "id": "indCr138",
+      "description": "Work time rapeseed Feb (h / ha)",
+      "min": null,
+      "def": 0,
+      "max": null
+    },
+    {
+      "id": "indCr139",
+      "description": "Work time rapeseed March (h / ha)",
+      "min": null,
+      "def": 0,
+      "max": null
+    },
+    {
+      "id": "indCr140",
+      "description": "Work time rapeseed Apr (h / ha)",
+      "min": null,
+      "def": 0,
+      "max": null
+    },
+    {
+      "id": "indCr141",
+      "description": "Work time rapeseed May (h / ha)",
+      "min": null,
+      "def": 0,
+      "max": null
+    },
+    {
+      "id": "indCr142",
+      "description": "Work time rapeseed June (h / ha)",
+      "min": null,
+      "def": 0,
+      "max": null
+    },
+    {
+      "id": "indCr143",
+      "description": "Work time rapeseed July (h / ha)",
+      "min": null,
+      "def": 1.34,
+      "max": null
+    },
+    {
+      "id": "indCr144",
+      "description": "Work time rapeseed Aug (h / ha)",
+      "min": null,
+      "def": 0,
+      "max": null
+    },
+    {
+      "id": "indCr145",
+      "description": "Work time rapeseed Sept (h / ha)",
+      "min": null,
+      "def": 0,
+      "max": null
+    },
+    {
+      "id": "indCr146",
+      "description": "Work time rapeseed Oct (h / ha)",
+      "min": null,
+      "def": 0,
+      "max": null
+    },
+    {
+      "id": "indCr147",
+      "description": "Work time rapeseed Nov (h / ha)",
+      "min": null,
+      "def": 0,
+      "max": null
+    },
+    {
+      "id": "indCr148",
+      "description": "Work time rapeseed Dec (h / ha)",
+      "min": null,
+      "def": 0,
+      "max": null
+    },
+    {
+      "id": "indCr149",
+      "description": "Work time pea Jan (h / ha)",
+      "min": null,
+      "def": 0,
+      "max": null
+    },
+    {
+      "id": "indCr150",
+      "description": "Work time pea Feb (h / ha)",
+      "min": null,
+      "def": 0,
+      "max": null
+    },
+    {
+      "id": "indCr151",
+      "description": "Work time pea March (h / ha)",
+      "min": null,
+      "def": 0,
+      "max": null
+    },
+    {
+      "id": "indCr152",
+      "description": "Work time pea Apr (h / ha)",
+      "min": null,
+      "def": 0,
+      "max": null
+    },
+    {
+      "id": "indCr153",
+      "description": "Work time pea May (h / ha)",
+      "min": null,
+      "def": 0,
+      "max": null
+    },
+    {
+      "id": "indCr154",
+      "description": "Work time pea June (h / ha)",
+      "min": null,
+      "def": 0,
+      "max": null
+    },
+    {
+      "id": "indCr155",
+      "description": "Work time pea July (h / ha)",
+      "min": null,
+      "def": 1.34,
+      "max": null
+    },
+    {
+      "id": "indCr156",
+      "description": "Work time pea Aug (h / ha)",
+      "min": null,
+      "def": 0,
+      "max": null
+    },
+    {
+      "id": "indCr157",
+      "description": "Work time pea Sept (h / ha)",
+      "min": null,
+      "def": 0,
+      "max": null
+    },
+    {
+      "id": "indCr158",
+      "description": "Work time pea Oct (h / ha)",
+      "min": null,
+      "def": 0,
+      "max": null
+    },
+    {
+      "id": "indCr159",
+      "description": "Work time pea Nov (h / ha)",
+      "min": null,
+      "def": 0,
+      "max": null
+    },
+    {
+      "id": "indCr160",
+      "description": "Work time pea Dec (h / ha)",
+      "min": null,
+      "def": 0,
+      "max": null
+    },
+    {
+      "id": "indCr161",
+      "description": "Work time faba bean Jan (h / ha)",
+      "min": null,
+      "def": 0,
+      "max": null
+    },
+    {
+      "id": "indCr162",
+      "description": "Work time faba bean Feb (h / ha)",
+      "min": null,
+      "def": 0,
+      "max": null
+    },
+    {
+      "id": "indCr163",
+      "description": "Work time faba bean March (h / ha)",
+      "min": null,
+      "def": 0,
+      "max": null
+    },
+    {
+      "id": "indCr164",
+      "description": "Work time faba bean Apr (h / ha)",
+      "min": null,
+      "def": 0,
+      "max": null
+    },
+    {
+      "id": "indCr165",
+      "description": "Work time faba bean May (h / ha)",
+      "min": null,
+      "def": 0,
+      "max": null
+    },
+    {
+      "id": "indCr166",
+      "description": "Work time faba bean June (h / ha)",
+      "min": null,
+      "def": 0,
+      "max": null
+    },
+    {
+      "id": "indCr167",
+      "description": "Work time faba bean July (h / ha)",
+      "min": null,
+      "def": 1.34,
+      "max": null
+    },
+    {
+      "id": "indCr168",
+      "description": "Work time faba bean Aug (h / ha)",
+      "min": null,
+      "def": 0,
+      "max": null
+    },
+    {
+      "id": "indCr169",
+      "description": "Work time faba bean Sept (h / ha)",
+      "min": null,
+      "def": 0,
+      "max": null
+    },
+    {
+      "id": "indCr170",
+      "description": "Work time faba bean Oct (h / ha)",
+      "min": null,
+      "def": 0,
+      "max": null
+    },
+    {
+      "id": "indCr171",
+      "description": "Work time faba bean Nov (h / ha)",
+      "min": null,
+      "def": 0,
+      "max": null
+    },
+    {
+      "id": "indCr172",
+      "description": "Work time faba bean Dec (h / ha)",
+      "min": null,
+      "def": 0,
+      "max": null
+    },
+    {
+      "id": "indCr173",
+      "description": "Work time maize Jan (h / ha)",
+      "min": null,
+      "def": 0,
+      "max": null
+    },
+    {
+      "id": "indCr174",
+      "description": "Work time maize Feb (h / ha)",
+      "min": null,
+      "def": 0,
+      "max": null
+    },
+    {
+      "id": "indCr175",
+      "description": "Work time maize March (h / ha)",
+      "min": null,
+      "def": 0,
+      "max": null
+    },
+    {
+      "id": "indCr176",
+      "description": "Work time maize Apr (h / ha)",
+      "min": null,
+      "def": 0,
+      "max": null
+    },
+    {
+      "id": "indCr177",
+      "description": "Work time maize May (h / ha)",
+      "min": null,
+      "def": 0,
+      "max": null
+    },
+    {
+      "id": "indCr178",
+      "description": "Work time maize June (h / ha)",
+      "min": null,
+      "def": 0,
+      "max": null
+    },
+    {
+      "id": "indCr179",
+      "description": "Work time maize July (h / ha)",
+      "min": null,
+      "def": 0,
+      "max": null
+    },
+    {
+      "id": "indCr180",
+      "description": "Work time maize Aug (h / ha)",
+      "min": null,
+      "def": 0,
+      "max": null
+    },
+    {
+      "id": "indCr181",
+      "description": "Work time maize Sept (h / ha)",
+      "min": null,
+      "def": 2.36,
+      "max": null
+    },
+    {
+      "id": "indCr182",
+      "description": "Work time maize Oct (h / ha)",
+      "min": null,
+      "def": 0,
+      "max": null
+    },
+    {
+      "id": "indCr183",
+      "description": "Work time maize Nov (h / ha)",
+      "min": null,
+      "def": 0,
+      "max": null
+    },
+    {
+      "id": "indCr184",
+      "description": "Work time maize Dec (h / ha)",
+      "min": null,
+      "def": 0,
+      "max": null
+    },
+    {
+      "id": "indCr185",
+      "description": "Work time alfalfa Jan (h / ha)",
+      "min": null,
+      "def": 0,
+      "max": null
+    },
+    {
+      "id": "indCr186",
+      "description": "Work time alfalfa Feb (h / ha)",
+      "min": null,
+      "def": 0,
+      "max": null
+    },
+    {
+      "id": "indCr187",
+      "description": "Work time alfalfa March (h / ha)",
+      "min": null,
+      "def": 0,
+      "max": null
+    },
+    {
+      "id": "indCr188",
+      "description": "Work time alfalfa Apr (h / ha)",
+      "min": null,
+      "def": 0,
+      "max": null
+    },
+    {
+      "id": "indCr189",
+      "description": "Work time alfalfa May (h / ha)",
+      "min": null,
+      "def": 1.75,
+      "max": null
+    },
+    {
+      "id": "indCr190",
+      "description": "Work time alfalfa June (h / ha)",
+      "min": null,
+      "def": 1.75,
+      "max": null
+    },
+    {
+      "id": "indCr191",
+      "description": "Work time alfalfa July (h / ha)",
+      "min": null,
+      "def": 0,
+      "max": null
+    },
+    {
+      "id": "indCr192",
+      "description": "Work time alfalfa Aug (h / ha)",
+      "min": null,
+      "def": 0,
+      "max": null
+    },
+    {
+      "id": "indCr193",
+      "description": "Work time alfalfa Sept (h / ha)",
+      "min": null,
+      "def": 1.75,
+      "max": null
+    },
+    {
+      "id": "indCr194",
+      "description": "Work time alfalfa Oct (h / ha)",
+      "min": null,
+      "def": 0,
+      "max": null
+    },
+    {
+      "id": "indCr195",
+      "description": "Work time alfalfa Nov (h / ha)",
+      "min": null,
+      "def": 0,
+      "max": null
+    },
+    {
+      "id": "indCr196",
+      "description": "Work time alfalfa Dec (h / ha)",
+      "min": null,
+      "def": 0,
+      "max": null
+    },
+    {
+      "id": "indCr197",
+      "description": "Work time sorghum Jan (h / ha)",
+      "min": null,
+      "def": 0,
+      "max": null
+    },
+    {
+      "id": "indCr198",
+      "description": "Work time sorghum Feb (h / ha)",
+      "min": null,
+      "def": 0,
+      "max": null
+    },
+    {
+      "id": "indCr199",
+      "description": "Work time sorghum March (h / ha)",
+      "min": null,
+      "def": 0,
+      "max": null
+    },
+    {
+      "id": "indCr200",
+      "description": "Work time sorghum Apr (h / ha)",
+      "min": null,
+      "def": 0,
+      "max": null
+    },
+    {
+      "id": "indCr201",
+      "description": "Work time sorghum May (h / ha)",
+      "min": null,
+      "def": 0,
+      "max": null
+    },
+    {
+      "id": "indCr202",
+      "description": "Work time sorghum June (h / ha)",
+      "min": null,
+      "def": 0,
+      "max": null
+    },
+    {
+      "id": "indCr203",
+      "description": "Work time sorghum July (h / ha)",
+      "min": null,
+      "def": 0,
+      "max": null
+    },
+    {
+      "id": "indCr204",
+      "description": "Work time sorghum Aug (h / ha)",
+      "min": null,
+      "def": 0,
+      "max": null
+    },
+    {
+      "id": "indCr205",
+      "description": "Work time sorghum Sept (h / ha)",
+      "min": null,
+      "def": 2.36,
+      "max": null
+    },
+    {
+      "id": "indCr206",
+      "description": "Work time sorghum Oct (h / ha)",
+      "min": null,
+      "def": 0,
+      "max": null
+    },
+    {
+      "id": "indCr207",
+      "description": "Work time sorghum Nov (h / ha)",
+      "min": null,
+      "def": 0,
+      "max": null
+    },
+    {
+      "id": "indCr208",
+      "description": "Work time sorghum Dec (h / ha)",
+      "min": null,
+      "def": 0,
+      "max": null
+    },
+    {
+      "id": "indCr209",
+      "description": "Work time TG Jan (h / ha)",
+      "min": null,
+      "def": 0,
+      "max": null
+    },
+    {
+      "id": "indCr210",
+      "description": "Work time TG Feb (h / ha)",
+      "min": null,
+      "def": 0,
+      "max": null
+    },
+    {
+      "id": "indCr211",
+      "description": "Work time TG March (h / ha)",
+      "min": null,
+      "def": 0,
+      "max": null
+    },
+    {
+      "id": "indCr212",
+      "description": "Work time TG Apr (h / ha)",
+      "min": null,
+      "def": 0,
+      "max": null
+    },
+    {
+      "id": "indCr213",
+      "description": "Work time TG May (h / ha)",
+      "min": null,
+      "def": 1.17,
+      "max": null
+    },
+    {
+      "id": "indCr214",
+      "description": "Work time TG June (h / ha)",
+      "min": null,
+      "def": 1.17,
+      "max": null
+    },
+    {
+      "id": "indCr215",
+      "description": "Work time TG July (h / ha)",
+      "min": null,
+      "def": 0,
+      "max": null
+    },
+    {
+      "id": "indCr216",
+      "description": "Work time TG Aug (h / ha)",
+      "min": null,
+      "def": 0,
+      "max": null
+    },
+    {
+      "id": "indCr217",
+      "description": "Work time TG Sept (h / ha)",
+      "min": null,
+      "def": 0,
+      "max": null
+    },
+    {
+      "id": "indCr218",
+      "description": "Work time TG Oct (h / ha)",
+      "min": null,
+      "def": 0,
+      "max": null
+    },
+    {
+      "id": "indCr219",
+      "description": "Work time TG Nov (h / ha)",
+      "min": null,
+      "def": 0,
+      "max": null
+    },
+    {
+      "id": "indCr220",
+      "description": "Work time TG Dec (h / ha)",
+      "min": null,
+      "def": 0,
+      "max": null
+    },
+    {
+      "id": "indCr221",
+      "description": "Work time PG Jan (h / ha)",
+      "min": null,
+      "def": 0,
+      "max": null
+    },
+    {
+      "id": "indCr222",
+      "description": "Work time PG Feb (h / ha)",
+      "min": null,
+      "def": 0,
+      "max": null
+    },
+    {
+      "id": "indCr223",
+      "description": "Work time PG March (h / ha)",
+      "min": null,
+      "def": 0,
+      "max": null
+    },
+    {
+      "id": "indCr224",
+      "description": "Work time PG Apr (h / ha)",
+      "min": null,
+      "def": 0,
+      "max": null
+    },
+    {
+      "id": "indCr225",
+      "description": "Work time PG May (h / ha)",
+      "min": null,
+      "def": 0,
+      "max": null
+    },
+    {
+      "id": "indCr226",
+      "description": "Work time PG June (h / ha)",
+      "min": null,
+      "def": 1.17,
+      "max": null
+    },
+    {
+      "id": "indCr227",
+      "description": "Work time PG July (h / ha)",
+      "min": null,
+      "def": 0,
+      "max": null
+    },
+    {
+      "id": "indCr228",
+      "description": "Work time PG Aug (h / ha)",
+      "min": null,
+      "def": 0,
+      "max": null
+    },
+    {
+      "id": "indCr229",
+      "description": "Work time PG Sept (h / ha)",
+      "min": null,
+      "def": 0,
+      "max": null
+    },
+    {
+      "id": "indCr230",
+      "description": "Work time PG Oct (h / ha)",
+      "min": null,
+      "def": 0,
+      "max": null
+    },
+    {
+      "id": "indCr231",
+      "description": "Work time PG Nov (h / ha)",
+      "min": null,
+      "def": 0,
+      "max": null
+    },
+    {
+      "id": "indCr232",
+      "description": "Work time PG Dec (h / ha)",
+      "min": null,
+      "def": 0,
+      "max": null
+    },
+    {
+      "id": "indCr233",
+      "description": "Water quality pesticides UAA (unitless)",
+      "min": 0,
+      "def": 2,
+      "max": 5
+    },
+    {
+      "id": "indCr234",
+      "description": "Water quality pesticides PG (unitless)",
+      "min": 0,
+      "def": 5,
+      "max": 5
+    },
+    {
+      "id": "indCr235",
+      "description": "Water quality nitrates UAA (unitless)",
+      "min": 0,
+      "def": 2,
+      "max": 5
+    },
+    {
+      "id": "indCr236",
+      "description": "Water quality nitrates PG (unitless)",
+      "min": 0,
+      "def": 5,
+      "max": 5
+    },
+    {
+      "id": "indEc1",
+      "description": "Costs of seeds, machinery, land renting, etc. (€ / ha)",
+      "min": 300,
+      "def": 900,
+      "max": 1000
+    },
+    {
+      "id": "indEc2",
+      "description": "CAP subsidies 1st Pillar (€ / ha)",
+      "min": 0,
+      "def": 295,
+      "max": 295
+    },
+    {
+      "id": "indEc3",
+      "description": "CAP subsidies 2nd Pillar (€ / ha)",
+      "min": 0,
+      "def": 140,
+      "max": 140
+    },
+    {
+      "id": "indEc4",
+      "description": "Investment capacity (unitless)",
+      "min": null,
+      "def": 1,
+      "max": null
+    },
+    {
+      "id": "indAn1",
+      "description": "Average number of dairy cows",
+      "min": null,
+      "def": 1,
+      "max": null
+    },
+    {
+      "id": "indAn2",
+      "description": "Average number of heifers",
+      "min": null,
+      "def": 1,
+      "max": null
+    },
+    {
+      "id": "indAn3",
+      "description": "Average number of bulls and steers",
+      "min": null,
+      "def": 1,
+      "max": null
+    },
+    {
+      "id": "indAn4",
+      "description": "Average number of calves",
+      "min": null,
+      "def": 1,
+      "max": null
+    },
+    {
+      "id": "indAn5",
+      "description": "Number of culled cows sold",
+      "min": null,
+      "def": 1,
+      "max": null
+    },
+    {
+      "id": "indAn6",
+      "description": "Number of bulls and steers sold",
+      "min": null,
+      "def": 1,
+      "max": null
+    },
+    {
+      "id": "indAn7",
+      "description": "Number of calves sold",
+      "min": null,
+      "def": 1,
+      "max": null
+    },
+    {
+      "id": "indAn8",
+      "description": "Number of non pregnant heifers sold",
+      "min": null,
+      "def": 1,
+      "max": null
+    },
+    {
+      "id": "indAn9",
+      "description": "Number of pregnant heifers sold",
+      "min": null,
+      "def": 1,
+      "max": null
+    },
+    {
+      "id": "indAn10",
+      "description": "Cow culling rate (unitless)",
+      "min": null,
+      "def": 0.33,
+      "max": null
+    },
+    {
+      "id": "indAn11",
+      "description": "Heifer conception rate (unitless)",
+      "min": null,
+      "def": 0.9,
+      "max": null
+    },
+    {
+      "id": "indAn12",
+      "description": "Cow calving rate (unitless)",
+      "min": null,
+      "def": 0.95,
+      "max": null
+    },
+    {
+      "id": "indAn13",
+      "description": "Calf mortality (unitless)",
+      "min": null,
+      "def": 0.05,
+      "max": null
+    },
+    {
+      "id": "indAn14",
+      "description": "Young cattle mortality (unitless)",
+      "min": null,
+      "def": 0.02,
+      "max": null
+    },
+    {
+      "id": "indAn15",
+      "description": "Option for herd size (multiplying factor)",
+      "min": null,
+      "def": 1,
+      "max": null
+    },
+    {
+      "id": "indAn16",
+      "description": "Meat of culled cows (kg / animal)",
+      "min": null,
+      "def": 340,
+      "max": null
+    },
+    {
+      "id": "indAn17",
+      "description": "Meat of bulls and steers (kg / animal)",
+      "min": null,
+      "def": 335,
+      "max": null
+    },
+    {
+      "id": "indAn18",
+      "description": "Meat of non pregnant heifers (kg / animal)",
+      "min": null,
+      "def": 265,
+      "max": null
+    },
+    {
+      "id": "indAn19",
+      "description": "Annual milk production per dairy cow (L)",
+      "min": null,
+      "def": 7000,
+      "max": null
+    },
+    {
+      "id": "indAn20",
+      "description": "Fat content (g / L)",
+      "min": null,
+      "def": 4.01,
+      "max": null
+    },
+    {
+      "id": "indAn21",
+      "description": "Protein content (g / L)",
+      "min": null,
+      "def": 3.3,
+      "max": null
+    },
+    {
+      "id": "indAn22",
+      "description": "Somatic cells count (number / L)",
+      "min": null,
+      "def": 215000,
+      "max": null
+    },
+    {
+      "id": "indAn23",
+      "description": "Animal welfare of cows (unitless)",
+      "min": null,
+      "def": 1,
+      "max": null
+    },
+    {
+      "id": "indAn24",
+      "description": "Animal welfare of heifers (unitless)",
+      "min": null,
+      "def": 1,
+      "max": null
+    },
+    {
+      "id": "indAn25",
+      "description": "Animal welfare of bulls (unitless)",
+      "min": null,
+      "def": 1,
+      "max": null
+    },
+    {
+      "id": "indAn26",
+      "description": "Animal welfare of steers (unitless)",
+      "min": null,
+      "def": 1,
+      "max": null
+    },
+    {
+      "id": "indAn27",
+      "description": "Antibiotic use for cows (nb / animal)",
+      "min": null,
+      "def": 1,
+      "max": null
+    },
+    {
+      "id": "indAn28",
+      "description": "Antibiotic use for heifers (nb / animal)",
+      "min": null,
+      "def": 1,
+      "max": null
+    },
+    {
+      "id": "indAn29",
+      "description": "Antibiotic use for bulls (nb / animal)",
+      "min": null,
+      "def": 1,
+      "max": null
+    },
+    {
+      "id": "indAn30",
+      "description": "Antibiotic use for steers (nb / animal)",
+      "min": null,
+      "def": 1,
+      "max": null
+    },
+    {
+      "id": "indAn31",
+      "description": "Anthelmintic use for cows (nb / animal)",
+      "min": null,
+      "def": 1,
+      "max": null
+    },
+    {
+      "id": "indAn32",
+      "description": "Anthelmintic use for heifers (nb / animal)",
+      "min": null,
+      "def": 1,
+      "max": null
+    },
+    {
+      "id": "indAn33",
+      "description": "Anthelmintic use for bulls (nb / animal)",
+      "min": null,
+      "def": 1,
+      "max": null
+    },
+    {
+      "id": "indAn34",
+      "description": "Anthelmintic use for steers (nb / animal)",
+      "min": null,
+      "def": 1,
+      "max": null
+    },
+    {
+      "id": "indAn35",
+      "description": "Veterinary costs for cows (€ / animal)",
+      "min": null,
+      "def": 61.2,
+      "max": null
+    },
+    {
+      "id": "indAn36",
+      "description": "Veterinary costs for heifers (€ / animal)",
+      "min": null,
+      "def": 8.84,
+      "max": null
+    },
+    {
+      "id": "indAn37",
+      "description": "Veterinary costs for bulls (€ / animal)",
+      "min": null,
+      "def": 5.5,
+      "max": null
+    },
+    {
+      "id": "indAn38",
+      "description": "Veterinary costs for steers (€ / animal)",
+      "min": null,
+      "def": 5.5,
+      "max": null
+    },
+    {
+      "id": "indAn39",
+      "description": "Insemination costs (€ / animal)",
+      "min": null,
+      "def": 78,
+      "max": null
+    },
+    {
+      "id": "indAn40",
+      "description": "Energy demand for machinery (L of fuel / dairy cow)",
+      "min": null,
+      "def": 1,
+      "max": null
+    },
+    {
+      "id": "indAn41",
+      "description": "Energy demand for milking operation (kWh / L of milk)",
+      "min": null,
+      "def": 1,
+      "max": null
+    },
+    {
+      "id": "indAn42",
+      "description": "Water demand for cows (L / animal)",
+      "min": null,
+      "def": 29750,
+      "max": null
+    },
+    {
+      "id": "indAn43",
+      "description": "Water demand for heifers (L / animal)",
+      "min": null,
+      "def": 14600,
+      "max": null
+    },
+    {
+      "id": "indAn44",
+      "description": "Water demand for pregnant heifers (L / animal)",
+      "min": null,
+      "def": 21900,
+      "max": null
+    },
+    {
+      "id": "indAn45",
+      "description": "Water demand for bulls and steers (L / animal)",
+      "min": null,
+      "def": 16400,
+      "max": null
+    },
+    {
+      "id": "indAn46",
+      "description": "Water demand for calves (L / animal)",
+      "min": null,
+      "def": 3650,
+      "max": null
+    },
+    {
+      "id": "indAn47",
+      "description": "Water demand for other uses (L)",
+      "min": null,
+      "def": 365,
+      "max": null
+    },
+    {
+      "id": "indAn48",
+      "description": "Straw demand for cows (t DM / animal)",
+      "min": null,
+      "def": 0.968,
+      "max": null
+    },
+    {
+      "id": "indAn49",
+      "description": "Straw demand for heifers (t DM / animal)",
+      "min": null,
+      "def": 0.8008,
+      "max": null
+    },
+    {
+      "id": "indAn50",
+      "description": "Straw demand for bulls (t DM / animal)",
+      "min": null,
+      "def": 0.6424,
+      "max": null
+    },
+    {
+      "id": "indAn51",
+      "description": "Straw demand for steers (t DM / animal)",
+      "min": null,
+      "def": 0.6424,
+      "max": null
+    },
+    {
+      "id": "indAn52",
+      "description": "Manure production of cows (t / animal)",
+      "min": null,
+      "def": 18.3636363636364,
+      "max": null
+    },
+    {
+      "id": "indAn53",
+      "description": "Manure production of heifers (t / animal)",
+      "min": null,
+      "def": 6.8,
+      "max": null
+    },
+    {
+      "id": "indAn54",
+      "description": "Manure production of bulls (t / animal)",
+      "min": null,
+      "def": 5.58181818181818,
+      "max": null
+    },
+    {
+      "id": "indAn55",
+      "description": "Manure production of steers (t / animal)",
+      "min": null,
+      "def": 8.41818181818182,
+      "max": null
+    },
+    {
+      "id": "indAn56",
+      "description": "Slurry production of cows (m3 / animal)",
+      "min": null,
+      "def": 33.6666666666667,
+      "max": null
+    },
+    {
+      "id": "indAn57",
+      "description": "Slurry production of heifers (m3 / animal)",
+      "min": null,
+      "def": 12.4666666666667,
+      "max": null
+    },
+    {
+      "id": "indAn58",
+      "description": "Slurry production of bulls (m3 / animal)",
+      "min": null,
+      "def": 10.2333333333333,
+      "max": null
+    },
+    {
+      "id": "indAn59",
+      "description": "Slurry production of steers (m3 / animal)",
+      "min": null,
+      "def": 15.4333333333333,
+      "max": null
+    },
+    {
+      "id": "indAn60",
+      "description": "Number of days of grazing",
+      "min": null,
+      "def": 1,
+      "max": null
+    },
+    {
+      "id": "indAn61",
+      "description": "Maize silage demand for cows (t DM / animal)",
+      "min": null,
+      "def": 1.15,
+      "max": null
+    },
+    {
+      "id": "indAn62",
+      "description": "Maize silage demand for heifers (t DM / animal)",
+      "min": null,
+      "def": 1.15,
+      "max": null
+    },
+    {
+      "id": "indAn63",
+      "description": "Maize silage demand for bulls (t DM / animal)",
+      "min": null,
+      "def": 1.15,
+      "max": null
+    },
+    {
+      "id": "indAn64",
+      "description": "Maize silage demand for steers (t DM / animal)",
+      "min": null,
+      "def": 1.15,
+      "max": null
+    },
+    {
+      "id": "indAn65",
+      "description": "Grass silage demand for cows (t DM / animal)",
+      "min": null,
+      "def": 1.15,
+      "max": null
+    },
+    {
+      "id": "indAn66",
+      "description": "Grass silage demand for heifers (t DM / animal)",
+      "min": null,
+      "def": 1.15,
+      "max": null
+    },
+    {
+      "id": "indAn67",
+      "description": "Grass silage demand for bulls (t DM / animal)",
+      "min": null,
+      "def": 1.15,
+      "max": null
+    },
+    {
+      "id": "indAn68",
+      "description": "Grass silage demand for steers (t DM / animal)",
+      "min": null,
+      "def": 1.15,
+      "max": null
+    },
+    {
+      "id": "indAn69",
+      "description": "Alfalfa silage demand for cows (t DM / animal)",
+      "min": null,
+      "def": 1.15,
+      "max": null
+    },
+    {
+      "id": "indAn70",
+      "description": "Alfalfa silage demand for heifers (t DM / animal)",
+      "min": null,
+      "def": 1.15,
+      "max": null
+    },
+    {
+      "id": "indAn71",
+      "description": "Alfalfa silage demand for bulls (t DM / animal)",
+      "min": null,
+      "def": 1.15,
+      "max": null
+    },
+    {
+      "id": "indAn72",
+      "description": "Alfalfa silage demand for steers (t DM / animal)",
+      "min": null,
+      "def": 1.15,
+      "max": null
+    },
+    {
+      "id": "indAn73",
+      "description": "Sorghum silage demand for cows (t DM / animal)",
+      "min": null,
+      "def": 1.15,
+      "max": null
+    },
+    {
+      "id": "indAn74",
+      "description": "Sorghum silage demand for heifers (t DM / animal)",
+      "min": null,
+      "def": 1.15,
+      "max": null
+    },
+    {
+      "id": "indAn75",
+      "description": "Sorghum silage demand for bulls (t DM / animal)",
+      "min": null,
+      "def": 1.15,
+      "max": null
+    },
+    {
+      "id": "indAn76",
+      "description": "Sorghum silage demand for steers (t DM / animal)",
+      "min": null,
+      "def": 1.15,
+      "max": null
+    },
+    {
+      "id": "indAn77",
+      "description": "Hay demand for cows (t DM / animal)",
+      "min": null,
+      "def": 1.15,
+      "max": null
+    },
+    {
+      "id": "indAn78",
+      "description": "Hay demand for heifers (t DM / animal)",
+      "min": null,
+      "def": 1.15,
+      "max": null
+    },
+    {
+      "id": "indAn79",
+      "description": "Hay demand for bulls (t DM / animal)",
+      "min": null,
+      "def": 1.15,
+      "max": null
+    },
+    {
+      "id": "indAn80",
+      "description": "Hay demand for steers (t DM / animal)",
+      "min": null,
+      "def": 1.15,
+      "max": null
+    },
+    {
+      "id": "indAn81",
+      "description": "Grazed grass demand for cows (t DM / animal)",
+      "min": null,
+      "def": 1.15,
+      "max": null
+    },
+    {
+      "id": "indAn82",
+      "description": "Grazed grass demand for heifers (t DM / animal)",
+      "min": null,
+      "def": 1.15,
+      "max": null
+    },
+    {
+      "id": "indAn83",
+      "description": "Grazed grass demand for bulls (t DM / animal)",
+      "min": null,
+      "def": 1.15,
+      "max": null
+    },
+    {
+      "id": "indAn84",
+      "description": "Grazed grass demand for steers (t DM / animal)",
+      "min": null,
+      "def": 1.15,
+      "max": null
+    },
+    {
+      "id": "indAn85",
+      "description": "Barley demand for cows (t DM / animal)",
+      "min": null,
+      "def": 1.05,
+      "max": null
+    },
+    {
+      "id": "indAn86",
+      "description": "Barley demand for heifers (t DM / animal)",
+      "min": null,
+      "def": 1.05,
+      "max": null
+    },
+    {
+      "id": "indAn87",
+      "description": "Barley demand for bulls (t DM / animal)",
+      "min": null,
+      "def": 1.05,
+      "max": null
+    },
+    {
+      "id": "indAn88",
+      "description": "Barley demand for steers (t DM / animal)",
+      "min": null,
+      "def": 1.05,
+      "max": null
+    },
+    {
+      "id": "indAn89",
+      "description": "RSM demand for cows (t DM / animal)",
+      "min": null,
+      "def": 1.05,
+      "max": null
+    },
+    {
+      "id": "indAn90",
+      "description": "RSM demand for heifers (t DM / animal)",
+      "min": null,
+      "def": 1.05,
+      "max": null
+    },
+    {
+      "id": "indAn91",
+      "description": "RSM demand for bulls (t DM / animal)",
+      "min": null,
+      "def": 1.05,
+      "max": null
+    },
+    {
+      "id": "indAn92",
+      "description": "RSM demand for steers (t DM / animal)",
+      "min": null,
+      "def": 1.05,
+      "max": null
+    },
+    {
+      "id": "indAn93",
+      "description": "SBM demand for cows (t DM / animal)",
+      "min": null,
+      "def": 1.05,
+      "max": null
+    },
+    {
+      "id": "indAn94",
+      "description": "SBM demand for heifers (t DM / animal)",
+      "min": null,
+      "def": 1.05,
+      "max": null
+    },
+    {
+      "id": "indAn95",
+      "description": "SBM demand for bulls (t DM / animal)",
+      "min": null,
+      "def": 1.05,
+      "max": null
+    },
+    {
+      "id": "indAn96",
+      "description": "SBM demand for steers (t DM / animal)",
+      "min": null,
+      "def": 1.05,
+      "max": null
+    },
+    {
+      "id": "indAn97",
+      "description": "Faba bean demand for cows (t DM / animal)",
+      "min": null,
+      "def": 1.05,
+      "max": null
+    },
+    {
+      "id": "indAn98",
+      "description": "Faba bean demand for heifers (t DM / animal)",
+      "min": null,
+      "def": 1.05,
+      "max": null
+    },
+    {
+      "id": "indAn99",
+      "description": "Faba bean demand for bulls (t DM / animal)",
+      "min": null,
+      "def": 1.05,
+      "max": null
+    },
+    {
+      "id": "indAn100",
+      "description": "Faba bean demand for steers (t DM / animal)",
+      "min": null,
+      "def": 1.05,
+      "max": null
+    },
+    {
+      "id": "indAn101",
+      "description": "Wheat demand for cows (t DM / animal)",
+      "min": null,
+      "def": 1.05,
+      "max": null
+    },
+    {
+      "id": "indAn102",
+      "description": "Wheat demand for heifers (t DM / animal)",
+      "min": null,
+      "def": 1.05,
+      "max": null
+    },
+    {
+      "id": "indAn103",
+      "description": "Wheat demand for bulls (t DM / animal)",
+      "min": null,
+      "def": 1.05,
+      "max": null
+    },
+    {
+      "id": "indAn104",
+      "description": "Wheat demand for steers (t DM / animal)",
+      "min": null,
+      "def": 1.05,
+      "max": null
+    },
+    {
+      "id": "indAn105",
+      "description": "Milk replacer demand for cows (kg DM / animal)",
+      "min": null,
+      "def": null,
+      "max": null
+    },
+    {
+      "id": "indAn106",
+      "description": "Milk replacer demand for heifers (kg DM / animal)",
+      "min": null,
+      "def": 50,
+      "max": null
+    },
+    {
+      "id": "indAn107",
+      "description": "Milk replacer demand for bulls (kg DM / animal)",
+      "min": null,
+      "def": 50,
+      "max": null
+    },
+    {
+      "id": "indAn108",
+      "description": "Milk replacer demand for steers (kg DM / animal)",
+      "min": null,
+      "def": 50,
+      "max": null
+    },
+    {
+      "id": "indAn109",
+      "description": "Milk demand for cows (kg DM / animal)",
+      "min": null,
+      "def": null,
+      "max": null
+    },
+    {
+      "id": "indAn110",
+      "description": "Milk demand for heifers (kg DM / animal)",
+      "min": null,
+      "def": 400,
+      "max": null
+    },
+    {
+      "id": "indAn111",
+      "description": "Milk demand for bulls (kg DM / animal)",
+      "min": null,
+      "def": 400,
+      "max": null
+    },
+    {
+      "id": "indAn112",
+      "description": "Milk demand for steers (kg DM / animal)",
+      "min": null,
+      "def": 400,
+      "max": null
+    },
+    {
+      "id": "indAn113",
+      "description": "Feed straw demand for cows (t DM / animal)",
+      "min": null,
+      "def": 1.15,
+      "max": null
+    },
+    {
+      "id": "indAn114",
+      "description": "Feed straw demand for heifers (t DM / animal)",
+      "min": null,
+      "def": 1.15,
+      "max": null
+    },
+    {
+      "id": "indAn115",
+      "description": "Feed straw demand for bulls (t DM / animal)",
+      "min": null,
+      "def": 1.15,
+      "max": null
+    },
+    {
+      "id": "indAn116",
+      "description": "Feed straw demand for steers (t DM / animal)",
+      "min": null,
+      "def": 1.15,
+      "max": null
+    },
+    {
+      "id": "indAn117",
+      "description": "Annual routine work demand for milking (h / animal)",
+      "min": null,
+      "def": 21,
+      "max": null
+    },
+    {
+      "id": "indAn118",
+      "description": "Annual routine work demand for feeding (cows) (h / animal)",
+      "min": null,
+      "def": 10.5,
+      "max": null
+    },
+    {
+      "id": "indAn119",
+      "description": "Annual routine work demand for feeding (other cattle) (h / animal)",
+      "min": null,
+      "def": 6.24,
+      "max": null
+    },
+    {
+      "id": "indAn120",
+      "description": "Annual routine work demand for manure management (cows) (h / animal)",
+      "min": null,
+      "def": 6.3,
+      "max": null
+    },
+    {
+      "id": "indAn121",
+      "description": "Annual routine work demand for manure management (other cattle) (h / animal)",
+      "min": null,
+      "def": 1.25,
+      "max": null
+    },
+    {
+      "id": "indAn122",
+      "description": "Annual routine work demand for heath & care (cows) (h / animal)",
+      "min": null,
+      "def": 2.1,
+      "max": null
+    },
+    {
+      "id": "indAn123",
+      "description": "Annual routine work demand for heath & care (other cattle) (h / animal)",
+      "min": null,
+      "def": 0.42,
+      "max": null
+    },
+    {
+      "id": "indAn124",
+      "description": "Annual routine work demand for other activities (cows) (h / animal)",
+      "min": null,
+      "def": 2.1,
+      "max": null
+    },
+    {
+      "id": "indAn125",
+      "description": "Annual routine work demand for other activities (other cattle) (h / animal)",
+      "min": null,
+      "def": 0.42,
+      "max": null
+    },
+    {
+      "id": "indAn126",
+      "description": "Investment in buildings and agroforestry (€)",
+      "min": null,
+      "def": 0,
+      "max": null
+    },
+    {
+      "id": "indGl1",
+      "description": "Organic farming (yes/no)",
+      "min": null,
+      "def": 0,
+      "max": null
+    },
+    {
+      "id": "indGl2",
+      "description": "Complexity of the system (unitless)",
+      "min": 0,
+      "def": 5,
+      "max": 5
+    },
+    {
+      "id": "paramF1",
+      "description": "Farm area (ha)",
+      "min": null,
+      "def": 85,
+      "max": null
+    },
+    {
+      "id": "paramF2",
+      "description": "Area of UAA1 (%)",
+      "min": null,
+      "def": 45,
+      "max": null
+    },
+    {
+      "id": "paramF3",
+      "description": "Water price (€ / m3)",
+      "min": null,
+      "def": 4.12,
+      "max": null
+    },
+    {
+      "id": "paramF4",
+      "description": "Cost of hiring a worker (€ / h)",
+      "min": null,
+      "def": 10,
+      "max": null
+    },
+    {
+      "id": "paramF5",
+      "description": "Fuel price (€ / L)",
+      "min": null,
+      "def": 0.56,
+      "max": null
+    },
+    {
+      "id": "paramF6",
+      "description": "Number of permanent workers (unitless)",
+      "min": null,
+      "def": 1.2,
+      "max": null
+    },
+    {
+      "id": "paramF7",
+      "description": "Pool of labour (h / month / perm. worker)",
+      "min": null,
+      "def": 250,
+      "max": null
+    },
+    {
+      "id": "paramAn1",
+      "description": "Conventional milk price (€ / 1000 L)",
+      "min": null,
+      "def": 358,
+      "max": null
+    },
+    {
+      "id": "paramAn2",
+      "description": "Organic milk price premium (€ / 1000 L)",
+      "min": null,
+      "def": 150,
+      "max": null
+    },
+    {
+      "id": "paramAn5",
+      "description": "Extra-cost due to organic system (coefficient)",
+      "min": null,
+      "def": 0.25,
+      "max": null
+    },
+    {
+      "id": "paramAn6",
+      "description": "Culled cow price - Holstein (€ / kg meat)",
+      "min": null,
+      "def": 3.16,
+      "max": null
+    },
+    {
+      "id": "paramAn7",
+      "description": "Bull and steer, non pregnant heifer price - Holstein (€ / kg meat)",
+      "min": null,
+      "def": 3.8,
+      "max": null
+    },
+    {
+      "id": "paramAn8",
+      "description": "Calf price - Holstein (€ / animal)",
+      "min": null,
+      "def": 75,
+      "max": null
+    },
+    {
+      "id": "paramAn9",
+      "description": "Preignant heifer price - Holstein (€ / animal)",
+      "min": null,
+      "def": 1650,
+      "max": null
+    },
+    {
+      "id": "paramAn10",
+      "description": "Culled cow price - Siemmental (€ / kg meat)",
+      "min": null,
+      "def": 3.79,
+      "max": null
+    },
+    {
+      "id": "paramAn11",
+      "description": "Bull and steer, non pregnant heifer price - Siemmental (€ / kg meat)",
+      "min": null,
+      "def": 4.19,
+      "max": null
+    },
+    {
+      "id": "paramAn12",
+      "description": "Calf price - Siemmental (€ / animal)",
+      "min": null,
+      "def": 75,
+      "max": null
+    },
+    {
+      "id": "paramAn13",
+      "description": "Preignant heifer price - Siemmental (€ / animal)",
+      "min": null,
+      "def": 2000,
+      "max": null
+    },
+    {
+      "id": "paramAn14",
+      "description": "Culled cow price - Montbéliarde (€ / kg meat)",
+      "min": null,
+      "def": 3.79,
+      "max": null
+    },
+    {
+      "id": "paramAn15",
+      "description": "Bull and steer, non pregnant heifer price - Montbéliarde (€ / kg meat)",
+      "min": null,
+      "def": 4.19,
+      "max": null
+    },
+    {
+      "id": "paramAn16",
+      "description": "Calf price - Montbéliarde (€ / animal)",
+      "min": null,
+      "def": 75,
+      "max": null
+    },
+    {
+      "id": "paramAn17",
+      "description": "Preignant heifer price - Montbéliarde (€ / animal)",
+      "min": null,
+      "def": 2370,
+      "max": null
+    },
+    {
+      "id": "paramAn18",
+      "description": "RSM feed price (conventionnal) (€ / t DM)",
+      "min": null,
+      "def": 248,
+      "max": null
+    },
+    {
+      "id": "paramAn19",
+      "description": "SBM feed price (conventionnal) (€ / t DM)",
+      "min": null,
+      "def": 325,
+      "max": null
+    },
+    {
+      "id": "paramAn20",
+      "description": "Maize silage feed price (conventionnal) (€ / t DM)",
+      "min": null,
+      "def": 121.55,
+      "max": null
+    },
+    {
+      "id": "paramAn21",
+      "description": "Grass feed price (conventionnal) (€ / t DM)",
+      "min": null,
+      "def": 165,
+      "max": null
+    },
+    {
+      "id": "paramAn22",
+      "description": "Alfalfa silage feed price (conventionnal) (€ / t DM)",
+      "min": null,
+      "def": 184,
+      "max": null
+    },
+    {
+      "id": "paramAn23",
+      "description": "Sorghum silage feed price (conventionnal) (€ / t DM)",
+      "min": null,
+      "def": 121.55,
+      "max": null
+    },
+    {
+      "id": "paramAn26",
+      "description": "Barley feed price (conventionnal) (€ / t DM)",
+      "min": null,
+      "def": 146.3,
+      "max": null
+    },
+    {
+      "id": "paramAn27",
+      "description": "Faba bean feed price (conventionnal) (€ / t DM)",
+      "min": null,
+      "def": 238.7,
+      "max": null
+    },
+    {
+      "id": "paramAn28",
+      "description": "Wheat feed price (conventionnal) (€ / t DM)",
+      "min": null,
+      "def": 148.5,
+      "max": null
+    },
+    {
+      "id": "paramAn29",
+      "description": "Milk replacer feed price (conventionnal) (€ / t DM)",
+      "min": null,
+      "def": 1390,
+      "max": null
+    },
+    {
+      "id": "paramAn31",
+      "description": "Straw price (conventionnal) (€ / t DM)",
+      "min": null,
+      "def": 64.71,
+      "max": null
+    },
+    {
+      "id": "paramCr1",
+      "description": "Maize silage sold price (conventionnal) (€ / t DM)",
+      "min": null,
+      "def": 110.5,
+      "max": null
+    },
+    {
+      "id": "paramCr2",
+      "description": "Grass sold price (conventionnal) (€ / t DM)",
+      "min": null,
+      "def": 150,
+      "max": null
+    },
+    {
+      "id": "paramCr3",
+      "description": "Alfalfa silage sold price (conventionnal) (€ / t DM)",
+      "min": null,
+      "def": 165.6,
+      "max": null
+    },
+    {
+      "id": "paramCr4",
+      "description": "Sorghum silage sold price (conventionnal) (€ / t DM)",
+      "min": null,
+      "def": 110.5,
+      "max": null
+    },
+    {
+      "id": "paramCr7",
+      "description": "Barley sold price (conventionnal) (€ / t DM)",
+      "min": null,
+      "def": 133,
+      "max": null
+    },
+    {
+      "id": "paramCr8",
+      "description": "Faba bean sold price (conventionnal) (€ / t DM)",
+      "min": null,
+      "def": 217,
+      "max": null
+    },
+    {
+      "id": "paramCr9",
+      "description": "Wheat sold price (conventionnal) (€ / t DM)",
+      "min": null,
+      "def": 135,
+      "max": null
+    },
+    {
+      "id": "paramCr10",
+      "description": "Straw sold price (conventionnal) (€ / t DM)",
+      "min": null,
+      "def": 58.82,
+      "max": null
+    },
+    {
+      "id": "paramCr11",
+      "description": "Cost of one crop treatment (€ / ha)",
+      "min": null,
+      "def": 37,
+      "max": null
+    },
+    {
+      "id": "paramCr12",
+      "description": "Artificial N (ammonitrate 33.5%) price (€ / t)",
+      "min": null,
+      "def": 244,
+      "max": null
+    },
+    {
+      "id": "paramCr13",
+      "description": "N need wheat (kg N / t DM)",
+      "min": null,
+      "def": 34.4827586206897,
+      "max": null
+    },
+    {
+      "id": "paramCr14",
+      "description": "N need barley (kg N / t DM)",
+      "min": null,
+      "def": 28.735632183908,
+      "max": null
+    },
+    {
+      "id": "paramCr15",
+      "description": "N need sugar beet (kg N)",
+      "min": null,
+      "def": 220,
+      "max": null
+    },
+    {
+      "id": "paramCr16",
+      "description": "N need potato (kg N)",
+      "min": null,
+      "def": 240,
+      "max": null
+    },
+    {
+      "id": "paramCr17",
+      "description": "N need rapeseed (kg N / t DM)",
+      "min": null,
+      "def": 75.839653304442,
+      "max": null
+    },
+    {
+      "id": "paramCr18",
+      "description": "N need pea (kg N / t DM)",
+      "min": null,
+      "def": null,
+      "max": null
+    },
+    {
+      "id": "paramCr19",
+      "description": "N need faba bean (kg N / t DM)",
+      "min": null,
+      "def": null,
+      "max": null
+    },
+    {
+      "id": "paramCr20",
+      "description": "N need maize (kg N / t DM)",
+      "min": null,
+      "def": 14,
+      "max": null
+    },
+    {
+      "id": "paramCr21",
+      "description": "N need alfalfa (kg N / t DM)",
+      "min": null,
+      "def": null,
+      "max": null
+    },
+    {
+      "id": "paramCr22",
+      "description": "N need sorghum (kg N / t DM)",
+      "min": null,
+      "def": 14,
+      "max": null
+    },
+    {
+      "id": "paramCr23",
+      "description": "N need grassland (kg N / t DM)",
+      "min": null,
+      "def": 25,
+      "max": null
+    },
+    {
+      "id": "paramAn32",
+      "description": "Manure N content (kg N / t)",
+      "min": null,
+      "def": 5.5,
+      "max": null
+    },
+    {
+      "id": "paramAn33",
+      "description": "Slurry N content (kg N / t)",
+      "min": null,
+      "def": 3,
+      "max": null
+    },
+    {
+      "id": "paramCr24",
+      "description": "Harvest Index for cereals",
+      "min": null,
+      "def": 0.5,
+      "max": null
+    },
+    {
+      "id": "paramCr25",
+      "description": "Sugar beet sold price (conventional) (€ / t)",
+      "min": null,
+      "def": 23,
+      "max": null
+    },
+    {
+      "id": "paramCr26",
+      "description": "Rapeseed sold price (conventional) (€ / t DM)",
+      "min": null,
+      "def": 331,
+      "max": null
+    },
+    {
+      "id": "paramCr27",
+      "description": "Pea sold price (conventional) (€ / t DM)",
+      "min": null,
+      "def": 169,
+      "max": null
+    },
+    {
+      "id": "paramCr28",
+      "description": "Potatoe sold price (conventional) (€ / t)",
+      "min": null,
+      "def": 200,
+      "max": null
+    },
+    {
+      "id": "indF52",
+      "description": "Natural enemies at farm-scale (unitless)",
+      "min": 0.7,
+      "def": null,
+      "max": 3.5
+    },
+    {
+      "id": "indF53",
+      "description": "Microbial biomass at farm-scale (unitless)",
+      "min": null,
+      "def": null,
+      "max": 19
+    },
+    {
+      "id": "indF54",
+      "description": "Soil meso-fauna - nematodes at farm-scale (unitless)",
+      "min": 0.7,
+      "def": null,
+      "max": 3.5
+    },
+    {
+      "id": "indF55",
+      "description": "Earthworm abundance at farm-scale (unitless)",
+      "min": null,
+      "def": null,
+      "max": 20
+    },
+    {
+      "id": "indF56",
+      "description": "Pollinators at farm-scale (unitless)",
+      "min": 0.7,
+      "def": null,
+      "max": 3.5
+    },
+    {
+      "id": "paramF8",
+      "description": "Fuel density (kg / L)",
+      "min": null,
+      "def": 0.832,
+      "max": null
+    },
+    {
+      "id": "paramF9",
+      "description": "Net Calorific Value of fuel (kWh / kg)",
+      "min": null,
+      "def": 12.22,
+      "max": null
+    },
+    {
+      "id": "paramCr29",
+      "description": "Gross energy - wheat (grain) (MJ / t DM)",
+      "min": null,
+      "def": 18200,
+      "max": null
+    },
+    {
+      "id": "paramCr30",
+      "description": "Gross energy - straw (MJ / t DM)",
+      "min": null,
+      "def": 18500,
+      "max": null
+    },
+    {
+      "id": "paramCr31",
+      "description": "Gross energy - barley (grain) (MJ / t DM)",
+      "min": null,
+      "def": 18400,
+      "max": null
+    },
+    {
+      "id": "paramCr32",
+      "description": "Gross energy - sugar beet (MJ / t DM)",
+      "min": null,
+      "def": 16900,
+      "max": null
+    },
+    {
+      "id": "paramCr33",
+      "description": "Gross energy - potato (MJ / t DM)",
+      "min": null,
+      "def": 16800,
+      "max": null
+    },
+    {
+      "id": "paramCr34",
+      "description": "Gross energy - rapeseed (MJ / t DM)",
+      "min": null,
+      "def": 28800,
+      "max": null
+    },
+    {
+      "id": "paramCr35",
+      "description": "Gross energy - pea (MJ / t DM)",
+      "min": null,
+      "def": 18300,
+      "max": null
+    },
+    {
+      "id": "paramCr36",
+      "description": "Gross energy - faba bean (MJ / t DM)",
+      "min": null,
+      "def": 18700,
+      "max": null
+    },
+    {
+      "id": "paramCr37",
+      "description": "Gross energy - maize (MJ / t DM)",
+      "min": null,
+      "def": 18900,
+      "max": null
+    },
+    {
+      "id": "paramCr38",
+      "description": "Gross energy - alfalfa (MJ / t DM)",
+      "min": null,
+      "def": 18000,
+      "max": null
+    },
+    {
+      "id": "paramCr39",
+      "description": "Gross energy - sorghum (MJ / t DM)",
+      "min": null,
+      "def": 18100,
+      "max": null
+    },
+    {
+      "id": "paramCr40",
+      "description": "Gross energy - grass (MJ / t DM)",
+      "min": null,
+      "def": 18000,
+      "max": null
+    },
+    {
+      "id": "paramCr41",
+      "description": "Gross energy - rapeseed meal (MJ / t DM)",
+      "min": null,
+      "def": 19400,
+      "max": null
+    },
+    {
+      "id": "paramCr42",
+      "description": "Gross energy - soybean meal (MJ / t DM)",
+      "min": null,
+      "def": 19700,
+      "max": null
+    },
+    {
+      "id": "paramCr43",
+      "description": "Gross energy - milk replacer (MJ / t DM)",
+      "min": null,
+      "def": 23200,
+      "max": null
+    },
+    {
+      "id": "paramCr44",
+      "description": "Gross energy - milk (MJ / L)",
+      "min": null,
+      "def": 2.63310745401743,
+      "max": null
+    },
+    {
+      "id": "paramCr45",
+      "description": "Gross energy - meat (MJ / kg)",
+      "min": null,
+      "def": 10.88,
+      "max": null
+    },
+    {
+      "id": "paramCr46",
+      "description": "Dry matter - sugar beet (%)",
+      "min": null,
+      "def": 18.8,
+      "max": null
+    },
+    {
+      "id": "paramCr47",
+      "description": "Dry matter - potato (%)",
+      "min": null,
+      "def": 20.6,
+      "max": null
+    },
+    {
+      "id": "indF58",
+      "description": "Energy efficiency",
+      "min": 0,
+      "def": null,
+      "max": 1
+    },
+    {
+      "id": "paramF10",
+      "description": "Emission factor from applied manure, slurry and fertilizers (kg N-N2O / kg N)",
+      "min": null,
+      "def": 0.01,
+      "max": null
+    },
+    {
+      "id": "paramF11",
+      "description": "Emission factor from urine and dung at pasture (kg N-N2O / kg N)",
+      "min": null,
+      "def": 0.02,
+      "max": null
+    },
+    {
+      "id": "paramF12",
+      "description": "Emission factor from manure and slurry management (kg N-N2O / kg N)",
+      "min": null,
+      "def": 0.005,
+      "max": null
+    },
+    {
+      "id": "paramF13",
+      "description": "Emission from manure management - cows (kg CH4 / year)",
+      "min": null,
+      "def": 0.01605888,
+      "max": null
+    },
+    {
+      "id": "paramF14",
+      "description": "Emission from manure management - other than cows (kg CH4 / year)",
+      "min": null,
+      "def": 0.00614016,
+      "max": null
+    },
+    {
+      "id": "paramF15",
+      "description": "Emission from slurry management - cows (kg CH4 / year)",
+      "min": null,
+      "def": 0.08832384,
+      "max": null
+    },
+    {
+      "id": "paramF16",
+      "description": "Emission from slurry management - other than cows (kg CH4 / year)",
+      "min": null,
+      "def": 0.03377088,
+      "max": null
+    },
+    {
+      "id": "paramF17",
+      "description": "Emission from excretion at grazing - cows (kg CH4 / year)",
+      "min": null,
+      "def": 0.00802944,
+      "max": null
+    },
+    {
+      "id": "paramF18",
+      "description": "Emission from excretion at grazing - other than cows (kg CH4 / year)",
+      "min": null,
+      "def": 0.00307008,
+      "max": null
+    },
+    {
+      "id": "paramF19",
+      "description": "Emission of enteric methane (MJ / kg CH4 / year)",
+      "min": null,
+      "def": 0.00116801437556155,
+      "max": null
+    },
+    {
+      "id": "indCr280",
+      "description": "Soil Organic Carbon (SOC) (unitless)",
+      "min": 0,
+      "def": null,
+      "max": 6.5
+    },
+    {
+      "id": "paramF20",
+      "description": "Emission factor for fuel combustion (kg CO2 / kg fuel)",
+      "min": null,
+      "def": 3.12,
+      "max": null
+    },
+    {
+      "id": "paramF21",
+      "description": "CO2 equivalent factor for CH4 (kg CO2 eq / kg)",
+      "min": null,
+      "def": 27.75,
+      "max": null
+    },
+    {
+      "id": "paramF22",
+      "description": "CO2 equivalent factor for N2O (kg CO2 eq / kg)",
+      "min": null,
+      "def": 265,
+      "max": null
+    },
+    {
+      "id": "paramF36",
+      "description": "Global Warming Potential per ha (kg CO2 eq / ha)",
+      "min": 3000,
+      "def": null,
+      "max": 9000
+    },
+    {
+      "id": "paramAn34",
+      "description": "Building costs due to increase in herd size (€ / animal)",
+      "min": null,
+      "def": 2840,
+      "max": null
+    },
+    {
+      "id": "paramAn35",
+      "description": "Building costs of heifer and fattening cattle housing system - slatted floor (€ / animal)",
+      "min": null,
+      "def": 2980,
+      "max": null
+    },
+    {
+      "id": "paramAn36",
+      "description": "Building costs of heifer and fattening cattle housing system - bedding (€ / animal)",
+      "min": null,
+      "def": 2700,
+      "max": null
+    },
+    {
+      "id": "paramF23",
+      "description": "Cost of in-field agroforestry, with subsidies (€ / ha)",
+      "min": null,
+      "def": 1000,
+      "max": null
+    },
+    {
+      "id": "indCr240",
+      "description": "Water quality due to pesticide use",
+      "min": 0,
+      "def": null,
+      "max": 5
+    },
+    {
+      "id": "indCr281",
+      "description": "Water quality related to nitrate losses",
+      "min": 0,
+      "def": null,
+      "max": 5
+    },
+    {
+      "id": "paramF24",
+      "description": "Emission factor from manure and slurry (kg N-NH3 / kg N)",
+      "min": null,
+      "def": 0.18,
+      "max": null
+    },
+    {
+      "id": "paramF25",
+      "description": "Attenuation of volatilization from grazing of cows and heifers",
+      "min": null,
+      "def": 0.722222222222222,
+      "max": null
+    },
+    {
+      "id": "paramF26",
+      "description": "Attenuation of volatilization from grazing of cows or heifers",
+      "min": null,
+      "def": 0.861111111111111,
+      "max": null
+    },
+    {
+      "id": "paramF27",
+      "description": "Emission factor from manure during spreading (kg N-NH3 / kg N)",
+      "min": null,
+      "def": 0.076,
+      "max": null
+    },
+    {
+      "id": "paramF28",
+      "description": "Emission factor from slurry during spreading (kg N-NH3 / kg N)",
+      "min": null,
+      "def": 0.1375,
+      "max": null
+    },
+    {
+      "id": "paramF29",
+      "description": "Emission factor from mineral fertilizer during spreading (kg N-NH3 / kg N)",
+      "min": null,
+      "def": 0.02,
+      "max": null
+    },
+    {
+      "id": "paramF37",
+      "description": "Ammonia volatilization per ha",
+      "min": 10,
+      "def": null,
+      "max": 50
+    },
+    {
+      "id": "paramF38",
+      "description": "TFI (farm)",
+      "min": 0,
+      "def": null,
+      "max": 5
+    },
+    {
+      "id": "indF70",
+      "description": "Resistance of soil to erosion",
+      "min": 0,
+      "def": null,
+      "max": 5
+    },
+    {
+      "id": "indF91",
+      "description": "Cumulated investment capacity",
+      "min": null,
+      "def": 12000,
+      "max": null
+    },
+    {
+      "id": "indAn131",
+      "description": "Animal welfare index",
+      "min": 0.9,
+      "def": null,
+      "max": 3
+    },
+    {
+      "id": "paramF30",
+      "description": "Risk of nitrate losses due to organic and mineral fertilizers (unitless)",
+      "min": 50,
+      "def": null,
+      "max": 170
+    },
+    {
+      "id": "paramF31",
+      "description": "Reasonable amount of workload (h / month / perm. worker)",
+      "min": null,
+      "def": 200,
+      "max": null
+    },
+    {
+      "id": "paramF32",
+      "description": "Legal annual workload (h / year)",
+      "min": null,
+      "def": 1607,
+      "max": null
+    },
+    {
+      "id": "paramF33",
+      "description": "Legal minimum salary (€ / year)",
+      "min": null,
+      "def": 16070,
+      "max": null
+    },
+    {
+      "id": "indAn158",
+      "description": "Initial cow number",
+      "min": null,
+      "def": 60,
+      "max": null
+    },
+    {
+      "id": "paramF34",
+      "description": "Maximum nb of game turns with a negative CIC",
+      "min": null,
+      "def": 3,
+      "max": null
+    },
+    {
+      "id": "paramF35",
+      "description": "Direct energy consumption (kWh / ha)",
+      "min": 1200,
+      "def": null,
+      "max": 3200
+    },
+    {
+      "id": "paramF39",
+      "description": "Number of job created",
+      "min": 1,
+      "def": null,
+      "max": null
+    },
+    {
+      "id": "paramF40",
+      "description": "Level of remuneration (nb of legal minimum salary)",
+      "min": 1,
+      "def": null,
+      "max": 3
+    },
+    {
+      "id": "paramF41",
+      "description": "Notice about farm profit",
+      "min": 1,
+      "def": null,
+      "max": 4
+    },
+    {
+      "id": "indT40",
+      "description": "Economic efficiency",
+      "min": 0,
+      "def": 0.166666666666667,
+      "max": null
+    },
+    {
+      "id": "paramF42",
+      "description": "Hazardous effect: milk price (event probability)",
+      "min": null,
+      "def": 0.1,
+      "max": null
+    },
+    {
+      "id": "paramF43",
+      "description": "Hazardous effect: milk price (price variation, €)",
+      "min": null,
+      "def": -100,
+      "max": null
+    },
+    {
+      "id": "paramF44",
+      "description": "N demand minimal (kg N / ha)",
+      "min": 0,
+      "def": null,
+      "max": null
+    },
+    {
+      "id": "paramF45",
+      "description": "Crop / animal yield gap acceptable",
+      "min": 0.5,
+      "def": null,
+      "max": 1
+    },
+    {
+      "id": "paramF47",
+      "description": "Keq (manure)",
+      "min": null,
+      "def": 0.2,
+      "max": null
+    },
+    {
+      "id": "paramF48",
+      "description": "Keq (slurry)",
+      "min": null,
+      "def": 0.5,
+      "max": null
+    },
+    {
+      "id": "paramF49",
+      "description": "Milk dry matter (g MS / L)",
+      "min": null,
+      "def": 130,
+      "max": null
+    },
+    {
+      "id": "paramF50",
+      "description": "Price of electricity (€ / kWh)",
+      "min": null,
+      "def": 0.11,
+      "max": null
+    },
+    {
+      "id": "indT1",
+      "description": "Weight of the indicator indT1",
+      "min": null,
+      "def": 0.333333333333333,
+      "max": null
+    },
+    {
+      "id": "indT2",
+      "description": "Weight of the indicator indT2",
+      "min": null,
+      "def": 0.333333333333333,
+      "max": null
+    },
+    {
+      "id": "indT3",
+      "description": "Weight of the indicator indT3",
+      "min": null,
+      "def": 0.333333333333333,
+      "max": null
+    },
+    {
+      "id": "indT4",
+      "description": "Weight of the indicator indT4",
+      "min": null,
+      "def": 0.5,
+      "max": null
+    },
+    {
+      "id": "indT5",
+      "description": "Weight of the indicator indT5",
+      "min": null,
+      "def": 0.5,
+      "max": null
+    },
+    {
+      "id": "indT6",
+      "description": "Weight of the indicator indT6",
+      "min": null,
+      "def": 0.5,
+      "max": null
+    },
+    {
+      "id": "indT7",
+      "description": "Weight of the indicator indT7",
+      "min": null,
+      "def": 0.5,
+      "max": null
+    },
+    {
+      "id": "indT8",
+      "description": "Weight of the indicator indT8",
+      "min": null,
+      "def": 0.333333333333333,
+      "max": null
+    },
+    {
+      "id": "indT9",
+      "description": "Weight of the indicator indT9",
+      "min": null,
+      "def": 0.5,
+      "max": null
+    },
+    {
+      "id": "indT10",
+      "description": "Weight of the indicator indT10",
+      "min": null,
+      "def": 0.5,
+      "max": null
+    },
+    {
+      "id": "indT11",
+      "description": "Weight of the indicator indT11",
+      "min": null,
+      "def": 0.333333333333333,
+      "max": null
+    },
+    {
+      "id": "paramF51",
+      "description": "C storage of grasslands (kg C / ha)",
+      "min": null,
+      "def": 570,
+      "max": null
+    },
+    {
+      "id": "paramF52",
+      "description": "C storage of annual crops (kg C / ha)",
+      "min": null,
+      "def": -160,
+      "max": null
+    },
+    {
+      "id": "paramF53",
+      "description": "C storage of annual crops after grassland (kg C / ha)",
+      "min": null,
+      "def": -950,
+      "max": null
+    },
+    {
+      "id": "paramF54",
+      "description": "C storage due to NT & permanent cover (kg C / ha)",
+      "min": null,
+      "def": 150,
+      "max": null
+    },
+    {
+      "id": "indF187",
+      "description": "Building modification (A.2.3)",
+      "min": null,
+      "def": 0,
+      "max": null
+    },
+    {
+      "id": "indF188",
+      "description": "Building modification (A.2.4)",
+      "min": null,
+      "def": 0,
+      "max": null
+    },
+    {
+      "id": "paramF55",
+      "description": "Building costs due to modification of milking parlour (€)",
+      "min": null,
+      "def": 40000,
+      "max": null
+    },
+    {
+      "id": "paramF56",
+      "description": "Number of turns in a a game",
+      "min": null,
+      "def": 10,
+      "max": null
+    },
+    {
+      "id": "paramF57",
+      "description": "Number of changes in a game turn",
+      "min": null,
+      "def": 5,
+      "max": null
+    },
+    {
+      "id": "indT12",
+      "description": "Weight of the indicator indT12",
+      "min": null,
+      "def": 0.666666666666667,
+      "max": null
+    },
+    {
+      "id": "indT13",
+      "description": "Weight of the indicator indT13",
+      "min": null,
+      "def": 0.333333333333333,
+      "max": null
+    },
+    {
+      "id": "paramF58",
+      "description": "Other costs related to animal production (building, insurance, etc.) (€ / ha)",
+      "min": null,
+      "def": 310,
+      "max": null
+    },
+    {
+      "id": "paramF59",
+      "description": "LU cow",
+      "min": null,
+      "def": 1,
+      "max": null
+    },
+    {
+      "id": "paramF60",
+      "description": "LU heifer",
+      "min": null,
+      "def": 0.6,
+      "max": null
+    },
+    {
+      "id": "paramF61",
+      "description": "LU bull",
+      "min": null,
+      "def": 0.5,
+      "max": null
+    },
+    {
+      "id": "paramF62",
+      "description": "LU steer",
+      "min": null,
+      "def": 0.7,
+      "max": null
+    },
+    {
+      "id": "indF192",
+      "description": "Limits of indF192",
+      "min": 0,
+      "def": null,
+      "max": 1
+    },
+    {
+      "id": "indF193",
+      "description": "Limits of indF193",
+      "min": 0,
+      "def": null,
+      "max": 1
+    },
+    {
+      "id": "indF194",
+      "description": "Limits of indF194",
+      "min": 0,
+      "def": null,
+      "max": 1
+    },
+    {
+      "id": "paramCr48",
+      "description": "Protein content - wheat (grain) (t protein / t DM)",
+      "min": null,
+      "def": 0.126,
+      "max": null
+    },
+    {
+      "id": "paramCr49",
+      "description": "Protein content - straw (t protein / t DM)",
+      "min": null,
+      "def": 0.042,
+      "max": null
+    },
+    {
+      "id": "paramCr50",
+      "description": "Protein content - barley (grain) (t protein / t DM)",
+      "min": null,
+      "def": 0.118,
+      "max": null
+    },
+    {
+      "id": "paramCr51",
+      "description": "Protein content - rapeseed (grain) (t protein / t DM)",
+      "min": null,
+      "def": 0.209,
+      "max": null
+    },
+    {
+      "id": "paramCr52",
+      "description": "Protein content - faba bean (grain) (t protein / t DM)",
+      "min": null,
+      "def": 0.29,
+      "max": null
+    },
+    {
+      "id": "paramCr53",
+      "description": "Protein content - maize (silage) (t protein / t DM)",
+      "min": null,
+      "def": 0.08,
+      "max": null
+    },
+    {
+      "id": "paramCr54",
+      "description": "Protein content - alfalfa (silage) (t protein / t DM)",
+      "min": null,
+      "def": 0.191,
+      "max": null
+    },
+    {
+      "id": "paramCr55",
+      "description": "Protein content - sorghum (silage) (t protein / t DM)",
+      "min": null,
+      "def": 0.067,
+      "max": null
+    },
+    {
+      "id": "paramCr56",
+      "description": "Protein content - grass only (t protein / t DM)",
+      "min": null,
+      "def": 0.125,
+      "max": null
+    },
+    {
+      "id": "paramCr57",
+      "description": "Protein content - rapeseed meal (t protein / t DM)",
+      "min": null,
+      "def": 0.381,
+      "max": null
+    },
+    {
+      "id": "paramCr58",
+      "description": "Protein content - soybean meal (t protein / t DM)",
+      "min": null,
+      "def": 0.526,
+      "max": null
+    },
+    {
+      "id": "paramF63",
+      "description": "C storage due to straw left on soil (kg C / ha)",
+      "min": null,
+      "def": 240,
+      "max": null
+    },
+    {
+      "id": "indT14",
+      "description": "Weight of the indicator indT14",
+      "min": null,
+      "def": 0.5,
+      "max": null
+    },
+    {
+      "id": "indT15",
+      "description": "Weight of the indicator indT15",
+      "min": null,
+      "def": 0.5,
+      "max": null
+    },
+    {
+      "id": "indT16",
+      "description": "Weight of the indicator indT16",
+      "min": null,
+      "def": 0.333333333333333,
+      "max": null
+    },
+    {
+      "id": "indT17",
+      "description": "Weight of the indicator indT17",
+      "min": null,
+      "def": 0.5,
+      "max": null
+    },
+    {
+      "id": "indT18",
+      "description": "Weight of the indicator indT18",
+      "min": null,
+      "def": 0.5,
+      "max": null
+    },
+    {
+      "id": "indT19",
+      "description": "Weight of the indicator indT19",
+      "min": null,
+      "def": 0.333333333333333,
+      "max": null
+    },
+    {
+      "id": "indT20",
+      "description": "Weight of the indicator indT20",
+      "min": null,
+      "def": 0.5,
+      "max": null
+    },
+    {
+      "id": "indT21",
+      "description": "Weight of the indicator indT21",
+      "min": null,
+      "def": 0.5,
+      "max": null
+    },
+    {
+      "id": "indT22",
+      "description": "Weight of the indicator indT22",
+      "min": null,
+      "def": 0.333333333333333,
+      "max": null
+    },
+    {
+      "id": "indT23",
+      "description": "Weight of the indicator indT23",
+      "min": null,
+      "def": 0.333333333333333,
+      "max": null
+    },
+    {
+      "id": "indT24",
+      "description": "Weight of the indicator indT24",
+      "min": null,
+      "def": 0.333333333333333,
+      "max": null
+    },
+    {
+      "id": "indT25",
+      "description": "Weight of the indicator indT25",
+      "min": null,
+      "def": 0.25,
+      "max": null
+    },
+    {
+      "id": "indT26",
+      "description": "Weight of the indicator indT26",
+      "min": null,
+      "def": 0.25,
+      "max": null
+    },
+    {
+      "id": "indT27",
+      "description": "Weight of the indicator indT27",
+      "min": null,
+      "def": 0.5,
+      "max": null
+    },
+    {
+      "id": "indT28",
+      "description": "Weight of the indicator indT28",
+      "min": null,
+      "def": 0.5,
+      "max": null
+    },
+    {
+      "id": "indT29",
+      "description": "Weight of the indicator indT29",
+      "min": null,
+      "def": 0.5,
+      "max": null
+    },
+    {
+      "id": "indT30",
+      "description": "Weight of the indicator indT30",
+      "min": null,
+      "def": 0.5,
+      "max": null
+    },
+    {
+      "id": "indT31",
+      "description": "Weight of the indicator indT31",
+      "min": null,
+      "def": 0.5,
+      "max": null
+    },
+    {
+      "id": "indT32",
+      "description": "Weight of the indicator indT32",
+      "min": null,
+      "def": 0.5,
+      "max": null
+    },
+    {
+      "id": "indT33",
+      "description": "Weight of the indicator indT33",
+      "min": null,
+      "def": 0.4,
+      "max": null
+    },
+    {
+      "id": "indT34",
+      "description": "Weight of the indicator indT34",
+      "min": null,
+      "def": 0.2,
+      "max": null
+    },
+    {
+      "id": "indT35",
+      "description": "Weight of the indicator indT35",
+      "min": null,
+      "def": 0.4,
+      "max": null
+    },
+    {
+      "id": "indT36",
+      "description": "Weight of the indicator indT36",
+      "min": null,
+      "def": 0.5,
+      "max": null
+    },
+    {
+      "id": "indT37",
+      "description": "Weight of the indicator indT37",
+      "min": null,
+      "def": 0.333333333333333,
+      "max": null
+    },
+    {
+      "id": "indT38",
+      "description": "Weight of the indicator indT38",
+      "min": null,
+      "def": 0.333333333333333,
+      "max": null
+    },
+    {
+      "id": "indT39",
+      "description": "Weight of the indicator indT39",
+      "min": null,
+      "def": 0.166666666666667,
+      "max": null
+    },
+    {
+      "id": "indT41",
+      "description": "Weight of the indicator indT41",
+      "min": null,
+      "def": 0.333333333333333,
+      "max": null
+    },
+    {
+      "id": "indT42",
+      "description": "Weight of the indicator indT42",
+      "min": null,
+      "def": 0.333333333333333,
+      "max": null
+    },
+    {
+      "id": "paramF64",
+      "description": "C storage due to manure (kg C / ha)",
+      "min": null,
+      "def": 300,
+      "max": null
+    },
+    {
+      "id": "paramF65",
+      "description": "C storage due to slurry [only / N limited] (kg C / ha)",
+      "min": null,
+      "def": -90,
+      "max": null
+    },
+    {
+      "id": "paramF66",
+      "description": "C storage due to hedges (kg C / ha)",
+      "min": null,
+      "def": 150,
+      "max": null
+    },
+    {
+      "id": "paramCr59",
+      "description": "Protein content - grass & clover (t protein / t DM)",
+      "min": null,
+      "def": 0.171,
+      "max": null
+    },
+    {
+      "id": null,
+      "description": null,
+      "min": null,
+      "def": null,
+      "max": null
+    },
+    {
+      "id": "paramBackground",
+      "description": "Which background to use? (fr: 0, be: 1, it: 2, pl: 3)",
+      "min": null,
+      "def": 0,
+      "max": null
+    },
+    {
+      "id": "paramInitialWonGames",
+      "description": null,
+      "min": null,
+      "def": 0,
+      "max": null
+    }
+  ],
+  "style": {
+    "A579": "text-align: left; white-space: pre-wrap; overflow: hidden; background-color: rgb(255, 202, 40);",
+    "B579": "text-align: left; white-space: pre-wrap; background-color: rgb(255, 202, 40);",
+    "C579": "text-align: center; white-space: pre-wrap; overflow: hidden; background-color: rgb(255, 202, 40);",
+    "D579": "text-align: center; white-space: pre-wrap; background-color: rgb(255, 202, 40);",
+    "E579": "text-align: center; white-space: pre-wrap; overflow: hidden; background-color: rgb(255, 202, 40);"
+  },
+  "infos": {
+    "version": 2,
+    "comment": "This is the base parameters, should only be edited by professionals !\nMis à jour par MC le 13 juillet 2021 (Resistance of soil to erosion instead of Risk of erosion)"
+  }
+}

@@ -1,0 +1,831 @@
+{
+  "columns": [
+    {
+      "type": "text",
+      "name": "id",
+      "title": "id",
+      "width": "114",
+      "align": "center"
+    },
+    {
+      "type": "text",
+      "name": "title_en",
+      "title": "title_en",
+      "width": "390",
+      "align": "left",
+      "readOnly": false
+    },
+    {
+      "type": "text",
+      "width": "417",
+      "title": "title",
+      "align": "center",
+      "name": "title"
+    },
+    {
+      "type": "text",
+      "name": "description_en",
+      "title": "description_en",
+      "width": "297",
+      "align": "left",
+      "readOnly": false
+    },
+    {
+      "type": "text",
+      "name": "description",
+      "title": "description",
+      "width": "297",
+      "align": "left"
+    }
+  ],
+  "data": [
+    {
+      "id": "C.1.1",
+      "title_en": "Conventional tillage",
+      "title": "Conventionele grondbewerking",
+      "description_en": "The “traditional” method of farming in which soil is prepared for planting by completely inverting it with a moldboard plow.",
+      "description": "De \"traditionele\" landbouwmethode waarbij grond voor beplanting wordt voorbereid door deze volledig om te ploegen met een molbordploeg."
+    },
+    {
+      "id": "C.1.2",
+      "title_en": "Reduced tillage",
+      "title": "Gereduceerde grondbewerking",
+      "description_en": "Use of only superficial tillage without soil inversion.",
+      "description": "Uitsluitend gebruik van oppervlaktegrondbewerking zonder kering van de grond."
+    },
+    {
+      "id": "C.1.3",
+      "title_en": "No tillage",
+      "title": "Geen grondbewerking",
+      "description_en": "Planting of crops directly (no tillage) in preceding cover crop (living or destroyed, i.e. mulched) or crop residues.",
+      "description": "Het direct planten van gewassen (zonder grondbewerking) op bodembegroeiing (levend of verwoest, bijv. aangeaard) of gewasresten."
+    },
+    {
+      "id": "C.2.1",
+      "title_en": "Fall cover crop destructed before winter",
+      "title": "Herfstbegroeiing vernietigd voor de winter",
+      "description_en": "The cover crop is terminated before winter and the soil is left bare until the spring crop is well established.",
+      "description": "De bodembegroeiing wordt voor de winter beëindigd en de grond wordt onbegroeid gelaten totdat de voorjaarsteelt zich goed gevestigd heeft."
+    },
+    {
+      "id": "C.2.2",
+      "title_en": "Fall cover crop destructed early spring",
+      "title": "Herfstbegroeiing vernietigd in de vroege lente",
+      "description_en": "The fall cover crop is left during winter, covering the soil and is terminated early spring.",
+      "description": "De herfstbegroeiing wordt gedurende de winter met rust gelaten en in de vroege lente beëindigd."
+    },
+    {
+      "id": "C.2.3",
+      "title_en": "Permanent soil cover",
+      "title": "Permanente grondbedekking",
+      "description_en": "Implementing this practice means that the soil is never left bare across the whole rotation.",
+      "description": "Deze praktijk houdt in dat de grond nooit onbegroeid is gedurende de hele rotatiecyclus."
+    },
+    {
+      "id": "C.3.1",
+      "title_en": "Straw removal",
+      "title": "Stroverwijdering",
+      "description_en": "Crop residues are exported from the crop system and used for livestock bedding and/or exported from the farm by selling it.",
+      "description": "Gewasresten worden uit het gewassysteem geëxporteerd en gebruikt als strooisel voor stallen en/of verkocht."
+    },
+    {
+      "id": "C.3.2",
+      "title_en": "Straw left on soil",
+      "title": "Stro achtergelaten op de grond",
+      "description_en": "Crop residues are left on the soil and are either incorporated into the soil when tilling or are left as mulch when implementing direct seeding.",
+      "description": "Gewasresten worden op de grond achtergelaten en ingecorporeerd in de grond tijdens grondbewerking of achtergelaten als mulch tijdens direct zaaien."
+    },
+    {
+      "id": "C.4.1",
+      "title_en": "On-farm organic fertilizers + input of mineral fertilizer",
+      "title": "Organische mest + invoer van minerale mest op landbouwbedrijven",
+      "description_en": "The slurry and/or manure produced by animals is used as organic fertilizer and completed by mineral fertiliser.",
+      "description": "Door dieren geproduceerde gier en/of mest wordt gebruikt als organische mest en aangevuld met minerale mest."
+    },
+    {
+      "id": "C.4.2",
+      "title_en": "On-farm organic fertilizers only",
+      "title": "Uitsluitend organische mest op landbouwbedrijven",
+      "description_en": "The slurry and/or manure produced by animals is used as organic fertilizer and not complemented.",
+      "description": "Door dieren geproduceerde gier en/of mest wordt gebruikt als organische mest en niet aangevuld."
+    },
+    {
+      "id": "C.5.1",
+      "title_en": "Systematic use of chemical fungicides",
+      "title": "Systematisch gebruik van chemische fungiciden",
+      "description_en": "Chemical fungicides are systematically used. ",
+      "description": "Chemische fungiciden worden systematisch gebruikt. "
+    },
+    {
+      "id": "C.5.2",
+      "title_en": "Sound approach of chemical fungicides",
+      "title": "Gezonde benadering van chemische fungiciden",
+      "description_en": "The use of chemical fungicides whenever and only if it is absolutely required.",
+      "description": "Gebruik van chemische fungiciden alleen wanneer absoluut vereist."
+    },
+    {
+      "id": "C.5.3",
+      "title_en": "Biocontrol products against diseases",
+      "title": "Biocontroleproducten tegen ziektes",
+      "description_en": "‘Integrated pest management’ strategy without chemicals.",
+      "description": "Geïntegreerde plaagbestrijdingsstrategieën zonder chemicaliën."
+    },
+    {
+      "id": "C.5.4",
+      "title_en": "No direct protection against diseases",
+      "title": "Geen directe bescherming tegen ziektes",
+      "description_en": "No fungicide is applied.",
+      "description": "Geen toepassing van fungiciden."
+    },
+    {
+      "id": "C.6.1",
+      "title_en": "Systematic and sole use of chemical herbicides",
+      "title": "Systematisch en uitsluitend gebruik van chemische herbiciden",
+      "description_en": "Chemical herbicides are systematically used.",
+      "description": "Chemische herbiciden worden systematisch gebruikt."
+    },
+    {
+      "id": "C.6.2",
+      "title_en": "Sound approach of chemical herbicides + mechanical weed control",
+      "title": "Gezonde benadering van chemische herbiciden + mechanische onkruidbestrijding",
+      "description_en": "The use of chemical herbicides whenever and only if it is absolutely required.",
+      "description": "Gebruik van chemische herbiciden alleen wanneer absoluut vereist."
+    },
+    {
+      "id": "C.6.3",
+      "title_en": "Sole use of mechanical weed control",
+      "title": "Uitsluitend gebruik van mechanische onkruidbestrijding",
+      "description_en": "No herbicide is applied, weed populations are managed through physical methods (e.g. hoeing, harrowing).",
+      "description": "Er worden geen herbiciden toegepast maar onkruid wordt bestreden d.m.v. fysieke methoden (bijv. door schoffelen en eggen)."
+    },
+    {
+      "id": "C.7.1",
+      "title_en": "Systematic use of chemical insecticides / molluscicides / nematicides",
+      "title": "Systematisch gebruik van chemische insecticiden/mollusciciden/nematiciden",
+      "description_en": "Chemical insecticides / molluscicides / nematicides are systematically used to avoid pests, even if the pressure is low.",
+      "description": "Chemische insecticiden/mollusciciden/nematiciden worden systematisch gebruikt ter preventie van plagen, zelfs bij lage druk."
+    },
+    {
+      "id": "C.7.2",
+      "title_en": "Sound approach of chemical insecticides / molluscicides / nematicides",
+      "title": "Gezonde benadering van chemische insecticiden/mollusciciden/nematiciden",
+      "description_en": "Chemical insecticides / molluscicides / nematicides  are applied only if pests are monitored in the field and sprays or other control methods are carried out only when the action threshold is exceeded (Integrated Pest Management).",
+      "description": "Chemische insecticiden/mollusciciden/nematiciden worden alleen toegepast als de plagen in het veld worden gemonitord, en bespuiting of andere bestrijdingsmethoden worden alleen toegepast wanneer de actiedrempel wordt overschreden (Geïntegreerde Plaagbestrijding)."
+    },
+    {
+      "id": "C.7.3",
+      "title_en": "Biocontrol products (incl. pyrethrin) and other natural control techniques against pests",
+      "title": "Biocontroleproducten (bijv. pyrethrine) en andere natuurlijke plaagbestrijdingstechnieken",
+      "description_en": "Biocontrol products / biopesticides will be applied using a sprayer.",
+      "description": "Biocontroleproducten/biopesticiden worden toegepast met een sproeier."
+    },
+    {
+      "id": "C.7.4",
+      "title_en": "No direct protection against animal pests",
+      "title": "Geen directe bescherming tegen dierlijke plagen",
+      "description_en": "No Insecticide / Molluscicide / Nematicide is applied.",
+      "description": "Geen insecticide/molluscicide/nematicide toegepast."
+    },
+    {
+      "id": "C.8.1",
+      "title_en": "High yielding cultivars",
+      "title": "Cultivars voor grote oogst",
+      "description_en": "Use of one cultivar selected for its high yield in controled conditions.",
+      "description": "Gebruik van een cultivar die wordt gekozen om de grote oogst onder gecontroleerde omstandigheden."
+    },
+    {
+      "id": "C.8.2",
+      "title_en": "Resistant cultivars and/or mix of varieties",
+      "title": "Bestendige cultivars en/of een mix van verschillende soorten",
+      "description_en": "Use of one or more cultivars selected for their resistance/tolerance to pests and diseases, but with lower yield in controled conditions.",
+      "description": "Gebruik van een of meerdere cultivars die zijn geselecteerd om hun weerstand/tolerantie voor plagen en ziekten, maar met lagere oogst, onder gecontroleerde omstandigheden."
+    },
+    {
+      "id": "C.9.1",
+      "title_en": "Temporary grassland composed of grass",
+      "title": "Tijdelijk grasland samengesteld uit gras",
+      "description_en": "Land on which the vegetation is dominated by grass such as perennial ryegrass or sheep's fescue.",
+      "description": "Land waarop de begroeiing wordt gedomineerd door gras als meerjarig raaigras of schapengras."
+    },
+    {
+      "id": "C.9.2",
+      "title_en": "Temporary grassland composed of simple grass/legume mixtures",
+      "title": "Tijdelijk grasland bestaand uit eenvoudige gras-/leguminosemengsels",
+      "description_en": "Land on which the vegetation is dominated by two species, one grass and one legume such as perennial ryegrass and white clover.",
+      "description": "Land waarop de begroeiing wordt gedomineerd door twee soorten; een gras- en een leguminosesoort zoals meerjarig raaigras en witte klaver."
+    },
+    {
+      "id": "C.9.3",
+      "title_en": "Temporary grassland composed of complex grass/legume mixtures",
+      "title": "Tijdelijk grasland bestaand uit complexe gras-/leguminosemengsels",
+      "description_en": "Land on which the vegetation is dominated by various species, grasses, legumes, etc.",
+      "description": "Land waarop de begroeiing wordt gedomineerd door verschillende soorten, grassen, leguminosen etc."
+    },
+    {
+      "id": "C.10.1",
+      "title_en": "No permanent grassland",
+      "title": "Geen permanent grasland",
+      "description_en": "No permanent grassland on the farm.",
+      "description": "Geen permanent grasland op de boerderij."
+    },
+    {
+      "id": "C.10.2",
+      "title_en": "Permanent grassland occupy a small percentage of the farm area",
+      "title": "Permanent grasland vormt een klein percentage van het landbouwgebied",
+      "description_en": "Permanent grassland occupy 10% of farm area. It can be used to feed livestock and promote biodiversity.",
+      "description": "Permanent grasland vormt 10% van het landbouwgebied Het kan worden gebruikt om vee mee te voeden en de biodiversiteit te bevorderen."
+    },
+    {
+      "id": "C.10.3",
+      "title_en": "Permanent grassland occupy a high percentage of the farm area",
+      "title": "Permanent grasland vormt een groot percentage van het landbouwgebied",
+      "description_en": "Permanent grassland occupy 20% of farm area. It can be used to feed livestock and promote biodiversity.",
+      "description": "Permanent grasland vormt 20% van het landbouwgebied Het kan worden gebruikt om vee mee te voeden en de biodiversiteit te bevorderen."
+    },
+    {
+      "id": "C.11.1",
+      "title_en": "Sole crops",
+      "title": "Losse gewassen",
+      "description_en": "Each crop is grown alone in the field.",
+      "description": "Ieder gewas groeit alleen in het veld."
+    },
+    {
+      "id": "C.11.2",
+      "title_en": "Wheat/pea intercrops",
+      "title": "Tussengewassen van tarwe/erwt ",
+      "description_en": "Coexistence of the two crops (wheat, pea) on the same field at the same time. Yield of the intercrop will be higher than the average of individual crops on the same area. Intercrops can be valorized as animal feeding. Selling the crops will require additional sorting costs (not considered in the game).",
+      "description": "Gezamenlijk bestaan van twee gewassen (tarwe/erwt) tegelijk op hetzelfde veld. De oogst van het tussengewas zal groter zijn dan het gemiddelde van de individuele gewassen op hetzelfde gebied. Tussengewassen kunnen worden gevaloriseerd als dierenvoer. Verkoop van de gewassen brengt aanvullende sorteerkosten met zich mee (niet in beschouwing genomen in het spel)."
+    },
+    {
+      "id": "C.12.1",
+      "title_en": "CS #1: maize - wheat",
+      "title": "CS #1: mais - tarwe",
+      "description_en": "Simple but low diversity cropping plan.",
+      "description": "Simpel maar weinig divers teeltplan "
+    },
+    {
+      "id": "C.12.2",
+      "title_en": "CS #1: rapeseed - wheat - maize - wheat",
+      "title": "CS #1: raapzaad - tarwe - mais - tarwe",
+      "description_en": "Medium diversity cropping plan.",
+      "description": "Gemiddeld divers teeltplan"
+    },
+    {
+      "id": "C.12.3",
+      "title_en": "CS #1: maize - wheat - maize - barley",
+      "title": "CS #1: mais - tarwe - mais - gerst",
+      "description_en": "Medium diversity cropping plan.",
+      "description": "Gemiddeld divers teeltplan"
+    },
+    {
+      "id": "C.12.4",
+      "title_en": "CS #1: alfalfa (3 years) - maize - wheat",
+      "title": "CS #1: alfalfa (3 jaar) - mais - tarwe",
+      "description_en": "Medium diversity cropping plan, with legume crop.",
+      "description": "Gemiddeld divers teeltplan, met leguminosen."
+    },
+    {
+      "id": "C.12.5",
+      "title_en": "CS #1: faba bean - wheat - rapeseed - maize",
+      "title": "CS #1: fababoon - tarwe - raapzaad - mais",
+      "description_en": "Medium diversity cropping plan, with legume crop.",
+      "description": "Gemiddeld divers teeltplan, met leguminosen."
+    },
+    {
+      "id": "C.12.6",
+      "title_en": "CS #1: grassland (4 years) - maize - maize",
+      "title": "CS #1: grasland (4 jaar) - mais - mais",
+      "description_en": "Low diversity cropping plan, with grassland.",
+      "description": "Weinig divers teeltplan, met grasland."
+    },
+    {
+      "id": "C.12.7",
+      "title_en": "CS #1: grassland (3 years) - maize - wheat - barley",
+      "title": "CS #1: grasland (3 jaar) - mais - tarwe - gerst",
+      "description_en": "Medium diversity cropping plan, with grassland.",
+      "description": "Gemiddeld divers teeltplan, met grasland."
+    },
+    {
+      "id": "C.12.8",
+      "title_en": "CS #1: faba bean - wheat - maize - alfalfa (3 years) - barley - maize",
+      "title": "CS #1: fababoon - tarwe - mais - alfalfa (3 jaar) - gerst - mais",
+      "description_en": "High diversity cropping plan, with legume crops and grassland.",
+      "description": "Zeer divers teeltplan, met leguminosen en grasland."
+    },
+    {
+      "id": "C.12.9",
+      "title_en": "CS #1: grassland (3 years) - maize - wheat - faba bean - rapeseed",
+      "title": "CS #1: grasland (3 jaar) - mais - tarwe - fababoon - raapzaad",
+      "description_en": "High diversity cropping plan, with legume crop and grassland.",
+      "description": "Zeer divers teeltplan, met leguminosen en grasland."
+    },
+    {
+      "id": "C.13.1",
+      "title_en": "CS #2: maize - wheat",
+      "title": "CS #2: mais - tarwe",
+      "description_en": "Simple but low diversity cropping plan.",
+      "description": "Simpel maar weinig divers teeltplan"
+    },
+    {
+      "id": "C.13.2",
+      "title_en": "CS #2: rapeseed - wheat - maize - wheat",
+      "title": "CS #2: raapzaad - tarwe - mais - tarwe",
+      "description_en": "Medium diversity cropping plan.",
+      "description": "Gemiddeld divers teeltplan"
+    },
+    {
+      "id": "C.13.3",
+      "title_en": "CS #2: maize - wheat - maize - barley",
+      "title": "CS #2: mais - tarwe - mais - gerst",
+      "description_en": "Medium diversity cropping plan.",
+      "description": "Gemiddeld divers teeltplan"
+    },
+    {
+      "id": "C.13.4",
+      "title_en": "CS #2: alfalfa (3 years) - maize - wheat",
+      "title": "CS #2: alfalfa (3 jaar) - mais - tarwe",
+      "description_en": "Medium diversity cropping plan, with legume crop.",
+      "description": "Gemiddeld divers teeltplan, met leguminosen."
+    },
+    {
+      "id": "C.13.5",
+      "title_en": "CS #2: faba bean - wheat - rapeseed - maize",
+      "title": "CS #2: fababoon - tarwe - raadzaad - mais",
+      "description_en": "Medium diversity cropping plan, with legume crop.",
+      "description": "Gemiddeld divers teeltplan, met leguminosen."
+    },
+    {
+      "id": "C.13.6",
+      "title_en": "CS #2: grassland (4 years) - maize - maize",
+      "title": "CS #2: grasland (4 jaar) - mais - mais",
+      "description_en": "Low diversity cropping plan, with grassland.",
+      "description": "Weinig divers teeltplan, met grasland."
+    },
+    {
+      "id": "C.13.7",
+      "title_en": "CS #2: grassland (3 years) - maize - wheat - barley",
+      "title": "CS #2: grasland (3 jaar) - mais - tarwe - gerst",
+      "description_en": "Medium diversity cropping plan, with grassland.",
+      "description": "Gemiddeld divers teeltplan, met grasland."
+    },
+    {
+      "id": "C.13.8",
+      "title_en": "CS #2: faba bean - wheat - maize - alfalfa (3 years) - barley - maize",
+      "title": "CS #2: fababoon - tarwe - mais - alfalfa (3 jaar) - gerst - mais",
+      "description_en": "High diversity cropping plan, with legume crops and grassland.",
+      "description": "Zeer divers teeltplan, met leguminosen en grasland."
+    },
+    {
+      "id": "C.13.9",
+      "title_en": "CS #2: grassland (3 years) - maize - wheat - faba bean - rapeseed",
+      "title": "CS #2: grasland (3 jaar) - mais - tarwe - fababoon - raapzaad",
+      "description_en": "High diversity cropping plan, with legume crop and grassland.",
+      "description": "Zeer divers teeltplan, met leguminosen en grasland."
+    },
+    {
+      "id": "C.14.1",
+      "title_en": "No particular green infrastructure elements",
+      "title": "Geen specifieke groene onderdelen van de infrastructuur",
+      "description_en": "No particular green infrastructure elements.",
+      "description": "Geen specifieke groene onderdelen van de infrastructuur."
+    },
+    {
+      "id": "C.14.2",
+      "title_en": "Sown field margins as green infrastructures: wildflowers strip",
+      "title": "Ingezaaide veldmarges als groene infrastructuren: strook veldbloemen",
+      "description_en": "A mix of flowering plants.",
+      "description": "Een mix van bloeiende planten."
+    },
+    {
+      "id": "C.14.3",
+      "title_en": "Sown field margins as green infrastructures: beetle bank (for birds and polyphagous predator)",
+      "title": "Ingezaaide veldmarges als groene infrastructuren: keverbank (voor vogels en polyfage roofdieren)",
+      "description_en": "Raised grassy banks, typically 2-3 m wide, sown with tussock forming grasses.",
+      "description": "Verhoogde grasbanken, meestal 2-3 m breed, ingezaaid met graspollen."
+    },
+    {
+      "id": "C.14.4",
+      "title_en": "Semi-natural field margins as green infrastructures: hedgerows ",
+      "title": "Halfnatuurlijke veldmarges als groene infrastructuren: hagen ",
+      "description_en": "Common trees and shrubs present on the edge of the fields.",
+      "description": "Gewone bomen en struikgewassen aan de randen van de velden."
+    },
+    {
+      "id": "C.14.5",
+      "title_en": "Semi-natural field margins as green infrastructures: grass margins",
+      "title": "Halfnatuurlijke veldmarges als groene infrastructuren: grasmarges",
+      "description_en": "Grassland in the edges of the fields.",
+      "description": "Grasland aan de randen van de velden."
+    },
+    {
+      "id": "C.15.1",
+      "title_en": "No agroforestry",
+      "title": "Geen boslandbouw",
+      "description_en": "No agroforestry on the farm.",
+      "description": "Geen boslandbouw op de boerderij."
+    },
+    {
+      "id": "C.15.2",
+      "title_en": "In-field agroforestry",
+      "title": "Boslandbouw in het veld",
+      "description_en": "A sustainable management system that integrate trees, crops and livestock on the same plot of land. Farm area for crops and temporary grasslands is reduced by 16%.",
+      "description": "Een duurzaam beheerssysteem dat bomen, gewassen en vee integreert op hetzelfde perceel. Het boerderijgebied voor gewassen en tijdelijke graslanden wordt met 16% gereduceerd."
+    },
+    {
+      "id": "E.1.1",
+      "title_en": "Balanced strategy between farmer income and investment",
+      "title": "Gebalanceerde strategie tussen inkomsten voor de boer en investeringen",
+      "description_en": "Farm profit is equally shared between farmer income and investment capacity.",
+      "description": "De winst voor de boerderij wordt gelijk verdeeld over het inkomen van de boer en de investeringscapaciteit."
+    },
+    {
+      "id": "E.1.2",
+      "title_en": "Investment-oriented strategy",
+      "title": "Investeringsgerichte strategie",
+      "description_en": "Farm profit is 80% distributed to investment capacity.",
+      "description": "De opbrengst van de boerderij wordt voor 80% besteed aan investeringen."
+    },
+    {
+      "id": "E.1.3",
+      "title_en": "Income-oriented strategy",
+      "title": "Inkomensgerichte strategie",
+      "description_en": "Farm profit is 80% distributed to farmer income.",
+      "description": "De opbrengst van de boerderij wordt voor 80% besteed aan het inkomen van de boer."
+    },
+    {
+      "id": "G.1.1",
+      "title_en": "Conventional farming",
+      "title": "Conventionele landbouw",
+      "description_en": "It corresponds to the most widespread farm management, with no particular specifications (except the compliance with the Good Agricultural and Environmental conditions of the CAP). Input and output prices are 25% lower than in organic farming.",
+      "description": "Dit is het meest voorkomende landbouwbeheer, zonder duidelijke specificatie (behalve naleving van Goede Landbouw- en Milieuomstandigheden van het CAP). De input- en outputprijzen liggen 25% lager dan bij organische landbouw."
+    },
+    {
+      "id": "G.1.2",
+      "title_en": "Organic farming",
+      "title": "Organische landbouw",
+      "description_en": "Specifications of organic farming rely mainly on no chemical input use. Input and output prices are 25% higher in conventional farming.",
+      "description": "De kenmerken van organische landbouw komen hoofdzakelijk neer op het niet-gebruiken van chemische input. De input- en outputprijzen liggen 25% hoger dan bij conventionele landbouw."
+    },
+    {
+      "id": "A.1.1",
+      "title_en": "Cattle breed is Holstein",
+      "title": "Het runderras is Holstein",
+      "description_en": "Holstein is a breed of dairy cattle used for high milk production.",
+      "description": "Holstein is een melkveeras dat wordt gebruikt voor een hoge melkproductie."
+    },
+    {
+      "id": "A.1.2",
+      "title_en": "Cattle breed is Siemmental",
+      "title": "Het runderras is Siemmental",
+      "description_en": "Siemmental is a dual purpose breed for milk and meat.",
+      "description": "Siemmental wordt zowel voor melk als vlees gebruikt."
+    },
+    {
+      "id": "A.1.3",
+      "title_en": "Cattle breed is Montbéliarde",
+      "title": "Het runderras is Montbéliarde",
+      "description_en": "Montbéliarde cattle are a dairy breed, but have better beef characteristics than Holstein cattle.",
+      "description": "Montbéliarde is een melkveeras maar met betere vleeseigenschappen dan Holstein."
+    },
+    {
+      "id": "A.2.1",
+      "title_en": "Initial herd size",
+      "title": "Begingrootte van de kudde",
+      "description_en": "No modification of the number of cows.",
+      "description": "Geen aanpassing van het aantal koeien."
+    },
+    {
+      "id": "A.2.2",
+      "title_en": "15% increase of initial herd size (no building modification)",
+      "title": "15% toename van de begingrootte van de kudde (geen gebouwaanpassingen)",
+      "description_en": "The number of cows is increased by 15% of initial number, without building modification. The cow density is increased.",
+      "description": "Het aantal koeien wordt met 15% vergroot t.o.v. het beginaantal, zonder gebouwaanpassingen. De koedichtheid wordt vergroot."
+    },
+    {
+      "id": "A.2.3",
+      "title_en": "15% increase of initial herd size (building modification)",
+      "title": "15% toename van de begingrootte van de kudde (met gebouwaanpassingen)",
+      "description_en": "The number of cows is increased by 15% of initial number AND the barn size is increased by 15%. This practice requires investment capacity for building extension (once per game).",
+      "description": "Het aantal koeien wordt met 15% vergroot t.o.v. het beginaantal EN de stal wordt met 15% vergroot. Voor deze praktijk is investeringscapaciteit voor gebouwuitbreiding vereist (een keer per spel)."
+    },
+    {
+      "id": "A.2.4",
+      "title_en": "30% increase of initial herd size (building modification)",
+      "title": "30% toename van de begingrootte van de kudde (met gebouwaanpassingen)",
+      "description_en": "The number of cows is increased by 30% of initial number AND the barn size is increased by 30%. The milking parlour is also modified. This practice requires investment capacity for building extension (once per game).",
+      "description": "Het aantal koeien wordt met 30% vergroot t.o.v. het beginaantal EN de stal wordt met 30% vergroot. Ook de melkstal wordt aangepast. Voor deze praktijk is investeringscapaciteit voor gebouwuitbreiding vereist (een keer per spel)."
+    },
+    {
+      "id": "A.2.5",
+      "title_en": "15% decrease of initial herd size",
+      "title": "15% afname van de begingrootte van de kudde",
+      "description_en": "The number of cows is decreased by 15% of initial number.",
+      "description": "Het aantal koeien wordt met 15% verkleind t.o.v. het beginaantal."
+    },
+    {
+      "id": "A.2.6",
+      "title_en": "30% decrease of initial herd size",
+      "title": "30% afname van de begingrootte van de kudde",
+      "description_en": "The number of cows is decreased by 30% of initial number.",
+      "description": "Het aantal koeien wordt met 30% verkleind t.o.v. het beginaantal."
+    },
+    {
+      "id": "A.3.1",
+      "title_en": "Bulls fattened up to 18 months",
+      "title": "Stieren worden vetgemest tot 18 maanden",
+      "description_en": "Indoor feeding based on high density diet (mainly, maize silage, soybean supplement, wheat).",
+      "description": "Binnenvoeding op basis van een dieet met hoge dichtheid (hoofdzakelijk, maiskuilvoer, sojaboonsupplement, tarwe) "
+    },
+    {
+      "id": "A.3.2",
+      "title_en": "Castrated males fattened up to 36 months (steer)",
+      "title": "Gecastreerde mannetjes worden vetgemest tot 36 maanden (os)",
+      "description_en": "Extensive feeding based on hay and grass silage (small soybean supplement) during winter and outside grazing during summer.",
+      "description": "Extensieve voeding gebaseerd op hooi en gras (klein sojaboonsupplement) tijdens de winter en het buiten grazen in de zomer."
+    },
+    {
+      "id": "A.3.3",
+      "title_en": "Male calves sold at 8 days",
+      "title": "Mannetjeskalveren worden na 8 dagen verkocht",
+      "description_en": "Sale non-weaned calves to fattening farms.",
+      "description": "Verkoop van ongespeende kalveren aan mestbedrijven."
+    },
+    {
+      "id": "A.4.1",
+      "title_en": "Cows are tied on straw bedding",
+      "title": "De koeien worden vastgebonden aan een strobed",
+      "description_en": "Due to geographical constraints, cows are tied on straw bedding.",
+      "description": "Door geografische beperkingen worden de koeien vastgebonden aan een strobed"
+    },
+    {
+      "id": "A.4.2",
+      "title_en": "Housing of cows is cubicles with straw (shallow bedding)",
+      "title": "De koeien worden gehuisvest in hokken met stro (ondiep stro)",
+      "description_en": "Cows can rest on individual places. You need to invest if you want to change to this cow housing system. It requires straw and produces manure.",
+      "description": "De koeien kunnen rusten op individuele plaatsen. Je moet investeren als je wilt overstappen naar dit koehuisvestingssysteem. Er is stro vereist en er wordt mest geproduceerd."
+    },
+    {
+      "id": "A.4.3",
+      "title_en": "Housing of cows is cubicles with slatted floor",
+      "title": "De koeien worden gehuisvest in hokken met roostervloer",
+      "description_en": "Cows can rest on individual places. You need to invest if you want to change to this cow housing system. It produces slurry.",
+      "description": "De koeien kunnen rusten op individuele plaatsen. Je moet investeren als je wilt overstappen naar dit koehuisvestingssysteem. Er wordt gier geproduceerd."
+    },
+    {
+      "id": "A.4.4",
+      "title_en": "Housing of cows is free-stall (deep bedding)",
+      "title": "De koeien worden gehuisvest in ligstallen (diep stro)",
+      "description_en": "You need to invest if you want to change to this cow housing system. Deeper beeding requires more straw; this building produces manure. This system improves the animal welfare.",
+      "description": "Je moet investeren als je wilt overstappen naar dit koehuisvestingssysteem. Voor diep stro is meer stro vereist; dit gebouw produceert mest. Dit systeem komt het dierenwelzijn ten goede."
+    },
+    {
+      "id": "A.4.5",
+      "title_en": "Housing of cows is free-stall slatted floor",
+      "title": "De koeien worden gehuisvest in ligstallen met roostervloer",
+      "description_en": "You need to invest if you want to change to this cow housing system. It produces slurry.",
+      "description": "Je moet investeren als je wilt overstappen naar dit koehuisvestingssysteem. Er wordt gier geproduceerd."
+    },
+    {
+      "id": "A.5.1",
+      "title_en": "Housing of heifer, bulls and steers is slatted floor",
+      "title": "Koekalveren, stieren en ossen worden gehuisvest op een roostervloer",
+      "description_en": "You need to invest if you want to change to this housing system for heifers, bulls and steers. This type of building produces slurry.",
+      "description": "Je moet investeren als je wilt overstappen naar dit huisvestingssysteem voor koekalveren, stieren en ossen. Dit gebouwtype produceert gier."
+    },
+    {
+      "id": "A.5.2",
+      "title_en": "Housing of heifer, bulls and steers is shallow bedding",
+      "title": "Koekalveren, stieren en ossen worden gehuisvest op ondiep stro",
+      "description_en": "You need to invest if you want to change to this housing system for heifers, bulls and steers. This type of building requires straw and produces manure.",
+      "description": "Je moet investeren als je wilt overstappen naar dit huisvestingssysteem voor koekalveren, stieren en ossen. Voor dit gebouwtype is stro vereist en er wordt mest geproduceerd."
+    },
+    {
+      "id": "A.5.3",
+      "title_en": "Housing of heifer, bulls and steers is deep bedding",
+      "title": "Koekalveren, stieren en ossen worden gehuisvest op diep stro",
+      "description_en": "You need to invest if you want to change to this housing system for heifers, bulls and steers. Deeper beeding requires more straw; this building produces manure.",
+      "description": "Je moet investeren als je wilt overstappen naar dit huisvestingssysteem voor koekalveren, stieren en ossen. Voor diep stro is meer stro vereist; dit gebouw produceert mest."
+    },
+    {
+      "id": "A.6.1",
+      "title_en": "Cow feeding system: all year indoor, maize silage & soybean meal supplement",
+      "title": "Koevoedersysteem: het hele jaar door binnen, maiskuilvoer en sojaboonsupplement",
+      "description_en": "All year indoor, cows are mainly fed with maize silage & soybean meal supplement.",
+      "description": "Het hele jaar door binnen, koeien hoofdzakelijk gevoed met maiskuilvoer en sojaboonsupplement."
+    },
+    {
+      "id": "A.6.2",
+      "title_en": "Cow feeding system: all year indoor, sorghum silage & soybean meal supplement",
+      "title": "Koevoedersysteem: het hele jaar door binnen, sorghumkuilvoer en sojaboonsupplement",
+      "description_en": "All year indoor, cows are mainly fed with sorghum silage & soybean meal supplement.",
+      "description": "Het hele jaar door binnen, koeien hoofdzakelijk gevoed met sorghumkuilvoer en sojaboonsupplement."
+    },
+    {
+      "id": "A.6.3",
+      "title_en": "Cow feeding system: all year indoor, sorghum & alfalfa silage",
+      "title": "Koevoedersysteem: het hele jaar door binnen, voeding met sorghum en alfalfa",
+      "description_en": "All year indoor, cows are mainly fed with sorghum & alfalfa silage.",
+      "description": "Het hele jaar door binnen, koeien hoofdzakelijk gevoed met sorghum en alfalfa."
+    },
+    {
+      "id": "A.6.4",
+      "title_en": "Cow feeding system: all year indoor, maize silage, alfalfa silage & soybean meal supplement",
+      "title": "Koevoedersysteem: het hele jaar door binnen, maiskuilvoer, alfalfakuilvoer en sojaboonsupplement",
+      "description_en": "All year indoor, cows are mainly fed with maize silage, alfalfa silage & soybean meal supplement.",
+      "description": "Het hele jaar door binnen, koeien hoofdzakelijk gevoed met maiskuilvoer, alfalfakuilvoer en sojaboonsupplement."
+    },
+    {
+      "id": "A.6.5",
+      "title_en": "Cow feeding system: 4 months grazing / maize silage & soybean meal supplement",
+      "title": "Koevoedersysteem: 4 maanden grazen en sojaboonsupplement",
+      "description_en": "As cows are outside 4 months a year, you need a sufficient grazing area. Soybean meal is purchased.",
+      "description": "Aangezien de koeien 4 maanden per jaar buiten verblijven heb je voldoende graasland nodig. Sojaboonvoer moet worden gekocht."
+    },
+    {
+      "id": "A.6.6",
+      "title_en": "Cow feeding system: 4 months grazing / maize silage & rapeseed meal supplement",
+      "title": "Koevoedersysteem: 4 maanden grazen en raapzaadsupplement",
+      "description_en": "As cows are outside 4 months a year, you need a sufficient grazing area. Rapeseed meal is purchased.",
+      "description": "Aangezien de koeien 4 maanden per jaar buiten verblijven heb je voldoende graasland nodig. Raapzaadvoer moet worden gekocht."
+    },
+    {
+      "id": "A.6.7",
+      "title_en": "Cow feeding system: 5 months grazing / maize silage & rapeseed meal supplement",
+      "title": "Koevoedersysteem: 5 maanden grazen en raadzaadsupplement",
+      "description_en": "As cows are outside 5 months a year, you need a sufficient grazing area. Rapeseed meal is purchased.",
+      "description": "Aangezien de koeien 5 maanden per jaar buiten verblijven heb je voldoende graasland nodig. Raapzaadvoer moet worden gekocht."
+    },
+    {
+      "id": "A.6.8",
+      "title_en": "Cow feeding system: 7 months grazing / maize silage & rapeseed meal supplement",
+      "title": "Koevoedersysteem: 7 maanden grazen en raadzaadsupplement",
+      "description_en": "As cows are outside 7 months a year, you need a sufficient grazing area. Rapeseed meal is purchased.",
+      "description": "Aangezien de koeien 7 maanden per jaar buiten verblijven heb je voldoende graasland nodig. Raapzaadvoer moet worden gekocht."
+    },
+    {
+      "id": "A.6.9",
+      "title_en": "Cow feeding system: 8 months grazing / grass silage & faba bean supplement",
+      "title": "Koevoedersysteem: 8 maanden grazen en fababoonsupplement",
+      "description_en": "As cows are outside 8 months a year, you need a sufficient grazing area.",
+      "description": "Aangezien de koeien 8 maanden per jaar buiten verblijven heb je voldoende graasland nodig."
+    },
+    {
+      "id": "A.6.10",
+      "title_en": "Cow feeding system: all year indoor, hay & rapeseed meal supplement",
+      "title": "Koevoedersysteem: het hele jaar door binnen, hooi en sojaboonsupplement",
+      "description_en": "Rapeseed meal is purchased; feeding without silage, milk proper for particular cheese production.",
+      "description": "Raapzaadvoer moet worden gekocht; voeding zonder kuilvoer, melk geschikt voor productie van bepaalde kazen"
+    },
+    {
+      "id": "A.6.11",
+      "title_en": "Cow feeding system: 9 months grazing / grass silage",
+      "title": "Koevoedersysteem: 9 maanden grazen, zonder eiwitsupplement",
+      "description_en": "As cows are outside 9 months a year, you need a sufficient grazing area.",
+      "description": "Aangezien de koeien 9 maanden per jaar buiten verblijven heb je voldoende graasland nodig."
+    },
+    {
+      "id": "A.7.1",
+      "title_en": "No concentrate supply for lactating dairy cows",
+      "title": "Geen concentraatlevering voor zogende zuivelkoeien",
+      "description_en": "No concentrate is supplied for lactating dairy cows.",
+      "description": "Er wordt geen concentraat geleverd voor zogende zuivelkoeien."
+    },
+    {
+      "id": "A.7.2",
+      "title_en": "+1000 kg milk / cow / year (with soybean meal and cereals)",
+      "title": "+1000 kg / koe / jaar met sojaboonvoer en graanproducten",
+      "description_en": "In order to increase milk production, concentrates (soybean meal and cereals) are given to the cows. Soybean meal is purchased.",
+      "description": "Er worden concentraten (sojaboonvoer en graanproducten) aan de koeien toegediend om de melkproductie te verhogen. Sojaboonvoer moet worden gekocht."
+    },
+    {
+      "id": "A.7.3",
+      "title_en": "+500 kg milk / cow / year (with soybean meal and cereals)",
+      "title": "+500 kg / koe / jaar met sojaboonvoer en graanproducten",
+      "description_en": "In order to increase milk production, concentrates (soybean meal and cereals) are given to the cows. Soybean meal is purchased.",
+      "description": "Er worden concentraten (sojaboonvoer en graanproducten) aan de koeien toegediend om de melkproductie te verhogen. Sojaboonvoer moet worden gekocht."
+    },
+    {
+      "id": "A.7.4",
+      "title_en": "+500 kg milk / cow / year (with faba bean and cereals)",
+      "title": "+500 kg / koe / jaar met fababonen en graanproducten",
+      "description_en": "In order to increase milk production, concentrates (faba bean and cereals) are given to the cows.",
+      "description": "Er worden concentraten (fababonen en graanproducten) aan de koeien toegediend om de melkproductie te verhogen."
+    },
+    {
+      "id": "A.8.1",
+      "title_en": "Heifer feeding system: zero grazing / maize silage & soybean meal | Age at first calving: 24 months",
+      "title": "Koekalfvoedersysteem: geen grazen / maiskuilvoer + sojaboonvoer | Leeftijd eerste keer kalveren: 24 maanden",
+      "description_en": "Heifers calve at 24 months (more intensive feeding). Soybean meal is purchased.",
+      "description": "Koekalveren kalveren na 24 maanden (intensievere voeding). Sojaboonvoer moet worden gekocht."
+    },
+    {
+      "id": "A.8.2",
+      "title_en": "Heifer feeding system: 4 months grazing / 8 months maize silage, hay & soybean meal | Age at first calving: 24 months",
+      "title": "Koekalfvoedersysteem: 4 maanden grazen / 8 maanden maiskuilvoer + hooi + sojaboonvoer | Leeftijd eerste keer kalveren: 24 maanden",
+      "description_en": "Heifers calve at 24 months (more intensive feeding). Soybean meal is purchased. As cows are outside 4 months a year, you need a sufficient grazing area.",
+      "description": "Koekalveren kalveren na 24 maanden (intensievere voeding). Sojaboonvoer moet worden gekocht. Aangezien de koeien 4 maanden per jaar buiten verblijven heb je voldoende graasland nodig."
+    },
+    {
+      "id": "A.8.3",
+      "title_en": "Heifer feeding system: 6 months grazing / 6 months maize silage, grass silage & soybean meal | Age at first calving: 24 months",
+      "title": "Koekalfvoedersysteem: 6 maanden grazen / 6 maanden maiskuilvoer + graskuilvoer (of hooi) + sojaboonvoer | Leeftijd eerste keer kalveren: 24 maanden",
+      "description_en": "Heifers calve at 24 months (more intensive feeding). Soybean meal is purchased. As cows are outside 6 months a year, you need a sufficient grazing area.",
+      "description": "Koekalveren kalveren na 24 maanden (intensievere voeding). Sojaboonvoer moet worden gekocht. Aangezien de koeien 6 maanden per jaar buiten verblijven heb je voldoende graasland nodig."
+    },
+    {
+      "id": "A.8.4",
+      "title_en": "Heifer feeding system: 6 months grazing / 6 months grass silage, cereals & soybean meal | Age at first calving: 24 months",
+      "title": "Koekalfvoedersysteem: 6 maanden grazen / 6 maanden graskuilvoer (of hooi) + graanproducten + sojaboonvoer | Leeftijd eerste keer kalveren: 24 maanden",
+      "description_en": "Heifers calve at 24 months (more intensive feeding). Soybean meal is purchased. As cows are outside 6 months a year, you need a sufficient grazing area.",
+      "description": "Koekalveren kalveren na 24 maanden (intensievere voeding). Sojaboonvoer moet worden gekocht. Aangezien de koeien 6 maanden per jaar buiten verblijven heb je voldoende graasland nodig."
+    },
+    {
+      "id": "A.8.5",
+      "title_en": "Heifer feeding system: zero grazing / maize silage & soybean meal | Age at first calving: 29 months",
+      "title": "Koekalfvoedersysteem: geen grazen / maiskuilvoer + sojaboonvoer | Leeftijd eerste keer kalveren: 29 maanden",
+      "description_en": "Heifers calve at 29 months (less intensive feeding). Soybean meal is purchased.",
+      "description": "Koekalveren kalveren na 29 maanden (minder intensieve voeding). Sojaboonvoer moet worden gekocht."
+    },
+    {
+      "id": "A.8.6",
+      "title_en": "Heifer feeding system: 4 months grazing / 8 months maize silage, hay & soybean meal | Age at first calving: 29 months",
+      "title": "Koekalfvoedersysteem: 4 maanden grazen / 8 maanden maiskuilvoer + hooi + sojaboonvoer | Leeftijd eerste keer kalveren: 29 maanden",
+      "description_en": "Heifers calve at 29 months (less intensive feeding). Soybean meal is purchased. As cows are outside 4 months a year, you need a sufficient grazing area.",
+      "description": "Koekalveren kalveren na 29 maanden (minder intensieve voeding). Sojaboonvoer moet worden gekocht. Aangezien de koeien 4 maanden per jaar buiten verblijven heb je voldoende graasland nodig."
+    },
+    {
+      "id": "A.8.7",
+      "title_en": "Heifer feeding system: 6 months grazing / 6 months maize silage, grass silage (or hay) & soybean meal | Age at first calving: 29 months",
+      "title": "Koekalfvoedersysteem: 6 maanden grazen / 6 maanden maiskuilvoer + graskuilvoer (of hooi) + sojaboonvoer | Leeftijd eerste keer kalveren: 29 maanden",
+      "description_en": "Heifers calve at 29 months (less intensive feeding). Soybean meal is purchased. As cows are outside 6 months a year, you need a sufficient grazing area.",
+      "description": "Koekalveren kalveren na 29 maanden (minder intensieve voeding). Sojaboonvoer moet worden gekocht. Aangezien de koeien 6 maanden per jaar buiten verblijven heb je voldoende graasland nodig."
+    },
+    {
+      "id": "A.8.8",
+      "title_en": "Heifer feeding system: 6 months grazing / 6 months grass silage (or hay), cereals & soybean meal | Age at first calving: 29 months",
+      "title": "Koekalfvoedersysteem: 6 maanden grazen / 6 maanden graskuilvoer (of hooi) + graanproducten + sojaboonvoer | Leeftijd eerste keer kalveren: 29 maanden",
+      "description_en": "Heifers calve at 29 months (less intensive feeding). Soybean meal is purchased. As cows are outside 6 months a year, you need a sufficient grazing area.",
+      "description": "Koekalveren kalveren na 29 maanden (minder intensieve voeding). Sojaboonvoer moet worden gekocht. Aangezien de koeien 6 maanden per jaar buiten verblijven heb je voldoende graasland nodig."
+    },
+    {
+      "id": "A.9.1",
+      "title_en": "Systematic antibiotic treatment of cows",
+      "title": "Systematische behandeling van koeien met antibiotica",
+      "description_en": "All cows are treated with antibiotics at the dry period.",
+      "description": "Alle koeien worden in de droge periode behandeld met antibiotica."
+    },
+    {
+      "id": "A.9.2",
+      "title_en": "Selective antibiotic treatment of cows",
+      "title": "Selectieve behandeling van koeien met antibiotica",
+      "description_en": "Only cows with an intramammary infection are treated with antibiotics.",
+      "description": "Alleen koeien met een intramammaire infectie worden behandeld met antibiotica."
+    },
+    {
+      "id": "A.9.3",
+      "title_en": "Preventive measures of hygiene (no treatment of cows)",
+      "title": "Preventieve hygiënemaatregelen voor de huisvestingsomstandigheden (geen behandeling van koeien)",
+      "description_en": "None of the cows are treated with antibiotics at drying off.",
+      "description": "Geen van de koeien wordt tijdens het drogen met antibiotica behandeld."
+    },
+    {
+      "id": "A.10.1",
+      "title_en": "Systematic anti-parasitic treatment of heifers",
+      "title": "Systematische antiparasitaire behandeling van koekalveren",
+      "description_en": "Systematic treatment of heifers is implemented.",
+      "description": "Er wordt systematische behandeling van koekalveren geïmplementeerd."
+    },
+    {
+      "id": "A.10.2",
+      "title_en": "Selective treatment of heifers",
+      "title": "Selectieve/doelgerichte behandeling van koekalveren met een groot aantal parasieten",
+      "description_en": "Only one treatment per year is implemented, only on the heifers displaying growth retardations.",
+      "description": "Er wordt slechts één behandeling per jaar geïmplementeerd, alleen voor de koekalveren die groeiafwijkingen vertonen."
+    },
+    {
+      "id": "A.10.3",
+      "title_en": "Immunization against internal parasites by low exposure grazing of heifers (no treatment)",
+      "title": "Immunisatie tegen interne parasieten door koekalveren te laten grazen bij lage blootstelling (geen behandeling)",
+      "description_en": "None of the heifers are treated with anthelmintic treatment. Immunity is enhanced by controlled exposure to parasites. It requires longer grazing rotations.",
+      "description": "Geen van de koekalveren krijgt een ontwormingsbehandeling. De immuniteit wordt versterkt d.m.v. gecontroleerde blootstelling aan parasieten. Hiervoor zijn langere graasrotaties nodig."
+    },
+    {
+      "id": "A.11.1",
+      "title_en": "Milk replacer is fed to calves",
+      "title": "Kalveren worden gevoed met een melkvervanger",
+      "description_en": "Purchased milk replacer is fed to calves.",
+      "description": "Kalveren worden gevoed met gekochte melkvervanger"
+    },
+    {
+      "id": "A.11.2",
+      "title_en": "Milk is fed to calves",
+      "title": "Kalveren worden gevoed met melk",
+      "description_en": "Milk produced on-farm is fed to calves.",
+      "description": "Kalveren worden gevoed met melk dat op de boerderij wordt geproduceerd."
+    }
+  ],
+  "style": {},
+  "infos": {
+    "version": 2
+  }
+}

@@ -1,0 +1,3511 @@
+{
+  "columns": [
+    {
+      "type": "text",
+      "name": "key",
+      "title": "key",
+      "width": "306",
+      "align": "left"
+    },
+    {
+      "type": "text",
+      "name": "en",
+      "title": "en",
+      "width": "267",
+      "align": "left"
+    },
+    {
+      "type": "text",
+      "width": "153",
+      "align": "center",
+      "title": "es",
+      "name": "es"
+    },
+    {
+      "type": "text",
+      "width": "227",
+      "align": "center",
+      "title": "fl",
+      "name": "fl"
+    },
+    {
+      "type": "text",
+      "name": "fr",
+      "title": "fr",
+      "width": "226",
+      "align": "left"
+    },
+    {
+      "type": "text",
+      "width": "243",
+      "align": "center",
+      "title": "it",
+      "name": "it"
+    },
+    {
+      "type": "text",
+      "width": "194",
+      "align": "center",
+      "title": "pl",
+      "name": "pl"
+    }
+  ],
+  "data": [
+    {
+      "key": "NEWS",
+      "en": null,
+      "es": null,
+      "fl": null,
+      "fr": null,
+      "it": null,
+      "pl": null
+    },
+    {
+      "key": "news",
+      "en": null,
+      "es": null,
+      "fl": null,
+      "fr": null,
+      "it": null,
+      "pl": null
+    },
+    {
+      "key": null,
+      "en": null,
+      "es": null,
+      "fl": null,
+      "fr": null,
+      "it": null,
+      "pl": null
+    },
+    {
+      "key": null,
+      "en": null,
+      "es": null,
+      "fl": null,
+      "fr": null,
+      "it": null,
+      "pl": null
+    },
+    {
+      "key": "link_scenario_creator",
+      "en": "https://apps.succubus.dev/agrocampusouest/segae/scenario-creator/",
+      "es": null,
+      "fl": null,
+      "fr": null,
+      "it": null,
+      "pl": null
+    },
+    {
+      "key": "link_teacher_app",
+      "en": "https://apps.succubus.dev/agrocampusouest/segae/teacher-app/",
+      "es": null,
+      "fl": null,
+      "fr": null,
+      "it": null,
+      "pl": null
+    },
+    {
+      "key": "MARKERS NAMES",
+      "en": null,
+      "es": null,
+      "fl": null,
+      "fr": null,
+      "it": null,
+      "pl": null
+    },
+    {
+      "key": "cows",
+      "en": "Cows",
+      "es": "Vacas",
+      "fl": "Koeien",
+      "fr": "Vaches",
+      "it": "Vacche",
+      "pl": "Krowy"
+    },
+    {
+      "key": "soils",
+      "en": "Soil management",
+      "es": "Gestión del suelo",
+      "fl": "Grondbeheer",
+      "fr": "Sols",
+      "it": "Gestione del terreno",
+      "pl": "Gospodarowanie glebą"
+    },
+    {
+      "key": "crops",
+      "en": "Crop management",
+      "es": "Gestión de cultivos",
+      "fl": "Gewasbeheer",
+      "fr": "Cultures",
+      "it": "Gestione delle colture",
+      "pl": "Gospodarowanie roślinami uprawnymi"
+    },
+    {
+      "key": "feeding-system",
+      "en": "Feeding system",
+      "es": "Sistema de alimentación",
+      "fl": "Voedersysteem",
+      "fr": "Système d’alimentation",
+      "it": "Sistema di alimentazione",
+      "pl": "System żywienia"
+    },
+    {
+      "key": "landscape",
+      "en": "Landscape management",
+      "es": "Gestión paisajística",
+      "fl": "Landschapbeheer",
+      "fr": "Paysages",
+      "it": "Gestione del paesaggio",
+      "pl": "Zarządzanie krajobrazem"
+    },
+    {
+      "key": "warehouse",
+      "en": "Warehouse",
+      "es": "Almacén",
+      "fl": "Magazijn",
+      "fr": "Entrepôt",
+      "it": "Magazzino",
+      "pl": "Magazyn"
+    },
+    {
+      "key": "marker_fertilisation",
+      "en": "Fertilisation",
+      "es": "Fertilización",
+      "fl": "Bemesting",
+      "fr": "Fertilisation",
+      "it": "Fertilizzazione",
+      "pl": "Nawożenie"
+    },
+    {
+      "key": "heifer-and-fattening-cattle",
+      "en": "Heifer and fattening cattle",
+      "es": "Vaquillas y ganado de engorde",
+      "fl": "Koekalveren en mestvee",
+      "fr": "Génisses et bovins mâles",
+      "it": "Giovenche e bestiame da ingrasso",
+      "pl": "Jałówka i bydło opasowe"
+    },
+    {
+      "key": "strategic-decisions",
+      "en": "Strategic decisions",
+      "es": "Decisiones estratégicas",
+      "fl": "Strategische beslissingen",
+      "fr": "Décisions stratégiques",
+      "it": "Decisioni strategiche",
+      "pl": "Decyzje strategiczne"
+    },
+    {
+      "key": "land-use",
+      "en": "Land use management",
+      "es": "Gestión del uso de la tierra",
+      "fl": "Landgebruiksbeheer",
+      "fr": "Assolement et rotations",
+      "it": "Gestione dell'uso del suolo",
+      "pl": "Zarządzanie użytkowaniem gruntów"
+    },
+    {
+      "key": null,
+      "en": null,
+      "es": null,
+      "fl": null,
+      "fr": null,
+      "it": null,
+      "pl": null
+    },
+    {
+      "key": "AEP CATEGS",
+      "en": null,
+      "es": null,
+      "fl": null,
+      "fr": null,
+      "it": null,
+      "pl": null
+    },
+    {
+      "key": null,
+      "en": null,
+      "es": null,
+      "fl": null,
+      "fr": null,
+      "it": null,
+      "pl": null
+    },
+    {
+      "key": "cow_housing_system",
+      "en": "Cow housing system",
+      "es": "Sistema de estabulación de vacas",
+      "fl": "Koehuisvestingsssyteem",
+      "fr": "Type de bâtiment",
+      "it": "Sistema di stabulazione della vacche",
+      "pl": "System utrzymania krów"
+    },
+    {
+      "key": "feeding_system_for_cows",
+      "en": "Feeding system for cows",
+      "es": "Sistema de alimentación de las vacas",
+      "fl": "Voedersysteem voor koeien",
+      "fr": "Ration des vaches",
+      "it": "Sistema di alimentazione per le vacche",
+      "pl": "System żywienia krów"
+    },
+    {
+      "key": "concentrate_supply_for_lactating_dairy_cows",
+      "en": "Concentrate supply for lactating dairy cows",
+      "es": "Suministro de concentrado a las vacas lecheras lactantes",
+      "fl": "Concentraatlevering voor zogende zuivelkoeien",
+      "fr": "Complémentation",
+      "it": "Fornitura di concentrato per vacche da latte in lattazione",
+      "pl": "Zaopatrzenie w pasze treściwe dla krów mlecznych"
+    },
+    {
+      "key": "management_of_the_risk_of_mastitis_at_the_dry_period",
+      "en": "Management of the risk of mastitis at the dry period",
+      "es": "Control del riesgo de mastitis en períodos secos",
+      "fl": "Beheer van het risico op uierontsteking in de droge periode",
+      "fr": "Gestion du risque de mammite en période de tarissement",
+      "it": "Gestione del rischio di mastite nel periodo di asciutta",
+      "pl": "Zarządzanie ryzykiem zapalenia wymienia w okresie zasuszenia"
+    },
+    {
+      "key": "tillage_management",
+      "en": "Tillage management",
+      "es": "Gestión de la labranza",
+      "fl": "Grondbewerkingsbeheer",
+      "fr": "Gestion du travail du sol",
+      "it": "Gestione della lavorazione del terreno",
+      "pl": "Zarządzanie uprawą roli"
+    },
+    {
+      "key": "soil_cover",
+      "en": "Soil cover",
+      "es": "Cubierta del suelo",
+      "fl": "Bodembegroeiing",
+      "fr": "Couverture des sols",
+      "it": "Copertura del terreno",
+      "pl": "Okrywa gleby"
+    },
+    {
+      "key": "residues_management",
+      "en": "Residues management",
+      "es": "Gestión de residuos",
+      "fl": "Restantbeheer",
+      "fr": "Gestion des pailles",
+      "it": "Gestione dei residui",
+      "pl": "Gospodarowanie resztkami pożniwnymi"
+    },
+    {
+      "key": "categ_fertilisation",
+      "en": "Fertilisation",
+      "es": "Fertilización",
+      "fl": "Bemesting",
+      "fr": "Fertilisation",
+      "it": "Fertilizzazione",
+      "pl": "Nawożenie"
+    },
+    {
+      "key": "crop_protection_against_diseases",
+      "en": "Crop protection against diseases",
+      "es": "Protección de los cultivos contra las enfermedades",
+      "fl": "Bescherming van gewassen tegen ziekten",
+      "fr": "Protection des cultures contre les maladies",
+      "it": "Protezione delle colture contro le malattie",
+      "pl": "Ochrona upraw przed chorobami"
+    },
+    {
+      "key": "weed_control",
+      "en": "Weed control",
+      "es": "Control de la maleza",
+      "fl": "Onkruidcontrole",
+      "fr": "Gestion des adventices",
+      "it": "Controllo delle erbe infestanti",
+      "pl": "Zwalczanie chwastów"
+    },
+    {
+      "key": "crop_protection_against_animal_pests",
+      "en": "Crop protection against animal pests",
+      "es": "Protección de los cultivos contra las plagas",
+      "fl": "Bescherming van gewassen tegen dierenplagen",
+      "fr": "Protection des cultures contre les parasites",
+      "it": "Protezione delle colture contro i parassiti degli animali",
+      "pl": "Ochrona upraw przed szkodnikami zwierzęcymi"
+    },
+    {
+      "key": "cash_crop_cultivars",
+      "en": "Cash crop cultivars",
+      "es": "Variedades de cultivos comerciales",
+      "fl": "Geldgewascultivars",
+      "fr": "Choix des variétés",
+      "it": "Cultivar commerciali",
+      "pl": "Rośliny uprawiane z przeznaczeniem na sprzedaż"
+    },
+    {
+      "key": "spatial_distribution_of_cash_crops",
+      "en": "Spatial distribution of cash crops",
+      "es": "Distribución espacial de los cultivos comerciales",
+      "fl": "Ruimtelijke spreiding van geldgewassen",
+      "fr": "Répartition spatiale des cultures",
+      "it": "Distribuzione spaziale delle colture commerciali",
+      "pl": "Rozkład przestrzenny roślin uprawianych z przeznaczeniem na sprzedaz"
+    },
+    {
+      "key": "feeding_system_for_heifers_age_at_first_calving",
+      "en": "Feeding system for heifers & age at first calving",
+      "es": "Sistema de alimentación para novillas y edad del primer parto",
+      "fl": "Voedersysteem voor koekalveren en leeftijd van eerste keer kalveren",
+      "fr": "Ration des génisses et âge au premier vêlage",
+      "it": "Sistema di alimentazione per giovenche ed età al primo parto",
+      "pl": "System żywienia jałówek i wiek  pierwszego ocielenia"
+    },
+    {
+      "key": "cropping_system_1",
+      "en": "Cropping system #1 (CS #1)",
+      "es": "Sistema de cultivo N.º 1 (SC N.º 1)",
+      "fl": "Teeltsysteem #1 (CS #1)",
+      "fr": "Système de culture n°1 (SdC n°1)",
+      "it": "Sistema di coltivazione #1 (SC #1)",
+      "pl": "System uprawy nr 1 (CS #1)"
+    },
+    {
+      "key": "cropping_system_2",
+      "en": "Cropping system #2 (CS #2)",
+      "es": "Sistema de cultivo N.º 2 (SC N.º 2)",
+      "fl": "Teeltsysteem #2 (CS #2)",
+      "fr": "Système de culture n°2 (SdC n°2)",
+      "it": "Sistema di coltivazione #2 (SC #2)",
+      "pl": "System uprawy nr 2 (CS #2)"
+    },
+    {
+      "key": "temporary_grassland_composition",
+      "en": "Temporary grassland composition",
+      "es": "Composición de las praderas temporales ",
+      "fl": "Samenstelling tijdelijk grasland",
+      "fr": "Composition des prairies temporaires ",
+      "it": "Composizione del prato temporaneo",
+      "pl": "Skład krótkotrwałego użytku zielonego"
+    },
+    {
+      "key": "permanent_grassland_area",
+      "en": "Permanent grassland area",
+      "es": "Área de praderas permanentes",
+      "fl": "Permanent graslandgebied",
+      "fr": "Prairies permanentes",
+      "it": "Area del prato permanente",
+      "pl": "Powierzchnia trwałego użytku zielonego"
+    },
+    {
+      "key": "green_infrastructures",
+      "en": "Green infrastructures",
+      "es": "Infraestructura verde",
+      "fl": "Groene infrastructuren",
+      "fr": "Infrastructures écologiques",
+      "it": "Infrastrutture verdi",
+      "pl": "Infrastruktura zielona"
+    },
+    {
+      "key": "agroforestry",
+      "en": "Agroforestry",
+      "es": "Agroforestería",
+      "fl": "Boslandbouw",
+      "fr": "Agroforesterie",
+      "it": "Agriforestazione",
+      "pl": "Agroleśnictwo"
+    },
+    {
+      "key": "gains_and_costs",
+      "en": "Gains and Costs",
+      "es": "Utilidad y costos",
+      "fl": "Baten en Lasten",
+      "fr": "Coûts et gains",
+      "it": "Guadagni e Costi",
+      "pl": "Zyski i koszty"
+    },
+    {
+      "key": "subsidies",
+      "en": "Subsidies",
+      "es": "Subsidios",
+      "fl": "Subsidies",
+      "fr": "Subventions",
+      "it": "Sussidi",
+      "pl": "Dotacje"
+    },
+    {
+      "key": "feed_balance",
+      "en": "Feed balance",
+      "es": "Balance alimentario",
+      "fl": "Voedingsbalans",
+      "fr": "Bilan alimentaire",
+      "it": "Bilancio foraggero",
+      "pl": "Bilans paszy"
+    },
+    {
+      "key": "crop_production",
+      "en": "Crop production",
+      "es": "Producción agrícola",
+      "fl": "Gewasproductie",
+      "fr": "Production végétale",
+      "it": "Produzione di raccolto",
+      "pl": "Produkcja roślinna"
+    },
+    {
+      "key": "crop_sales_feed_purchases",
+      "en": "Crop sales & Feed purchases",
+      "es": "Venta de cosechas - Compra de alimentos para animales",
+      "fl": "Gewasverkoop - Voedingsinkoop",
+      "fr": "Vente des cultures & Achat d'aliments",
+      "it": "Vendite di raccolto & Acquisti di mangimi",
+      "pl": "Sprzedaż plonów – zakupy paszy"
+    },
+    {
+      "key": "animal_production",
+      "en": "Animal production",
+      "es": "Producción animal",
+      "fl": "Dierlijke productie",
+      "fr": "Production animale",
+      "it": "Produzione animale",
+      "pl": "Produkcja zwierzęca"
+    },
+    {
+      "key": "workload",
+      "en": "Workload",
+      "es": "Carga de trabajo",
+      "fl": "Werklast",
+      "fr": "Charge de travail",
+      "it": "Carico di lavoro",
+      "pl": "Obciążenie pracą"
+    },
+    {
+      "key": "fertilisation",
+      "en": "Fertilisation",
+      "es": "Fertilización",
+      "fl": "Bemesting",
+      "fr": "Fertilisation",
+      "it": "Fertilizzazione",
+      "pl": "Nawożenie"
+    },
+    {
+      "key": "heifers_bulls_and_steers_housing_system",
+      "en": "Heifers, bulls and steers housing system",
+      "es": "Sistema de estabulación de novillas, toros y novillos",
+      "fl": "Huisvestingssysteem voor koekalveren, stieren en ossen",
+      "fr": "Type de bâtiments (jeunes bovins)",
+      "it": "Sistema di stabulazione per giovenche, tori e manzi",
+      "pl": "Legowiskowy system utrzymania jałówek, buhajków i wolców"
+    },
+    {
+      "key": "anti_parasitic_management",
+      "en": "Anti-parasitic management",
+      "es": "Manejo de plagas",
+      "fl": "Parasietbestrijding",
+      "fr": "Gestion antiparasitaire",
+      "it": "Gestione antiparassitaria",
+      "pl": "Zarządzanie przeciwpasożytnicze"
+    },
+    {
+      "key": "male_management",
+      "en": "Male management",
+      "es": "Manejo de los machos",
+      "fl": "Mannetjesbeheer",
+      "fr": "Gestion des bovins mâles",
+      "it": "Gestione dei maschi",
+      "pl": "Gospodarowanie samcami"
+    },
+    {
+      "key": "feeding_system_for_calves",
+      "en": "Feeding system for calves",
+      "es": "Sistema de alimentación de terneros",
+      "fl": "Kalvervoedersysteem",
+      "fr": "Alimentation des veaux",
+      "it": "Sistema di alimentazione per vitelli",
+      "pl": "System żywienia cieląt"
+    },
+    {
+      "key": "type_of_agriculture",
+      "en": "Type of agriculture",
+      "es": "Tipo de agricultura",
+      "fl": "Type landbouw",
+      "fr": "Type d’agriculture",
+      "it": "Tipo di agricoltura",
+      "pl": "Typ rolnictwa"
+    },
+    {
+      "key": "distribution_of_farm_profit",
+      "en": "Distribution of farm profit",
+      "es": "Distribución de las utilidades de la granja",
+      "fl": "Spreiding van opbrengst uit landbouw",
+      "fr": "Répartition du profit",
+      "it": "Distribuzione del profitto aziendale",
+      "pl": "Podział zysków gospodarstwa"
+    },
+    {
+      "key": "cattle_breed",
+      "en": "Cattle breed",
+      "es": "Raza de ganado",
+      "fl": "Runderras",
+      "fr": "Race bovine",
+      "it": "Razza bovina",
+      "pl": "Rasa bydła"
+    },
+    {
+      "key": "herd_size",
+      "en": "Herd size",
+      "es": "Tamaño del ganado",
+      "fl": "Kuddeomvang",
+      "fr": "Taille du cheptel",
+      "it": "Dimensioni della mandria",
+      "pl": "Wielkość stada"
+    },
+    {
+      "key": null,
+      "en": null,
+      "es": null,
+      "fl": null,
+      "fr": null,
+      "it": null,
+      "pl": null
+    },
+    {
+      "key": "RULES FEEDBACK",
+      "en": null,
+      "es": null,
+      "fl": null,
+      "fr": null,
+      "it": null,
+      "pl": null
+    },
+    {
+      "key": null,
+      "en": null,
+      "es": null,
+      "fl": null,
+      "fr": null,
+      "it": null,
+      "pl": null
+    },
+    {
+      "key": "one_change",
+      "en": "can only be changed once during the game ",
+      "es": "solo se puede cambiar una vez durante el juego ",
+      "fl": "kan maar één keer tijdens het spel worden gewijzigd ",
+      "fr": "ne peut être modifié(e) qu'une seule fois au cours du jeu ",
+      "it": "può essere modificato solo una volta durante il gioco ",
+      "pl": "można zmienić tylko raz w trakcie gry"
+    },
+    {
+      "key": "only_available_if",
+      "en": "only available if",
+      "es": "solo disponible si",
+      "fl": "alleen beschikbaar als",
+      "fr": "disponible uniquement si vous choissisez",
+      "it": "disponibile solo se",
+      "pl": "dostępne tylko gdy"
+    },
+    {
+      "key": "only_available_if_not",
+      "en": "only available if not",
+      "es": "solo disponible si no",
+      "fl": "alleen beschikbaar als niet",
+      "fr": "disponible uniquement si vous ne choissisez pas",
+      "it": "disponibile solo se non",
+      "pl": "dostępne tylko jeżeli nie"
+    },
+    {
+      "key": "C9x",
+      "en": "Your cropping systems do not include temporary grasslands, their composition cannot be chosen",
+      "es": "Sus sistemas de cultivo no incluyen praderas temporales, su composición no puede ser elegida",
+      "fl": "Je teeltsystemen omvatten geen tijdelijk grasland en de samenstelling kan niet worden gekozen",
+      "fr": "Vos systèmes de culture ne comprennent pas de prairies temporaires, leur composition ne peut être choisie",
+      "it": "I tuoi sistemi di coltivazione non includono prati temporanei, la loro composizione non può essere scelta",
+      "pl": "Twoje systemy upraw nie obejmują krótkotrwałych użytków zielonych, ich składu nie można wybrać"
+    },
+    {
+      "key": "C10x",
+      "en": "Area of permanent grassland can only increase",
+      "es": "La superficie de las praderas permanentes solo puede aumentar",
+      "fl": "Een gebied met permanent grasland kan alleen toenemen",
+      "fr": "La superficie des prairies permanentes ne peut qu'augmenter",
+      "it": "L'area del prato permanente può solo aumentare",
+      "pl": "Powierzchnię trwałego użytku zielonego można tylko zwiększać"
+    },
+    {
+      "key": "A10.3",
+      "en": "Low exposure grazing of heifers cannot be achieved since feeding system for heifers do not include grazing",
+      "es": "El pastoreo de vaquillas a baja exposición no puede lograrse ya que el sistema de alimentación de las vaquillas no incluye el pastoreo.",
+      "fl": "Het grazen van koekalveren bij lage blootstelling is niet mogelijk omdat het voedersysteem voor koekalveren geen grazen omvat",
+      "fr": "Cette pratique ne peut pas être mise en œuvre puisque le système d'alimentation des génisses ne comprend pas de pâturage",
+      "it": "Il pascolo a bassa esposizione delle giovenche non può essere ottenuto poiché il sistema di alimentazione delle giovenche non include il pascolo",
+      "pl": "Wypas jałówek z niską ekspozycją na pasożyty nie może być zrealizowany, ponieważ ich system żywienia nie obejmuje wypasu"
+    },
+    {
+      "key": "region_not_allowed",
+      "en": "In this region, this practice is not allowed",
+      "es": "En esta región, esta práctica no está permitida.",
+      "fl": "In deze regio is deze praktijk niet toegestaan",
+      "fr": "Dans cette région, cette pratique n'est pas autorisée",
+      "it": "In questa regione questa pratica non è consentita",
+      "pl": "W tym regionie praktyka ta jest niedozwolona"
+    },
+    {
+      "key": "heifers_immunized",
+      "en": "As heifers are immunized against internal parasites by low exposure grazing, this practice is not allowed",
+      "es": "Como las vaquillas están inmunizadas contra los parásitos internos por el pastoreo de baja exposición, esta práctica no está permitida.",
+      "fl": "Omdat koekalveren immuun gemaakt zijn tegen interne parasieten door te grazen bij lage blootstelling, is deze praktijk niet toegestaan",
+      "fr": "Les génisses étant immunisées contre les parasites internes par un pâturage à faible exposition, cette pratique n'est pas autorisée",
+      "it": "Dato che le giovenche sono immunizzate contro i parassiti interni grazie al pascolo a bassa esposizione, questa pratica non è consentita",
+      "pl": "Ponieważ jałówki są uodporniane na pasożyty wewnętrzne poprzez wypas przy niskim narażeniu, praktyka ta jest niedozwolona"
+    },
+    {
+      "key": "no_remaining_changes",
+      "en": "You cannot do more changes this year",
+      "es": null,
+      "fl": null,
+      "fr": "Vous ne pouvez plus faire de changement cette année",
+      "it": null,
+      "pl": null
+    },
+    {
+      "key": null,
+      "en": null,
+      "es": null,
+      "fl": null,
+      "fr": null,
+      "it": null,
+      "pl": null
+    },
+    {
+      "key": "TEXTS",
+      "en": null,
+      "es": null,
+      "fl": null,
+      "fr": null,
+      "it": null,
+      "pl": null
+    },
+    {
+      "key": null,
+      "en": null,
+      "es": null,
+      "fl": null,
+      "fr": null,
+      "it": null,
+      "pl": null
+    },
+    {
+      "key": null,
+      "en": null,
+      "es": null,
+      "fl": null,
+      "fr": null,
+      "it": null,
+      "pl": null
+    },
+    {
+      "key": "choose_game_language",
+      "en": "Game language ",
+      "es": "Seleccione el idioma del juego ",
+      "fl": "Selecteer de taal van het spel ",
+      "fr": "Langue du jeu",
+      "it": "Seleziona la lingua del gioco ",
+      "pl": "Wybierz język gry"
+    },
+    {
+      "key": "choose_scenario",
+      "en": "Choose a scenario",
+      "es": "Elija un escenario",
+      "fl": "Kies een scenario",
+      "fr": "Choisir un scénario",
+      "it": "Scegliere uno scenario",
+      "pl": "Wybierz scenariusz"
+    },
+    {
+      "key": "play_button_france",
+      "en": "Play the French Farm",
+      "es": "Jugar en la granja francesa",
+      "fl": "Speel de Franse boerderij",
+      "fr": "Ferme française",
+      "it": "Gioca alla fattoria francese",
+      "pl": "Francuska ferma"
+    },
+    {
+      "key": "play_button_italy",
+      "en": "Play the italian farm",
+      "es": "Jugar en la granja italiana",
+      "fl": "Speel de Italiaanse boerderij",
+      "fr": "Ferme italienne",
+      "it": "Gioca alla fattoria italiana",
+      "pl": "Włoska ferma"
+    },
+    {
+      "key": "play_button_poland",
+      "en": "Play the polish farm",
+      "es": "Jugar en la granja polaca",
+      "fl": "Speel de Poolse boerderij",
+      "fr": "Ferme polonaise",
+      "it": "Gioca alla fattoria polacca",
+      "pl": "Polska ferma"
+    },
+    {
+      "key": "play_button_belgium",
+      "en": "Play the belgian farm",
+      "es": "Jugar en la granja belga",
+      "fl": "Speel de Belgische boerderij",
+      "fr": "Ferme belge",
+      "it": "Gioca alla fattoria belga",
+      "pl": "Belgijska ferma"
+    },
+    {
+      "key": null,
+      "en": null,
+      "es": null,
+      "fl": null,
+      "fr": null,
+      "it": null,
+      "pl": null
+    },
+    {
+      "key": null,
+      "en": null,
+      "es": null,
+      "fl": null,
+      "fr": null,
+      "it": null,
+      "pl": null
+    },
+    {
+      "key": "year",
+      "en": "Year",
+      "es": "Año",
+      "fl": "Jaar",
+      "fr": "Année",
+      "it": "Anno",
+      "pl": "Rok"
+    },
+    {
+      "key": "report",
+      "en": "Report",
+      "es": "Informe",
+      "fl": "Rapport",
+      "fr": "Rapport",
+      "it": "Rapporto",
+      "pl": "Raport"
+    },
+    {
+      "key": "next_year",
+      "en": "Next year",
+      "es": "Año siguiente",
+      "fl": "Volgend jaar",
+      "fr": "Année suivante",
+      "it": "Anno successivo",
+      "pl": "Kolejny rok"
+    },
+    {
+      "key": "sustainability",
+      "en": "Sustainability ",
+      "es": "Desarrollo sostenible ",
+      "fl": "Duurzaamheid ",
+      "fr": "Durabilité",
+      "it": "Sostenibilità ",
+      "pl": "Zrównoważenie"
+    },
+    {
+      "key": "economic",
+      "en": "Economic",
+      "es": "Economía",
+      "fl": "Economisch",
+      "fr": "Économie",
+      "it": "Economico",
+      "pl": "Ekonomiczne"
+    },
+    {
+      "key": "environment",
+      "en": "Environment",
+      "es": "Medio Ambiente",
+      "fl": "Milieu",
+      "fr": "Environnement",
+      "it": "Ambiente",
+      "pl": "Środowiskowe"
+    },
+    {
+      "key": "social",
+      "en": "Social",
+      "es": "Social",
+      "fl": "Sociaal",
+      "fr": "Social",
+      "it": "Sociale",
+      "pl": "Społeczne"
+    },
+    {
+      "key": "remaining_changes",
+      "en": "Remaining changes: ",
+      "es": "Otros cambios: ",
+      "fl": "Resterende wijzigingen: ",
+      "fr": "Changements autorisés :",
+      "it": "Modifiche rimanenti: ",
+      "pl": "Pozostałe zmiany: "
+    },
+    {
+      "key": "remaining_time",
+      "en": "Remaining time: ",
+      "es": null,
+      "fl": null,
+      "fr": "Temps restant :",
+      "it": null,
+      "pl": null
+    },
+    {
+      "key": "score",
+      "en": "Score:",
+      "es": "Puntaje:",
+      "fl": "Score:",
+      "fr": "Score :",
+      "it": "Punteggio:",
+      "pl": "Wynik:"
+    },
+    {
+      "key": "points",
+      "en": "Pts",
+      "es": "Puntos",
+      "fl": "Punten",
+      "fr": "Pts",
+      "it": "Punti",
+      "pl": "Punkty"
+    },
+    {
+      "key": null,
+      "en": null,
+      "es": null,
+      "fl": null,
+      "fr": null,
+      "it": null,
+      "pl": null
+    },
+    {
+      "key": "restart",
+      "en": "Restart the game",
+      "es": "Nuevo juego",
+      "fl": "Nieuw spel",
+      "fr": "Nouvelle partie",
+      "it": "Nuovo gioco",
+      "pl": "Nowa gra"
+    },
+    {
+      "key": null,
+      "en": null,
+      "es": null,
+      "fl": null,
+      "fr": null,
+      "it": null,
+      "pl": null
+    },
+    {
+      "key": "no_alea",
+      "en": "No alea this year",
+      "es": "No alea este año",
+      "fl": "Geen alea dit jaar",
+      "fr": "Pas d'aléa cette année",
+      "it": "Niente pulci quest'anno",
+      "pl": "Nie ma alea w tym roku"
+    },
+    {
+      "key": null,
+      "en": null,
+      "es": null,
+      "fl": null,
+      "fr": null,
+      "it": null,
+      "pl": null
+    },
+    {
+      "key": "goals_win_if",
+      "en": "You win if: ",
+      "es": "Tú ganas si: ",
+      "fl": "Je wint als: ",
+      "fr": "Vous gagnez si : ",
+      "it": "Se vinci tu: ",
+      "pl": "Wygrasz, jeśli: "
+    },
+    {
+      "key": "goals_lose_if",
+      "en": "You lose if: ",
+      "es": "Pierdes si: ",
+      "fl": "Je verliest als: ",
+      "fr": "Vous perdez si : ",
+      "it": "Si perde se: ",
+      "pl": "Przegrasz, jeśli: "
+    },
+    {
+      "key": "goals_or",
+      "en": "Or:",
+      "es": "O:",
+      "fl": "Of:",
+      "fr": "Ou : ",
+      "it": "Oppure:",
+      "pl": "Albo:"
+    },
+    {
+      "key": null,
+      "en": null,
+      "es": null,
+      "fl": null,
+      "fr": null,
+      "it": null,
+      "pl": null
+    },
+    {
+      "key": null,
+      "en": null,
+      "es": null,
+      "fl": null,
+      "fr": null,
+      "it": null,
+      "pl": null
+    },
+    {
+      "key": "game_over_title_win",
+      "en": "Game won! ",
+      "es": "¡Has ganado el juego!",
+      "fl": "Je hebt het spel gewonnen!",
+      "fr": "Vous avez gagné !",
+      "it": "Avete vinto la partita!",
+      "pl": "Wygrałeś tę grę!"
+    },
+    {
+      "key": "game_over_title_lose",
+      "en": "Game lost! ",
+      "es": "¡Has perdido el juego! ",
+      "fl": "Je hebt het spel verloren!",
+      "fr": "Vous avez perdu !",
+      "it": "Hai perso la partita! ",
+      "pl": "Przegrałeś tę grę! "
+    },
+    {
+      "key": "game_over_title_draw",
+      "en": "Game finished",
+      "es": null,
+      "fl": null,
+      "fr": "Le jeu est terminé",
+      "it": null,
+      "pl": "\u0000"
+    },
+    {
+      "key": null,
+      "en": null,
+      "es": null,
+      "fl": null,
+      "fr": null,
+      "it": null,
+      "pl": null
+    },
+    {
+      "key": "game_over_win",
+      "en": "You have won the game! Here's why:",
+      "es": "¡Has ganado el juego! Aquí está el porqué:",
+      "fl": "Je hebt het spel gewonnen! Hier is waarom:",
+      "fr": "Vous avez gagné ! Voici pourquoi :",
+      "it": "Avete vinto la partita! Ecco perché:",
+      "pl": "Wygrałeś tę grę! Oto dlaczego:"
+    },
+    {
+      "key": "game_over_lose",
+      "en": "You have lost the game! Here's why:",
+      "es": "¡Has perdido el juego! Aquí está el porqué:",
+      "fl": "Je hebt het spel verloren! Hier is waarom:",
+      "fr": "Vous avez perdu ! Voici pourquoi :",
+      "it": "Hai perso la partita! Ecco perché:",
+      "pl": "Przegrałeś tę grę! Oto dlaczego:"
+    },
+    {
+      "key": "game_over_draw",
+      "en": "You have reached the end of the game! Here's why:",
+      "es": null,
+      "fl": null,
+      "fr": "Le jeu est terminé, voici pourquoi : ",
+      "it": null,
+      "pl": "\u0000"
+    },
+    {
+      "key": null,
+      "en": null,
+      "es": null,
+      "fl": null,
+      "fr": null,
+      "it": null,
+      "pl": null
+    },
+    {
+      "key": "indicator_history_chart_value",
+      "en": "Value",
+      "es": null,
+      "fl": null,
+      "fr": "Valeur",
+      "it": null,
+      "pl": null
+    },
+    {
+      "key": null,
+      "en": null,
+      "es": null,
+      "fl": null,
+      "fr": null,
+      "it": null,
+      "pl": null
+    },
+    {
+      "key": "no_aep_modified",
+      "en": "No practices were changed this year",
+      "es": null,
+      "fl": null,
+      "fr": "Pas de changement de pratique cette année",
+      "it": null,
+      "pl": null
+    },
+    {
+      "key": null,
+      "en": null,
+      "es": null,
+      "fl": null,
+      "fr": null,
+      "it": null,
+      "pl": null
+    },
+    {
+      "key": "new_game_alert_popup_title",
+      "en": "Restart game?",
+      "es": null,
+      "fl": null,
+      "fr": "Voulez-vous rejouer ?",
+      "it": null,
+      "pl": null
+    },
+    {
+      "key": "new_game_alert_popup_content",
+      "en": "Are you sure you want to leave this game?",
+      "es": null,
+      "fl": null,
+      "fr": "Êtes-vous certain de vouloir quitter cette partie ?",
+      "it": null,
+      "pl": null
+    },
+    {
+      "key": "yes",
+      "en": "Yes",
+      "es": null,
+      "fl": null,
+      "fr": "Oui",
+      "it": null,
+      "pl": null
+    },
+    {
+      "key": "no",
+      "en": "No",
+      "es": null,
+      "fl": null,
+      "fr": "Non",
+      "it": null,
+      "pl": null
+    },
+    {
+      "key": null,
+      "en": null,
+      "es": null,
+      "fl": null,
+      "fr": null,
+      "it": null,
+      "pl": null
+    },
+    {
+      "key": "meeting_not_started",
+      "en": "Please wait, the multiplayer game will start soon!",
+      "es": null,
+      "fl": null,
+      "fr": null,
+      "it": null,
+      "pl": null
+    },
+    {
+      "key": "meeting_paused",
+      "en": "Multiplayer game paused, please wait, it will be unpaused soon!",
+      "es": null,
+      "fl": null,
+      "fr": null,
+      "it": null,
+      "pl": null
+    },
+    {
+      "key": "meeting_finished",
+      "en": "Multiplayer game finished!",
+      "es": null,
+      "fl": null,
+      "fr": null,
+      "it": null,
+      "pl": null
+    },
+    {
+      "key": null,
+      "en": null,
+      "es": null,
+      "fl": null,
+      "fr": null,
+      "it": null,
+      "pl": null
+    },
+    {
+      "key": null,
+      "en": null,
+      "es": null,
+      "fl": null,
+      "fr": null,
+      "it": null,
+      "pl": null
+    },
+    {
+      "key": "FORMULAIRES",
+      "en": null,
+      "es": null,
+      "fl": null,
+      "fr": "\u0000",
+      "it": null,
+      "pl": null
+    },
+    {
+      "key": null,
+      "en": null,
+      "es": null,
+      "fl": null,
+      "fr": null,
+      "it": null,
+      "pl": null
+    },
+    {
+      "key": "play_offline",
+      "en": "Play without an account",
+      "es": "Juega ahora",
+      "fl": "Speel nu",
+      "fr": "Jouer sans compte",
+      "it": "Gioca ora",
+      "pl": "Zagraj teraz"
+    },
+    {
+      "key": "login_account",
+      "en": "Login to your account",
+      "es": null,
+      "fl": null,
+      "fr": "Connexion",
+      "it": null,
+      "pl": null
+    },
+    {
+      "key": "create_account",
+      "en": "Create an account",
+      "es": "Crear una cuenta",
+      "fl": "Maak een account aan",
+      "fr": "Créer un compte",
+      "it": "Crea un conto",
+      "pl": "Załóż konto"
+    },
+    {
+      "key": "create_an_account_title",
+      "en": "Create an account",
+      "es": "Crear una cuenta",
+      "fl": "Maak een account aan",
+      "fr": "Créer un compte",
+      "it": "Crea un conto",
+      "pl": "Załóż konto"
+    },
+    {
+      "key": "menu_back_button",
+      "en": "Back",
+      "es": null,
+      "fl": null,
+      "fr": "Précédent",
+      "it": null,
+      "pl": null
+    },
+    {
+      "key": "play_button",
+      "en": "Play!",
+      "es": "¡Toca!",
+      "fl": "Speel!",
+      "fr": "Jouer !",
+      "it": "Jogue!",
+      "pl": "Graj!"
+    },
+    {
+      "key": null,
+      "en": null,
+      "es": null,
+      "fl": null,
+      "fr": null,
+      "it": null,
+      "pl": null
+    },
+    {
+      "key": "form_email",
+      "en": "email",
+      "es": null,
+      "fl": null,
+      "fr": "e-mail",
+      "it": null,
+      "pl": null
+    },
+    {
+      "key": "form_password",
+      "en": "Password",
+      "es": null,
+      "fl": null,
+      "fr": "Mot de passe",
+      "it": null,
+      "pl": null
+    },
+    {
+      "key": "form_confirm_password",
+      "en": "Confirm password",
+      "es": null,
+      "fl": null,
+      "fr": "Confirmation du mot de passe",
+      "it": null,
+      "pl": null
+    },
+    {
+      "key": "form_password_no_match",
+      "en": "Passwords don't match",
+      "es": null,
+      "fl": null,
+      "fr": "Les mots de passe ne concordent pas",
+      "it": null,
+      "pl": null
+    },
+    {
+      "key": "form_pseudo",
+      "en": "Pseudo",
+      "es": null,
+      "fl": null,
+      "fr": "Pseudo",
+      "it": null,
+      "pl": null
+    },
+    {
+      "key": "connection_error",
+      "en": "Connection error, please check your credentials",
+      "es": null,
+      "fl": null,
+      "fr": "Erreur de connexion, vérifier les données saisies",
+      "it": null,
+      "pl": null
+    },
+    {
+      "key": "button_connect",
+      "en": "Connect",
+      "es": null,
+      "fl": null,
+      "fr": "Valider",
+      "it": null,
+      "pl": null
+    },
+    {
+      "key": "user_create_error",
+      "en": "Error creating account!",
+      "es": null,
+      "fl": null,
+      "fr": "Problème lors de la création du compte",
+      "it": null,
+      "pl": null
+    },
+    {
+      "key": "button_create_user",
+      "en": "Create account",
+      "es": null,
+      "fl": null,
+      "fr": "Valider",
+      "it": null,
+      "pl": null
+    },
+    {
+      "key": "enter_meeting_code",
+      "en": "Or enter multiplayer game code",
+      "es": null,
+      "fl": null,
+      "fr": "Ou entrer un code de partie multijoueur",
+      "it": null,
+      "pl": null
+    },
+    {
+      "key": "meeting_code",
+      "en": "Code",
+      "es": null,
+      "fl": null,
+      "fr": "Code",
+      "it": null,
+      "pl": null
+    },
+    {
+      "key": "error_connect_multiplayer_game",
+      "en": "Error connecting to multiplayer game",
+      "es": null,
+      "fl": null,
+      "fr": "Problème lors de la connexion à la partie mulijoueur",
+      "it": null,
+      "pl": null
+    },
+    {
+      "key": null,
+      "en": null,
+      "es": null,
+      "fl": null,
+      "fr": null,
+      "it": null,
+      "pl": null
+    },
+    {
+      "key": "new_user_popup_title",
+      "en": "A previous user has been detected",
+      "es": null,
+      "fl": null,
+      "fr": "Un profil local a déjà été trouvé",
+      "it": null,
+      "pl": null
+    },
+    {
+      "key": "new_user_popup_content",
+      "en": "Do you want to start from scratch or reuse this profile ?",
+      "es": null,
+      "fl": null,
+      "fr": "Voulez-vous poursuivre avec le profil local ou recommencer à zéro ?",
+      "it": null,
+      "pl": null
+    },
+    {
+      "key": "new_user_popup_erase_btn",
+      "en": "Start new",
+      "es": null,
+      "fl": null,
+      "fr": "Recommencer à zéro",
+      "it": null,
+      "pl": null
+    },
+    {
+      "key": "new_user_popup_keep_btn",
+      "en": "Reuse",
+      "es": null,
+      "fl": null,
+      "fr": "Poursuivre",
+      "it": null,
+      "pl": null
+    },
+    {
+      "key": null,
+      "en": null,
+      "es": null,
+      "fl": null,
+      "fr": null,
+      "it": null,
+      "pl": null
+    },
+    {
+      "key": "connected_as",
+      "en": "Connected as",
+      "es": null,
+      "fl": null,
+      "fr": "Connecté en tant que",
+      "it": null,
+      "pl": null
+    },
+    {
+      "key": null,
+      "en": null,
+      "es": null,
+      "fl": null,
+      "fr": null,
+      "it": null,
+      "pl": null
+    },
+    {
+      "key": "CHART - GAINS & COSTS",
+      "en": null,
+      "es": null,
+      "fl": null,
+      "fr": null,
+      "it": null,
+      "pl": null
+    },
+    {
+      "key": null,
+      "en": null,
+      "es": null,
+      "fl": null,
+      "fr": null,
+      "it": null,
+      "pl": null
+    },
+    {
+      "key": "gains",
+      "en": "Gains",
+      "es": "Utilidad",
+      "fl": "Baten",
+      "fr": "Gains",
+      "it": "Guadagni",
+      "pl": "Zyski"
+    },
+    {
+      "key": "costs",
+      "en": "Costs",
+      "es": "Costos",
+      "fl": "Lasten",
+      "fr": "Coûts",
+      "it": "Costi",
+      "pl": "Koszty"
+    },
+    {
+      "key": null,
+      "en": null,
+      "es": null,
+      "fl": null,
+      "fr": null,
+      "it": null,
+      "pl": null
+    },
+    {
+      "key": "gains_n_costs_Y_label",
+      "en": "₸",
+      "es": "₸",
+      "fl": "₸",
+      "fr": "₸",
+      "it": "₸",
+      "pl": "₸"
+    },
+    {
+      "key": null,
+      "en": null,
+      "es": null,
+      "fl": null,
+      "fr": null,
+      "it": null,
+      "pl": null
+    },
+    {
+      "key": "CHART - CROP PROD",
+      "en": null,
+      "es": null,
+      "fl": null,
+      "fr": null,
+      "it": null,
+      "pl": null
+    },
+    {
+      "key": null,
+      "en": null,
+      "es": null,
+      "fl": null,
+      "fr": null,
+      "it": null,
+      "pl": null
+    },
+    {
+      "key": "wheat",
+      "en": "Wheat",
+      "es": "Trigo",
+      "fl": "Tarwe",
+      "fr": "Blé",
+      "it": "Grano",
+      "pl": "Pszenica"
+    },
+    {
+      "key": "barley",
+      "en": "Barley",
+      "es": "Cebada",
+      "fl": "Gerst",
+      "fr": "Orge",
+      "it": "Orzo",
+      "pl": "Jęczmień"
+    },
+    {
+      "key": "rapeseed",
+      "en": "Rapeseed",
+      "es": "Canola",
+      "fl": "Raapzaad",
+      "fr": "Colza",
+      "it": "Colza",
+      "pl": "Rzepak"
+    },
+    {
+      "key": "faba_bean",
+      "en": "Faba bean",
+      "es": "Haba",
+      "fl": "Fababoon",
+      "fr": "Féverole",
+      "it": "Fava",
+      "pl": "Bobik"
+    },
+    {
+      "key": "maize",
+      "en": "Maize",
+      "es": "Maíz",
+      "fl": "Mais",
+      "fr": "Maïs",
+      "it": "Mais",
+      "pl": "Kukurydza"
+    },
+    {
+      "key": "alfalfa",
+      "en": "Alfalfa",
+      "es": "Alfalfa",
+      "fl": "Alfalfa",
+      "fr": "Luzerne",
+      "it": "Erba medica",
+      "pl": "Lucerna"
+    },
+    {
+      "key": "sorghum",
+      "en": "Sorghum",
+      "es": "Sorgo",
+      "fl": "Sorghum",
+      "fr": "Sorgho",
+      "it": "Sorgo",
+      "pl": "Sorgo"
+    },
+    {
+      "key": "grass",
+      "en": "Grass",
+      "es": "Hierba",
+      "fl": "Gras",
+      "fr": "Herbe",
+      "it": "Erba",
+      "pl": "Trawa"
+    },
+    {
+      "key": "straw",
+      "en": "Straw",
+      "es": "Paja",
+      "fl": "Stro",
+      "fr": "Paille",
+      "it": "Paglia",
+      "pl": "Słoma"
+    },
+    {
+      "key": "soybean",
+      "en": "Soybean",
+      "es": "Soya",
+      "fl": "Sojaboon",
+      "fr": "Soja",
+      "it": "Soia",
+      "pl": "Soja"
+    },
+    {
+      "key": "sugar_beet",
+      "en": "Sugar beet",
+      "es": "Remolacha azucarera",
+      "fl": "Suikerbiet",
+      "fr": "Betterave à sucre",
+      "it": "Barbabietola da zucchero",
+      "pl": "Burak cukrowy"
+    },
+    {
+      "key": "potato",
+      "en": "Potato",
+      "es": "Papa",
+      "fl": "Aardappel",
+      "fr": "Pomme de terre",
+      "it": "Patata",
+      "pl": "Ziemniak"
+    },
+    {
+      "key": "pea",
+      "en": "Pea",
+      "es": "Arvejas",
+      "fl": "Erwt",
+      "fr": "Pois",
+      "it": "Pisello",
+      "pl": "Groch"
+    },
+    {
+      "key": null,
+      "en": null,
+      "es": null,
+      "fl": null,
+      "fr": null,
+      "it": null,
+      "pl": null
+    },
+    {
+      "key": "crop_prod_legend_title",
+      "en": "Quantity",
+      "es": "Cantidad",
+      "fl": "Hoeveelheid",
+      "fr": "Quantité",
+      "it": "Quantità",
+      "pl": "Ilość"
+    },
+    {
+      "key": "crop_prod_legend_subtitle",
+      "en": "(t DM, except for sugar beet and potato in t) ",
+      "es": "(t MS, excepto para la remolacha azucarera y la papa) ",
+      "fl": "(t DM, behalve voor suikerbiet en aardappel in t) ",
+      "fr": "(t MS, sauf pour la betterave sucrière et la pomme de terre en t) ",
+      "it": "(t s.s., eccetto barbabietola da zucchero e patata in t) ",
+      "pl": "(t suchej masy, za wyjątkiem buraka cukrowego i ziemniaka – t) "
+    },
+    {
+      "key": null,
+      "en": null,
+      "es": null,
+      "fl": null,
+      "fr": null,
+      "it": null,
+      "pl": null
+    },
+    {
+      "key": "products",
+      "en": "Products",
+      "es": "Productos",
+      "fl": "Producten",
+      "fr": "Produits",
+      "it": "Prodotti",
+      "pl": "Produkty"
+    },
+    {
+      "key": "demands",
+      "en": "Demands",
+      "es": "Requisitos",
+      "fl": "Vraag",
+      "fr": "Demandes",
+      "it": "Esigenze",
+      "pl": "Potrzeby"
+    },
+    {
+      "key": null,
+      "en": null,
+      "es": null,
+      "fl": null,
+      "fr": null,
+      "it": null,
+      "pl": null
+    },
+    {
+      "key": "CHART - WORKLOAD",
+      "en": null,
+      "es": null,
+      "fl": null,
+      "fr": null,
+      "it": null,
+      "pl": null
+    },
+    {
+      "key": null,
+      "en": null,
+      "es": null,
+      "fl": null,
+      "fr": null,
+      "it": null,
+      "pl": null
+    },
+    {
+      "key": "month1",
+      "en": "Jan.",
+      "es": "Ene.",
+      "fl": "Jan.",
+      "fr": "Janv.",
+      "it": "Gen.",
+      "pl": "Sty."
+    },
+    {
+      "key": "month2",
+      "en": "Feb.",
+      "es": "Feb.",
+      "fl": "Feb.",
+      "fr": "Fév.",
+      "it": "Feb.",
+      "pl": "Lut."
+    },
+    {
+      "key": "month3",
+      "en": "Mar.",
+      "es": "Mar.",
+      "fl": "Mrt.",
+      "fr": "Mar.",
+      "it": "Mar.",
+      "pl": "Mar."
+    },
+    {
+      "key": "month4",
+      "en": "Apr.",
+      "es": "Abr.",
+      "fl": "Apr.",
+      "fr": "Avr.",
+      "it": "Apr.",
+      "pl": "Kwi."
+    },
+    {
+      "key": "month5",
+      "en": "May.",
+      "es": "Mayo",
+      "fl": "Mei",
+      "fr": "Mai",
+      "it": "Mag.",
+      "pl": "Maj"
+    },
+    {
+      "key": "month6",
+      "en": "Jun.",
+      "es": "Junio",
+      "fl": "Jun.",
+      "fr": "Juin",
+      "it": "Giu.",
+      "pl": "Cze."
+    },
+    {
+      "key": "month7",
+      "en": "Jul.",
+      "es": "Julio.",
+      "fl": "Jul.",
+      "fr": "Juil.",
+      "it": "Lug.",
+      "pl": "Lip."
+    },
+    {
+      "key": "month8",
+      "en": "Aug.",
+      "es": "Agosto",
+      "fl": "Aug.",
+      "fr": "Août",
+      "it": "Ago.",
+      "pl": "Sie."
+    },
+    {
+      "key": "month9",
+      "en": "Sep.",
+      "es": "Sept.",
+      "fl": "Sep.",
+      "fr": "Sept.",
+      "it": "Set.",
+      "pl": "Wrz."
+    },
+    {
+      "key": "month10",
+      "en": "Oct.",
+      "es": "Oct.",
+      "fl": "Okt.",
+      "fr": "Oct.",
+      "it": "Ott.",
+      "pl": "Paź."
+    },
+    {
+      "key": "month11",
+      "en": "Nov.",
+      "es": "Nov.",
+      "fl": "Nov.",
+      "fr": "Nov.",
+      "it": "Nov.",
+      "pl": "Lis."
+    },
+    {
+      "key": "month12",
+      "en": "Dec.",
+      "es": "Dic.",
+      "fl": "Dec.",
+      "fr": "Déc.",
+      "it": "Dic.",
+      "pl": "Gru."
+    },
+    {
+      "key": null,
+      "en": null,
+      "es": null,
+      "fl": null,
+      "fr": null,
+      "it": null,
+      "pl": null
+    },
+    {
+      "key": "workload_Y_label",
+      "en": "h/month",
+      "es": "h/mes",
+      "fl": "h/maand",
+      "fr": "h/mois",
+      "it": "h/mese",
+      "pl": "h/miesiąc"
+    },
+    {
+      "key": null,
+      "en": null,
+      "es": null,
+      "fl": null,
+      "fr": null,
+      "it": null,
+      "pl": null
+    },
+    {
+      "key": "REPORT POPUP",
+      "en": null,
+      "es": null,
+      "fl": null,
+      "fr": "\u0000",
+      "it": null,
+      "pl": null
+    },
+    {
+      "key": null,
+      "en": null,
+      "es": null,
+      "fl": null,
+      "fr": null,
+      "it": null,
+      "pl": null
+    },
+    {
+      "key": "report_popup_title_year_1",
+      "en": "Report: consequences of initial agricultural practices",
+      "es": "Informe: consecuencias de las prácticas agrícolas iniciales",
+      "fl": "Rapport: gevolgen van beginnende landbouwpraktijken",
+      "fr": "Rapport : conséquences des pratiques agricoles initiales",
+      "it": "Rapporto: conseguenze delle pratiche agricole iniziali",
+      "pl": "Raport: konsekwencje początkowych praktyk rolniczych"
+    },
+    {
+      "key": "report_popup_title_year_2+",
+      "en": "Report: consequences of agricultural practices implemented in Year",
+      "es": "Informe: consecuencias de las prácticas agrícolas aplicadas durante el año",
+      "fl": "Rapport: gevolgen van landbouwpraktijken geïmplementeerd in het jaar",
+      "fr": "Rapport : conséquences des pratiques agricoles mises en œuvre au cours de l'année",
+      "it": "Rapporto: conseguenze delle pratiche agricole attuate nell'anno",
+      "pl": "Raport: konsekwencje praktyk rolniczych wdrożonych w roku"
+    },
+    {
+      "key": "initial_practices",
+      "en": "Initial practices",
+      "es": "Prácticas iniciales",
+      "fl": "Beginpraktijken",
+      "fr": "Pratiques initiales",
+      "it": "Pratiche iniziali",
+      "pl": "Początkowe praktyki"
+    },
+    {
+      "key": "new_practices_year_n",
+      "en": "New practices implemented in year",
+      "es": "Nuevas prácticas aplicadas durante el año",
+      "fl": "Nieuwe praktijken geïmplementeerd in het jaar",
+      "fr": "Nouvelles pratiques mises en œuvre en année",
+      "it": "Nuove pratiche implementate nell'anno",
+      "pl": "Nowe praktyki wdrażane w roku"
+    },
+    {
+      "key": null,
+      "en": null,
+      "es": null,
+      "fl": null,
+      "fr": null,
+      "it": null,
+      "pl": null
+    },
+    {
+      "key": null,
+      "en": null,
+      "es": null,
+      "fl": null,
+      "fr": null,
+      "it": null,
+      "pl": null
+    },
+    {
+      "key": null,
+      "en": null,
+      "es": null,
+      "fl": null,
+      "fr": null,
+      "it": null,
+      "pl": null
+    },
+    {
+      "key": "MY FARM POPUP",
+      "en": null,
+      "es": null,
+      "fl": null,
+      "fr": null,
+      "it": null,
+      "pl": null
+    },
+    {
+      "key": null,
+      "en": null,
+      "es": null,
+      "fl": null,
+      "fr": null,
+      "it": null,
+      "pl": null
+    },
+    {
+      "key": "my_farm_title",
+      "en": "My farm ",
+      "es": "Mi granja",
+      "fl": "Mijn boerderij ",
+      "fr": "Ma ferme",
+      "it": "La mia fattoria ",
+      "pl": "Moja ferma"
+    },
+    {
+      "key": "permanent_workers_nb",
+      "en": "Number of permanent workers: ",
+      "es": "Número de empleados permanentes: ",
+      "fl": "Aantal permanente arbeiders: ",
+      "fr": "Nombre de travailleurs permanents : ",
+      "it": "Numero di dipendenti fissi: ",
+      "pl": "Liczba stałych pracowników: "
+    },
+    {
+      "key": "farm_localization",
+      "en": "Farm location: ",
+      "es": "Ubicación de la granja: ",
+      "fl": "Locatie van de boerderij: ",
+      "fr": "Localisation de la ferme : ",
+      "it": "Posizione della fattoria: ",
+      "pl": "Lokalizacja farmy: "
+    },
+    {
+      "key": "BELGIUM",
+      "en": "Belgium",
+      "es": "Bélgica",
+      "fl": "België",
+      "fr": "Belgique",
+      "it": "Belgio",
+      "pl": "Belgia"
+    },
+    {
+      "key": "FRANCE",
+      "en": "France",
+      "es": "Francia",
+      "fl": "Frankrijk",
+      "fr": "France",
+      "it": "Francia",
+      "pl": "Francja"
+    },
+    {
+      "key": "ITALY",
+      "en": "Italy",
+      "es": "Italia",
+      "fl": "Italië",
+      "fr": "Italie",
+      "it": "Italia",
+      "pl": "Włochy"
+    },
+    {
+      "key": "POLAND",
+      "en": "Poland",
+      "es": "Polonia",
+      "fl": "Polen",
+      "fr": "Pologne",
+      "it": "Polonia",
+      "pl": "Polska"
+    },
+    {
+      "key": "crop_rotation_and_production",
+      "en": "Crop rotation and production",
+      "es": "Rotación de cultivos y producción",
+      "fl": "Gewasrotatie en productie",
+      "fr": "Rotation des cultures et production végétale",
+      "it": "Rotazione e produzione delle colture",
+      "pl": "Rotacja upraw i produkcja"
+    },
+    {
+      "key": "herd_size_and_animal_production",
+      "en": "Herd size and animal production",
+      "es": null,
+      "fl": null,
+      "fr": "Cheptel et production animale",
+      "it": null,
+      "pl": null
+    },
+    {
+      "key": "type_of_farming",
+      "en": "Type of farming:  ",
+      "es": "Tipo de agricultura : ",
+      "fl": "Soort landbouw :",
+      "fr": "Type d'agriculture : ",
+      "it": "Tipo di agricoltura : ",
+      "pl": "Ferma organiczna:"
+    },
+    {
+      "key": "type_of_farming_conventional",
+      "en": "Conventional",
+      "es": "Convencional",
+      "fl": "Conventioneel",
+      "fr": "Conventionnel",
+      "it": "Convenzionale",
+      "pl": "Nie"
+    },
+    {
+      "key": "type_of_farming_organic",
+      "en": "Organic",
+      "es": "Orgánico",
+      "fl": "Organisch",
+      "fr": "Biologique",
+      "it": "Organico",
+      "pl": "Tak"
+    },
+    {
+      "key": null,
+      "en": null,
+      "es": null,
+      "fl": null,
+      "fr": null,
+      "it": null,
+      "pl": null
+    },
+    {
+      "key": "indCr239_label",
+      "en": "Permanent grassland",
+      "es": "pastizal permanente",
+      "fl": "blijvend grasland",
+      "fr": "Prairie permanente",
+      "it": "prato permanente",
+      "pl": "pastwiska trwałe"
+    },
+    {
+      "key": "indF139_label",
+      "en": "Green infrastructures",
+      "es": null,
+      "fl": null,
+      "fr": "Infrastructures écologiques",
+      "it": null,
+      "pl": null
+    },
+    {
+      "key": "indF140_label",
+      "en": "Agroforestry",
+      "es": null,
+      "fl": null,
+      "fr": "Agroforesterie",
+      "it": null,
+      "pl": null
+    },
+    {
+      "key": "indF170_label",
+      "en": "Wheat",
+      "es": "Trigo",
+      "fl": "Tarwe",
+      "fr": "Blé",
+      "it": "Grano",
+      "pl": "Pszenica"
+    },
+    {
+      "key": "indF171_label",
+      "en": "Barley",
+      "es": "Cebada",
+      "fl": "Gerst",
+      "fr": "Orge",
+      "it": "Orzo",
+      "pl": "Jęczmień"
+    },
+    {
+      "key": "indF172_label",
+      "en": "Sugar beet",
+      "es": "Remolacha azucarera",
+      "fl": "Suikerbiet",
+      "fr": "Betterave à sucre",
+      "it": "Barbabietola da zucchero",
+      "pl": "Burak cukrowy"
+    },
+    {
+      "key": "indF173_label",
+      "en": "Potato",
+      "es": "Papa",
+      "fl": "Aardappel",
+      "fr": "Pomme de terre",
+      "it": "Patata",
+      "pl": "Ziemniak"
+    },
+    {
+      "key": "indF174_label",
+      "en": "Rapeseed",
+      "es": "Canola",
+      "fl": "Raapzaad",
+      "fr": "Colza",
+      "it": "Colza",
+      "pl": "Rzepak"
+    },
+    {
+      "key": "indF175_label",
+      "en": "Pea",
+      "es": "Arvejas",
+      "fl": "Erwt",
+      "fr": "Pois",
+      "it": "Pisello",
+      "pl": "Groch"
+    },
+    {
+      "key": "indF176_label",
+      "en": "Faba bean",
+      "es": "Haba",
+      "fl": "Fababoon",
+      "fr": "Féverole",
+      "it": "Fava",
+      "pl": "Bobik"
+    },
+    {
+      "key": "indF177_label",
+      "en": "Maize",
+      "es": "Maíz",
+      "fl": "Mais",
+      "fr": "Maïs",
+      "it": "Mais",
+      "pl": "Kukurydza"
+    },
+    {
+      "key": "indF178_label",
+      "en": "Alfalfa",
+      "es": "Alfalfa",
+      "fl": "Alfalfa",
+      "fr": "Luzerne",
+      "it": "Erba medica",
+      "pl": "Lucerna"
+    },
+    {
+      "key": "indF179_label",
+      "en": "Sorghum",
+      "es": "Sorgo",
+      "fl": "Sorghum",
+      "fr": "Sorgho",
+      "it": "Sorgo",
+      "pl": "Sorgo"
+    },
+    {
+      "key": "indF180_label",
+      "en": "Temporary grassland",
+      "es": "Hierba",
+      "fl": "Gras",
+      "fr": "Prairie temporaire",
+      "it": "Erba",
+      "pl": "Trawa"
+    },
+    {
+      "key": "indCr19.UAA1_label",
+      "en": "Wheat",
+      "es": "Trigo",
+      "fl": "Tarwe",
+      "fr": "Blé",
+      "it": "Grano",
+      "pl": "Pszenica"
+    },
+    {
+      "key": "indCr20.UAA1_label",
+      "en": "Barley",
+      "es": "Cebada",
+      "fl": "Gerst",
+      "fr": "Orge",
+      "it": "Orzo",
+      "pl": "Jęczmień"
+    },
+    {
+      "key": "indCr21.UAA1_label",
+      "en": "Sugar beet",
+      "es": "Remolacha azucarera",
+      "fl": "Suikerbiet",
+      "fr": "Betterave à sucre",
+      "it": "Barbabietola da zucchero",
+      "pl": "Burak cukrowy"
+    },
+    {
+      "key": "indCr22.UAA1_label",
+      "en": "Potato",
+      "es": "Papa",
+      "fl": "Aardappel",
+      "fr": "Pomme de terre",
+      "it": "Patata",
+      "pl": "Ziemniak"
+    },
+    {
+      "key": "indCr23.UAA1_label",
+      "en": "Rapeseed",
+      "es": "Canola",
+      "fl": "Raapzaad",
+      "fr": "Colza",
+      "it": "Colza",
+      "pl": "Rzepak"
+    },
+    {
+      "key": "indCr24.UAA1_label",
+      "en": "Pea",
+      "es": "Arvejas",
+      "fl": "Erwt",
+      "fr": "Pois",
+      "it": "Pisello",
+      "pl": "Groch"
+    },
+    {
+      "key": "indCr25.UAA1_label",
+      "en": "Faba bean",
+      "es": "Haba",
+      "fl": "Fababoon",
+      "fr": "Féverole",
+      "it": "Fava",
+      "pl": "Bobik"
+    },
+    {
+      "key": "indCr26.UAA1_label",
+      "en": "Maize",
+      "es": "Maíz",
+      "fl": "Mais",
+      "fr": "Maïs",
+      "it": "Mais",
+      "pl": "Kukurydza"
+    },
+    {
+      "key": "indCr27.UAA1_label",
+      "en": "Alfalfa",
+      "es": "Alfalfa",
+      "fl": "Alfalfa",
+      "fr": "Luzerne",
+      "it": "Erba medica",
+      "pl": "Lucerna"
+    },
+    {
+      "key": "indCr28.UAA1_label",
+      "en": "Sorghum",
+      "es": "Sorgo",
+      "fl": "Sorghum",
+      "fr": "Sorgho",
+      "it": "Sorgo",
+      "pl": "Sorgo"
+    },
+    {
+      "key": "indCr29.UAA1_label",
+      "en": "Temporary grassland",
+      "es": "Hierba",
+      "fl": "Gras",
+      "fr": "Prairie temporaire",
+      "it": "Erba",
+      "pl": "Trawa"
+    },
+    {
+      "key": "indCr19.UAA2_label",
+      "en": "Wheat",
+      "es": "Trigo",
+      "fl": "Tarwe",
+      "fr": "Blé",
+      "it": "Grano",
+      "pl": "Pszenica"
+    },
+    {
+      "key": "indCr20.UAA2_label",
+      "en": "Barley",
+      "es": "Cebada",
+      "fl": "Gerst",
+      "fr": "Orge",
+      "it": "Orzo",
+      "pl": "Jęczmień"
+    },
+    {
+      "key": "indCr21.UAA2_label",
+      "en": "Sugar beet",
+      "es": "Remolacha azucarera",
+      "fl": "Suikerbiet",
+      "fr": "Betterave à sucre",
+      "it": "Barbabietola da zucchero",
+      "pl": "Burak cukrowy"
+    },
+    {
+      "key": "indCr22.UAA2_label",
+      "en": "Potato",
+      "es": "Papa",
+      "fl": "Aardappel",
+      "fr": "Pomme de terre",
+      "it": "Patata",
+      "pl": "Ziemniak"
+    },
+    {
+      "key": "indCr23.UAA2_label",
+      "en": "Rapeseed",
+      "es": "Canola",
+      "fl": "Raapzaad",
+      "fr": "Colza",
+      "it": "Colza",
+      "pl": "Rzepak"
+    },
+    {
+      "key": "indCr24.UAA2_label",
+      "en": "Pea",
+      "es": "Arvejas",
+      "fl": "Erwt",
+      "fr": "Pois",
+      "it": "Pisello",
+      "pl": "Groch"
+    },
+    {
+      "key": "indCr25.UAA2_label",
+      "en": "Faba bean",
+      "es": "Haba",
+      "fl": "Fababoon",
+      "fr": "Féverole",
+      "it": "Fava",
+      "pl": "Bobik"
+    },
+    {
+      "key": "indCr26.UAA2_label",
+      "en": "Maize",
+      "es": "Maíz",
+      "fl": "Mais",
+      "fr": "Maïs",
+      "it": "Mais",
+      "pl": "Kukurydza"
+    },
+    {
+      "key": "indCr27.UAA2_label",
+      "en": "Alfalfa",
+      "es": "Alfalfa",
+      "fl": "Alfalfa",
+      "fr": "Luzerne",
+      "it": "Erba medica",
+      "pl": "Lucerna"
+    },
+    {
+      "key": "indCr28.UAA2_label",
+      "en": "Sorghum",
+      "es": "Sorgo",
+      "fl": "Sorghum",
+      "fr": "Sorgho",
+      "it": "Sorgo",
+      "pl": "Sorgo"
+    },
+    {
+      "key": "indCr29.UAA2_label",
+      "en": "Temporary grassland",
+      "es": "Hierba",
+      "fl": "Gras",
+      "fr": "Prairie temporaire",
+      "it": "Erba",
+      "pl": "Trawa"
+    },
+    {
+      "key": "indAn128_label",
+      "en": "Meat production",
+      "es": "Producción de carne",
+      "fl": "Vleesproductie",
+      "fr": "Production de viande",
+      "it": "Produzione di carne",
+      "pl": "Produkcja mięsa"
+    },
+    {
+      "key": "indAn1_label",
+      "en": "Dairy cows",
+      "es": "Número medio de vacas lecheras",
+      "fl": "Gemiddeld aantal melkkoeien",
+      "fr": "Vaches laitières",
+      "it": "Numero medio di vacche da latte",
+      "pl": "Średnia liczba krów mlecznych"
+    },
+    {
+      "key": "indAn2_label",
+      "en": "Heifers",
+      "es": "Número medio de novillas",
+      "fl": "Gemiddeld aantal vaarzen",
+      "fr": "Génisses",
+      "it": "Numero medio di giovenche",
+      "pl": "Średnia liczba jałówek"
+    },
+    {
+      "key": "indAn3_label",
+      "en": "Bulls and steers",
+      "es": "Promedio de toros y novillos",
+      "fl": "Gemiddeld aantal stieren en ossen",
+      "fr": "Bovins mâles",
+      "it": "Numero medio di tori e manzi",
+      "pl": "Średnia liczba byków i wołów"
+    },
+    {
+      "key": "indAn4_label",
+      "en": "Calves",
+      "es": "Número medio de terneros",
+      "fl": "Gemiddeld aantal kalveren",
+      "fr": "Veaux",
+      "it": "Numero medio di vitelli",
+      "pl": "Średnia liczba cieląt"
+    },
+    {
+      "key": "indAn127_label",
+      "en": "Milk production",
+      "es": "Producción de leche",
+      "fl": "Melkproductie",
+      "fr": "Production laitière",
+      "it": "Produzione di latte",
+      "pl": "Produkcja mleka"
+    },
+    {
+      "key": "PARAMETERS",
+      "en": null,
+      "es": null,
+      "fl": "\u0000",
+      "fr": null,
+      "it": null,
+      "pl": "\u0000"
+    },
+    {
+      "key": null,
+      "en": null,
+      "es": null,
+      "fl": null,
+      "fr": null,
+      "it": null,
+      "pl": null
+    },
+    {
+      "key": "paramF1",
+      "en": "Total farm area: ",
+      "es": "Superficie total de la granja ",
+      "fl": "Totaal boerderijgebied: ",
+      "fr": "Surface totale de la ferme : ",
+      "it": "Area totale della fattoria: ",
+      "pl": "Całkowita powierzchnia gospodarstwa: "
+    },
+    {
+      "key": "paramF1_unit",
+      "en": "ha",
+      "es": "ha",
+      "fl": "ha",
+      "fr": "ha",
+      "it": "ha",
+      "pl": "ha"
+    },
+    {
+      "key": null,
+      "en": null,
+      "es": null,
+      "fl": null,
+      "fr": null,
+      "it": null,
+      "pl": null
+    },
+    {
+      "key": null,
+      "en": null,
+      "es": null,
+      "fl": null,
+      "fr": null,
+      "it": null,
+      "pl": null
+    },
+    {
+      "key": null,
+      "en": null,
+      "es": null,
+      "fl": null,
+      "fr": null,
+      "it": null,
+      "pl": null
+    },
+    {
+      "key": "GOALS",
+      "en": null,
+      "es": null,
+      "fl": "\u0000",
+      "fr": null,
+      "it": null,
+      "pl": "\u0000"
+    },
+    {
+      "key": "time_limit",
+      "en": "Time limit: max 3 years!",
+      "es": "Límite de tiempo: ¡máximo 3 años!",
+      "fl": "Tijdslimiet: max. 3 jaar!",
+      "fr": "Temps limité : maximum 3 ans !",
+      "it": "Limite di tempo: max 3 anni!",
+      "pl": "Limit czasowy: maksymalnie 3 lata!"
+    },
+    {
+      "key": "durability_1",
+      "en": "good economic sustainability (> 0.6)",
+      "es": "buena sostenibilidad económica (> 0,6)",
+      "fl": "goede economische duurzaamheid (> 0,6)",
+      "fr": "bonne durabilité économique (> 0,6)",
+      "it": "buona sostenibilità economica (> 0,6)",
+      "pl": "dobra stabilność gospodarcza (> 0,6)"
+    },
+    {
+      "key": "durability_2",
+      "en": "and good environmental sustainability (> 0.6)",
+      "es": "y una buena sostenibilidad ambiental (> 0,6)",
+      "fl": "en goede milieuduurzaamheid (> 0,6)",
+      "fr": "et bonne durabilité environnementale (> 0,6)",
+      "it": "e una buona sostenibilità ambientale (> 0,6)",
+      "pl": "i dobre zrównoważenie środowiskowe (> 0,6)"
+    },
+    {
+      "key": "durability_3",
+      "en": "and good social sustainability (> 0.6)",
+      "es": "y una buena sostenibilidad social (> 0,6)",
+      "fl": "en goede sociale duurzaamheid (> 0,6)",
+      "fr": "et bonne durabilité sociale (> 0,6)",
+      "it": "e una buona sostenibilità sociale (> 0,6)",
+      "pl": "i dobre zrównoważenie społeczne (> 0,6)"
+    },
+    {
+      "key": "durability_4",
+      "en": "after 10 years",
+      "es": "después de 10 años",
+      "fl": "na 10 jaar",
+      "fr": "après plus de 10 ans",
+      "it": "dopo 10 anni",
+      "pl": "po 10 latach"
+    },
+    {
+      "key": "deficit",
+      "en": "the Cumulated investment capacity is negative for more than 3 years",
+      "es": "el beneficio de la granja es negativo por más de 3 años",
+      "fl": "de bedrijfswinst is al meer dan 3 jaar negatief",
+      "fr": "la Capacité d'investissement cumulée est négative pendant plus de 3 ans",
+      "it": "il profitto dell'azienda agricola è negativo per più di 3 anni",
+      "pl": "zysk gospodarstwa jest ujemny przez okres dłuższy niż 3 lata"
+    },
+    {
+      "key": "duration",
+      "en": "you did not achieve the goals after 10 years",
+      "es": "no lograste los objetivos después de 10 años",
+      "fl": "je hebt de doelen na 10 jaar niet bereikt",
+      "fr": "vous n'atteignez pas les objectifs dans les 10 ans",
+      "it": "non hai raggiunto gli obiettivi dopo 10 anni",
+      "pl": "nie udało ci się osiągnąć celów po 10 latach"
+    },
+    {
+      "key": null,
+      "en": null,
+      "es": null,
+      "fl": null,
+      "fr": null,
+      "it": null,
+      "pl": null
+    },
+    {
+      "key": "ALEAS",
+      "en": null,
+      "es": null,
+      "fl": null,
+      "fr": null,
+      "it": null,
+      "pl": "\u0000"
+    },
+    {
+      "key": "tooltip_aleas_title",
+      "en": "Aleas",
+      "es": null,
+      "fl": null,
+      "fr": null,
+      "it": null,
+      "pl": null
+    },
+    {
+      "key": "milk_price_title",
+      "en": "Crisis in the dairy industry!",
+      "es": null,
+      "fl": null,
+      "fr": "Crise dans l'industrie laitière !",
+      "it": null,
+      "pl": null
+    },
+    {
+      "key": "milk_price_description",
+      "en": "The milk price has lowered by ₸100!",
+      "es": null,
+      "fl": null,
+      "fr": "Le prix du lait a baissé de 100₸ !",
+      "it": null,
+      "pl": null
+    },
+    {
+      "key": "summer_drought_title",
+      "en": "Summer drought!",
+      "es": null,
+      "fl": null,
+      "fr": "Sécheresse estivale !",
+      "it": null,
+      "pl": null
+    },
+    {
+      "key": "summer_drought_description",
+      "en": "Maize yields decreased by 20%! Yields of other cereals decreased by 15%! Rapeseed, pea, faba bean, and temporary grassland yields decreased by 10%!",
+      "es": null,
+      "fl": null,
+      "fr": "Les rendements du maïs ont baissé de 20% ! Les rendements des autres céréales ont baissé de 15% ! Les rendements du colza, du pois, de la féverole et des prairies temporaires ont baissé de 10% !",
+      "it": null,
+      "pl": null
+    },
+    {
+      "key": null,
+      "en": null,
+      "es": null,
+      "fl": null,
+      "fr": null,
+      "it": null,
+      "pl": null
+    },
+    {
+      "key": "PROFILE POPUP",
+      "en": null,
+      "es": null,
+      "fl": null,
+      "fr": null,
+      "it": null,
+      "pl": "\u0000"
+    },
+    {
+      "key": null,
+      "en": null,
+      "es": null,
+      "fl": null,
+      "fr": null,
+      "it": null,
+      "pl": null
+    },
+    {
+      "key": "profile_popup_title",
+      "en": "My profile",
+      "es": null,
+      "fl": null,
+      "fr": "Mon profil",
+      "it": null,
+      "pl": null
+    },
+    {
+      "key": "badges_tab",
+      "en": "My achievements",
+      "es": null,
+      "fl": null,
+      "fr": "Mes badges",
+      "it": null,
+      "pl": null
+    },
+    {
+      "key": "score_tab",
+      "en": "My scores",
+      "es": null,
+      "fl": null,
+      "fr": "Mes scores",
+      "it": null,
+      "pl": null
+    },
+    {
+      "key": "leaderboard_tab",
+      "en": "Best scores",
+      "es": null,
+      "fl": null,
+      "fr": "Meilleurs scores",
+      "it": null,
+      "pl": null
+    },
+    {
+      "key": "connection_incitation",
+      "en": "You are playing as an unregistred user! Register to compete against other players! ",
+      "es": null,
+      "fl": null,
+      "fr": "Vous jouez en tant qu'utilisateur non enregistré ! Connectez-vous afin de vous mesurer aux autres !",
+      "it": null,
+      "pl": null
+    },
+    {
+      "key": "meeting_datas_error",
+      "en": "An error happened, please try later",
+      "es": null,
+      "fl": null,
+      "fr": "Une erreur est apparue. Essayez plus tard...",
+      "it": null,
+      "pl": null
+    },
+    {
+      "key": "loading",
+      "en": "Loading...",
+      "es": null,
+      "fl": null,
+      "fr": "Chargement...",
+      "it": null,
+      "pl": null
+    },
+    {
+      "key": "scores_no_data",
+      "en": "No data!",
+      "es": null,
+      "fl": null,
+      "fr": "Aucune donnée !",
+      "it": null,
+      "pl": null
+    },
+    {
+      "key": null,
+      "en": null,
+      "es": null,
+      "fl": null,
+      "fr": null,
+      "it": null,
+      "pl": null
+    },
+    {
+      "key": "my_score_show_all",
+      "en": "Show all games",
+      "es": null,
+      "fl": null,
+      "fr": "Toutes les parties",
+      "it": null,
+      "pl": null
+    },
+    {
+      "key": "my_score_show_last_five",
+      "en": "Show last 5 games",
+      "es": null,
+      "fl": null,
+      "fr": "Les 5 dernières parties",
+      "it": null,
+      "pl": null
+    },
+    {
+      "key": "my_score_show_last",
+      "en": "Show only last game",
+      "es": null,
+      "fl": null,
+      "fr": "La dernière partie",
+      "it": null,
+      "pl": null
+    },
+    {
+      "key": null,
+      "en": null,
+      "es": null,
+      "fl": null,
+      "fr": null,
+      "it": null,
+      "pl": null
+    },
+    {
+      "key": "BADGES",
+      "en": null,
+      "es": null,
+      "fl": null,
+      "fr": null,
+      "it": null,
+      "pl": null
+    },
+    {
+      "key": null,
+      "en": null,
+      "es": null,
+      "fl": null,
+      "fr": null,
+      "it": null,
+      "pl": null
+    },
+    {
+      "key": "Conservation_agriculture_title1",
+      "en": "Conservation ",
+      "es": null,
+      "fl": null,
+      "fr": "Agriculture",
+      "it": null,
+      "pl": null
+    },
+    {
+      "key": "Conservation_agriculture_title2",
+      "en": "agriculture",
+      "es": null,
+      "fl": null,
+      "fr": "de conservation",
+      "it": null,
+      "pl": null
+    },
+    {
+      "key": "Conservation_agriculture_description",
+      "en": "Conservation agriculture",
+      "es": null,
+      "fl": null,
+      "fr": "Agriculture de conservation",
+      "it": null,
+      "pl": null
+    },
+    {
+      "key": "BiodiversityConservation_Bronze_title1",
+      "en": "Biodiversity",
+      "es": null,
+      "fl": null,
+      "fr": "Preservation",
+      "it": null,
+      "pl": null
+    },
+    {
+      "key": "BiodiversityConservation_Bronze_title2",
+      "en": "conservation ",
+      "es": null,
+      "fl": null,
+      "fr": "de la biodiversite",
+      "it": null,
+      "pl": null
+    },
+    {
+      "key": "BiodiversityConservation_Bronze_subtitle",
+      "en": "3<sup>rd</sup> price",
+      "es": null,
+      "fl": null,
+      "fr": "3<sup>ème</sup> prix",
+      "it": null,
+      "pl": null
+    },
+    {
+      "key": "BiodiversityConservation_Bronze_description",
+      "en": "Biodiversity conservation",
+      "es": null,
+      "fl": null,
+      "fr": "Préservation de la biodiversité",
+      "it": null,
+      "pl": null
+    },
+    {
+      "key": "BiodiversityConservation_Silver_title1",
+      "en": "Biodiversity",
+      "es": null,
+      "fl": null,
+      "fr": "Preservation",
+      "it": null,
+      "pl": null
+    },
+    {
+      "key": "BiodiversityConservation_Silver_title2",
+      "en": "conservation ",
+      "es": null,
+      "fl": null,
+      "fr": "de la biodiversite",
+      "it": null,
+      "pl": null
+    },
+    {
+      "key": "BiodiversityConservation_Silver_subtitle",
+      "en": "2<sup>nd</sup> price",
+      "es": null,
+      "fl": null,
+      "fr": "2<sup>nd</sup> prix",
+      "it": null,
+      "pl": null
+    },
+    {
+      "key": "BiodiversityConservation_Silver_description",
+      "en": "Biodiversity conservation",
+      "es": null,
+      "fl": null,
+      "fr": "Préservation de la biodiversité",
+      "it": null,
+      "pl": null
+    },
+    {
+      "key": "BiodiversityConservation_Gold_title1",
+      "en": "Biodiversity",
+      "es": null,
+      "fl": null,
+      "fr": "Preservation",
+      "it": null,
+      "pl": null
+    },
+    {
+      "key": "BiodiversityConservation_Gold_title2",
+      "en": "conservation ",
+      "es": null,
+      "fl": null,
+      "fr": "de la biodiversite",
+      "it": null,
+      "pl": null
+    },
+    {
+      "key": "BiodiversityConservation_Gold_subtitle",
+      "en": "1<sup>st</sup> price",
+      "es": null,
+      "fl": null,
+      "fr": "1<sup>er</sup> prix",
+      "it": null,
+      "pl": null
+    },
+    {
+      "key": "BiodiversityConservation_Gold_description",
+      "en": "Biodiversity conservation",
+      "es": null,
+      "fl": null,
+      "fr": "Préservation de la biodiversité",
+      "it": null,
+      "pl": null
+    },
+    {
+      "key": "EnvironmentalQuality_title1",
+      "en": "Environmental",
+      "es": null,
+      "fl": null,
+      "fr": "Qualite",
+      "it": null,
+      "pl": null
+    },
+    {
+      "key": "EnvironmentalQuality_title2",
+      "en": "quality",
+      "es": null,
+      "fl": null,
+      "fr": "environnementale",
+      "it": null,
+      "pl": null
+    },
+    {
+      "key": "EnvironmentalQuality_description",
+      "en": "Environmental quality",
+      "es": null,
+      "fl": null,
+      "fr": "Qualité environnementale",
+      "it": null,
+      "pl": null
+    },
+    {
+      "key": "LowInputSystem_title1",
+      "en": "Low input",
+      "es": null,
+      "fl": null,
+      "fr": "Systeme",
+      "it": null,
+      "pl": null
+    },
+    {
+      "key": "LowInputSystem_title2",
+      "en": "system",
+      "es": null,
+      "fl": null,
+      "fr": "bas intrants",
+      "it": null,
+      "pl": null
+    },
+    {
+      "key": "LowInputSystem_description",
+      "en": "Low input system",
+      "es": null,
+      "fl": null,
+      "fr": "Système économe en intrants",
+      "it": null,
+      "pl": null
+    },
+    {
+      "key": "WeFeedTheWorld_title1",
+      "en": "We Feed",
+      "es": null,
+      "fl": null,
+      "fr": "Nourrir",
+      "it": null,
+      "pl": null
+    },
+    {
+      "key": "WeFeedTheWorld_title2",
+      "en": "the World",
+      "es": null,
+      "fl": null,
+      "fr": "le monde",
+      "it": null,
+      "pl": null
+    },
+    {
+      "key": "WeFeedTheWorld_description",
+      "en": "We feed the world!",
+      "es": null,
+      "fl": null,
+      "fr": "Nourrir le monde",
+      "it": null,
+      "pl": null
+    },
+    {
+      "key": "FarmDiversification_title1",
+      "en": "Farm",
+      "es": null,
+      "fl": null,
+      "fr": "Diversification",
+      "it": null,
+      "pl": null
+    },
+    {
+      "key": "FarmDiversification_title2",
+      "en": "diversification",
+      "es": null,
+      "fl": null,
+      "fr": "des productions",
+      "it": null,
+      "pl": null
+    },
+    {
+      "key": "FarmDiversification_description",
+      "en": "Farm diversification",
+      "es": null,
+      "fl": null,
+      "fr": "Diversification des productions",
+      "it": null,
+      "pl": null
+    },
+    {
+      "key": "FreeTime_title1",
+      "en": "Free time",
+      "es": null,
+      "fl": null,
+      "fr": "Temps libre",
+      "it": null,
+      "pl": null
+    },
+    {
+      "key": "FreeTime_description",
+      "en": "Free time!",
+      "es": null,
+      "fl": null,
+      "fr": "Temps libre",
+      "it": null,
+      "pl": null
+    },
+    {
+      "key": "FarmerExperience_Beginner_title1",
+      "en": "Farmer",
+      "es": null,
+      "fl": null,
+      "fr": "Experience",
+      "it": null,
+      "pl": null
+    },
+    {
+      "key": "FarmerExperience_Beginner_title2",
+      "en": "experience",
+      "es": null,
+      "fl": null,
+      "fr": "Agriculteur",
+      "it": null,
+      "pl": null
+    },
+    {
+      "key": "FarmerExperience_Beginner_subtitle",
+      "en": "3<sup>rd</sup> price",
+      "es": null,
+      "fl": null,
+      "fr": "3<sup>ème</sup> prix",
+      "it": null,
+      "pl": null
+    },
+    {
+      "key": "FarmerExperience_Beginner_description",
+      "en": "Farmer experience",
+      "es": null,
+      "fl": null,
+      "fr": "Agriculture d'expérience",
+      "it": null,
+      "pl": null
+    },
+    {
+      "key": "FarmerExperience_Advance_title1",
+      "en": "Farmer",
+      "es": null,
+      "fl": null,
+      "fr": "Experience",
+      "it": null,
+      "pl": null
+    },
+    {
+      "key": "FarmerExperience_Advance_title2",
+      "en": "experience",
+      "es": null,
+      "fl": null,
+      "fr": "Agriculteur",
+      "it": null,
+      "pl": null
+    },
+    {
+      "key": "FarmerExperience_Advance_subtitle",
+      "en": "2<sup>nd</sup> price",
+      "es": null,
+      "fl": null,
+      "fr": "2<sup>nd</sup> prix",
+      "it": null,
+      "pl": null
+    },
+    {
+      "key": "FarmerExperience_Advance_description",
+      "en": "Farmer experience",
+      "es": null,
+      "fl": null,
+      "fr": "Agriculture d'expérience",
+      "it": null,
+      "pl": null
+    },
+    {
+      "key": "FarmerExperience_Expert_title1",
+      "en": "Farmer",
+      "es": null,
+      "fl": null,
+      "fr": "Experience",
+      "it": null,
+      "pl": null
+    },
+    {
+      "key": "FarmerExperience_Expert_title2",
+      "en": "experience",
+      "es": null,
+      "fl": null,
+      "fr": "Agriculteur",
+      "it": null,
+      "pl": null
+    },
+    {
+      "key": "FarmerExperience_Expert_subtitle",
+      "en": "1<sup>st</sup> price",
+      "es": null,
+      "fl": null,
+      "fr": "1<sup>er</sup> prix",
+      "it": null,
+      "pl": null
+    },
+    {
+      "key": "FarmerExperience_Expert_description",
+      "en": "Farmer experience",
+      "es": null,
+      "fl": null,
+      "fr": "Agriculture d'expérience",
+      "it": null,
+      "pl": null
+    },
+    {
+      "key": "EuropeanFarmer_Belgium_title1",
+      "en": "European",
+      "es": null,
+      "fl": null,
+      "fr": "Agriculture",
+      "it": null,
+      "pl": null
+    },
+    {
+      "key": "EuropeanFarmer_Belgium_title2",
+      "en": "Farmer",
+      "es": null,
+      "fl": null,
+      "fr": "europeen",
+      "it": null,
+      "pl": null
+    },
+    {
+      "key": "EuropeanFarmer_Belgium_description",
+      "en": "European farmer",
+      "es": null,
+      "fl": null,
+      "fr": "Agriculture européen",
+      "it": null,
+      "pl": null
+    },
+    {
+      "key": "EuropeanFarmer_France_title1",
+      "en": "European",
+      "es": null,
+      "fl": null,
+      "fr": "Agriculture",
+      "it": null,
+      "pl": null
+    },
+    {
+      "key": "EuropeanFarmer_France_title2",
+      "en": "Farmer",
+      "es": null,
+      "fl": null,
+      "fr": "europeen",
+      "it": null,
+      "pl": null
+    },
+    {
+      "key": "EuropeanFarmer_France_description",
+      "en": "European farmer",
+      "es": null,
+      "fl": null,
+      "fr": "Agriculture européen",
+      "it": null,
+      "pl": null
+    },
+    {
+      "key": "EuropeanFarmer_Italy_title1",
+      "en": "European",
+      "es": null,
+      "fl": null,
+      "fr": "Agriculture",
+      "it": null,
+      "pl": null
+    },
+    {
+      "key": "EuropeanFarmer_Italy_title2",
+      "en": "Farmer",
+      "es": null,
+      "fl": null,
+      "fr": "europeen",
+      "it": null,
+      "pl": null
+    },
+    {
+      "key": "EuropeanFarmer_Italy_description",
+      "en": "European farmer",
+      "es": null,
+      "fl": null,
+      "fr": "Agriculture européen",
+      "it": null,
+      "pl": null
+    },
+    {
+      "key": "EuropeanFarmer_Polish_title1",
+      "en": "European",
+      "es": null,
+      "fl": null,
+      "fr": "Agriculture",
+      "it": null,
+      "pl": null
+    },
+    {
+      "key": "EuropeanFarmer_Polish_title2",
+      "en": "Farmer",
+      "es": null,
+      "fl": null,
+      "fr": "europeen",
+      "it": null,
+      "pl": null
+    },
+    {
+      "key": "EuropeanFarmer_Polish_description",
+      "en": "European farmer",
+      "es": null,
+      "fl": null,
+      "fr": "Agriculture européen",
+      "it": null,
+      "pl": null
+    },
+    {
+      "key": null,
+      "en": null,
+      "es": null,
+      "fl": null,
+      "fr": null,
+      "it": null,
+      "pl": null
+    },
+    {
+      "key": "myscores_chart_year",
+      "en": "Year",
+      "es": null,
+      "fl": null,
+      "fr": "Année",
+      "it": null,
+      "pl": null
+    },
+    {
+      "key": "myscores_chart_game",
+      "en": "Game",
+      "es": null,
+      "fl": null,
+      "fr": "Partie",
+      "it": null,
+      "pl": "\u0000"
+    },
+    {
+      "key": null,
+      "en": null,
+      "es": null,
+      "fl": null,
+      "fr": null,
+      "it": null,
+      "pl": null
+    },
+    {
+      "key": "JEUX MULTIPLAYER PUBLICS",
+      "en": null,
+      "es": null,
+      "fl": null,
+      "fr": null,
+      "it": null,
+      "pl": null
+    },
+    {
+      "key": "generic_belgium",
+      "en": "Belgian farm (Easy)",
+      "es": null,
+      "fl": null,
+      "fr": "Ferme belge (Facile)",
+      "it": null,
+      "pl": null
+    },
+    {
+      "key": null,
+      "en": null,
+      "es": null,
+      "fl": null,
+      "fr": null,
+      "it": null,
+      "pl": null
+    },
+    {
+      "key": "generic_france",
+      "en": "French farm (Intermediate)",
+      "es": null,
+      "fl": null,
+      "fr": "Ferme française (Moyen)",
+      "it": null,
+      "pl": null
+    },
+    {
+      "key": "generic_france_summary",
+      "en": "<center>This is <b>your farm</b>!<br>A mixed crop-livestock farm in the western part of France<br><span style='font-size:80px;'>&#127805;</span> <span style='font-size:80px;'>&#128046;</span></center>",
+      "es": null,
+      "fl": null,
+      "fr": "<center>Voici <b>votre ferme</b> !<br>Une exploitation de polyculture-élevage dans l'ouest de la France<br><span style='font-size:80px;'>&#127805;</span> <span style='font-size:80px;'>&#128046;</span></center>",
+      "it": null,
+      "pl": null
+    },
+    {
+      "key": null,
+      "en": null,
+      "es": null,
+      "fl": null,
+      "fr": null,
+      "it": null,
+      "pl": null
+    },
+    {
+      "key": "generic_italy",
+      "en": "Italian farm (Expert)",
+      "es": null,
+      "fl": null,
+      "fr": "Ferme italienne (Expert)",
+      "it": null,
+      "pl": null
+    },
+    {
+      "key": "generic_poland",
+      "en": "Polish farm (Expert)",
+      "es": null,
+      "fl": null,
+      "fr": "Ferme polonaise (Expert)",
+      "it": null,
+      "pl": null
+    },
+    {
+      "key": null,
+      "en": null,
+      "es": null,
+      "fl": null,
+      "fr": null,
+      "it": null,
+      "pl": null
+    }
+  ],
+  "style": {
+    "A1": "text-align: left; white-space: pre-wrap; background-color: rgb(255, 238, 88);",
+    "B1": "text-align: left; white-space: pre-wrap; background-color: rgb(255, 238, 88);",
+    "C1": "text-align: center; white-space: pre-wrap; background-color: rgb(255, 238, 88);",
+    "D1": "text-align: center; white-space: pre-wrap; background-color: rgb(255, 238, 88);",
+    "E1": "text-align: left; white-space: pre-wrap; background-color: rgb(255, 238, 88);",
+    "F1": "text-align: center; white-space: pre-wrap; background-color: rgb(255, 238, 88);",
+    "G1": "text-align: center; white-space: pre-wrap; overflow: hidden; background-color: rgb(255, 238, 88);",
+    "A7": "text-align: left; white-space: pre-wrap; background-color: rgb(255, 238, 88);",
+    "B7": "text-align: left; white-space: pre-wrap; background-color: rgb(255, 238, 88); overflow: hidden;",
+    "C7": "text-align: center; white-space: pre-wrap; background-color: rgb(255, 238, 88);",
+    "D7": "text-align: center; white-space: pre-wrap; background-color: rgb(255, 238, 88);",
+    "E7": "text-align: left; white-space: pre-wrap; background-color: rgb(255, 241, 118);",
+    "A19": "text-align: left; white-space: pre-wrap; background-color: rgb(255, 238, 88);",
+    "B19": "text-align: left; white-space: pre-wrap; background-color: rgb(255, 238, 88);",
+    "E19": "text-align: left; white-space: pre-wrap; overflow: hidden; background-color: rgb(255, 238, 88);",
+    "A58": "text-align: left; white-space: pre-wrap; background-color: rgb(255, 238, 88);",
+    "B58": "text-align: left; white-space: pre-wrap; background-color: rgb(255, 238, 88);",
+    "E58": "text-align: left; white-space: pre-wrap; overflow: hidden; background-color: rgb(255, 238, 88);",
+    "A70": "text-align: left; white-space: pre-wrap; background-color: rgb(255, 238, 88);",
+    "B70": "text-align: left; white-space: pre-wrap; background-color: rgb(255, 238, 88);",
+    "E70": "text-align: left; white-space: pre-wrap; overflow: hidden; background-color: rgb(255, 238, 88);",
+    "A124": "text-align: left; white-space: pre-wrap; background-color: rgb(255, 249, 196);",
+    "B124": "text-align: left; white-space: pre-wrap; overflow: hidden; background-color: rgb(255, 249, 196);",
+    "C124": "text-align: center; white-space: pre-wrap; background-color: rgb(255, 249, 196);",
+    "D124": "text-align: center; white-space: pre-wrap; overflow: hidden; background-color: rgb(255, 249, 196);",
+    "E124": "text-align: left; white-space: pre-wrap; overflow: hidden; background-color: rgb(255, 249, 196);",
+    "F124": "text-align: center; white-space: pre-wrap; background-color: rgb(255, 249, 196);",
+    "G124": "text-align: center; white-space: pre-wrap; overflow: hidden; background-color: rgb(255, 249, 196);",
+    "A142": "text-align: left; white-space: pre-wrap; overflow: hidden; background-color: rgb(76, 175, 80);",
+    "B142": "text-align: left; white-space: pre-wrap; background-color: rgb(76, 175, 80);",
+    "C142": "text-align: center; white-space: pre-wrap; background-color: rgb(76, 175, 80);",
+    "D142": "text-align: center; white-space: pre-wrap; overflow: hidden; background-color: rgb(76, 175, 80);",
+    "E142": "text-align: left; white-space: pre-wrap; background-color: rgb(76, 175, 80);",
+    "A153": "text-align: left; white-space: pre-wrap; background-color: rgb(255, 238, 88);",
+    "B153": "text-align: left; white-space: pre-wrap; background-color: rgb(255, 238, 88);",
+    "E153": "text-align: left; white-space: pre-wrap; overflow: hidden; background-color: rgb(255, 238, 88);",
+    "A160": "text-align: left; white-space: pre-wrap; background-color: rgb(255, 238, 88);",
+    "B160": "text-align: left; white-space: pre-wrap; background-color: rgb(255, 238, 88);",
+    "E160": "text-align: left; white-space: pre-wrap; overflow: hidden; background-color: rgb(255, 238, 88);",
+    "A182": "text-align: left; white-space: pre-wrap; background-color: rgb(255, 238, 88);",
+    "B182": "text-align: left; white-space: pre-wrap; background-color: rgb(255, 238, 88);",
+    "E182": "text-align: left; white-space: pre-wrap; overflow: hidden; background-color: rgb(255, 238, 88);",
+    "A199": "text-align: left; white-space: pre-wrap; background-color: rgb(255, 238, 88);",
+    "B199": "text-align: left; white-space: pre-wrap; overflow: hidden; background-color: rgb(255, 238, 88);",
+    "E199": "text-align: left; white-space: pre-wrap; overflow: hidden; background-color: rgb(255, 238, 88);",
+    "A208": "text-align: left; white-space: pre-wrap; background-color: rgb(255, 238, 88);",
+    "B208": "text-align: left; white-space: pre-wrap; background-color: rgb(255, 238, 88);",
+    "E208": "text-align: left; white-space: pre-wrap; overflow: hidden; background-color: rgb(255, 238, 88);",
+    "A265": "text-align: left; white-space: pre-wrap; background-color: rgb(255, 235, 59);",
+    "B265": "text-align: left; white-space: pre-wrap; background-color: rgb(255, 235, 59);",
+    "C265": "text-align: center; white-space: pre-wrap; overflow: hidden; background-color: rgb(255, 238, 88);",
+    "D265": "text-align: center; white-space: pre-wrap; background-color: rgb(255, 238, 88);",
+    "E265": "text-align: left; white-space: pre-wrap; background-color: rgb(255, 235, 59);",
+    "F265": "text-align: center; white-space: pre-wrap; overflow: hidden; background-color: rgb(255, 238, 88);",
+    "G265": "text-align: center; white-space: pre-wrap; background-color: rgb(255, 238, 88);",
+    "A270": "text-align: left; white-space: pre-wrap; background-color: rgb(255, 238, 88);",
+    "B270": "text-align: left; white-space: pre-wrap; background-color: rgb(255, 238, 88);",
+    "C270": "text-align: center; white-space: pre-wrap; background-color: rgb(255, 238, 88);",
+    "D270": "text-align: center; white-space: pre-wrap; background-color: rgb(255, 238, 88);",
+    "E270": "text-align: left; white-space: pre-wrap; background-color: rgb(255, 238, 88);",
+    "F270": "text-align: center; white-space: pre-wrap; background-color: rgb(255, 238, 88);",
+    "G270": "text-align: center; white-space: pre-wrap; overflow: hidden; background-color: rgb(255, 238, 88);",
+    "A272": "text-align: left; white-space: pre-wrap; background-color: rgb(255, 238, 88);",
+    "B272": "text-align: left; white-space: pre-wrap; background-color: rgb(255, 238, 88);",
+    "C272": "text-align: center; white-space: pre-wrap; overflow: hidden; background-color: rgb(255, 238, 88);",
+    "D272": "text-align: center; white-space: pre-wrap; background-color: rgb(255, 238, 88);",
+    "E272": "text-align: left; white-space: pre-wrap; background-color: rgb(255, 238, 88);",
+    "F272": "text-align: center; white-space: pre-wrap; overflow: hidden; background-color: rgb(255, 238, 88);",
+    "G272": "text-align: center; white-space: pre-wrap; background-color: rgb(255, 238, 88);",
+    "A281": "text-align: left; white-space: pre-wrap; background-color: rgb(255, 241, 118);",
+    "B281": "text-align: left; white-space: pre-wrap; background-color: rgb(255, 241, 118);",
+    "C281": "text-align: center; white-space: pre-wrap; background-color: rgb(255, 241, 118);",
+    "D281": "text-align: center; white-space: pre-wrap; background-color: rgb(255, 241, 118);",
+    "E281": "text-align: left; white-space: pre-wrap; background-color: rgb(255, 241, 118);",
+    "F281": "text-align: center; white-space: pre-wrap; overflow: hidden; background-color: rgb(255, 241, 118);",
+    "G281": "text-align: center; white-space: pre-wrap; overflow: hidden; background-color: rgb(255, 241, 118);",
+    "A288": "text-align: left; white-space: pre-wrap; background-color: rgb(255, 238, 88);",
+    "B288": "text-align: left; white-space: pre-wrap; background-color: rgb(255, 238, 88);",
+    "C288": "text-align: center; white-space: pre-wrap; background-color: rgb(255, 238, 88);",
+    "D288": "text-align: center; white-space: pre-wrap; background-color: rgb(255, 238, 88);",
+    "E288": "text-align: left; white-space: pre-wrap; background-color: rgb(255, 238, 88);",
+    "F288": "text-align: center; white-space: pre-wrap; overflow: hidden; background-color: rgb(255, 238, 88);",
+    "G288": "text-align: center; white-space: pre-wrap; overflow: hidden; background-color: rgb(255, 238, 88);",
+    "A303": "text-align: left; white-space: pre-wrap; background-color: rgb(255, 238, 88);",
+    "B303": "text-align: left; white-space: pre-wrap; background-color: rgb(255, 238, 88);",
+    "C303": "text-align: center; white-space: pre-wrap; background-color: rgb(255, 238, 88);",
+    "D303": "text-align: center; white-space: pre-wrap; background-color: rgb(255, 238, 88);",
+    "E303": "text-align: left; white-space: pre-wrap; background-color: rgb(255, 238, 88);",
+    "F303": "text-align: center; white-space: pre-wrap; background-color: rgb(255, 238, 88);",
+    "G303": "text-align: center; white-space: pre-wrap; overflow: hidden; background-color: rgb(255, 238, 88);",
+    "B308": "text-align: left; white-space: pre-wrap; background-color: rgb(245, 245, 245);",
+    "B309": "text-align: left; white-space: pre-wrap; background-color: rgb(245, 245, 245);",
+    "B310": "text-align: left; white-space: pre-wrap; background-color: rgb(245, 245, 245);",
+    "B311": "text-align: left; white-space: pre-wrap; background-color: rgb(245, 245, 245);",
+    "B315": "text-align: left; white-space: pre-wrap; background-color: rgb(245, 245, 245);",
+    "B316": "text-align: left; white-space: pre-wrap; background-color: rgb(245, 245, 245);",
+    "B317": "text-align: left; white-space: pre-wrap; background-color: rgb(245, 245, 245);",
+    "B318": "text-align: left; white-space: pre-wrap; background-color: rgb(245, 245, 245);",
+    "B319": "text-align: left; white-space: pre-wrap; background-color: rgb(245, 245, 245);",
+    "B323": "text-align: left; white-space: pre-wrap; background-color: rgb(245, 245, 245);",
+    "B324": "text-align: left; white-space: pre-wrap; background-color: rgb(245, 245, 245);",
+    "B329": "text-align: left; white-space: pre-wrap; background-color: rgb(245, 245, 245);",
+    "B330": "text-align: left; white-space: pre-wrap; background-color: rgb(245, 245, 245);",
+    "B334": "text-align: left; white-space: pre-wrap; background-color: rgb(245, 245, 245);",
+    "B335": "text-align: left; white-space: pre-wrap; background-color: rgb(245, 245, 245);",
+    "B336": "text-align: left; white-space: pre-wrap; background-color: rgb(245, 245, 245);",
+    "B342": "text-align: left; white-space: pre-wrap; background-color: rgb(245, 245, 245);",
+    "B343": "text-align: left; white-space: pre-wrap; background-color: rgb(245, 245, 245);",
+    "B344": "text-align: left; white-space: pre-wrap; background-color: rgb(245, 245, 245);",
+    "B349": "text-align: left; white-space: pre-wrap; background-color: rgb(245, 245, 245);",
+    "B350": "text-align: left; white-space: pre-wrap; background-color: rgb(245, 245, 245);",
+    "B355": "text-align: left; white-space: pre-wrap; background-color: rgb(245, 245, 245);",
+    "B356": "text-align: left; white-space: pre-wrap; background-color: rgb(245, 245, 245);",
+    "A362": "text-align: left; white-space: pre-wrap; background-color: rgb(255, 241, 118);",
+    "B362": "text-align: left; white-space: pre-wrap; background-color: rgb(255, 241, 118);",
+    "C362": "text-align: center; white-space: pre-wrap; background-color: rgb(255, 241, 118);",
+    "D362": "text-align: center; white-space: pre-wrap; background-color: rgb(255, 241, 118);",
+    "E362": "text-align: left; white-space: pre-wrap; background-color: rgb(255, 241, 118);",
+    "F362": "text-align: center; white-space: pre-wrap; background-color: rgb(255, 241, 118);",
+    "G362": "text-align: center; white-space: pre-wrap; overflow: hidden; background-color: rgb(255, 241, 118);"
+  },
+  "infos": {
+    "version": 2,
+    "comment": ""
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "columns": [
+    {
+      "type": "text",
+      "name": "id",
+      "title": "id",
+      "width": "281",
+      "align": "center"
+    },
+    {
+      "type": "text",
+      "width": "324",
+      "align": "center",
+      "title": "code",
+      "name": "code"
+    }
+  ],
+  "data": [
+    {
+      "id": "generic_france",
+      "code": "6YUP9E"
+    },
+    {
+      "id": "generic_belgium",
+      "code": "2W95HZ"
+    },
+    {
+      "id": "generic_italy",
+      "code": "BGLMNM"
+    },
+    {
+      "id": "generic_poland",
+      "code": "2489XBN"
+    }
+  ],
+  "style": {},
+  "infos": {
+    "version": 2
+  }
+}

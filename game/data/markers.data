@@ -1,0 +1,404 @@
+{
+  "columns": [
+    {
+      "type": "text",
+      "name": "id",
+      "title": "id",
+      "width": "130",
+      "align": "left"
+    },
+    {
+      "type": "numeric",
+      "name": "x_pos",
+      "title": "x_pos",
+      "width": "333",
+      "align": "left"
+    },
+    {
+      "type": "numeric",
+      "name": "y_pos",
+      "title": "y_pos",
+      "width": "70",
+      "align": "center"
+    },
+    {
+      "type": "text",
+      "name": "aep_categories",
+      "title": "aep_categories",
+      "width": "355",
+      "align": "center"
+    },
+    {
+      "type": "text",
+      "name": "indicators",
+      "title": "indicators",
+      "width": "337",
+      "align": "center"
+    },
+    {
+      "type": "text",
+      "width": "260",
+      "align": "center",
+      "title": "custom_content_id",
+      "name": "custom_content_id"
+    }
+  ],
+  "data": [
+    {
+      "id": "cows",
+      "x_pos": 1100,
+      "y_pos": 200,
+      "aep_categories": "cow_housing_system",
+      "indicators": "indAn134;indAn135;indAn137;indAn185;indF2",
+      "custom_content_id": null
+    },
+    {
+      "id": null,
+      "x_pos": null,
+      "y_pos": null,
+      "aep_categories": "feeding_system_for_cows",
+      "indicators": "indAn19;indAn133;indAn139;indAn140;indAn141;indAn142;indAn143;indAn144;indAn145;indAn146;indAn147;indAn148;indAn149;indAn134;indAn131",
+      "custom_content_id": null
+    },
+    {
+      "id": null,
+      "x_pos": null,
+      "y_pos": null,
+      "aep_categories": "concentrate_supply_for_lactating_dairy_cows",
+      "indicators": "indAn19;indAn133",
+      "custom_content_id": null
+    },
+    {
+      "id": null,
+      "x_pos": null,
+      "y_pos": null,
+      "aep_categories": "management_of_the_risk_of_mastitis_at_the_dry_period",
+      "indicators": "indAn129;indF190",
+      "custom_content_id": null
+    },
+    {
+      "id": "soils",
+      "x_pos": 1500,
+      "y_pos": 260,
+      "aep_categories": "tillage_management",
+      "indicators": "indF51;indF53;indF54;indF55",
+      "custom_content_id": null
+    },
+    {
+      "id": null,
+      "x_pos": null,
+      "y_pos": null,
+      "aep_categories": "soil_cover",
+      "indicators": "indF70;indCr281",
+      "custom_content_id": null
+    },
+    {
+      "id": null,
+      "x_pos": null,
+      "y_pos": null,
+      "aep_categories": "residues_management",
+      "indicators": "indF4;indF6;indF19;indF20",
+      "custom_content_id": null
+    },
+    {
+      "id": "crops",
+      "x_pos": 1630,
+      "y_pos": 450,
+      "aep_categories": "fertilisation",
+      "indicators": "indCr264;indAn185;indF181;indF1;indF2;indCr281;indCr280",
+      "custom_content_id": null
+    },
+    {
+      "id": null,
+      "x_pos": null,
+      "y_pos": null,
+      "aep_categories": "crop_protection_against_diseases",
+      "indicators": "indF49;indF53;indCr280;indCr240",
+      "custom_content_id": null
+    },
+    {
+      "id": null,
+      "x_pos": null,
+      "y_pos": null,
+      "aep_categories": "weed_control",
+      "indicators": "indF49;indF51;indF52;indF53;indF54;indF55;indCr240",
+      "custom_content_id": null
+    },
+    {
+      "id": null,
+      "x_pos": null,
+      "y_pos": null,
+      "aep_categories": "crop_protection_against_animal_pests",
+      "indicators": "indF49;indF52;indF56;indCr280;indCr240",
+      "custom_content_id": null
+    },
+    {
+      "id": null,
+      "x_pos": null,
+      "y_pos": null,
+      "aep_categories": "cash_crop_cultivars",
+      "indicators": "indF49",
+      "custom_content_id": null
+    },
+    {
+      "id": null,
+      "x_pos": null,
+      "y_pos": null,
+      "aep_categories": "spatial_distribution_of_cash_crops",
+      "indicators": "indF134;indF135",
+      "custom_content_id": null
+    },
+    {
+      "id": "feeding-system",
+      "x_pos": 750,
+      "y_pos": 440,
+      "aep_categories": "feeding_system_for_cows",
+      "indicators": "indAn19;indAn133;indAn139;indAn140;indAn141;indAn142;indAn143;indAn144;indAn145;indAn146;indAn147;indAn148;indAn149;indAn134;indAn131",
+      "custom_content_id": null
+    },
+    {
+      "id": null,
+      "x_pos": null,
+      "y_pos": null,
+      "aep_categories": "feeding_system_for_heifers_age_at_first_calving",
+      "indicators": "indAn133;indAn139;indAn140;indAn141;indAn142;indAn143;indAn144;indAn145;indAn146;indAn147;indAn148;indAn149;indAn134;indAn131",
+      "custom_content_id": null
+    },
+    {
+      "id": null,
+      "x_pos": null,
+      "y_pos": null,
+      "aep_categories": "cropping_system_1",
+      "indicators": "indCr237;indF107;indF108;indF109;indF110;indF111;indF112;indF113;indF114;indF115;indF116;indF117;indF118;indF119;indF51;indCr281",
+      "custom_content_id": null
+    },
+    {
+      "id": null,
+      "x_pos": null,
+      "y_pos": null,
+      "aep_categories": "cropping_system_2",
+      "indicators": "indCr238;indF120;indF121;indF122;indF123;indF124;indF125;indF126;indF127;indF128;indF129;indF130;indF131;indF132;indF51;indCr281",
+      "custom_content_id": null
+    },
+    {
+      "id": null,
+      "x_pos": null,
+      "y_pos": null,
+      "aep_categories": "temporary_grassland_composition",
+      "indicators": "indF52;indF53;indF54;indF55;indF56",
+      "custom_content_id": null
+    },
+    {
+      "id": null,
+      "x_pos": null,
+      "y_pos": null,
+      "aep_categories": "permanent_grassland_area",
+      "indicators": "indCr239;indF133;indEc3",
+      "custom_content_id": null
+    },
+    {
+      "id": "landscape",
+      "x_pos": 1300,
+      "y_pos": 550,
+      "aep_categories": "green_infrastructures",
+      "indicators": "indF139;indF52;indF56",
+      "custom_content_id": null
+    },
+    {
+      "id": null,
+      "x_pos": null,
+      "y_pos": null,
+      "aep_categories": "agroforestry",
+      "indicators": "indF140;indF52;indF56",
+      "custom_content_id": null
+    },
+    {
+      "id": "warehouse",
+      "x_pos": 830,
+      "y_pos": 590,
+      "aep_categories": "gains_and_costs",
+      "indicators": "indF44;indF137;indF46;indF136;indF47;indF41;indF42;indF40;indF43",
+      "custom_content_id": "gains_and_costs"
+    },
+    {
+      "id": null,
+      "x_pos": null,
+      "y_pos": null,
+      "aep_categories": "subsidies",
+      "indicators": "indEc2;indEc3",
+      "custom_content_id": null
+    },
+    {
+      "id": null,
+      "x_pos": null,
+      "y_pos": null,
+      "aep_categories": "feed_balance",
+      "indicators": "indF192;indF193;indF194;indF18;indF22;indF26;indF29;indF31;indF33;indF35;indF37;indF138;indF20;indF38",
+      "custom_content_id": "crop_production"
+    },
+    {
+      "id": null,
+      "x_pos": null,
+      "y_pos": null,
+      "aep_categories": "crop_production",
+      "indicators": "indF3;indF4;indF5;indF6;indF7;indF8;indF9;indF10;indF11;indF12;indF13;indF14;indF15;indF16",
+      "custom_content_id": null
+    },
+    {
+      "id": null,
+      "x_pos": null,
+      "y_pos": null,
+      "aep_categories": "crop_sales_feed_purchases",
+      "indicators": "indF17;indF21;indF23;indF24;indF25;indF27;indF28;indF30;indF32;indF34;indF36;indF19;indF18;indF22;indF26;indF29;indF31;indF33;indF35;indF37;indF138;indF20;indF38",
+      "custom_content_id": null
+    },
+    {
+      "id": null,
+      "x_pos": null,
+      "y_pos": null,
+      "aep_categories": "animal_production",
+      "indicators": "indAn127;indAn128;indAn5;indAn6;indAn7;indAn8;indAn9",
+      "custom_content_id": null
+    },
+    {
+      "id": null,
+      "x_pos": null,
+      "y_pos": null,
+      "aep_categories": "workload",
+      "indicators": null,
+      "custom_content_id": "workload"
+    },
+    {
+      "id": "fertilisation",
+      "x_pos": 1370,
+      "y_pos": 850,
+      "aep_categories": "fertilisation",
+      "indicators": "indCr264;indAn185;indF181;indF1;indF2;indCr281;indCr280",
+      "custom_content_id": null
+    },
+    {
+      "id": null,
+      "x_pos": null,
+      "y_pos": null,
+      "aep_categories": "cow_housing_system",
+      "indicators": "indAn134;indAn135;indAn137;indAn185;indF2",
+      "custom_content_id": null
+    },
+    {
+      "id": null,
+      "x_pos": null,
+      "y_pos": null,
+      "aep_categories": "heifers_bulls_and_steers_housing_system",
+      "indicators": "indAn134;indAn135;indAn137;indAn185;indF2;indAn131",
+      "custom_content_id": null
+    },
+    {
+      "id": "heifer-and-fattening-cattle",
+      "x_pos": 1550,
+      "y_pos": 720,
+      "aep_categories": "heifers_bulls_and_steers_housing_system",
+      "indicators": "indAn134;indAn135;indAn137;indAn185;indF2;indAn131",
+      "custom_content_id": null
+    },
+    {
+      "id": null,
+      "x_pos": null,
+      "y_pos": null,
+      "aep_categories": "feeding_system_for_heifers_age_at_first_calving",
+      "indicators": "indAn133;indAn139;indAn140;indAn141;indAn142;indAn143;indAn144;indAn145;indAn146;indAn147;indAn148;indAn149;indAn134;indAn131",
+      "custom_content_id": null
+    },
+    {
+      "id": null,
+      "x_pos": null,
+      "y_pos": null,
+      "aep_categories": "anti_parasitic_management",
+      "indicators": "indAn129;indF191",
+      "custom_content_id": null
+    },
+    {
+      "id": null,
+      "x_pos": null,
+      "y_pos": null,
+      "aep_categories": "male_management",
+      "indicators": "indAn6;indAn7;indAn17",
+      "custom_content_id": null
+    },
+    {
+      "id": null,
+      "x_pos": null,
+      "y_pos": null,
+      "aep_categories": "feeding_system_for_calves",
+      "indicators": "indAn150;indAn151",
+      "custom_content_id": null
+    },
+    {
+      "id": "strategic-decisions",
+      "x_pos": 400,
+      "y_pos": 650,
+      "aep_categories": "type_of_agriculture",
+      "indicators": "indF49;indF52;indF53;indF54;indF55;indF56",
+      "custom_content_id": null
+    },
+    {
+      "id": null,
+      "x_pos": null,
+      "y_pos": null,
+      "aep_categories": "distribution_of_farm_profit",
+      "indicators": "indF91;indEc5;indF90;indF83;indF97;indAn153;indF84;indF85",
+      "custom_content_id": null
+    },
+    {
+      "id": null,
+      "x_pos": null,
+      "y_pos": null,
+      "aep_categories": "cattle_breed",
+      "indicators": "indAn10;indAn11;indAn12;indAn13;indAn14",
+      "custom_content_id": null
+    },
+    {
+      "id": null,
+      "x_pos": null,
+      "y_pos": null,
+      "aep_categories": "herd_size",
+      "indicators": "indAn1;indAn2;indAn3;indAn4;indAn160;indF189;indAn130;indAn131",
+      "custom_content_id": null
+    },
+    {
+      "id": "land-use",
+      "x_pos": 300,
+      "y_pos": 300,
+      "aep_categories": "cropping_system_1",
+      "indicators": "indCr237;indF107;indF108;indF109;indF110;indF111;indF112;indF113;indF114;indF115;indF116;indF117;indF118;indF119;indF51;indCr281",
+      "custom_content_id": null
+    },
+    {
+      "id": null,
+      "x_pos": null,
+      "y_pos": null,
+      "aep_categories": "cropping_system_2",
+      "indicators": "indCr238;indF120;indF121;indF122;indF123;indF124;indF125;indF126;indF127;indF128;indF129;indF130;indF131;indF132;indF51;indCr281",
+      "custom_content_id": null
+    },
+    {
+      "id": null,
+      "x_pos": null,
+      "y_pos": null,
+      "aep_categories": "temporary_grassland_composition",
+      "indicators": "indF52;indF53;indF54;indF55;indF56",
+      "custom_content_id": null
+    },
+    {
+      "id": null,
+      "x_pos": null,
+      "y_pos": null,
+      "aep_categories": "permanent_grassland_area",
+      "indicators": "indCr239;indF133;indEc3",
+      "custom_content_id": null
+    }
+  ],
+  "style": {},
+  "infos": {
+    "version": 2
+  }
+}

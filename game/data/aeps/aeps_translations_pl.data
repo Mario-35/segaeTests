@@ -1,0 +1,831 @@
+{
+  "columns": [
+    {
+      "type": "text",
+      "name": "id",
+      "title": "id",
+      "width": "114",
+      "align": "center"
+    },
+    {
+      "type": "text",
+      "name": "title_en",
+      "title": "title_en",
+      "width": "390",
+      "align": "left",
+      "readOnly": false
+    },
+    {
+      "type": "text",
+      "width": "326",
+      "title": "title",
+      "align": "center",
+      "name": "title"
+    },
+    {
+      "type": "text",
+      "name": "description_en",
+      "title": "description_en",
+      "width": "297",
+      "align": "left",
+      "readOnly": false
+    },
+    {
+      "type": "text",
+      "name": "description",
+      "title": "description",
+      "width": "297",
+      "align": "left"
+    }
+  ],
+  "data": [
+    {
+      "id": "C.1.1",
+      "title_en": "Conventional tillage",
+      "title": "Konwencjonalna orka (CT)",
+      "description_en": "The “traditional” method of farming in which soil is prepared for planting by completely inverting it with a moldboard plow.",
+      "description": "„Tradycyjny” sposób uprawy roli, w którym gleba jest przygotowywana do siewu poprzez całkowite odwrócenie przy pomocy pługa lemieszowego."
+    },
+    {
+      "id": "C.1.2",
+      "title_en": "Reduced tillage",
+      "title": "Ograniczona orka (RT)",
+      "description_en": "Use of only superficial tillage without soil inversion.",
+      "description": "Stosowanie wyłącznie powierzchniowej uprawy roli bez odwracania gleby."
+    },
+    {
+      "id": "C.1.3",
+      "title_en": "No tillage",
+      "title": "Brak orki (NT)",
+      "description_en": "Planting of crops directly (no tillage) in preceding cover crop (living or destroyed, i.e. mulched) or crop residues.",
+      "description": "Wsiewka  (bez orki) w roślinność okrywową (rosnącą lub skoszoną, t.j. ściółkowanie) lub w resztki pożniwne."
+    },
+    {
+      "id": "C.2.1",
+      "title_en": "Fall cover crop destructed before winter",
+      "title": "Jesienne rośliny okrywowe usunięte przed zimą",
+      "description_en": "The cover crop is terminated before winter and the soil is left bare until the spring crop is well established.",
+      "description": "Roślinność okrywowa zostaje usunięta przed zimą i gleba pozostaje odkryta do czasu wzejścia upraw jarych."
+    },
+    {
+      "id": "C.2.2",
+      "title_en": "Fall cover crop destructed early spring",
+      "title": "Jesienne rośliny okrywowe usunięte wczesną wiosną",
+      "description_en": "The fall cover crop is left during winter, covering the soil and is terminated early spring.",
+      "description": "Jesienna roślinność okrywowa pozostaje na zimę, pokrywając glebę, i zostaje usunięta wczesną wiosną."
+    },
+    {
+      "id": "C.2.3",
+      "title_en": "Permanent soil cover",
+      "title": "Stałe pokrycie gleby",
+      "description_en": "Implementing this practice means that the soil is never left bare across the whole rotation.",
+      "description": "Wdrożenie tej praktyki oznacza, że gleba nigdy nie jest odkryta."
+    },
+    {
+      "id": "C.3.1",
+      "title_en": "Straw removal",
+      "title": "Słoma usunięta z pola",
+      "description_en": "Crop residues are exported from the crop system and used for livestock bedding and/or exported from the farm by selling it.",
+      "description": "Resztki pożniwne są usuwane z pól i wykorzystywane jako ściółka dla bydła i/lub sprzedawane przez gospodarstwo rolne."
+    },
+    {
+      "id": "C.3.2",
+      "title_en": "Straw left on soil",
+      "title": "Słoma pozostawiona na polu",
+      "description_en": "Crop residues are left on the soil and are either incorporated into the soil when tilling or are left as mulch when implementing direct seeding.",
+      "description": "Resztki pożniwne pozostają na glebie i są albo przyorywane albo stanowią ściółkę w czasie siewu bezpośredniego."
+    },
+    {
+      "id": "C.4.1",
+      "title_en": "On-farm organic fertilizers + input of mineral fertilizer",
+      "title": "Nawozy naturalne z fermy + nawóz mineralny",
+      "description_en": "The slurry and/or manure produced by animals is used as organic fertilizer and completed by mineral fertiliser.",
+      "description": "Gnojowica i/lub obornik wytwarzany przez zwierzęta jest wykorzystywany jako nawóz organiczny z dodatkiem w postaci nawozu mineralnego."
+    },
+    {
+      "id": "C.4.2",
+      "title_en": "On-farm organic fertilizers only",
+      "title": "Tylko nawozy naturalne z fermy ",
+      "description_en": "The slurry and/or manure produced by animals is used as organic fertilizer and not complemented.",
+      "description": "Gnojowica i/lub obornik wytwarzany przez zwierzęta jest wykorzystywany jako nawóz organiczny bez dodatków."
+    },
+    {
+      "id": "C.5.1",
+      "title_en": "Systematic use of chemical fungicides",
+      "title": "Systematyczne użycie chemicznych środków grzybobójczych",
+      "description_en": "Chemical fungicides are systematically used. ",
+      "description": "Chemiczne środki grzybobójcze są systematycznie stosowane. "
+    },
+    {
+      "id": "C.5.2",
+      "title_en": "Sound approach of chemical fungicides",
+      "title": "Chemiczne środki grzybobójcze tylko w razie konieczności",
+      "description_en": "The use of chemical fungicides whenever and only if it is absolutely required.",
+      "description": "Chemiczne środki grzybobójcze są stosowane wyłącznie wówczas, gdy jest to bezwzględnie konieczne. "
+    },
+    {
+      "id": "C.5.3",
+      "title_en": "Biocontrol products against diseases",
+      "title": "Środki biologiczne do ochrony przed chorobami",
+      "description_en": "‘Integrated pest management’ strategy without chemicals.",
+      "description": "Strategia „zintegrowanej ochrony przed szkodnikami” bez środków chemicznych."
+    },
+    {
+      "id": "C.5.4",
+      "title_en": "No direct protection against diseases",
+      "title": "Brak bezpośredniej ochrony przed chorobami",
+      "description_en": "No fungicide is applied.",
+      "description": "Nie są stosowane żadne środki grzybobójcze."
+    },
+    {
+      "id": "C.6.1",
+      "title_en": "Systematic and sole use of chemical herbicides",
+      "title": "Systematyczne użycie herbicydów chemicznych",
+      "description_en": "Chemical herbicides are systematically used.",
+      "description": "Chemiczne środki chwastobójcze są stosowane systematycznie."
+    },
+    {
+      "id": "C.6.2",
+      "title_en": "Sound approach of chemical herbicides + mechanical weed control",
+      "title": "Herbicydy chemiczne tylko w razie konieczności + odchwaszczanie mechaniczne",
+      "description_en": "The use of chemical herbicides whenever and only if it is absolutely required.",
+      "description": "Chemiczne środki chwastobójcze są stosowane wyłącznie wówczas, gdy jest to bezwzględnie konieczne."
+    },
+    {
+      "id": "C.6.3",
+      "title_en": "Sole use of mechanical weed control",
+      "title": "Tylko mechaniczne odchwaszczanie",
+      "description_en": "No herbicide is applied, weed populations are managed through physical methods (e.g. hoeing, harrowing).",
+      "description": "Nie są stosowane żadne herbicydy, populacja chwastów jest kontrolowana metodami fizycznymi (np. gracowanie, bronowanie)."
+    },
+    {
+      "id": "C.7.1",
+      "title_en": "Systematic use of chemical insecticides / molluscicides / nematicides",
+      "title": "Systematyczne użycie chemicznych środków owadobójczych / mięczakobójczych / nicieniobójczych",
+      "description_en": "Chemical insecticides / molluscicides / nematicides are systematically used to avoid pests, even if the pressure is low.",
+      "description": "Dla uniknięcia szkodników systematycznie stosowane są chemiczne środki owadobójcze / mięczakobójcze / nematocydy, nawet przy niewielkiej presji."
+    },
+    {
+      "id": "C.7.2",
+      "title_en": "Sound approach of chemical insecticides / molluscicides / nematicides",
+      "title": "Chemiczne środki owadobójcze / mięczakobójcze / nicieniobójcze tylko w razie konieczności",
+      "description_en": "Chemical insecticides / molluscicides / nematicides  are applied only if pests are monitored in the field and sprays or other control methods are carried out only when the action threshold is exceeded (Integrated Pest Management).",
+      "description": "Chemiczne środki owadobójcze / mięczakobójcze / nematocydy są stosowane wyłącznie, jeżeli szkodniki są monitorowane w polu, zaś opryski lub inne metody ich zwalczania są realizowane wyłącznie po przekroczeniu progu działania (zintegrowana ochrona przed szkodnikami)."
+    },
+    {
+      "id": "C.7.3",
+      "title_en": "Biocontrol products (incl. pyrethrin) and other natural control techniques against pests",
+      "title": "Środki biologiczne (w tym pyretryna) i inne metody naturalnej kontroli szkodników",
+      "description_en": "Biocontrol products / biopesticides will be applied using a sprayer.",
+      "description": "Środki kontroli biologicznej / biopestycydy będą stosowane przy użyciu rozpylacza."
+    },
+    {
+      "id": "C.7.4",
+      "title_en": "No direct protection against animal pests",
+      "title": "Brak bezpośredniej ochrony przed owadami/ mięczakami / nicieniami",
+      "description_en": "No Insecticide / Molluscicide / Nematicide is applied.",
+      "description": "Nie są stosowane żadne środki owadobójcze / mięczakobójcze / nematocydy."
+    },
+    {
+      "id": "C.8.1",
+      "title_en": "High yielding cultivars",
+      "title": "Wysokowydajne odmiany uprawne",
+      "description_en": "Use of one cultivar selected for its high yield in controled conditions.",
+      "description": "Stosowanie jednej odmiany uprawnej wybranej ze względu na jej wysoką wydajność w kontrolowanych warunkach."
+    },
+    {
+      "id": "C.8.2",
+      "title_en": "Resistant cultivars and/or mix of varieties",
+      "title": "Odporne odmiany uprawne i/lub mieszanka odmian",
+      "description_en": "Use of one or more cultivars selected for their resistance/tolerance to pests and diseases, but with lower yield in controled conditions.",
+      "description": "Stosowanie jednej lub więcej odmian uprawnych wybranych ze względu na ich odporność/tolerancję na szkodniki i choroby, ale o mniejszej wydajności w kontrolowanych warunkach."
+    },
+    {
+      "id": "C.9.1",
+      "title_en": "Temporary grassland composed of grass",
+      "title": "Krótkotrwałe użytki zielone złożone z traw",
+      "description_en": "Land on which the vegetation is dominated by grass such as perennial ryegrass or sheep's fescue.",
+      "description": "Teren, na którym roślinność jest zdominowana przez trawy takie, jak życica trwała lub kostrzewa owcza."
+    },
+    {
+      "id": "C.9.2",
+      "title_en": "Temporary grassland composed of simple grass/legume mixtures",
+      "title": "Krótkotrwałe użytki zielone: trawa i mieszanka roślin strączkowych",
+      "description_en": "Land on which the vegetation is dominated by two species, one grass and one legume such as perennial ryegrass and white clover.",
+      "description": "Teren, na którym roślinność jest zdominowana przez dwa gatunki, jedną trawę i jedną roślinę strączkową, jak życica trwała i koniczyna biała."
+    },
+    {
+      "id": "C.9.3",
+      "title_en": "Temporary grassland composed of complex grass/legume mixtures",
+      "title": "Krótkotrwałe użytki zielone mieszanka traw i mieszanka roślin strączkowych",
+      "description_en": "Land on which the vegetation is dominated by various species, grasses, legumes, etc.",
+      "description": "Teren, na którym roślinność jest zdominowana przez różne gatunki, trawy, rośliny strączkowe, itp."
+    },
+    {
+      "id": "C.10.1",
+      "title_en": "No permanent grassland",
+      "title": "Brak trwałych użytków zielonych",
+      "description_en": "No permanent grassland on the farm.",
+      "description": "Brak trwałych użytków zielonych w gospodarstwie."
+    },
+    {
+      "id": "C.10.2",
+      "title_en": "Permanent grassland occupy a small percentage of the farm area",
+      "title": "Trwałe użytki zielone zajmują niewielki procent obszaru gospodarstwa",
+      "description_en": "Permanent grassland occupy 10% of farm area. It can be used to feed livestock and promote biodiversity.",
+      "description": "Trwałe użytki zielone zajmują 10% obszaru gospodarstwa. Mogą być wykorzystywane dla potrzeb żywienia bydła i zwiększenia bioróżnorodności."
+    },
+    {
+      "id": "C.10.3",
+      "title_en": "Permanent grassland occupy a high percentage of the farm area",
+      "title": "Trwałe użytki zielone zajmują duży procent obszaru gospodarstwa",
+      "description_en": "Permanent grassland occupy 20% of farm area. It can be used to feed livestock and promote biodiversity.",
+      "description": "Trwałe użytki zielone zajmują 20% obszaru gospodarstwa. Mogą być wykorzystywane dla potrzeb żywienia bydła i zwiększenia bioróżnorodności."
+    },
+    {
+      "id": "C.11.1",
+      "title_en": "Sole crops",
+      "title": "Pojedyncze uprawy",
+      "description_en": "Each crop is grown alone in the field.",
+      "description": "Każda roślina jest uprawiana na polu pojedynczo."
+    },
+    {
+      "id": "C.11.2",
+      "title_en": "Wheat/pea intercrops",
+      "title": "Międzyplony: pszenica/groch",
+      "description_en": "Coexistence of the two crops (wheat, pea) on the same field at the same time. Yield of the intercrop will be higher than the average of individual crops on the same area. Intercrops can be valorized as animal feeding. Selling the crops will require additional sorting costs (not considered in the game).",
+      "description": "Jednoczesne współistnienie dwóch upraw (pszenica, groch) na tym samym polu. Wydajność międzyplonu będzie wyższa niż średnia dla pojedynczych upraw na tym samym obszarze. Międzyplony można wykorzystywaćjako karmę dla zwierząt. Sprzedaż plonów będzie wymagała dodatkowych kosztów sortowania (nie brane pod uwagę w grze)."
+    },
+    {
+      "id": "C.12.1",
+      "title_en": "CS #1: maize - wheat",
+      "title": "CS #1: kukurydza – pszenica",
+      "description_en": "Simple but low diversity cropping plan.",
+      "description": "Płodozmian prosty, ale charakteryzujący się niską różnorodnością upraw."
+    },
+    {
+      "id": "C.12.2",
+      "title_en": "CS #1: rapeseed - wheat - maize - wheat",
+      "title": "CS #1: rzepak – pszenica – kukurydza – pszenica",
+      "description_en": "Medium diversity cropping plan.",
+      "description": "Płodozmian o średniej różnorodności."
+    },
+    {
+      "id": "C.12.3",
+      "title_en": "CS #1: maize - wheat - maize - barley",
+      "title": "CS #1: kukurydza – pszenica – kukurydza – jęczmień",
+      "description_en": "Medium diversity cropping plan.",
+      "description": "Płodozmian  o średniej różnorodności."
+    },
+    {
+      "id": "C.12.4",
+      "title_en": "CS #1: alfalfa (3 years) - maize - wheat",
+      "title": "CS #1: lucerna (3 lata) – kukurydza – pszenica",
+      "description_en": "Medium diversity cropping plan, with legume crop.",
+      "description": "Płodozmian  o średniej różnorodności, z  roślinami strączkowymi."
+    },
+    {
+      "id": "C.12.5",
+      "title_en": "CS #1: faba bean - wheat - rapeseed - maize",
+      "title": "CS #1: bobik – pszenica – rzepak – kukurydza",
+      "description_en": "Medium diversity cropping plan, with legume crop.",
+      "description": "Płodozmian  o średniej różnorodności, z  roślinami strączkowymi."
+    },
+    {
+      "id": "C.12.6",
+      "title_en": "CS #1: grassland (4 years) - maize - maize",
+      "title": "CS #1: łąka (4 lata) – kukurydza – kukurydza",
+      "description_en": "Low diversity cropping plan, with grassland.",
+      "description": "Płodozmian  o niskiej różnorodności, z trawami."
+    },
+    {
+      "id": "C.12.7",
+      "title_en": "CS #1: grassland (3 years) - maize - wheat - barley",
+      "title": "CS #1: łąka (3 lata) – kukurydza – pszenica – jęczmień",
+      "description_en": "Medium diversity cropping plan, with grassland.",
+      "description": "Płodozmian  o średniej różnorodności, z trawami."
+    },
+    {
+      "id": "C.12.8",
+      "title_en": "CS #1: faba bean - wheat - maize - alfalfa (3 years) - barley - maize",
+      "title": "CS #1: bobik – pszenica – kukurydza – lucerna (3 lata) – jęczmień – kukurydza",
+      "description_en": "High diversity cropping plan, with legume crops and grassland.",
+      "description": "Płodozmian o wysokiej różnorodności, z  roślinami strączkowymi i trawami."
+    },
+    {
+      "id": "C.12.9",
+      "title_en": "CS #1: grassland (3 years) - maize - wheat - faba bean - rapeseed",
+      "title": "CS #1: łąka (3 lata) – kukurydza – pszenica – bobik – rzepak",
+      "description_en": "High diversity cropping plan, with legume crop and grassland.",
+      "description": "Płodozmian  o wysokiej różnorodności, z  roślinami strączkowymi i trawami."
+    },
+    {
+      "id": "C.13.1",
+      "title_en": "CS #2: maize - wheat",
+      "title": "CS #2: kukurydza – pszenica",
+      "description_en": "Simple but low diversity cropping plan.",
+      "description": "Płodozmian prosty, ale charakteryzujący się niską różnorodnością upraw."
+    },
+    {
+      "id": "C.13.2",
+      "title_en": "CS #2: rapeseed - wheat - maize - wheat",
+      "title": "CS #2: rzepak – pszenica – kukurydza – pszenica",
+      "description_en": "Medium diversity cropping plan.",
+      "description": "Płodozmian o średniej różnorodności."
+    },
+    {
+      "id": "C.13.3",
+      "title_en": "CS #2: maize - wheat - maize - barley",
+      "title": "CS #2: kukurydza – pszenica – kukurydza – jęczmień",
+      "description_en": "Medium diversity cropping plan.",
+      "description": "Płodozmian  o średniej różnorodności."
+    },
+    {
+      "id": "C.13.4",
+      "title_en": "CS #2: alfalfa (3 years) - maize - wheat",
+      "title": "CS #2: lucerna (3 lata) – kukurydza – pszenica",
+      "description_en": "Medium diversity cropping plan, with legume crop.",
+      "description": "Płodozmian  o średniej różnorodności, z  roślinami strączkowymi."
+    },
+    {
+      "id": "C.13.5",
+      "title_en": "CS #2: faba bean - wheat - rapeseed - maize",
+      "title": "CS #2: bobik – pszenica – rzepak – kukurydza",
+      "description_en": "Medium diversity cropping plan, with legume crop.",
+      "description": "Płodozmian  o średniej różnorodności, z  roślinami strączkowymi."
+    },
+    {
+      "id": "C.13.6",
+      "title_en": "CS #2: grassland (4 years) - maize - maize",
+      "title": "CS #2: łąka (4 lata) – kukurydza – kukurydza",
+      "description_en": "Low diversity cropping plan, with grassland.",
+      "description": "Płodozmian  o niskiej różnorodności, z trawamiami."
+    },
+    {
+      "id": "C.13.7",
+      "title_en": "CS #2: grassland (3 years) - maize - wheat - barley",
+      "title": "CS #2: łąka (3 lata) – kukurydza – pszenica – jęczmień",
+      "description_en": "Medium diversity cropping plan, with grassland.",
+      "description": "Płodozmian  o średniej różnorodności, z trawamiami."
+    },
+    {
+      "id": "C.13.8",
+      "title_en": "CS #2: faba bean - wheat - maize - alfalfa (3 years) - barley - maize",
+      "title": "CS #2: bobik – pszenica – kukurydza – lucerna (3 lata) – jęczmień – kukurydza",
+      "description_en": "High diversity cropping plan, with legume crops and grassland.",
+      "description": "Płodozmian  o wysokiej różnorodności, z  roślinami strączkowymi i trawami."
+    },
+    {
+      "id": "C.13.9",
+      "title_en": "CS #2: grassland (3 years) - maize - wheat - faba bean - rapeseed",
+      "title": "CS #2: łąka (3 lata) – kukurydza – pszenica – bobik – rzepak",
+      "description_en": "High diversity cropping plan, with legume crop and grassland.",
+      "description": "Płodozmian  o wysokiej różnorodności, z  roślinami strączkowymi i trawami."
+    },
+    {
+      "id": "C.14.1",
+      "title_en": "No particular green infrastructure elements",
+      "title": "Brak konkretnych elementów infrastruktury zielonej",
+      "description_en": "No particular green infrastructure elements.",
+      "description": "Brak konkretnych elementów infrastruktury zielonej."
+    },
+    {
+      "id": "C.14.2",
+      "title_en": "Sown field margins as green infrastructures: wildflowers strip",
+      "title": "Obrzeża pól jako infrastruktura zielona: pas polnych kwiatów",
+      "description_en": "A mix of flowering plants.",
+      "description": "Mieszanka kwitnących roślin."
+    },
+    {
+      "id": "C.14.3",
+      "title_en": "Sown field margins as green infrastructures: beetle bank (for birds and polyphagous predator)",
+      "title": "Obrzeża obsianych pól jako infrastruktura zielona: miedze trawiaste (dla ptaków i drapieżników wszystkożernych)",
+      "description_en": "Raised grassy banks, typically 2-3 m wide, sown with tussock forming grasses.",
+      "description": "Podwyższone nasypy trawiaste, typowo o szerokości 2-3 m, obsiane trawami tworzącymi kępki."
+    },
+    {
+      "id": "C.14.4",
+      "title_en": "Semi-natural field margins as green infrastructures: hedgerows ",
+      "title": "Półnaturalne obrzeża pól jako infrastruktura zielona: pasy zadrzewień",
+      "description_en": "Common trees and shrubs present on the edge of the fields.",
+      "description": "Pospolite drzewa i krzewy występujące na obrzeżach pól."
+    },
+    {
+      "id": "C.14.5",
+      "title_en": "Semi-natural field margins as green infrastructures: grass margins",
+      "title": "Półnaturalne obrzeża pól jako infrastruktura zielona: obrzeża z traw",
+      "description_en": "Grassland in the edges of the fields.",
+      "description": "Użytki zielone na obrzeżach pól."
+    },
+    {
+      "id": "C.15.1",
+      "title_en": "No agroforestry",
+      "title": "Brak agroleśnictwa",
+      "description_en": "No agroforestry on the farm.",
+      "description": "Brak agroleśnictwa na terenie gospodarstwa rolnego."
+    },
+    {
+      "id": "C.15.2",
+      "title_en": "In-field agroforestry",
+      "title": "Agroleśnictwo na terenie rolniczym",
+      "description_en": "A sustainable management system that integrate trees, crops and livestock on the same plot of land. Farm area for crops and temporary grasslands is reduced by 16%.",
+      "description": "Zrównoważony system gospodarowania, który integruje drzewa, uprawy i zwierzęta hodowlane na tym samym terenie. Powierzchnia gospodarstwa przeznaczona pod uprawy i krótkotrwałe użytki zielone jest zmniejszona o 16%."
+    },
+    {
+      "id": "E.1.1",
+      "title_en": "Balanced strategy between farmer income and investment",
+      "title": "Strategia bilansowania przychódów i inwestycji rolniczych",
+      "description_en": "Farm profit is equally shared between farmer income and investment capacity.",
+      "description": "Zyski gospodarstwa są równo dzielone pomiędzy przychód a zdolność inwestycyjną rolnika."
+    },
+    {
+      "id": "E.1.2",
+      "title_en": "Investment-oriented strategy",
+      "title": "Strategia ukierunkowana na inwestycje",
+      "description_en": "Farm profit is 80% distributed to investment capacity.",
+      "description": "Zyski gospodarstwa są w 80% przeznaczane na inwestycje."
+    },
+    {
+      "id": "E.1.3",
+      "title_en": "Income-oriented strategy",
+      "title": "Strategia ukierunkowana na przychód",
+      "description_en": "Farm profit is 80% distributed to farmer income.",
+      "description": "Zyski gospodarstwa w 80% stanowią przychód rolnika."
+    },
+    {
+      "id": "G.1.1",
+      "title_en": "Conventional farming",
+      "title": "Rolnictwo tradycyjne",
+      "description_en": "It corresponds to the most widespread farm management, with no particular specifications (except the compliance with the Good Agricultural and Environmental conditions of the CAP). Input and output prices are 25% lower than in organic farming.",
+      "description": "Najpopularniejszy sposób zarządzania gospodarstwem rolnym, bez określonych cech szczególnych (z wyjątkiem uwzględnienia zasad dobrej kultury rolnej i ochrony środowiska Wspólnej Polityki Rolnej (CAP)). Ceny wejściowe i wyjściowe są 25% niższe niż w przypadku rolnictwa organicznego."
+    },
+    {
+      "id": "G.1.2",
+      "title_en": "Organic farming",
+      "title": "Rolnictwo organiczne",
+      "description_en": "Specifications of organic farming rely mainly on no chemical input use. Input and output prices are 25% higher in conventional farming.",
+      "description": "Specyfika rolnictwa organicznego polega głównie na niestosowaniu środków chemicznych. Ceny wejściowe i wyjściowe są 25% wyższe niż w przypadku rolnictwa tradycyjnego."
+    },
+    {
+      "id": "A.1.1",
+      "title_en": "Cattle breed is Holstein",
+      "title": "Rasa  bydła (Holstein)",
+      "description_en": "Holstein is a breed of dairy cattle used for high milk production.",
+      "description": "Holstein jest rasą bydła mlecznego wykorzystywaną do produkcji mleka."
+    },
+    {
+      "id": "A.1.2",
+      "title_en": "Cattle breed is Siemmental",
+      "title": "Rasa  bydła  (Siemmental)",
+      "description_en": "Siemmental is a dual purpose breed for milk and meat.",
+      "description": "Siemmental to rasa bydła wykorzystywana zarówno do produkcji mleka, jak i mięsa."
+    },
+    {
+      "id": "A.1.3",
+      "title_en": "Cattle breed is Montbéliarde",
+      "title": "Rasa  bydła (Montbéliarde)",
+      "description_en": "Montbéliarde cattle are a dairy breed, but have better beef characteristics than Holstein cattle.",
+      "description": "Montbéliarde to rasa mleczna, ale posiada  cechy mięsne lepsze niż rasa Holstein."
+    },
+    {
+      "id": "A.2.1",
+      "title_en": "Initial herd size",
+      "title": "Początkowa wielkość stada",
+      "description_en": "No modification of the number of cows.",
+      "description": "Brak zmian liczby krów."
+    },
+    {
+      "id": "A.2.2",
+      "title_en": "15% increase of initial herd size (no building modification)",
+      "title": "15% zwiększenie początkowej wielkości stada (bez zmian budynków)",
+      "description_en": "The number of cows is increased by 15% of initial number, without building modification. The cow density is increased.",
+      "description": "Liczba krów zwiększona o 15% względem początkowej liczby, bez modyfikacji budynków. zwiększone zagęszczenie krów."
+    },
+    {
+      "id": "A.2.3",
+      "title_en": "15% increase of initial herd size (building modification)",
+      "title": "15% zwiększenie początkowej wielkości stada (zmiany budynków)",
+      "description_en": "The number of cows is increased by 15% of initial number AND the barn size is increased by 15%. This practice requires investment capacity for building extension (once per game).",
+      "description": "Liczba krów zwiększona o 15% względem początkowej liczby, wielkość obory zwiększona o 15%. Taka praktyka wymaga zdolności inwestycyjnej w zakresie rozbudowy budynku (jednorazowo)."
+    },
+    {
+      "id": "A.2.4",
+      "title_en": "30% increase of initial herd size (building modification)",
+      "title": "30% zwiększenie początkowej wielkości stada (zmiany budynków)",
+      "description_en": "The number of cows is increased by 30% of initial number AND the barn size is increased by 30%. The milking parlour is also modified. This practice requires investment capacity for building extension (once per game).",
+      "description": "Liczba krów zwiększona o 30% względem początkowej liczby, wielkość obory zwiększona o 30%. Również dojarnia podlega modyfikacji. Taka praktyka wymaga zdolności inwestycyjnej w zakresie rozbudowy budynku (jednorazowo)."
+    },
+    {
+      "id": "A.2.5",
+      "title_en": "15% decrease of initial herd size",
+      "title": "15% zmniejszenie początkowej wielkości stada",
+      "description_en": "The number of cows is decreased by 15% of initial number.",
+      "description": "Liczba krów zmniejszona o 15% względem początkowej liczby."
+    },
+    {
+      "id": "A.2.6",
+      "title_en": "30% decrease of initial herd size",
+      "title": "30% zmniejszenie początkowej wielkości stada",
+      "description_en": "The number of cows is decreased by 30% of initial number.",
+      "description": "Liczba krów zmniejszona o 30% względem początkowej liczby."
+    },
+    {
+      "id": "A.3.1",
+      "title_en": "Bulls fattened up to 18 months",
+      "title": "Buhajki opasane do 18 miesięcy",
+      "description_en": "Indoor feeding based on high density diet (mainly, maize silage, soybean supplement, wheat).",
+      "description": "Żywienie w budynku dawką  o wysokiej koncentracji składników pokarmowych (głównie kiszonka z kukurydzy, dodatek śruty sojowej, pszenica)."
+    },
+    {
+      "id": "A.3.2",
+      "title_en": "Castrated males fattened up to 36 months (steer)",
+      "title": "Wykastrowane buhajki (wolce) opasane do 36 miesięcy ",
+      "description_en": "Extensive feeding based on hay and grass silage (small soybean supplement) during winter and outside grazing during summer.",
+      "description": "Intensywne żywienie oparte na kiszonce z siana i traw (mały dodatek śruty sojowej) w zimie oraz wypas w lecie."
+    },
+    {
+      "id": "A.3.3",
+      "title_en": "Male calves sold at 8 days",
+      "title": "Cielęta sprzedawane po 8 dniach",
+      "description_en": "Sale non-weaned calves to fattening farms.",
+      "description": "Sprzedaż nieodsadzonych cieląt do ferm opasowych."
+    },
+    {
+      "id": "A.4.1",
+      "title_en": "Cows are tied on straw bedding",
+      "title": "Uwięziowe utrzymanie krów na ściółce ze słomy",
+      "description_en": "Due to geographical constraints, cows are tied on straw bedding.",
+      "description": "Krowy są wiązane na stanowiskach ze ściółką ze słomy."
+    },
+    {
+      "id": "A.4.2",
+      "title_en": "Housing of cows is cubicles with straw (shallow bedding)",
+      "title": "Utrzymanie krów na stanowiskach legowiskowych ścielonych słomą (ściółka płytka)",
+      "description_en": "Cows can rest on individual places. You need to invest if you want to change to this cow housing system. It requires straw and produces manure.",
+      "description": "Wydzielone są stanowiska indywidualne. Przejście na taki system utrzymania krów wymaga inwestycji. Wymaga słomy. Produkowany jest obornik."
+    },
+    {
+      "id": "A.4.3",
+      "title_en": "Housing of cows is cubicles with slatted floor",
+      "title": "Utrzymanie krów na stanowiskach legowiskowych bezściołowych z podłogą rusztową",
+      "description_en": "Cows can rest on individual places. You need to invest if you want to change to this cow housing system. It produces slurry.",
+      "description": "Wydzielone są stanowiska indywidualne. Przejście na taki system utrzymania krów wymaga inwestycji. Produkowana jest gnojowica."
+    },
+    {
+      "id": "A.4.4",
+      "title_en": "Housing of cows is free-stall (deep bedding)",
+      "title": "Wolnostanowiskowe utrzymanie krów (ściółka głęboka)",
+      "description_en": "You need to invest if you want to change to this cow housing system. Deeper beeding requires more straw; this building produces manure. This system improves the animal welfare.",
+      "description": "Przejście na taki system utrzymania  krów wymaga inwestycji. Głębsza ściółka wymaga więcej słomy; Produkowany jest obornik. Taki system poprawia dobrostan zwierząt."
+    },
+    {
+      "id": "A.4.5",
+      "title_en": "Housing of cows is free-stall slatted floor",
+      "title": "Wolnostanowiskowe utrzymanie krów na podłodze rusztowej",
+      "description_en": "You need to invest if you want to change to this cow housing system. It produces slurry.",
+      "description": "Przejście na taki system utrzymania  krów wymaga inwestycji. Produkowana jest gnojowica."
+    },
+    {
+      "id": "A.5.1",
+      "title_en": "Housing of heifer, bulls and steers is slatted floor",
+      "title": "Jałówki, buhajki i wolce na podłodze rusztowej",
+      "description_en": "You need to invest if you want to change to this housing system for heifers, bulls and steers. This type of building produces slurry.",
+      "description": "Przejście na taki system utrzymania  jałówek, buhajków i wolców wymaga inwestycji. Produkowana jest gnojowica."
+    },
+    {
+      "id": "A.5.2",
+      "title_en": "Housing of heifer, bulls and steers is shallow bedding",
+      "title": "Jałówki, buhajki i wolce na ściółce płytkiej",
+      "description_en": "You need to invest if you want to change to this housing system for heifers, bulls and steers. This type of building requires straw and produces manure.",
+      "description": "Przejście na taki system utrzymania  jałówek, buhajków i wolców wymaga inwestycji. Wymagana jest słoma na ściółkę. Produkowany jest obornik."
+    },
+    {
+      "id": "A.5.3",
+      "title_en": "Housing of heifer, bulls and steers is deep bedding",
+      "title": "Jałówki, buhajki i wolce na ściółce głębokiej",
+      "description_en": "You need to invest if you want to change to this housing system for heifers, bulls and steers. Deeper beeding requires more straw; this building produces manure.",
+      "description": "Przejście na taki system utrzymania  jałówek, buhajków i wolców wymaga inwestycji. Głębsza ściółka wymaga więcej słomy; Produkowany jest obornik."
+    },
+    {
+      "id": "A.6.1",
+      "title_en": "Cow feeding system: all year indoor, maize silage & soybean meal supplement",
+      "title": "System żywienia krów: cały rok w budynku, kiszonka z kukurydzy i dodatek śruty sojowej",
+      "description_en": "All year indoor, cows are mainly fed with maize silage & soybean meal supplement.",
+      "description": "Cały rok w budynku, żywienie krów głównie kiszonką z kukurydzy, z dodatkiem śruty sojowej."
+    },
+    {
+      "id": "A.6.2",
+      "title_en": "Cow feeding system: all year indoor, sorghum silage & soybean meal supplement",
+      "title": "System żywienia krów: cały rok w budynku, kiszonka z sorgo i dodatek śruty sojowej",
+      "description_en": "All year indoor, cows are mainly fed with sorghum silage & soybean meal supplement.",
+      "description": "Cały rok w budynku, żywienie krów głównie kiszonką z sorgo, z dodatkiem śruty sojowej."
+    },
+    {
+      "id": "A.6.3",
+      "title_en": "Cow feeding system: all year indoor, sorghum & alfalfa silage",
+      "title": "System żywienia krów: cały rok w budynku, kiszonka z sorgo i lucerny",
+      "description_en": "All year indoor, cows are mainly fed with sorghum & alfalfa silage.",
+      "description": "Cały rok w budynku, żywienie krów głównie kiszonką z sorgo i lucerny."
+    },
+    {
+      "id": "A.6.4",
+      "title_en": "Cow feeding system: all year indoor, maize silage, alfalfa silage & soybean meal supplement",
+      "title": "System żywienia krów: cały rok w budynku, kiszonka z kukurydzy, kiszonka z lucerny i dodatek śruty sojowej",
+      "description_en": "All year indoor, cows are mainly fed with maize silage, alfalfa silage & soybean meal supplement.",
+      "description": "Cały rok w budynku, żywienie krów głównie kiszonką z kukurydzy, kiszonką z lucerny, z dodatkiem śruty sojowej."
+    },
+    {
+      "id": "A.6.5",
+      "title_en": "Cow feeding system: 4 months grazing / maize silage & soybean meal supplement",
+      "title": "System żywienia krów: 4 miesiące wypasu i dodatek śruty sojowej",
+      "description_en": "As cows are outside 4 months a year, you need a sufficient grazing area. Soybean meal is purchased.",
+      "description": "Ponieważ krowy przebywają na zewnątrz 4 miesiące w roku, wymagane jest odpowiednie pastwisko. śruta sojowa z zakupu."
+    },
+    {
+      "id": "A.6.6",
+      "title_en": "Cow feeding system: 4 months grazing / maize silage & rapeseed meal supplement",
+      "title": "System żywienia krów: 4 miesiące wypasu i dodatek śruty rzepakowej",
+      "description_en": "As cows are outside 4 months a year, you need a sufficient grazing area. Rapeseed meal is purchased.",
+      "description": "Ponieważ krowy przebywają na zewnątrz 4 miesiące w roku, wymagane jest odpowiednie pastwisko. śruta rzepakowa z zakupu."
+    },
+    {
+      "id": "A.6.7",
+      "title_en": "Cow feeding system: 5 months grazing / maize silage & rapeseed meal supplement",
+      "title": "System żywienia krów: 5 miesięcy wypasu i dodatek śruty rzepakowej",
+      "description_en": "As cows are outside 5 months a year, you need a sufficient grazing area. Rapeseed meal is purchased.",
+      "description": "Ponieważ krowy przebywają na zewnątrz 5 miesięcy w roku, wymagane jest odpowiednie pastwisko. śruta rzepakowa z zakupu."
+    },
+    {
+      "id": "A.6.8",
+      "title_en": "Cow feeding system: 7 months grazing / maize silage & rapeseed meal supplement",
+      "title": "System żywienia krów: 7 miesięcy wypasu i dodatek śruty rzepakowej",
+      "description_en": "As cows are outside 7 months a year, you need a sufficient grazing area. Rapeseed meal is purchased.",
+      "description": "Ponieważ krowy przebywają na zewnątrz 7 miesięcy w roku, wymagane jest odpowiednie pastwisko. śruta rzepakowa z zakupu."
+    },
+    {
+      "id": "A.6.9",
+      "title_en": "Cow feeding system: 8 months grazing / grass silage & faba bean supplement",
+      "title": "System żywienia krów: 8 miesięcy wypasu i dodatek bobiku",
+      "description_en": "As cows are outside 8 months a year, you need a sufficient grazing area.",
+      "description": "Ponieważ krowy przebywają na zewnątrz 8 miesięcy w roku, wymagane jest odpowiednie pastwisko."
+    },
+    {
+      "id": "A.6.10",
+      "title_en": "Cow feeding system: all year indoor, hay & rapeseed meal supplement",
+      "title": "System żywienia krów: cały rok w budynku, dodatek siana i śruty rzepakowej",
+      "description_en": "Rapeseed meal is purchased; feeding without silage, milk proper for particular cheese production.",
+      "description": "Śruta rzepakowa z zakupu; żywienie bez kiszonki, mleko odpowiednie do produkcji określonego sera."
+    },
+    {
+      "id": "A.6.11",
+      "title_en": "Cow feeding system: 9 months grazing / grass silage",
+      "title": "System żywienia krów: 9 miesięcy wypasu, bez dodatku paszy białkowej",
+      "description_en": "As cows are outside 9 months a year, you need a sufficient grazing area.",
+      "description": "Ponieważ krowy przebywają na zewnątrz 9 miesięcy w roku, wymagane jest odpowiednie pastwisko."
+    },
+    {
+      "id": "A.7.1",
+      "title_en": "No concentrate supply for lactating dairy cows",
+      "title": "Brak zwiększonego dodatku paszy treściwej dla krów mlecznych",
+      "description_en": "No concentrate is supplied for lactating dairy cows.",
+      "description": "Krowy mleczne nie otrzymują zwiększonego dodatku paszy treściwej."
+    },
+    {
+      "id": "A.7.2",
+      "title_en": "+1000 kg milk / cow / year (with soybean meal and cereals)",
+      "title": " +1000 kg / krowę / rok - śruta sojowa i zboża",
+      "description_en": "In order to increase milk production, concentrates (soybean meal and cereals) are given to the cows. Soybean meal is purchased.",
+      "description": "W celu zwiększenia produkcji mleka, krowy otrzymują pasze treściwe (śruta sojowa i zboża). śruta sojowa z zakupu."
+    },
+    {
+      "id": "A.7.3",
+      "title_en": "+500 kg milk / cow / year (with soybean meal and cereals)",
+      "title": " +500 kg / krowę / rok - śruta sojowa i zboża",
+      "description_en": "In order to increase milk production, concentrates (soybean meal and cereals) are given to the cows. Soybean meal is purchased.",
+      "description": "W celu zwiększenia produkcji mleka, krowy otrzymują pasze treściwe (śruta sojowa i zboża). śruta sojowa z zakupu."
+    },
+    {
+      "id": "A.7.4",
+      "title_en": "+500 kg milk / cow / year (with faba bean and cereals)",
+      "title": " +500 kg / krowę / rok -  bobik i zboża",
+      "description_en": "In order to increase milk production, concentrates (faba bean and cereals) are given to the cows.",
+      "description": "W celu zwiększenia produkcji mleka, krowy otrzymują pasze treściwe (bobik i zboża)."
+    },
+    {
+      "id": "A.8.1",
+      "title_en": "Heifer feeding system: zero grazing / maize silage & soybean meal | Age at first calving: 24 months",
+      "title": "System żywienia jałówek: brak wypasu / kiszonka z kukurydzy + śruta sojowa | Wiek pierwszego ocielenia: 24 miesiące",
+      "description_en": "Heifers calve at 24 months (more intensive feeding). Soybean meal is purchased.",
+      "description": "Jałówki cielą się w wieku 24 miesięcy (bardziej intensywne żywienie). śruta sojowa z zakupu."
+    },
+    {
+      "id": "A.8.2",
+      "title_en": "Heifer feeding system: 4 months grazing / 8 months maize silage, hay & soybean meal | Age at first calving: 24 months",
+      "title": "System żywienia jałówek: 4 miesiące wypasu / 8 miesięcy kiszonka z kukurydzy + siano + śruta sojowa | Wiek pierwszego ocielenia: 24 miesiące",
+      "description_en": "Heifers calve at 24 months (more intensive feeding). Soybean meal is purchased. As cows are outside 4 months a year, you need a sufficient grazing area.",
+      "description": "Jałówki cielą się w wieku 24 miesięcy (bardziej intensywne żywienie). śruta sojowa z zakupu. Ponieważ krowy przebywają na zewnątrz 4 miesiące w roku, wymagane jest odpowiednie pastwisko."
+    },
+    {
+      "id": "A.8.3",
+      "title_en": "Heifer feeding system: 6 months grazing / 6 months maize silage, grass silage & soybean meal | Age at first calving: 24 months",
+      "title": "System żywienia jałówek: 6 miesięcy wypasu / 6 miesięcy kiszonka z kukurydzy + kiszonka z traw (lub siano) + śruta sojowa | Wiek pierwszego ocielenia: 24 miesiące",
+      "description_en": "Heifers calve at 24 months (more intensive feeding). Soybean meal is purchased. As cows are outside 6 months a year, you need a sufficient grazing area.",
+      "description": "Jałówki cielą się w wieku 24 miesięcy (bardziej intensywne żywienie). śruta sojowa z zakupu. Ponieważ krowy przebywają na zewnątrz 6 miesięcy w roku, wymagane jest odpowiednie pastwisko."
+    },
+    {
+      "id": "A.8.4",
+      "title_en": "Heifer feeding system: 6 months grazing / 6 months grass silage, cereals & soybean meal | Age at first calving: 24 months",
+      "title": "System żywienia jałówek: 6 miesięcy wypasu / 6 miesięcy kiszonka z traw (lub siano) + zboża + śruta sojowa | Wiek pierwszego ocielenia: 24 miesiące",
+      "description_en": "Heifers calve at 24 months (more intensive feeding). Soybean meal is purchased. As cows are outside 6 months a year, you need a sufficient grazing area.",
+      "description": "Jałówki cielą się w wieku 24 miesięcy (bardziej intensywne żywienie). śruta sojowa z zakupu. Ponieważ krowy przebywają na zewnątrz 6 miesięcy w roku, wymagane jest odpowiednie pastwisko."
+    },
+    {
+      "id": "A.8.5",
+      "title_en": "Heifer feeding system: zero grazing / maize silage & soybean meal | Age at first calving: 29 months",
+      "title": "System żywienia jałówek: brak wypasu / kiszonka z kukurydzy + śruta sojowa | Wiek pierwszego ocielenia: 29 miesięcy",
+      "description_en": "Heifers calve at 29 months (less intensive feeding). Soybean meal is purchased.",
+      "description": "Jałówki cielą się w wieku 29 miesięcy (mniej intensywne żywienie). śruta sojowa z zakupu."
+    },
+    {
+      "id": "A.8.6",
+      "title_en": "Heifer feeding system: 4 months grazing / 8 months maize silage, hay & soybean meal | Age at first calving: 29 months",
+      "title": "System żywienia jałówek: 4 miesiące wypasu / 8 miesięcy kiszonka z kukurydzy + siano + śruta sojowa | Wiek pierwszego ocielenia: 29 miesięcy",
+      "description_en": "Heifers calve at 29 months (less intensive feeding). Soybean meal is purchased. As cows are outside 4 months a year, you need a sufficient grazing area.",
+      "description": "Jałówki cielą się w wieku 29 miesięcy (mniej intensywne żywienie). śruta sojowa z zakupu. Ponieważ krowy przebywają na zewnątrz 4 miesiące w roku, wymagane jest odpowiednie pastwisko."
+    },
+    {
+      "id": "A.8.7",
+      "title_en": "Heifer feeding system: 6 months grazing / 6 months maize silage, grass silage (or hay) & soybean meal | Age at first calving: 29 months",
+      "title": "System żywienia jałówek: 6 miesięcy wypasu / 6 miesięcy kiszonka z kukurydzy + kiszonka z traw (lub siano) + śruta sojowa | Wiek pierwszego ocielenia: 29 miesięcy",
+      "description_en": "Heifers calve at 29 months (less intensive feeding). Soybean meal is purchased. As cows are outside 6 months a year, you need a sufficient grazing area.",
+      "description": "Jałówki cielą się w wieku 29 miesięcy (mniej intensywne żywienie). śruta sojowa z zakupu. Ponieważ krowy przebywają na zewnątrz 6 miesięcy w roku, wymagane jest odpowiednie pastwisko."
+    },
+    {
+      "id": "A.8.8",
+      "title_en": "Heifer feeding system: 6 months grazing / 6 months grass silage (or hay), cereals & soybean meal | Age at first calving: 29 months",
+      "title": "System żywienia jałówek: 6 miesięcy wypasu / 6 miesięcy kiszonka z traw (lub siano) + zboża + śruta sojowa | Wiek pierwszego ocielenia: 29 miesięcy",
+      "description_en": "Heifers calve at 29 months (less intensive feeding). Soybean meal is purchased. As cows are outside 6 months a year, you need a sufficient grazing area.",
+      "description": "Jałówki cielą się w wieku 29 miesięcy (mniej intensywne żywienie). śruta sojowa z zakupu. Ponieważ krowy przebywają na zewnątrz 6 miesięcy w roku, wymagane jest odpowiednie pastwisko."
+    },
+    {
+      "id": "A.9.1",
+      "title_en": "Systematic antibiotic treatment of cows",
+      "title": "Podawanie antybiotyków wszystkim krowom",
+      "description_en": "All cows are treated with antibiotics at the dry period.",
+      "description": "W okresie zasuszenia wszystkie krowy otrzymują antybiotyki."
+    },
+    {
+      "id": "A.9.2",
+      "title_en": "Selective antibiotic treatment of cows",
+      "title": "Selektywne podawanie antybiotyków krowom",
+      "description_en": "Only cows with an intramammary infection are treated with antibiotics.",
+      "description": "Antybiotyki są podawane wyłącznie krowom z zakażeniem wewnątrzwymieniowym."
+    },
+    {
+      "id": "A.9.3",
+      "title_en": "Preventive measures of hygiene (no treatment of cows)",
+      "title": "Działania prewencyjne –  warunki zoohigieniczne (brak leczenia krów)",
+      "description_en": "None of the cows are treated with antibiotics at drying off.",
+      "description": "W okresie zasuszenia krowy nie dostają antybiotyków."
+    },
+    {
+      "id": "A.10.1",
+      "title_en": "Systematic anti-parasitic treatment of heifers",
+      "title": "Systematyczne odrobaczanie jałówek",
+      "description_en": "Systematic treatment of heifers is implemented.",
+      "description": "Wszystkie jałówki są odrobaczane."
+    },
+    {
+      "id": "A.10.2",
+      "title_en": "Selective treatment of heifers",
+      "title": "Selektywne/ukierunkowane odrobaczanie jałówek o wysokim stopniu zarażenia pasożytami",
+      "description_en": "Only one treatment per year is implemented, only on the heifers displaying growth retardations.",
+      "description": "Tylko jedno odrobaczanie w roku, jedynie wobec jałówek wykazujących opóźnienia wzrostu."
+    },
+    {
+      "id": "A.10.3",
+      "title_en": "Immunization against internal parasites by low exposure grazing of heifers (no treatment)",
+      "title": "Brak odrobaczania jałówek ",
+      "description_en": "None of the heifers are treated with anthelmintic treatment. Immunity is enhanced by controlled exposure to parasites. It requires longer grazing rotations.",
+      "description": "Żadna z jałówek nie jest odrobaczana. Odporność jest wzmacniana poprzez kontrolowaną ekspozycję na pasożyty. Wymaga to dłuższej rotacji przy wypasie."
+    },
+    {
+      "id": "A.11.1",
+      "title_en": "Milk replacer is fed to calves",
+      "title": "Cielęta otrzymują preparat mlekozastępczy",
+      "description_en": "Purchased milk replacer is fed to calves.",
+      "description": "Cielętom podaje się preparat mlekozastępczy z zakupu."
+    },
+    {
+      "id": "A.11.2",
+      "title_en": "Milk is fed to calves",
+      "title": "Cielęta otrzymują mleko",
+      "description_en": "Milk produced on-farm is fed to calves.",
+      "description": "Cielętom podaje się mleko produkowane w gospodarstwie."
+    }
+  ],
+  "style": {},
+  "infos": {
+    "version": 2
+  }
+}

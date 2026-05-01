@@ -1,0 +1,45 @@
+{
+  "columns": [
+    {
+      "type": "text",
+      "name": "id",
+      "title": "id",
+      "width": "180",
+      "align": "left"
+    },
+    {
+      "type": "text",
+      "width": "605",
+      "align": "left",
+      "title": "title",
+      "name": "title"
+    }
+  ],
+  "data": [
+    {
+      "id": "indT42",
+      "title": "Economic sustainability"
+    },
+    {
+      "id": "indT24",
+      "title": "Environmental sustainability"
+    },
+    {
+      "id": "indT37",
+      "title": "Social sustainability"
+    },
+    {
+      "id": "indYearNumber",
+      "title": "Year"
+    },
+    {
+      "id": "indF91inf0",
+      "title": "Number of consecutive rounds with a negative Cumulated investment capacity"
+    }
+  ],
+  "style": {},
+  "infos": {
+    "version": 2,
+    "comment": "Mise à jour le 12 mai 2021 - MC"
+  }
+}

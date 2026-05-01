@@ -1,0 +1,113 @@
+{
+  "columns": [
+    {
+      "type": "text",
+      "name": "id",
+      "title": "id",
+      "width": "160",
+      "align": "left"
+    },
+    {
+      "type": "text",
+      "width": "330",
+      "align": "left",
+      "title": "title",
+      "name": "title"
+    }
+  ],
+  "data": [
+    {
+      "id": null,
+      "title": "YIELDS"
+    },
+    {
+      "id": "indCr1",
+      "title": "Wheat yield (grain) (t DM / ha)"
+    },
+    {
+      "id": "indCr3",
+      "title": "Barley yield (grain) (t DM / ha)"
+    },
+    {
+      "id": "indCr5",
+      "title": "Sugar beet yield (root) (t / ha)"
+    },
+    {
+      "id": "indCr6",
+      "title": "Potato yield (tuber) (t / ha)"
+    },
+    {
+      "id": "indCr7",
+      "title": "Rapeseed yield (grain) (t DM / ha)"
+    },
+    {
+      "id": "indCr8",
+      "title": "Pea yield (grain) (t DM / ha)"
+    },
+    {
+      "id": "indCr9",
+      "title": "Faba bean yield (grain) (t DM / ha)"
+    },
+    {
+      "id": "indCr10",
+      "title": "Maize yield (silage) (t DM / ha)"
+    },
+    {
+      "id": "indCr11",
+      "title": "Alfalfa yied (silage) (t DM / ha)"
+    },
+    {
+      "id": "indCr12",
+      "title": "Sorghum yield (silage) (t DM / ha)"
+    },
+    {
+      "id": "indCr13",
+      "title": "Temporary grassland yield (t DM / ha)"
+    },
+    {
+      "id": "indCr16",
+      "title": "Permanent grassland (yield) (t DM / ha)"
+    },
+    {
+      "id": null,
+      "title": "PRICES"
+    },
+    {
+      "id": "paramAn1",
+      "title": "Conventional milk price (₸ / 1000 L)"
+    },
+    {
+      "id": "paramAn12",
+      "title": "Organic milk price premium (₸ / 1000 L)"
+    },
+    {
+      "id": "paramCr12",
+      "title": "Artificial nitrogen price (₸ / t)"
+    },
+    {
+      "id": "paramF5",
+      "title": "Fuel price (₸ / L)"
+    },
+    {
+      "id": "paramCr11",
+      "title": "Cost of one crop treatment (₸ / ha)"
+    },
+    {
+      "id": null,
+      "title": "OTHER"
+    },
+    {
+      "id": "indAn13",
+      "title": "Calf mortality (unitless, range [0;1])"
+    },
+    {
+      "id": "paramF7",
+      "title": "Pool of labour (h / month / permanent worker)"
+    }
+  ],
+  "style": {},
+  "infos": {
+    "version": 2,
+    "comment": "Mis à jour le 12 mai 2021 / 28 juin 2021 / 13 juillet 2021 - MC"
+  }
+}

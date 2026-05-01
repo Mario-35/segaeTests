@@ -1,0 +1,112 @@
+{
+  "columns": [
+    {
+      "type": "text",
+      "name": "id",
+      "title": "id",
+      "width": "145",
+      "align": "left"
+    },
+    {
+      "type": "text",
+      "width": "255",
+      "align": "left",
+      "title": "name",
+      "name": "name"
+    },
+    {
+      "type": "checkbox",
+      "width": "95",
+      "align": "center",
+      "title": "default",
+      "name": "default"
+    }
+  ],
+  "data": [
+    {
+      "id": "indT47",
+      "name": "Score",
+      "default": true
+    },
+    {
+      "id": "indGameWon",
+      "name": "Game won",
+      "default": true
+    },
+    {
+      "id": "indT43",
+      "name": "Sustainability",
+      "default": true
+    },
+    {
+      "id": "indT42",
+      "name": "Economic sustainability",
+      "default": true
+    },
+    {
+      "id": "indT24",
+      "name": "Environmental sustainability",
+      "default": true
+    },
+    {
+      "id": "indT37",
+      "name": "Social sustainability",
+      "default": true
+    },
+    {
+      "id": "indYearNumber",
+      "name": "Final year",
+      "default": true
+    },
+    {
+      "id": "indF207",
+      "name": "Organic farming",
+      "default": false
+    },
+    {
+      "id": "indF193",
+      "name": "Concentrate feed autonomy",
+      "default": false
+    },
+    {
+      "id": "indF192",
+      "name": "Forage autonomy",
+      "default": false
+    },
+    {
+      "id": "indF194",
+      "name": "Protein autonomy",
+      "default": false
+    },
+    {
+      "id": "indF90",
+      "name": "Farmer income (₸)",
+      "default": false
+    },
+    {
+      "id": "indF97",
+      "name": "Weekly workload (h)",
+      "default": false
+    },
+    {
+      "id": "indAn1",
+      "name": "Average number of dairy cows",
+      "default": false
+    },
+    {
+      "id": "indF2",
+      "name": "Mineral fertilizer N purchased (kg N)",
+      "default": false
+    },
+    {
+      "id": "indF49",
+      "name": "Treatment Frequency Index",
+      "default": false
+    }
+  ],
+  "style": {},
+  "infos": {
+    "version": 2,
+    "comment": "Mis à jour le 12 mai 2021 / 28 juin 2021 / 13 juillet 2012 - MC"
+  }
+}

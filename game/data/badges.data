@@ -1,0 +1,296 @@
+{
+  "columns": [
+    {
+      "type": "text",
+      "name": "id",
+      "title": "id",
+      "width": "269",
+      "align": "center"
+    },
+    {
+      "type": "text",
+      "width": "163",
+      "align": "center",
+      "title": "title_ref",
+      "name": "title_ref"
+    },
+    {
+      "type": "text",
+      "width": "225",
+      "align": "center",
+      "title": "indicator_id",
+      "name": "indicator_id"
+    },
+    {
+      "type": "numeric",
+      "width": "129",
+      "align": "center",
+      "title": "threshold_min",
+      "name": "threshold_min"
+    },
+    {
+      "type": "numeric",
+      "width": "142",
+      "align": "center",
+      "title": "threshold_max",
+      "name": "threshold_max"
+    },
+    {
+      "type": "color",
+      "width": "132",
+      "align": "center",
+      "title": "title_color",
+      "name": "title_color"
+    },
+    {
+      "type": "color",
+      "width": "124",
+      "align": "center",
+      "title": "subtitle_color",
+      "name": "subtitle_color"
+    },
+    {
+      "type": "numeric",
+      "width": "122",
+      "align": "center",
+      "title": "title_yoffset",
+      "name": "title_yoffset"
+    },
+    {
+      "type": "numeric",
+      "width": "132",
+      "align": "center",
+      "title": "subtitle_yoffset",
+      "name": "subtitle_yoffset"
+    }
+  ],
+  "data": [
+    {
+      "id": "Conservation_agriculture",
+      "title_ref": "Conservation agriculture",
+      "indicator_id": "indF70",
+      "threshold_min": 4,
+      "threshold_max": null,
+      "title_color": "#C8AE5E",
+      "subtitle_color": null,
+      "title_yoffset": 43.5,
+      "subtitle_yoffset": null
+    },
+    {
+      "id": "BiodiversityConservation_Bronze",
+      "title_ref": "Biodiversity conservation - Bronze",
+      "indicator_id": "indT8",
+      "threshold_min": 0.5,
+      "threshold_max": null,
+      "title_color": "#0E4A3C",
+      "subtitle_color": "#EFDED4",
+      "title_yoffset": 43,
+      "subtitle_yoffset": 67
+    },
+    {
+      "id": "BiodiversityConservation_Silver",
+      "title_ref": "Biodiversity conservation - Silver",
+      "indicator_id": "indT8",
+      "threshold_min": 0.6,
+      "threshold_max": null,
+      "title_color": "#FFFFFF",
+      "subtitle_color": "#EFDED4",
+      "title_yoffset": 43,
+      "subtitle_yoffset": 67
+    },
+    {
+      "id": "BiodiversityConservation_Gold",
+      "title_ref": "Biodiversity conservation - Gold",
+      "indicator_id": "indT8",
+      "threshold_min": 0.8,
+      "threshold_max": null,
+      "title_color": "#FFFFFF",
+      "subtitle_color": "#EFDED4",
+      "title_yoffset": 43,
+      "subtitle_yoffset": 67
+    },
+    {
+      "id": "EnvironmentalQuality",
+      "title_ref": "Environmental quality",
+      "indicator_id": "indT23",
+      "threshold_min": 0.8,
+      "threshold_max": null,
+      "title_color": "#FFF568",
+      "subtitle_color": null,
+      "title_yoffset": 44,
+      "subtitle_yoffset": null
+    },
+    {
+      "id": "LowInputSystem",
+      "title_ref": "Low input system",
+      "indicator_id": "indT40",
+      "threshold_min": 0.8,
+      "threshold_max": null,
+      "title_color": "#FFFFFF",
+      "subtitle_color": null,
+      "title_yoffset": 44,
+      "subtitle_yoffset": null
+    },
+    {
+      "id": "WeFeedTheWorld",
+      "title_ref": "We feed the world!",
+      "indicator_id": "indT29",
+      "threshold_min": 0.95,
+      "threshold_max": null,
+      "title_color": "#FFCD85",
+      "subtitle_color": null,
+      "title_yoffset": 42.5,
+      "subtitle_yoffset": null
+    },
+    {
+      "id": "FarmDiversification",
+      "title_ref": "Farm diversification",
+      "indicator_id": "indT39",
+      "threshold_min": 0.8,
+      "threshold_max": null,
+      "title_color": "#D9B166",
+      "subtitle_color": null,
+      "title_yoffset": 42.5,
+      "subtitle_yoffset": null
+    },
+    {
+      "id": "FreeTime",
+      "title_ref": "Free time!",
+      "indicator_id": "indT32",
+      "threshold_min": 0.8,
+      "threshold_max": null,
+      "title_color": "#FFFFFF",
+      "subtitle_color": null,
+      "title_yoffset": 45,
+      "subtitle_yoffset": null
+    },
+    {
+      "id": "FarmerExperience_Beginner",
+      "title_ref": "Farmer experience - Beginner",
+      "indicator_id": "indNbWonGames",
+      "threshold_min": 5,
+      "threshold_max": null,
+      "title_color": "#EC7621",
+      "subtitle_color": "#EC7621",
+      "title_yoffset": 39.5,
+      "subtitle_yoffset": 73
+    },
+    {
+      "id": "FarmerExperience_Advance",
+      "title_ref": "Farmer experience - Advance",
+      "indicator_id": "indNbWonGames",
+      "threshold_min": 10,
+      "threshold_max": null,
+      "title_color": "#A5A8AD",
+      "subtitle_color": "#A5A8AD",
+      "title_yoffset": 39.5,
+      "subtitle_yoffset": 73
+    },
+    {
+      "id": "FarmerExperience_Expert",
+      "title_ref": "Farmer experience - Expert",
+      "indicator_id": "indNbWonGames",
+      "threshold_min": 15,
+      "threshold_max": null,
+      "title_color": "#E3A206",
+      "subtitle_color": "#E3A206",
+      "title_yoffset": 39.5,
+      "subtitle_yoffset": 73
+    },
+    {
+      "id": "EuropeanFarmer_Belgium",
+      "title_ref": "European Farmer - Belgium",
+      "indicator_id": "indNbWonGames_be",
+      "threshold_min": 5,
+      "threshold_max": null,
+      "title_color": "#FBAF5D",
+      "subtitle_color": null,
+      "title_yoffset": 40,
+      "subtitle_yoffset": null
+    },
+    {
+      "id": "EuropeanFarmer_France",
+      "title_ref": "European Farmer - France",
+      "indicator_id": "indNbWonGames_fr",
+      "threshold_min": 5,
+      "threshold_max": null,
+      "title_color": "#FBAF5D",
+      "subtitle_color": null,
+      "title_yoffset": 40,
+      "subtitle_yoffset": null
+    },
+    {
+      "id": "EuropeanFarmer_Italy",
+      "title_ref": "European Farmer - Polish",
+      "indicator_id": "indNbWonGames_it",
+      "threshold_min": 5,
+      "threshold_max": null,
+      "title_color": "#FBAF5D",
+      "subtitle_color": null,
+      "title_yoffset": 40,
+      "subtitle_yoffset": null
+    },
+    {
+      "id": "EuropeanFarmer_Polish",
+      "title_ref": "European Farmer - Italy",
+      "indicator_id": "indNbWonGames_pl",
+      "threshold_min": 5,
+      "threshold_max": null,
+      "title_color": "#FBAF5D",
+      "subtitle_color": null,
+      "title_yoffset": 40,
+      "subtitle_yoffset": null
+    }
+  ],
+  "style": {
+    "C1": "text-align: center; white-space: pre-wrap; overflow: hidden; background-color: rgb(255, 204, 128);",
+    "D1": "text-align: center; white-space: pre-wrap; background-color: rgb(255, 204, 128);",
+    "E1": "text-align: center; white-space: pre-wrap; overflow: hidden; background-color: rgb(255, 204, 128);",
+    "F1": "color: rgb(200, 174, 94); text-align: center; white-space: pre-wrap;",
+    "F2": "color: rgb(14, 74, 60); text-align: center; white-space: pre-wrap; overflow: hidden;",
+    "G2": "color: rgb(239, 222, 212); text-align: center; white-space: pre-wrap; overflow: hidden;",
+    "F3": "color: rgb(255, 255, 255); text-align: center; white-space: pre-wrap; overflow: hidden;",
+    "G3": "color: rgb(239, 222, 212); text-align: center; white-space: pre-wrap; overflow: hidden;",
+    "F4": "color: rgb(255, 255, 255); text-align: center; white-space: pre-wrap; overflow: hidden;",
+    "G4": "color: rgb(239, 222, 212); text-align: center; white-space: pre-wrap; overflow: hidden;",
+    "F5": "color: rgb(255, 245, 104); text-align: center; white-space: pre-wrap;",
+    "F6": "color: rgb(255, 255, 255); text-align: center; white-space: pre-wrap;",
+    "F7": "color: rgb(255, 205, 133); text-align: center; white-space: pre-wrap;",
+    "F8": "color: rgb(217, 177, 102); text-align: center; white-space: pre-wrap;",
+    "F9": "color: rgb(255, 255, 255); text-align: center; white-space: pre-wrap;",
+    "C10": "text-align: center; white-space: pre-wrap; overflow: hidden; background-color: rgb(255, 204, 128);",
+    "D10": "text-align: center; white-space: pre-wrap; background-color: rgb(255, 204, 128);",
+    "E10": "text-align: center; white-space: pre-wrap; overflow: hidden; background-color: rgb(255, 204, 128);",
+    "F10": "color: rgb(236, 118, 33); text-align: center; white-space: pre-wrap; overflow: hidden;",
+    "G10": "color: rgb(236, 118, 33); text-align: center; white-space: pre-wrap; overflow: hidden;",
+    "C11": "text-align: center; white-space: pre-wrap; overflow: hidden; background-color: rgb(255, 204, 128);",
+    "D11": "text-align: center; white-space: pre-wrap; background-color: rgb(255, 204, 128);",
+    "E11": "text-align: center; white-space: pre-wrap; overflow: hidden; background-color: rgb(255, 204, 128);",
+    "F11": "color: rgb(165, 168, 173); text-align: center; white-space: pre-wrap; overflow: hidden;",
+    "G11": "color: rgb(165, 168, 173); text-align: center; white-space: pre-wrap; overflow: hidden;",
+    "C12": "text-align: center; white-space: pre-wrap; overflow: hidden; background-color: rgb(255, 204, 128);",
+    "D12": "text-align: center; white-space: pre-wrap; background-color: rgb(255, 204, 128);",
+    "E12": "text-align: center; white-space: pre-wrap; overflow: hidden; background-color: rgb(255, 204, 128);",
+    "F12": "color: rgb(227, 162, 6); text-align: center; white-space: pre-wrap; overflow: hidden;",
+    "G12": "color: rgb(227, 162, 6); text-align: center; white-space: pre-wrap; overflow: hidden;",
+    "C13": "text-align: center; white-space: pre-wrap; overflow: hidden; background-color: rgb(255, 204, 128);",
+    "D13": "text-align: center; white-space: pre-wrap; background-color: rgb(255, 204, 128);",
+    "E13": "text-align: center; white-space: pre-wrap; overflow: hidden; background-color: rgb(255, 204, 128);",
+    "F13": "color: rgb(251, 175, 93); text-align: center; white-space: pre-wrap;",
+    "C14": "text-align: center; white-space: pre-wrap; overflow: hidden; background-color: rgb(255, 204, 128);",
+    "D14": "text-align: center; white-space: pre-wrap; background-color: rgb(255, 204, 128);",
+    "E14": "text-align: center; white-space: pre-wrap; overflow: hidden; background-color: rgb(255, 204, 128);",
+    "F14": "color: rgb(251, 175, 93); text-align: center; white-space: pre-wrap;",
+    "C15": "text-align: center; white-space: pre-wrap; overflow: hidden; background-color: rgb(255, 204, 128);",
+    "D15": "text-align: center; white-space: pre-wrap; background-color: rgb(255, 204, 128);",
+    "E15": "text-align: center; white-space: pre-wrap; overflow: hidden; background-color: rgb(255, 204, 128);",
+    "F15": "color: rgb(251, 175, 93); text-align: center; white-space: pre-wrap;",
+    "D16": "text-align: center; white-space: pre-wrap; background-color: rgb(255, 204, 128);",
+    "E16": "text-align: center; white-space: pre-wrap; overflow: hidden; background-color: rgb(255, 204, 128);",
+    "F16": "color: rgb(251, 175, 93); text-align: center; white-space: pre-wrap;"
+  },
+  "infos": {
+    "version": 2,
+    "comment": "threshold_min : valide si la valeur de l'indicateur est strictement supérieure.\nthreshold_max : valide si la valeur de l'indicateur est inférieure ou égale.\ntitle_ref : pour indication seulement. Les vrais titres, et sous-titres sont dans le fichier translation.data\n\n"
+  }
+}
