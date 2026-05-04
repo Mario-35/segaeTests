@@ -16,17 +16,12 @@ Si le contrat de base indiquait que le source vous soit transmis ce n'est pas le
 npx install -g uglify-js
 npx uglify-js ugly.js -b --source-map "filename='ugly.js.map'" -o beauty.js
 
-
-
-Autre soucis : dans l'index on vois que les fichiers js sont en fait des objects qui sont bindé au démarrage ca complique fortement le travail.
-
 ## Etats des lieux
-
-le fichier config indique les fichiers permetant les clés pour les tests mais on voit aussi l'appel a un serveur vertex : https://vertx.io/ sous java dont le code n'est pas transmis 
 
 le fichier formulas qui enregistre les formules.
 
 soucis particulier : les fichiers excel sont géré par : SheetJS https://github.com/sheetjs/sheetjs, dans le code on reconnais bien la syntaxe sheet_to_json propre a cette librarie
+
 ## injection du test 
 j'ai créer un fichier tests.js ou tout le process de test est mis en place
 
@@ -47,4 +42,4 @@ j'ai reperé la classe css "ui-button ui-button-left ui-button-top" qui represen
 
 maintenant en appuyant sur l'année les tests sont activés.
 
-![Lancer les tests](./assets/launch%20test.png"Tests")
+![Lancer les tests](./assets/launch_test.png)
