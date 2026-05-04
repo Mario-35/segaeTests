@@ -16,7 +16,12 @@ window.applyAvailabilityRules = function (aepId, allActionsIds, currentSelectedA
   if(aepAvailabilitiesRules[aepId] !== undefined) {
     rules.forEach(({func, message}) => {
       var ruleAvail = func(allActionsIds, currentSelectedActions)
-
+      console.log("#####################################################");
+      console.log(typeof func);
+      console.log(func);
+      console.log(typeof message);
+      console.log(message);
+      
       if(!ruleAvail) msg.push(message(translateFunc))
 
       available = available && ruleAvail

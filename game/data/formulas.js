@@ -62,8 +62,6 @@ function SUM(val, factors) {
 
 }
 
-
-
 //get indicator
 
 function i(indicatorsValues, id) {
