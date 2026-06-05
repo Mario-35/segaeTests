@@ -9150,23 +9150,23 @@ registerFormula("indF207", function(def_val, factors, parameters, indicatorsValu
 
 // ALEAS
 
-registerFormula("indF93", function(def_val, factors, parameters, indicatorsValues, yearNumber, prevIndValues) {
+// registerFormula("indF93", function(def_val, factors, parameters, indicatorsValues, yearNumber, prevIndValues) {
 
-  const isHappening = Math.random() < parameters.getDef("paramF42")
-  console.log("isHappening", isHappening)
-  if(!prevIndValues["indF93"] && isHappening) {
-    // on passe de false à true : on applique l'effet
-    parameters.get("paramAn1").def += parameters.getDef("paramF43")
+//   const isHappening = Math.random() < parameters.getDef("paramF42")
+//   console.log("isHappening", isHappening)
+//   if(!prevIndValues["indF93"] && isHappening) {
+//     // on passe de false à true : on applique l'effet
+//     parameters.get("paramAn1").def += parameters.getDef("paramF43")
 
-  }
+//   }
 
-  if(prevIndValues["indF93"] && !isHappening) {
-    // on passe de true à false : on désapplique l'effet
-    parameters.get("paramAn1").def -= parameters.getDef("paramF43")
+//   if(prevIndValues["indF93"] && !isHappening) {
+//     // on passe de true à false : on désapplique l'effet
+//     parameters.get("paramAn1").def -= parameters.getDef("paramF43")
 
-  }
+//   }
 
 
 
-  return isHappening
-}, []);
+//   return isHappening
+// }, []);

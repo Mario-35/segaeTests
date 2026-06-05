@@ -1784,8 +1784,8 @@
             E.open(v.ADVISOR, e);
         }
         var ve = function(e) {
-            console.log("============= VE ===============");
-            console.log(e);
+            // console.log("============= VE ===============");
+            // console.log(e);
             
             var t = e.data, n = e.categ, a = e.selected, i = e.prevSelected, c = e.onClick, l = window.applyAvailabilityRules(t.id, oe.allChosenAepIds, oe.currentSelectedAepIds, oe.t), o = !1, s = "";
             l && (o = l.available, s = l.msg), 0 === oe.remainingAepChanges && -1 === oe.aepIdsDiffCategs.indexOf(n) && (o = !1, 
@@ -2409,6 +2409,7 @@
                 className: "debug"
             }, r.a.createElement("header", null, r.a.createElement("div", null, r.a.createElement("h1", null, "SEGAE"), r.a.createElement("span", null, "Serious Game in AgroEcology ")), r.a.createElement("img", {
                 className: "logo",
+                onClick: function() { goTests()},
                 src: Be.a,
                 alt: ""
             })), r.a.createElement("div", {
