@@ -3985,7 +3985,6 @@
                 className: "ui-button ui-button-left ui-button-top"
             }, r.a.createElement("span", {
                 className: "label",
-                onClick: function() { startTests()}
             }, oe.t("year"), " ", oe.yearNumber), r.a.createElement("div", {
                 className: "separator"
             }), r.a.createElement("span", {
