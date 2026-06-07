@@ -143,29 +143,44 @@ class Test {
             this.games[name].push(input);
         else 
             this.games[name] = [input];
-    }    
-
-    async oneRound(numberOfMoves) {
-        const shot = [];
-        await asyncForEach(Array(numberOfMoves), (item) => {
+    }  
+    
+    /**
+     * 
+     * @param {*} shots historical shot
+     * @returns array of 3 shot 
+     */
+    randomShot(shots) {
+        let result = [];
+        do { // repeat
             let input = this._DATAS;
-            const oneLevel = Object.keys(input)[this.getRandom(0, Object.keys(input).length)];
-            input = input[oneLevel];        
-            const twoLevel = Object.keys(input)[this.getRandom(0, Object.keys(input).length)];
-            input = input[twoLevel];
-            const threeLevel = Object.keys(input)[this.getRandom(0, Object.keys(input).length)];                
-            if (oneLevel && twoLevel && threeLevel) 
-                this.selectGameOption(oneLevel, twoLevel, threeLevel)
-                    .then(() => shot.push(`${oneLevel}, ${twoLevel}, ${threeLevel}`))
-                    .catch(() => console.log("not done"));
+            result = [];
+            for (let i = 1; i < 4; i++) {
+                const key = Object.keys(input)[this.getRandom(0, Object.keys(input).length)];
+                result.push(key);
+                input = input[key];
+            }            
+        // while the first item are not played and the threeLevel exist                
+        } while (shots.includes(`${result[0]},${result[1]}`) || !result[2]);
+        return result;
+    }
+    
+    async oneRound(numberOfMoves) {
+        const shots = [];
+        await asyncForEach(Array(numberOfMoves), (item) => {
+            const shot = this.randomShot(shots);
+            this.selectGameOption(...shot)
+                .then(() => shots.push(shot.join()))
+                .catch(() => console.log("not done"));
         });
+
         this._NEXT.click(); 
         const gameOver = this.isEndGame();
         if (gameOver) {
             return {
                 partie: this.partie ,
                 year: +this._YEAR.innerText.split(" ")[1],
-                coups: shot,
+                coups: shots,
                 end: gameOver.children[0].innerText,
                 score: this._SCORE.innerText,
                 indicateurs : this.getScore()
@@ -174,7 +189,7 @@ class Test {
             return {
                 partie: this.partie,
                 year: +this._YEAR.innerText.split(" ")[1],
-                coups: shot,
+                coups: shots,
                 score: this._SCORE.innerText,
                 indicateurs : this.getScore()
             };
@@ -185,6 +200,7 @@ class Test {
         await asyncForEach(Array(nb), index => {
             this.oneRound(this._CHANGE).then(tmp => {
                 this.addToGames(tmp);
+
                 if(tmp["end"]) this.restartGame();
             });
         });
@@ -212,7 +228,7 @@ class Test {
         downloadAnchorNode.remove();
     }
 
-    async selectGameOption(title, subTitle, option) {
+    async selectGameOption(title, subTitle, option) {        
         this.clickAndElementsClassName(document.getElementById(title), "tab", true).then((tabsElements) => {                
             for (let tabElement of tabsElements) {
                 if (tabElement.innerText === subTitle) {
@@ -256,8 +272,6 @@ class Test {
      * Create _DATAS list object
      */
     initTests() { 
-        console.log("Start ===========>");
-        
         const titles = []; 
         this._DATAS = {};
 
@@ -271,7 +285,6 @@ class Test {
         this._SCORE = this.elementsClassName("profile")[0];
 
         this._CHANGE = +this.elementsClassName("remaining-changes-value")[0].innerText;
-        
 
        // get all titles and put id on element       
        for (let element of this.elementsClassName("marker-title")) {
