@@ -35,6 +35,76 @@ class Test {
         
     } 
 
+    getFormOption(input) {
+        for (var title in this._DATAS ) {          
+            // console.log(title);
+            for (var subTitle in this._DATAS[title] ) {          
+                // console.log(subTitle);
+                for (var option in this._DATAS[title][subTitle] ) {          
+                    if (this._DATAS[title][subTitle][option] === input) {
+                        return [title, subTitle, option]
+                    }
+                } 
+            } 
+            
+        } 
+    }
+
+    async playOneRound(input) {
+        const shots = [];
+        input.forEach(element => {
+            console.log(element);
+            
+            const temp = this.getFormOption(element);
+            if (temp) {
+                this.selectGameOption(...temp)
+                    .then(() => shots.push(temp.join()))
+                    .catch(() => console.log("not done"));
+            }
+            console.log(temp);
+            
+        });
+        this._NEXT.click(); 
+        const gameOver = this.isEndGame();
+        if (gameOver) {
+            return {
+                partie: this.partie ,
+                year: +this._YEAR.innerText.split(" ")[1],
+                coups: shots,
+                end: gameOver.children[0].innerText,
+                score: this._SCORE.innerText,
+                indicateurs : this.getScore()
+            };
+        } else 
+            return {
+                partie: this.partie,
+                year: +this._YEAR.innerText.split(" ")[1],
+                coups: shots,
+                score: this._SCORE.innerText,
+                indicateurs : this.getScore()
+            };
+    }
+
+    async startTest() {
+        const game = [];
+        // Year 1 : C.5.3 / C.6.3 / C.7.3 / C.8.2 / A.2.5
+        // Year 2 : A.7.1 / A.9.3 / A.10.3 / C.4.2 / G.1.2
+        // Year 3 : C.1.2 / C.9.3 / C.10.3
+        this.playOneRound(["C.5.3", "C.6.3", "C.7.3", "C.8.2", "A.2.5"]).then(tmp => {
+                this.addToGames(tmp);
+                if(tmp["end"]) this.restartGame();
+            });
+        this.playOneRound(["A.7.1", "A.9.3", "A.10.3", "C.4.2", "G.1.2"]).then(tmp => {
+                this.addToGames(tmp);
+                if(tmp["end"]) this.restartGame();
+            });
+        this.playOneRound(["C.1.2", "C.9.3", "C.10.3"]).then(tmp => {
+                this.addToGames(tmp);
+                if(tmp["end"]) this.restartGame();
+            });
+        return true; 
+    }
+
     // return random number
     getRandom(min, max) {
         min = Math.ceil(min);
@@ -210,11 +280,19 @@ class Test {
     async start() {
         let nb = prompt("Nombre de partie", "20");
         if (nb != null) {
-            nb = +nb + 1;
-            this.playAllGames(nb).then(tmp => {
+            if (+nb === 0) {
+                this.startTest().then(tmp => {
+                    console.log(this.games);                
+                    this.downloadGames();                
+                });
+            } else {
                 console.log(this.games);                
-                this.downloadGames();                
-            })
+                nb = +nb + 1;
+                this.playAllGames(nb).then(tmp => {
+                    console.log(this.games);                
+                    this.downloadGames();                
+                });
+            }
         }
     }
 
