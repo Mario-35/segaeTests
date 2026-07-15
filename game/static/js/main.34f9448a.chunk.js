@@ -1577,11 +1577,19 @@
             }, {
                 key: "sendScores",
                 value: function() {
+                    var z = []
                     var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : null, t = {};
                     this.scenario.Scores.forEach(function(e) {
                         var n = G.getIndicatorValue(e.id, !0);
+console.log(e);
+
                         void 0 !== n && (t[e.id] = n);
+                        void 0 !== n && (z[e.name] = n);
                     }), ae.userMeetingSetScores(t, e);
+                    // Manitou
+                    const zz= {...z, "popo": G.indicatorsRoundedValues}
+                    console.log("=======================================");
+                    _SKORE.push(zz);
                 }
             }, {
                 key: "saveCustomDatas",
@@ -1641,6 +1649,7 @@
                             r[n] = K(n, t, r, e, c, l, o);
                         }), r;
                     }(this.yearNumber, _.all, this.selectedActions, e), n = G.indicatorsRoundedValues;
+
                     this.indValuesHistory.push(n), G.values = t;
                     var a = V.checkAll();
                     G.setIndicatorValue("indGameWon", 0), a ? (this.yearNumber++, 

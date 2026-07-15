@@ -1,6 +1,7 @@
 
 let _START = false;
 let test = undefined;
+let _SKORE = []
 
 function logError(message) {
     console.error(message);
@@ -268,7 +269,7 @@ class Test {
     async playAllGames(nb) {
         const game = [];
         await asyncForEach(Array(nb), index => {
-            this.oneRound(this._CHANGE).then(tmp => {
+            this.oneRound(this.getRandom(1, this._CHANGE)).then(tmp => {
                 this.addToGames(tmp);
 
                 if(tmp["end"]) this.restartGame();
@@ -279,6 +280,11 @@ class Test {
 
     async start() {
         let nb = prompt("Nombre de partie", "20");
+        // this.espionne();
+        // console.log(window.webpackJsonpsegae);
+        console.log(window.formulas);
+        
+        
         if (nb != null) {
             if (+nb === 0) {
                 this.startTest().then(tmp => {
@@ -289,7 +295,7 @@ class Test {
                 console.log(this.games);                
                 nb = +nb + 1;
                 this.playAllGames(nb).then(tmp => {
-                    console.log(this.games);                
+                    console.log(_SKORE);                
                     this.downloadGames();                
                 });
             }
@@ -397,6 +403,18 @@ class Test {
         }).then(() => console.log("Init finished") );  
    }
 
+   espionne(selector, callback) {
+       const observer = new MutationObserver((mutations, observer) => {
+           console.log(mutations);
+           
+       });
+   
+       observer.observe(document.body, {
+            childList: true, // observer les enfants directs
+            subtree: true, // et les descendants aussi
+            characterDataOldValue: true // transmettre les anciennes données au callback
+       });
+   }
 }
 
 // create interval to catch year when it detect
@@ -416,3 +434,4 @@ const interval = setInterval(() => {
         }
     }
 }, 100);
+
