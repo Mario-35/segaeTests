@@ -22,11 +22,13 @@ class Test {
         this._NEXT = undefined;
         this._YEAR = undefined;
         this._SCORE = undefined;
-        this._CHANGE = undefined;        
+        this._CHANGE = undefined;    
+          
         
         this._START = true;
         this.wait = 100;
         this.partie = 1;
+        this.coup = 1;
         this.games = {};
 
         // alert("START TESTS");
@@ -66,7 +68,6 @@ class Test {
             
         });
         this._NEXT.click(); 
-        const gameOver = this.isEndGame();
         if (gameOver) {
             return {
                 partie: this.partie ,
@@ -121,6 +122,7 @@ class Test {
 
     clickOnScreen() {
         document.elementFromPoint(1, 1).click();
+        return true;
     }
 
     // close button
@@ -162,17 +164,17 @@ class Test {
         });
     }
 
-    /**
-     * test if End game
-     * 
-     * @returns popup content
-     */
-    isEndGame() { 
-        const elements = this.elementsClassName("GameOverPopup-top"); 
-        if (elements && elements[0]) 
-            return elements[0];
-    }
 
+    // isAleas() { 
+    //     let elements = this.elementsClassName("notif"); 
+    //     if (elements && elements[0]) {
+    //         log(elements[0]);
+    //         this._ALEA.click(); 
+    //         elements = this.elementsClassName("Alea"); 
+    //         if (elements && elements[0]) 
+    //             return elements[0];
+    //     } 
+    // }
     /**
      * 
      * @param {*} name of the button 
@@ -246,6 +248,7 @@ class Test {
         });
 
         this._NEXT.click(); 
+            
         return {
             partie: this.partie,
             coups: shots,
@@ -254,10 +257,20 @@ class Test {
     };
 
     async playAllGames(nb) {
-        await asyncForEach(Array(nb), index => {
+        
+        await asyncForEach(Array(nb + 10), index => {
+            this.coup ++;
             this.oneRound(this.getRandom(1, this._CHANGE)).then(tmp => {
                 this.addToGames(tmp);
-                if (+_SKORE["Game won"] != 0) this.restartGame();
+                if (+_SKORE["Game won"] != 0) {
+                    if (this.coup > nb) {
+                        this.restartGame();
+                        return this.clickOnScreen(); 
+                     }
+                     this.restartGame();
+
+                }
+                this.clickOnScreen();
             });
         });
         return true;        
@@ -317,22 +330,6 @@ class Test {
         }).catch(() => logError("Error tabsElements"));
     }
 
-    getScore() {
-        const scores = {};
-        
-        for (let element of this.elementsClassName("toggle-children")) { 
-            element.click();                
-        }
-        
-        for (let element of this.elementsClassName("ind-content")) { 
-            scores[element.children[0].innerText] = element.children[1].innerText;                
-        }
-
-        this.clickOnScreen();
-
-        return scores;
-    } 
-
     /**
      * Create _DATAS list object
      */
@@ -346,6 +343,14 @@ class Test {
             if (element.innerHTML.startsWith("Year"))
                 this._YEAR = element;
         }
+
+        for (let element of this.elementsClassName("bottom-left-ui")) { 
+            if (element.innerHTML === "Next year")
+                this._NEXT = element;
+            if (element.innerHTML.startsWith("Year"))
+                this._YEAR = element;
+        }
+        
 
         this._SCORE = this.elementsClassName("profile")[0];
 
@@ -404,8 +409,10 @@ const interval = setInterval(() => {
 }, 100);
 
 
-function _test(imput, G) {
+function _test(imput, G, j) {
     console.log("#############");
+    console.log(j);
+    console.log(imput);
     
     var z = [];
     var x = {};
@@ -413,8 +420,19 @@ function _test(imput, G) {
         var n = G.getIndicatorValue(e.id, !0);
         void 0 !== n && (z[e.name] = n);
     });
-console.log(G);
 // console.log({...z, "indicators" : G.indicatorsRoundedValues});
 
-    _SKORE = {...z, "indicators" : G.indicatorsRoundedValues};
+    _SKORE = {
+        ...z, 
+        "indicators" : G.indicatorsRoundedValues, 
+        "history": imput.allIndValuesHistory
+    };
+    if (j.length > 0) {
+        const a = {}
+        j.forEach(e => {
+            a[e.name] = e.message
+        })
+        _SKORE["aleas"] = a;
+    }
+        
 }

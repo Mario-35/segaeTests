@@ -1575,8 +1575,9 @@
                     E.open(v.DESCRIPTION);
                 }
             }, {
-                key: "sendScores",value: function() {
-                    _test(this, G);                    
+                key: "sendScores",value: function() {                   
+                    
+                    _test(this, G, j.getActiveAleas());                   
                     this.scenario.Scores.forEach(function(e) {
                         var n = G.getIndicatorValue(e.id, !0);
                         void 0 !== n && (t[e.id] = n);
