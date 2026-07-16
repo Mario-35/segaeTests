@@ -427,7 +427,7 @@ function _test(imput, G, j) {
         "indicators" : G.indicatorsRoundedValues, 
         "history": imput.allIndValuesHistory
     };
-    if (j.length > 0) {
+    if (j && j.length > 0) {
         const a = {}
         j.forEach(e => {
             a[e.name] = e.message
