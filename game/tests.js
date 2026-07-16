@@ -266,11 +266,9 @@ class Test {
                     console.log(this.games);                
                     this.downloadGames();                
                 });
-            } else {
-                console.log(this.games);                
+            } else {               
                 nb = +nb + 1;
-                this.playAllGames(nb).then(tmp => {
-                    console.log(_SKORE);                
+                this.playAllGames(nb).then(tmp => {               
                     this.downloadGames();                
                 });
             }
@@ -407,6 +405,8 @@ function _test(imput, G) {
         var n = G.getIndicatorValue(e.id, !0);
         void 0 !== n && (z[e.name] = n);
     });
+console.log(G);
+// console.log({...z, "indicators" : G.indicatorsRoundedValues});
 
     _SKORE.push({...z, "indicators" : G.indicatorsRoundedValues});
 }
