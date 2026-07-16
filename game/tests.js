@@ -1,7 +1,7 @@
 
 let _START = false;
 let test = undefined;
-let _SKORE = []
+let _SKORE = undefined;
 
 function logError(message) {
     console.error(message);
@@ -73,7 +73,7 @@ class Test {
                 year: +this._YEAR.innerText.split(" ")[1],
                 coups: shots,
                 end: gameOver.children[0].innerText,
-                score: this._SCORE.innerText,
+                score: SKORE,
                 indicateurs : this.getScore()
             };
         } else 
@@ -81,7 +81,7 @@ class Test {
                 partie: this.partie,
                 year: +this._YEAR.innerText.split(" ")[1],
                 coups: shots,
-                score: this._SCORE.innerText,
+                score: SKORE,
                 indicateurs : this.getScore()
             };
     }
@@ -246,12 +246,18 @@ class Test {
         });
 
         this._NEXT.click(); 
+        return {
+            partie: this.partie,
+            coups: shots,
+            ... _SKORE,
+        };
     };
 
     async playAllGames(nb) {
         await asyncForEach(Array(nb), index => {
             this.oneRound(this.getRandom(1, this._CHANGE)).then(tmp => {
-                if (+_SKORE[_SKORE.length - 1]["Game won"] != 0) this.restartGame();
+                this.addToGames(tmp);
+                if (+_SKORE["Game won"] != 0) this.restartGame();
             });
         });
         return true;        
@@ -268,7 +274,9 @@ class Test {
                 });
             } else {               
                 nb = +nb + 1;
-                this.playAllGames(nb).then(tmp => {               
+                this.playAllGames(nb).then(tmp => {    
+                    console.log(this.games);                
+
                     this.downloadGames();                
                 });
             }
@@ -276,7 +284,7 @@ class Test {
     }
 
     downloadGames() {
-        const dataStr = "data:text/json;charset=utf-8," + encodeURIComponent(JSON.stringify(_SKORE));
+        const dataStr = "data:text/json;charset=utf-8," + encodeURIComponent(JSON.stringify(this.games));
         const downloadAnchorNode = document.createElement('a');
         downloadAnchorNode.setAttribute("href",     dataStr);
         downloadAnchorNode.setAttribute("download", "resultats.json");
@@ -408,5 +416,5 @@ function _test(imput, G) {
 console.log(G);
 // console.log({...z, "indicators" : G.indicatorsRoundedValues});
 
-    _SKORE.push({...z, "indicators" : G.indicatorsRoundedValues});
+    _SKORE = {...z, "indicators" : G.indicatorsRoundedValues};
 }
