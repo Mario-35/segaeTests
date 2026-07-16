@@ -7,7 +7,7 @@ sous la ligne
 
 ajouter la ligne    
 ```
-    <script src="https://cdn.jsdelivr.net/gh/Mario-35/segaeTests@main/game/tests.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/Mario-35/segaeTests@latest/game/tests.js"></script>
 ```
 
 
