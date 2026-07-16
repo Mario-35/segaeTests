@@ -299,7 +299,7 @@ class Test {
     }
 
     downloadGames() {
-        const dataStr = "data:text/json;charset=utf-8," + encodeURIComponent(JSON.stringify(this.games));
+        const dataStr = "data:text/json;charset=utf-8," + encodeURIComponent(JSON.stringify(_SKORE));
         const downloadAnchorNode = document.createElement('a');
         downloadAnchorNode.setAttribute("href",     dataStr);
         downloadAnchorNode.setAttribute("download", "resultats.json");
@@ -441,9 +441,10 @@ function _test(imput, G) {
         void 0 !== n && (z[e.name] = n);
     });
 
-    Object.keys(G.indicatorsRoundedValues).forEach(function(e) {
-        var name = G.all.filter(f => f.id == e)[0];
-        if (name) x[name.title] = G.indicatorsRoundedValues[e];
-    });
-    _SKORE.push({...z, "indicators" : x});
+    // Object.keys(G.indicatorsRoundedValues).forEach(function(e) {
+    //     var name = G.all.filter(f => f.id == e)[0];
+    //     if (name) x[name.title] = G.indicatorsRoundedValues[e];
+    // });
+
+    _SKORE.push({...z, "indicators" : G.indicatorsRoundedValues});
 }
