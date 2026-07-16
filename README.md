@@ -6,7 +6,9 @@ sous la ligne
     <script src="./VertxClient.js"></script>
 
 ajouter la ligne    
+```
     <script src="https://cdn.jsdelivr.net/gh/Mario-35/segaeTests@main/game/tests.js"></script>
+```
 
 
 dans :
