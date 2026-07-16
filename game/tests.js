@@ -63,28 +63,14 @@ class Test {
                 this.selectGameOption(...temp)
                     .then(() => shots.push(temp.join()))
                     .catch(() => console.log("not done"));
-            }
-            console.log(temp);
-            
+            }            
         });
         this._NEXT.click(); 
-        if (gameOver) {
-            return {
-                partie: this.partie ,
-                year: +this._YEAR.innerText.split(" ")[1],
-                coups: shots,
-                end: gameOver.children[0].innerText,
-                score: SKORE,
-                indicateurs : this.getScore()
-            };
-        } else 
-            return {
-                partie: this.partie,
-                year: +this._YEAR.innerText.split(" ")[1],
-                coups: shots,
-                score: SKORE,
-                indicateurs : this.getScore()
-            };
+        return {
+            partie: this.partie,
+            coups: shots,
+            ... _SKORE,
+        };
     }
 
     async startTest() {
@@ -94,15 +80,18 @@ class Test {
         // Year 3 : C.1.2 / C.9.3 / C.10.3
         this.playOneRound(["C.5.3", "C.6.3", "C.7.3", "C.8.2", "A.2.5"]).then(tmp => {
                 this.addToGames(tmp);
-                if(tmp["end"]) this.restartGame();
+                if (+_SKORE["Game won"] != 0) this.restartGame();
+                this.clickOnScreen(); 
             });
         this.playOneRound(["A.7.1", "A.9.3", "A.10.3", "C.4.2", "G.1.2"]).then(tmp => {
                 this.addToGames(tmp);
-                if(tmp["end"]) this.restartGame();
+                if (+_SKORE["Game won"] != 0) this.restartGame();
+                this.clickOnScreen(); 
             });
         this.playOneRound(["C.1.2", "C.9.3", "C.10.3"]).then(tmp => {
                 this.addToGames(tmp);
-                if(tmp["end"]) this.restartGame();
+                if (+_SKORE["Game won"] != 0) this.restartGame();
+                this.clickOnScreen(); 
             });
         return true; 
     }
@@ -257,18 +246,22 @@ class Test {
     };
 
     async playAllGames(nb) {
-        
-        await asyncForEach(Array(nb + 10), index => {
+        this.coup = 1;
+        this.partie = 1;
+        this.games = {};
+
+        await asyncForEach(Array(nb*2), index => {
             this.coup ++;
             this.oneRound(this.getRandom(1, this._CHANGE)).then(tmp => {
                 this.addToGames(tmp);
                 if (+_SKORE["Game won"] != 0) {
+                    console.log(`nb : ${nb} ===>   this.coup  : ${this.coup }`);
+                    
                     if (this.coup > nb) {
                         this.restartGame();
                         return this.clickOnScreen(); 
                      }
                      this.restartGame();
-
                 }
                 this.clickOnScreen();
             });
@@ -409,18 +402,13 @@ const interval = setInterval(() => {
 }, 100);
 
 
-function _test(imput, G, j) {
-    console.log("#############");
-    console.log(j);
-    console.log(imput);
-    
+function _test(imput, G, j) {    
     var z = [];
     var x = {};
     imput.scenario.Scores.forEach(function(e) {
         var n = G.getIndicatorValue(e.id, !0);
         void 0 !== n && (z[e.name] = n);
     });
-// console.log({...z, "indicators" : G.indicatorsRoundedValues});
 
     _SKORE = {
         ...z, 
