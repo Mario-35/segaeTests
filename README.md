@@ -19,7 +19,7 @@ var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : null, t
 ```
 par
 ```
-_test(this, G);
+_test(this, G, j.getActiveAleas()); 
 ```
 
 
