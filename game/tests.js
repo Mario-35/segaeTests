@@ -441,10 +441,5 @@ function _test(imput, G) {
         void 0 !== n && (z[e.name] = n);
     });
 
-    // Object.keys(G.indicatorsRoundedValues).forEach(function(e) {
-    //     var name = G.all.filter(f => f.id == e)[0];
-    //     if (name) x[name.title] = G.indicatorsRoundedValues[e];
-    // });
-
     _SKORE.push({...z, "indicators" : G.indicatorsRoundedValues});
 }
