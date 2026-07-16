@@ -432,7 +432,7 @@ const interval = setInterval(() => {
 }, 100);
 
 
-function saveTest(imput, G) {
+function _test(imput, G) {
     var z = [];
     var x = {};
     imput.scenario.Scores.forEach(function(e) {
