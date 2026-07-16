@@ -246,33 +246,12 @@ class Test {
         });
 
         this._NEXT.click(); 
-        const gameOver = this.isEndGame();
-        if (gameOver) {
-            return {
-                partie: this.partie ,
-                year: +this._YEAR.innerText.split(" ")[1],
-                coups: shots,
-                end: gameOver.children[0].innerText,
-                score: this._SCORE.innerText,
-                indicateurs : this.getScore()
-            };
-        } else 
-            return {
-                partie: this.partie,
-                year: +this._YEAR.innerText.split(" ")[1],
-                coups: shots,
-                score: this._SCORE.innerText,
-                indicateurs : this.getScore()
-            };
     };
 
     async playAllGames(nb) {
-        const game = [];
         await asyncForEach(Array(nb), index => {
             this.oneRound(this.getRandom(1, this._CHANGE)).then(tmp => {
-                this.addToGames(tmp);
-
-                if(tmp["end"]) this.restartGame();
+                if (+_SKORE[_SKORE.length - 1]["Game won"] != 0) this.restartGame();
             });
         });
         return true;        
@@ -398,19 +377,6 @@ class Test {
             this.waitingClose().then(() => {});  
         }).then(() => console.log("Init finished"));  
    }
-
-   espionne(selector, callback) {
-       const observer = new MutationObserver((mutations, observer) => {
-           console.log(mutations);
-           
-       });
-   
-       observer.observe(document.body, {
-            childList: true, // observer les enfants directs
-            subtree: true, // et les descendants aussi
-            characterDataOldValue: true // transmettre les anciennes données au callback
-       });
-   }
 }
 
 // create interval to catch year when it detect
@@ -433,6 +399,8 @@ const interval = setInterval(() => {
 
 
 function _test(imput, G) {
+    console.log("#############");
+    
     var z = [];
     var x = {};
     imput.scenario.Scores.forEach(function(e) {
