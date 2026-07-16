@@ -8,6 +8,19 @@ sous la ligne
 ajouter la ligne    
     <script src="https://cdn.jsdelivr.net/gh/Mario-35/segaeTests@main/game/tests.js"></script>
 
+
+dans :
+
+remplacer 
+```
+var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : null, t = {};
+```
+par
+```
+_test(this, G);
+```
+
+
 c'est fait
 
 au demarrage l'initialisation se fera et dans la console (F12) Init finished apparait afin d'indiquer que c'est fait.

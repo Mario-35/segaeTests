@@ -279,11 +279,7 @@ class Test {
     }
 
     async start() {
-        let nb = prompt("Nombre de partie", "20");
-        // this.espionne();
-        // console.log(window.webpackJsonpsegae);
-        console.log(window.formulas);
-        
+        let nb = prompt("Nombre de partie", "20");       
         
         if (nb != null) {
             if (+nb === 0) {
@@ -400,7 +396,7 @@ class Test {
                 )   
             } else this.logError(title + " Not found");
             this.waitingClose().then(() => {});  
-        }).then(() => console.log("Init finished") );  
+        }).then(() => console.log("Init finished"));  
    }
 
    espionne(selector, callback) {
@@ -435,3 +431,19 @@ const interval = setInterval(() => {
     }
 }, 100);
 
+
+
+function _test(imput, G) {
+    var z = [];
+    var x = {};
+    imput.scenario.Scores.forEach(function(e) {
+        var n = G.getIndicatorValue(e.id, !0);
+        void 0 !== n && (z[e.name] = n);
+    });
+
+    Object.keys(G.indicatorsRoundedValues).forEach(function(e) {
+        var name = G.all.filter(f => f.id == e)[0];
+        if (name) x[name.title] = G.indicatorsRoundedValues[e];
+    });
+    _SKORE.push({...z, "indicators" : x});
+}
