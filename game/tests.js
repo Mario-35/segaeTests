@@ -31,8 +31,7 @@ class Test {
         this.partie = 1;
         this.coup = 1;
         this.games = {};
-
-        // alert("START TESTS");
+        
         this.initTests();
         console.log(this._AEPS );
         console.log(_HACK);
@@ -45,23 +44,14 @@ class Test {
 
     async playOneRound(shots) {
             // if non shots array random it   
+            // console.log(_HACK.currentSelectedAepIds,);
+            
             shots = shots || []         ;
             if (shots.length < 1) {                
                 const max = this.getRandom(1, this._CHANGE);
                 for (let i = 0; i < max ; i++) {
-                    const tmp = Object.keys(this._AEPS).filter(e => !shots.includes(e));
-
+                    const tmp = Object.keys(this._AEPS).filter(e => !shots.includes(e) && !_HACK.currentSelectedAepIds.includes(e));
                     const key = tmp[this.getRandom(0, Object.keys(tmp).length)];
-this.head("Test " + key);
-console.log(window.applyAvailabilityRules(key, _HACK.allChosenAepIds, _HACK.currentSelectedAepIds, null));
-
-
-
-
-
-
-
-
                     shots.push(key);
                 }                
             }
@@ -69,7 +59,7 @@ console.log(window.applyAvailabilityRules(key, _HACK.allChosenAepIds, _HACK.curr
             return new Promise((resolve) => {
                 const coups = [];
                 shots.forEach(key => {
-                    _HACK.setSelectedAep(this._AEPS[key], key);
+                    _HACK.setSelectedAep(this._AEPS[key].replaceAll(" ", "_"), key);
                     coups.push(key);
                 });
                 _HACK.goToNextYear();
@@ -86,26 +76,26 @@ console.log(window.applyAvailabilityRules(key, _HACK.allChosenAepIds, _HACK.curr
         // Year 1 : C.5.3 / C.6.3 / C.7.3 / C.8.2 / A.2.5
         // Year 2 : A.7.1 / A.9.3 / A.10.3 / C.4.2 / G.1.2
         // Year 3 : C.1.2 / C.9.3 / C.10.3
-        this.playOneRound(["A.6.4"]).then(tmp => {
+        // this.playOneRound(["A.6.4"]).then(tmp => {
+        //         this.addToGames(tmp);
+        //         if (+_SKORE["Game won"] != 0) this.restartGame();
+        //         this.clickOnScreen(); 
+        //     });
+        this.playOneRound(["C.5.3", "C.6.3", "C.7.3", "C.8.2", "A.2.5"]).then(tmp => {
+                this.addToGames(tmp);
+                if (+_SKORE["Game won"] != 0) this.restartGame();
+                this.clickOnScreen(); 
+            });        
+        this.playOneRound(["A.7.1", "A.9.3", "A.10.3", "C.4.2", "G.1.2"]).then(tmp => {
                 this.addToGames(tmp);
                 if (+_SKORE["Game won"] != 0) this.restartGame();
                 this.clickOnScreen(); 
             });
-        // this.playOneRound(["C.5.3", "C.6.3", "C.7.3", "C.8.2", "A.2.5"]).then(tmp => {
-        //         this.addToGames(tmp);
-        //         if (+_SKORE["Game won"] != 0) this.restartGame();
-        //         this.clickOnScreen(); 
-        //     });        
-        // this.playOneRound(["A.7.1", "A.9.3", "A.10.3", "C.4.2", "G.1.2"]).then(tmp => {
-        //         this.addToGames(tmp);
-        //         if (+_SKORE["Game won"] != 0) this.restartGame();
-        //         this.clickOnScreen(); 
-        //     });
-        // this.playOneRound(["C.1.2", "C.9.3", "C.10.3"]).then(tmp => {
-        //         this.addToGames(tmp);
-        //         if (+_SKORE["Game won"] != 0) this.restartGame();
-        //         this.clickOnScreen(); 
-        //     });
+        this.playOneRound(["C.1.2", "C.9.3", "C.10.3"]).then(tmp => {
+                this.addToGames(tmp);
+                if (+_SKORE["Game won"] != 0) this.restartGame();
+                this.clickOnScreen(); 
+            });
         return true; 
     }
 
@@ -285,20 +275,15 @@ console.log(window.applyAvailabilityRules(key, _HACK.allChosenAepIds, _HACK.curr
             const titleElement = document.getElementById(title);  
             if (titleElement) {
                 // get alls tab class
-                this.clickAndElementsClassName(titleElement, "tab", true).then((tabsElements) => {                    
-                        // create blank object
-                        const tmp = {}   
+                this.clickAndElementsClassName(titleElement, "tab", true).then((tabsElements) => { 
                         for (let tabElement of tabsElements) {
-                            // create blank array
-                            const tmpArray = {};
                             //  get all aep class
                             tabElement.click();
                             const aepsElements = document.getElementsByClassName("aep"); 
+                            
                             for (let aepElement of aepsElements) {
-                                tmpArray[aepElement.children[0].innerText] = aepElement.children[0].title;
-                                this._AEPS[aepElement.children[0].title] = aepElement.children[0].innerText;
-                            }
-                            tmp[tabElement.innerText] = tmpArray;                            
+                                this._AEPS[aepElement.children[0].title] = tabElement.innerText.toLowerCase();
+                            }                           
                         }
                     },
                 )   
@@ -339,7 +324,7 @@ function _test(imput, G, j) {
     
     _SKORE = {
         ...z, 
-        "indicators" : G.getIndicatorValue, 
+        "indicators" : G.getIndicatorValue,
         "history": imput.allIndValuesHistory
     };
     if (j && j.length > 0) {
@@ -352,9 +337,3 @@ function _test(imput, G, j) {
         
 }
 
-function _essai(t, e) {
-    console.log("========================");
-    console.log(t);
-    console.log(e);
-    
-}
