@@ -86,21 +86,26 @@ console.log(window.applyAvailabilityRules(key, _HACK.allChosenAepIds, _HACK.curr
         // Year 1 : C.5.3 / C.6.3 / C.7.3 / C.8.2 / A.2.5
         // Year 2 : A.7.1 / A.9.3 / A.10.3 / C.4.2 / G.1.2
         // Year 3 : C.1.2 / C.9.3 / C.10.3
-        this.playOneRound(["C.5.3", "C.6.3", "C.7.3", "C.8.2", "A.2.5"]).then(tmp => {
+        this.playOneRound(["A.6.4"]).then(tmp => {
                 this.addToGames(tmp);
                 if (+_SKORE["Game won"] != 0) this.restartGame();
                 this.clickOnScreen(); 
             });
-        this.playOneRound(["A.7.1", "A.9.3", "A.10.3", "C.4.2", "G.1.2"]).then(tmp => {
-                this.addToGames(tmp);
-                if (+_SKORE["Game won"] != 0) this.restartGame();
-                this.clickOnScreen(); 
-            });
-        this.playOneRound(["C.1.2", "C.9.3", "C.10.3"]).then(tmp => {
-                this.addToGames(tmp);
-                if (+_SKORE["Game won"] != 0) this.restartGame();
-                this.clickOnScreen(); 
-            });
+        // this.playOneRound(["C.5.3", "C.6.3", "C.7.3", "C.8.2", "A.2.5"]).then(tmp => {
+        //         this.addToGames(tmp);
+        //         if (+_SKORE["Game won"] != 0) this.restartGame();
+        //         this.clickOnScreen(); 
+        //     });        
+        // this.playOneRound(["A.7.1", "A.9.3", "A.10.3", "C.4.2", "G.1.2"]).then(tmp => {
+        //         this.addToGames(tmp);
+        //         if (+_SKORE["Game won"] != 0) this.restartGame();
+        //         this.clickOnScreen(); 
+        //     });
+        // this.playOneRound(["C.1.2", "C.9.3", "C.10.3"]).then(tmp => {
+        //         this.addToGames(tmp);
+        //         if (+_SKORE["Game won"] != 0) this.restartGame();
+        //         this.clickOnScreen(); 
+        //     });
         return true; 
     }
 
@@ -330,9 +335,11 @@ function _test(imput, G, j) {
         void 0 !== n && (z[e.name] = n);
     });
 
+
+    
     _SKORE = {
         ...z, 
-        "indicators" : G.indicatorsRoundedValues, 
+        "indicators" : G.getIndicatorValue, 
         "history": imput.allIndValuesHistory
     };
     if (j && j.length > 0) {
@@ -343,4 +350,11 @@ function _test(imput, G, j) {
         _SKORE["aleas"] = a;
     }
         
+}
+
+function _essai(t, e) {
+    console.log("========================");
+    console.log(t);
+    console.log(e);
+    
 }

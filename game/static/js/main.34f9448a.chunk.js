@@ -1582,6 +1582,7 @@
                         var n = G.getIndicatorValue(e.id, !0);
                         void 0 !== n && (t[e.id] = n);
                     }), ae.userMeetingSetScores(t, e); 
+                    _essai(t,e);
                 }
             }, {
                 key: "saveCustomDatas",
@@ -1788,11 +1789,11 @@
             var t = e.data, n = e.categ, a = e.selected, i = e.prevSelected, c = e.onClick, l = window.applyAvailabilityRules(t.id, oe.allChosenAepIds, oe.currentSelectedAepIds, oe.t), o = !1, s = "";
             l && (o = l.available, s = l.msg), 0 === oe.remainingAepChanges && -1 === oe.aepIdsDiffCategs.indexOf(n) && (o = !1, 
                 s = oe.t("no_remaining_changes"));
-                // console.log("##########################");
-                //        console.log(t.id)
-                //        console.log(oe.allChosenAepIds)
-                //        console.log(oe.currentSelectedAepIds)
-                //        console.log(oe.t)
+                console.log("##########################");
+                       console.log(t.id)
+                       console.log(oe.allChosenAepIds)
+                       console.log(oe.currentSelectedAepIds)
+                       console.log(oe.t)
             var u = "aep";
             return u += a ? " selected" : "", u += i ? " prev-selected" : "", a || (u += o ? "" : " disabled"), 
             r.a.createElement("div", {
