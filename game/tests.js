@@ -2,6 +2,8 @@
 let _START = false;
 let test = undefined;
 let _SKORE = undefined;
+let _HACK = undefined;
+
 
 function logError(message) {
     console.error(message);
@@ -19,7 +21,7 @@ class Test {
     constructor() {
         /* *** ATTRIBUTS *** */
         this._DATAS = undefined;
-        this._NEXT = undefined;
+        this._AEPS = undefined;
         this._YEAR = undefined;
         this._SCORE = undefined;
         this._CHANGE = undefined;    
@@ -34,44 +36,39 @@ class Test {
         // alert("START TESTS");
         this.initTests();
         console.log(this._DATAS );
-        
+        console.log(this._AEPS );
         
     } 
 
-    getFormOption(input) {
-        for (var title in this._DATAS ) {          
-            // console.log(title);
-            for (var subTitle in this._DATAS[title] ) {          
-                // console.log(subTitle);
-                for (var option in this._DATAS[title][subTitle] ) {          
-                    if (this._DATAS[title][subTitle][option] === input) {
-                        return [title, subTitle, option]
-                    }
-                } 
-            } 
-            
-        } 
+    head(message) {
+        console.log(`================ ${message} ================`);
     }
 
-    async playOneRound(input) {
-        const shots = [];
-        input.forEach(element => {
-            console.log(element);
+    async playOneRound(shots) {
+            // if non shots array random it   
+            shots = shots || []         ;
+            if (shots.length < 1) {                
+                const max = this.getRandom(1, this._CHANGE);
+                for (let i = 0; i < max ; i++) {
+                    const tmp = Object.keys(this._AEPS).filter(e => !shots.includes(e));
+                    shots.push(tmp[this.getRandom(0, Object.keys(tmp).length)]);
+                }                
+            }
             
-            const temp = this.getFormOption(element);
-            if (temp) {
-                this.selectGameOption(...temp)
-                    .then(() => shots.push(temp.join()))
-                    .catch(() => console.log("not done"));
-            }            
-        });
-        this._NEXT.click(); 
-        return {
-            partie: this.partie,
-            coups: shots,
-            ... _SKORE,
-        };
-    }
+            return new Promise((resolve) => {
+                const coups = [];
+                shots.forEach(element => {
+                    _HACK.setSelectedAep(this._AEPS[element], element);
+                    coups.push([element, this._AEPS[element]]);
+                });
+                _HACK.goToNextYear();
+                resolve({
+                    partie: this.partie,
+                    coups: coups,
+                    ... _SKORE,
+                });
+            });
+    };    
 
     async startTest() {
         const game = [];
@@ -152,18 +149,7 @@ class Test {
             }, this._WAIT);
         });
     }
-
-
-    // isAleas() { 
-    //     let elements = this.elementsClassName("notif"); 
-    //     if (elements && elements[0]) {
-    //         log(elements[0]);
-    //         this._ALEA.click(); 
-    //         elements = this.elementsClassName("Alea"); 
-    //         if (elements && elements[0]) 
-    //             return elements[0];
-    //     } 
-    // }
+    
     /**
      * 
      * @param {*} name of the button 
@@ -180,16 +166,17 @@ class Test {
     }
 
     restartGame() {
-        this.clickOnButton("Restart the game");
+        _HACK.restartGame();
         this.partie = this.partie + 1;
-        let elements = document.getElementsByTagName("button");
-        for (let element of elements) {
-            if (element.innerText.toLowerCase() === "yes") {
-                element.click();
-                return true;
-            }
-        }
-        return false;
+        // let elements = document.getElementsByTagName("button");
+        // for (let element of elements) {
+        //     if (element.innerText.toLowerCase() === "yes") {
+        //         element.click();
+        //         return true;
+        //     }
+        // }
+        // return false;
+        // return true;
     }
        
     dataInfos(title, subTitle, option) {
@@ -213,37 +200,11 @@ class Test {
      * @returns array of 3 shot 
      */
     randomShot(shots) {
-        let result = [];
-        do { // repeat
-            let input = this._DATAS;
-            result = [];
-            for (let i = 1; i < 4; i++) {
-                const key = Object.keys(input)[this.getRandom(0, Object.keys(input).length)];
-                result.push(key);
-                input = input[key];
-            }            
-        // while the first item are not played and the threeLevel exist                
-        } while (shots.includes(`${result[0]},${result[1]}`) || !result[2]);
-        return result;
+        const tmp = Object.keys(this._AEPS).filter(e => !shots.includes(e));        
+        return tmp[this.getRandom(0, Object.keys(tmp).length)];
     }
     
-    async oneRound(numberOfMoves) {
-        const shots = [];
-        await asyncForEach(Array(numberOfMoves), (item) => {
-            const shot = this.randomShot(shots);
-            this.selectGameOption(...shot)
-                .then(() => shots.push(shot.join()))
-                .catch(() => console.log("not done"));
-        });
 
-        this._NEXT.click(); 
-            
-        return {
-            partie: this.partie,
-            coups: shots,
-            ... _SKORE,
-        };
-    };
 
     async playAllGames(nb) {
         this.coup = 1;
@@ -252,7 +213,7 @@ class Test {
 
         await asyncForEach(Array(nb*2), index => {
             this.coup ++;
-            this.oneRound(this.getRandom(1, this._CHANGE)).then(tmp => {
+            this.playOneRound().then(tmp => {
                 this.addToGames(tmp);
                 if (+_SKORE["Game won"] != 0) {
                     console.log(`nb : ${nb} ===>   this.coup  : ${this.coup }`);
@@ -270,7 +231,7 @@ class Test {
     }
 
     async start() {
-        let nb = prompt("Nombre de partie", "20");       
+        let nb = prompt("Nombre de partie", "0");       
         
         if (nb != null) {
             if (+nb === 0) {
@@ -329,17 +290,14 @@ class Test {
     initTests() { 
         const titles = []; 
         this._DATAS = {};
+        this._AEPS = {};
 
         for (let element of this.elementsClassName("label")) { 
-            if (element.innerHTML === "Next year")
-                this._NEXT = element;
             if (element.innerHTML.startsWith("Year"))
                 this._YEAR = element;
         }
 
         for (let element of this.elementsClassName("bottom-left-ui")) { 
-            if (element.innerHTML === "Next year")
-                this._NEXT = element;
             if (element.innerHTML.startsWith("Year"))
                 this._YEAR = element;
         }
@@ -371,10 +329,11 @@ class Test {
                             const aepsElements = document.getElementsByClassName("aep"); 
                             for (let aepElement of aepsElements) {
                                 tmpArray[aepElement.children[0].innerText] = aepElement.children[0].title;
+                                this._AEPS[aepElement.children[0].title] = aepElement.children[0].innerText;
                             }
                             tmp[tabElement.innerText] = tmpArray;                            
                         }
-                        this._DATAS[title] = tmp;
+                        // this._DATAS[title] = tmp;
                     },
                 )   
             } else this.logError(title + " Not found");
@@ -402,7 +361,7 @@ const interval = setInterval(() => {
 }, 100);
 
 
-function _test(imput, G, j) {    
+function _test(imput, G, j) {
     var z = [];
     var x = {};
     imput.scenario.Scores.forEach(function(e) {
