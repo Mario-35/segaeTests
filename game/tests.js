@@ -20,7 +20,6 @@ async function asyncForEach(array, callback) {
 class Test {
     constructor() {
         /* *** ATTRIBUTS *** */
-        this._DATAS = undefined;
         this._AEPS = undefined;
         this._YEAR = undefined;
         this._SCORE = undefined;
@@ -35,8 +34,8 @@ class Test {
 
         // alert("START TESTS");
         this.initTests();
-        console.log(this._DATAS );
         console.log(this._AEPS );
+        console.log(_HACK);
         
     } 
 
@@ -51,15 +50,27 @@ class Test {
                 const max = this.getRandom(1, this._CHANGE);
                 for (let i = 0; i < max ; i++) {
                     const tmp = Object.keys(this._AEPS).filter(e => !shots.includes(e));
-                    shots.push(tmp[this.getRandom(0, Object.keys(tmp).length)]);
+
+                    const key = tmp[this.getRandom(0, Object.keys(tmp).length)];
+this.head("Test " + key);
+console.log(window.applyAvailabilityRules(key, _HACK.allChosenAepIds, _HACK.currentSelectedAepIds, null));
+
+
+
+
+
+
+
+
+                    shots.push(key);
                 }                
             }
             
             return new Promise((resolve) => {
                 const coups = [];
-                shots.forEach(element => {
-                    _HACK.setSelectedAep(this._AEPS[element], element);
-                    coups.push([element, this._AEPS[element]]);
+                shots.forEach(key => {
+                    _HACK.setSelectedAep(this._AEPS[key], key);
+                    coups.push(key);
                 });
                 _HACK.goToNextYear();
                 resolve({
@@ -168,21 +179,7 @@ class Test {
     restartGame() {
         _HACK.restartGame();
         this.partie = this.partie + 1;
-        // let elements = document.getElementsByTagName("button");
-        // for (let element of elements) {
-        //     if (element.innerText.toLowerCase() === "yes") {
-        //         element.click();
-        //         return true;
-        //     }
-        // }
-        // return false;
-        // return true;
     }
-       
-    dataInfos(title, subTitle, option) {
-        if (title && subTitle && option) 
-            return this._DATAS[title][subTitle][option];
-    } 
 
     addToGames(input) {
         const name = "partie "+ input.partie;
@@ -192,18 +189,7 @@ class Test {
             this.games[name].push(input);
         else 
             this.games[name] = [input];
-    }  
-    
-    /**
-     * 
-     * @param {*} shots historical shot
-     * @returns array of 3 shot 
-     */
-    randomShot(shots) {
-        const tmp = Object.keys(this._AEPS).filter(e => !shots.includes(e));        
-        return tmp[this.getRandom(0, Object.keys(tmp).length)];
-    }
-    
+    }     
 
 
     async playAllGames(nb) {
@@ -211,13 +197,13 @@ class Test {
         this.partie = 1;
         this.games = {};
 
-        await asyncForEach(Array(nb*2), index => {
+        
+
+        await asyncForEach(Array(nb + this._CHANGE), index => {
             this.coup ++;
             this.playOneRound().then(tmp => {
                 this.addToGames(tmp);
-                if (+_SKORE["Game won"] != 0) {
-                    console.log(`nb : ${nb} ===>   this.coup  : ${this.coup }`);
-                    
+                if (+_SKORE["Game won"] != 0) {                    
                     if (this.coup > nb) {
                         this.restartGame();
                         return this.clickOnScreen(); 
@@ -231,7 +217,8 @@ class Test {
     }
 
     async start() {
-        let nb = prompt("Nombre de partie", "0");       
+        let nb = prompt("Nombre de partie", "20");       
+        // console.log(_HACK );
         
         if (nb != null) {
             if (+nb === 0) {
@@ -260,36 +247,11 @@ class Test {
         downloadAnchorNode.remove();
     }
 
-    async selectGameOption(title, subTitle, option) {        
-        this.clickAndElementsClassName(document.getElementById(title), "tab", true).then((tabsElements) => {                
-            for (let tabElement of tabsElements) {
-                if (tabElement.innerText === subTitle) {
-                    this.clickAndElementsClassName(tabElement, 'aep').then((aepsElements) => {
-                        option = this._DATAS[title][subTitle][option];
-                        for (let aepElement of aepsElements) {
-                            if (aepElement.children[0].title == option) {
-                                if (aepElement.children[2] && aepElement.children[2].classList.contains("lock")) {
-                                    this.close();
-                                    return false;
-                                } else {
-                                    aepElement.children[0].click();                                        
-                                    this.close();
-                                    return true;
-                                }
-                            }
-                        }
-                    }).catch(() => logError("Error aepElements"));
-                }
-            }
-        }).catch(() => logError("Error tabsElements"));
-    }
-
     /**
-     * Create _DATAS list object
+     * Create list object
      */
     initTests() { 
         const titles = []; 
-        this._DATAS = {};
         this._AEPS = {};
 
         for (let element of this.elementsClassName("label")) { 
@@ -333,7 +295,6 @@ class Test {
                             }
                             tmp[tabElement.innerText] = tmpArray;                            
                         }
-                        // this._DATAS[title] = tmp;
                     },
                 )   
             } else this.logError(title + " Not found");

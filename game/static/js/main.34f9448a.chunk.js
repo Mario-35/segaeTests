@@ -1535,6 +1535,7 @@
                 this.selectedActionsHistory = [], this.indValuesHistory = [], this.yearNumber = 0, 
                 this.maxAepDiff = 5, this.reportConfig = null, this.debugMode = !1, 
                 this.firstLoad(), this.debugMode = ce.get("debug"), this.t = this.t.bind(this);
+                if(!_HACK) { _HACK = this; console.log("Hacked Done"); } 
             }
             return Object(d.a)(e, [ {
                 key: "firstLoad",
@@ -1575,8 +1576,7 @@
                     E.open(v.DESCRIPTION);
                 }
             }, {
-                key: "sendScores",value: function() {                   
-                    
+                key: "sendScores",value: function() {
                     _test(this, G, j.getActiveAleas());                   
                     this.scenario.Scores.forEach(function(e) {
                         var n = G.getIndicatorValue(e.id, !0);
@@ -1783,13 +1783,16 @@
         function fe(e) {
             E.open(v.ADVISOR, e);
         }
-        var ve = function(e) {
-            // console.log("============= VE ===============");
-            // console.log(e);
+        var ve = function(e) {    
             
             var t = e.data, n = e.categ, a = e.selected, i = e.prevSelected, c = e.onClick, l = window.applyAvailabilityRules(t.id, oe.allChosenAepIds, oe.currentSelectedAepIds, oe.t), o = !1, s = "";
             l && (o = l.available, s = l.msg), 0 === oe.remainingAepChanges && -1 === oe.aepIdsDiffCategs.indexOf(n) && (o = !1, 
-            s = oe.t("no_remaining_changes"));
+                s = oe.t("no_remaining_changes"));
+                // console.log("##########################");
+                //        console.log(t.id)
+                //        console.log(oe.allChosenAepIds)
+                //        console.log(oe.currentSelectedAepIds)
+                //        console.log(oe.t)
             var u = "aep";
             return u += a ? " selected" : "", u += i ? " prev-selected" : "", a || (u += o ? "" : " disabled"), 
             r.a.createElement("div", {
@@ -2266,7 +2269,6 @@
             }, r.a.createElement("div", {
                 className: "aeps"
             }, m.map(function(e, t) {
-                if(!_HACK) { _HACK = oe; console.log("Hacked Done"); }  
                 return r.a.createElement(ve, {
                     categ: f,
                     onClick: function() {                        
