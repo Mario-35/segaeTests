@@ -1535,7 +1535,10 @@
                 this.selectedActionsHistory = [], this.indValuesHistory = [], this.yearNumber = 0, 
                 this.maxAepDiff = 5, this.reportConfig = null, this.debugMode = !1, 
                 this.firstLoad(), this.debugMode = ce.get("debug"), this.t = this.t.bind(this);
-                if(!_HACK) { _HACK = this; console.log("Hacked Done"); } 
+                if(!_HACK) { 
+                    _AEPS = N;
+                    _HACK = this; 
+                    console.log("Hacked Done"); } 
             }
             return Object(d.a)(e, [ {
                 key: "firstLoad",
@@ -1606,9 +1609,6 @@
             }, {
                 key: "setSelectedAep",
                 value: function(e, t) {
-                                            console.log("#####################################");
-                        console.log(e);
-                        console.log(t);
                     this.isGameOver || (this.selectedActions[e] = t);
                 }
             }, {

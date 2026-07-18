@@ -1,8 +1,9 @@
 
-let _START = false;
-let test = undefined;
-let _SKORE = undefined;
-let _HACK = undefined;
+let test = undefined; // global var to know if test is initialised
+let _SKORE = undefined; // global var for catch score from segae code
+let _HACK = undefined; // global var to expose segae functions
+let _AEPS = undefined; //  global var to expose segae aeps values
+let _DEBUG = true; // set to true for debug
 
 
 function logError(message) {
@@ -20,83 +21,117 @@ async function asyncForEach(array, callback) {
 class Test {
     constructor() {
         /* *** ATTRIBUTS *** */
-        this._AEPS = undefined;
-        this._YEAR = undefined;
-        this._SCORE = undefined;
-        this._CHANGE = undefined;    
-          
-        
-        this._START = true;
-        this.wait = 100;
-        this.partie = 1;
-        this.coup = 1;
-        this.games = {};
-        
+        this.aepsKeys = undefined; // list of games keys
+        this.numberOfChange = undefined; // var that indicate maximum of changes in a round
+        this.gameNumber = 1; // index number of the game
+        this.savedGames = {}; // store games
+        // start init
         this.initTests();
-        console.log(this._AEPS );
-        console.log(_HACK);
-        
+        // info for debbuging
+        if (_DEBUG) {
+            this.head("aepsKeys");
+            console.log(this.aepsKeys);
+            this.head("_HAKS");
+            console.log(_HACK);
+        }        
     } 
 
     head(message) {
         console.log(`================ ${message} ================`);
     }
 
+    // Play one round
     async playOneRound(shots) {
-            // if non shots array random it   
-            // console.log(_HACK.currentSelectedAepIds,);
+        shots = shots || [];
+        // if shots empty random it            
+        if (shots.length < 1) {
+            // max moves for the round
+            const max = this.getRandom(1, this.numberOfChange);
+            // loop to generate shots
+            for (let i = 0; i < max ; i++) {
+                // create list key that not in the shots and not already selected
+                const keyList = Object.keys(this.aepsKeys).filter(e => !shots.includes(e) && !_HACK.currentSelectedAepIds.includes(e));
+                // random shot in list key
+                shots.push(keyList[this.getRandom(0, Object.keys(keyList).length)]);
+            }                
+        }
             
-            shots = shots || []         ;
-            if (shots.length < 1) {                
-                const max = this.getRandom(1, this._CHANGE);
-                for (let i = 0; i < max ; i++) {
-                    const tmp = Object.keys(this._AEPS).filter(e => !shots.includes(e) && !_HACK.currentSelectedAepIds.includes(e));
-                    const key = tmp[this.getRandom(0, Object.keys(tmp).length)];
-                    shots.push(key);
-                }                
-            }
-            
-            return new Promise((resolve) => {
-                const coups = [];
-                shots.forEach(key => {
-                    _HACK.setSelectedAep(this._AEPS[key].replaceAll(" ", "_"), key);
-                    coups.push(key);
-                });
-                _HACK.goToNextYear();
-                resolve({
-                    partie: this.partie,
-                    coups: coups,
-                    ... _SKORE,
-                });
+        // return create promise of all shots to execute
+        return new Promise((resolve) => {
+            const coups = [];
+            // loop shots
+            shots.forEach(shot => {
+                // select option in segae
+                _HACK.setSelectedAep(this.aepsKeys[shot], shot);
+                // save shot
+                coups.push(shot);
             });
-    };    
+            // select next year in segae and segae calculate score
+            _HACK.goToNextYear();
+            // resolve segae generated score
+            resolve({
+                coups: coups,
+                ... _SKORE,
+            });
+        });
+    };   
+      
+    // Play all rounds
+    async playAllRounds(arrayOfShots) {        
+        // game finished
+        let finished = undefined;
+        this.savedGames = {};
+        
+        // loop async rounds
+        await asyncForEach(arrayOfShots, shots => {
+            // if (!finished) 
+                this.playOneRound(shots).then(tmp => {
+                    this.addToGames(tmp);                
+                    if (_HACK.gameState != "INGAME") {
+                        finished = true;
+                    }
+                });
 
+        });
+        
+        await this.finisheGame();
+    }
+    
+    // fnished actual game
+    async finisheGame() {
+        // for testingg continue
+        
+        let finished = undefined;
+        await asyncForEach(Array(10), () => {
+            // while not finidhes
+            if (!finished) 
+                this.nextYear().then(tmp => {
+            this.addToGames(tmp);
+            // Won Or Lost stop the loop
+            if (_HACK.gameState != "INGAME") {
+                finished = true;
+                this.clickOnScreen();
+            }
+        });
+    });
+}
+
+    async nextYear() {            
+        return new Promise((resolve) => {
+            _HACK.goToNextYear();
+            // this.clickOnScreen();
+            resolve({
+                coups: [],
+                ... _SKORE,
+            });
+        });
+    };    
+        
+        
     async startTest() {
-        const game = [];
-        // Year 1 : C.5.3 / C.6.3 / C.7.3 / C.8.2 / A.2.5
-        // Year 2 : A.7.1 / A.9.3 / A.10.3 / C.4.2 / G.1.2
-        // Year 3 : C.1.2 / C.9.3 / C.10.3
-        // this.playOneRound(["A.6.4"]).then(tmp => {
-        //         this.addToGames(tmp);
-        //         if (+_SKORE["Game won"] != 0) this.restartGame();
-        //         this.clickOnScreen(); 
-        //     });
-        this.playOneRound(["C.5.3", "C.6.3", "C.7.3", "C.8.2", "A.2.5"]).then(tmp => {
-                this.addToGames(tmp);
-                if (+_SKORE["Game won"] != 0) this.restartGame();
-                this.clickOnScreen(); 
-            });        
-        this.playOneRound(["A.7.1", "A.9.3", "A.10.3", "C.4.2", "G.1.2"]).then(tmp => {
-                this.addToGames(tmp);
-                if (+_SKORE["Game won"] != 0) this.restartGame();
-                this.clickOnScreen(); 
-            });
-        this.playOneRound(["C.1.2", "C.9.3", "C.10.3"]).then(tmp => {
-                this.addToGames(tmp);
-                if (+_SKORE["Game won"] != 0) this.restartGame();
-                this.clickOnScreen(); 
-            });
-        return true; 
+        // const datas =  [["A.6.4"]];
+        const datas =  [["C.5.3", "C.6.3", "C.7.3", "C.8.2", "A.2.5"], ["A.7.1", "A.9.3", "A.10.3", "C.4.2", "G.1.2"], ["C.1.2", "C.9.3", "C.10.3"] ];
+        await this.playAllRounds(datas).then(tmp => { return tmp; }); 
     }
 
     // return random number
@@ -111,7 +146,7 @@ class Test {
         const list = document.getElementsByClassName(name);  
         return list;
     }
-
+    
     clickOnScreen() {
         document.elementFromPoint(1, 1).click();
         return true;
@@ -126,32 +161,32 @@ class Test {
         }
         return false; 
     }
-
+    
     // waiting close
     waitingClose() {
         return new Promise((resolve) => {
             setTimeout(() => {
                 this.close();
                 resolve();
-            }, this._WAIT);
+            }, 100);
         });
     }    
-
+    
     // click ang get all elements class
-
+    
     /**
      * 
      * @param {*} element HTML element
      * @param {*} name class name to search 
      * @param {*} closeBefore boolean
      * @returns 
-     */
-    clickAndElementsClassName(element, name, closeBefore) {
-        if(closeBefore) this.close();
-        return new Promise((resolve) => {
-            setTimeout(() => {
-                element.click(); 
-                resolve(this.elementsClassName(name));
+    */
+   clickAndElementsClassName(element, name, closeBefore) {
+       if(closeBefore) this.close();
+       return new Promise((resolve) => {
+           setTimeout(() => {
+               element.click(); 
+               resolve(this.elementsClassName(name));
             }, this._WAIT);
         });
     }
@@ -160,80 +195,83 @@ class Test {
      * 
      * @param {*} name of the button 
      * @returns true if found
-     */
-    clickOnButton(name) {
-        for (let element of this.elementsClassName("label")) { 
-            if (element.innerHTML === name) {
-                element.click();
-                return true;
+    */
+   clickOnButton(name) {
+       for (let element of this.elementsClassName("label")) { 
+           if (element.innerHTML === name) {
+               element.click();
+               return true;
             }
         }
         return false;
     }
-
-    restartGame() {
-        _HACK.restartGame();
-        this.partie = this.partie + 1;
-    }
-
+    
     addToGames(input) {
-        const name = "partie "+ input.partie;
-        delete input.partie;
-        
-        if( this.games[name])
-            this.games[name].push(input);
+        const name = "partie " + this.gameNumber ;
+
+        if( this.savedGames[name])
+            this.savedGames[name].push(input);
         else 
-            this.games[name] = [input];
+            this.savedGames[name] = [input];
     }     
+    
+    
+    async playAllGames(max) {
+        this.savedGames = {};
 
-
-    async playAllGames(nb) {
-        this.coup = 1;
-        this.partie = 1;
-        this.games = {};
-
+        for (this.gameNumber  = 1; this.gameNumber <= max; this.gameNumber++) {
+            while (_HACK.gameState == "INGAME") {
+                await this.playOneRound().then(tmp => {
+                    this.addToGames(tmp);
+                });                
+            }
+            _HACK.restartGame();
+            this.clickOnScreen();            
+        }
         
-
-        await asyncForEach(Array(nb + this._CHANGE), index => {
-            this.coup ++;
-            this.playOneRound().then(tmp => {
-                this.addToGames(tmp);
-                if (+_SKORE["Game won"] != 0) {                    
-                    if (this.coup > nb) {
-                        this.restartGame();
-                        return this.clickOnScreen(); 
-                     }
-                     this.restartGame();
-                }
-                this.clickOnScreen();
-            });
-        });
+        // await asyncForEach(Array(nb + this.numberOfChange), index => {
+        //     this.coup ++;
+        //     this.playOneRound().then(tmp => {
+        //         this.addToGames(tmp);
+        //         if (+_SKORE["Game won"] != 0) {                    
+        //             if (this.coup > nb) {
+        //                 this.restartGame();
+        //                 this.finisheGame();
+        //                 return this.clickOnScreen(); 
+        //             }
+        //             this.restartGame();
+        //         }
+        //         this.clickOnScreen();
+        //     });
+        // });
         return true;        
     }
-
+    
+    // start test
     async start() {
-        let nb = prompt("Nombre de partie", "20");       
-        // console.log(_HACK );
+        let nb = prompt("Nombre de partie", "5");       
+        console.log(_AEPS);
         
         if (nb != null) {
             if (+nb === 0) {
                 this.startTest().then(tmp => {
-                    console.log(this.games);                
                     this.downloadGames();                
                 });
-            } else {               
-                nb = +nb + 1;
-                this.playAllGames(nb).then(tmp => {    
-                    console.log(this.games);                
-
+            } else {
+                this.playAllGames(+nb).then(tmp => {
                     this.downloadGames();                
                 });
             }
         }
     }
 
+    // download games file
     downloadGames() {
-        const dataStr = "data:text/json;charset=utf-8," + encodeURIComponent(JSON.stringify(this.games));
+        if (_DEBUG) {
+            console.log(this.savedGames);
+            return;
+        }
+        const dataStr = "data:text/json;charset=utf-8," + encodeURIComponent(JSON.stringify(this.savedGames));
         const downloadAnchorNode = document.createElement('a');
         downloadAnchorNode.setAttribute("href",     dataStr);
         downloadAnchorNode.setAttribute("download", "resultats.json");
@@ -241,56 +279,137 @@ class Test {
         downloadAnchorNode.click();
         downloadAnchorNode.remove();
     }
-
+    
     /**
      * Create list object
-     */
-    initTests() { 
-        const titles = []; 
-        this._AEPS = {};
-
-        for (let element of this.elementsClassName("label")) { 
-            if (element.innerHTML.startsWith("Year"))
-                this._YEAR = element;
-        }
-
-        for (let element of this.elementsClassName("bottom-left-ui")) { 
-            if (element.innerHTML.startsWith("Year"))
-                this._YEAR = element;
-        }
-        
-
-        this._SCORE = this.elementsClassName("profile")[0];
-
-        this._CHANGE = +this.elementsClassName("remaining-changes-value")[0].innerText;
-
-       // get all titles and put id on element       
-       for (let element of this.elementsClassName("marker-title")) {
-           titles.push(element.innerText);
-           element.id = element.innerText;
-       }
-       
-        asyncForEach(titles, (title) => {
-            // get element
-            const titleElement = document.getElementById(title);  
-            if (titleElement) {
-                // get alls tab class
-                this.clickAndElementsClassName(titleElement, "tab", true).then((tabsElements) => { 
-                        for (let tabElement of tabsElements) {
-                            //  get all aep class
-                            tabElement.click();
-                            const aepsElements = document.getElementsByClassName("aep"); 
-                            
-                            for (let aepElement of aepsElements) {
-                                this._AEPS[aepElement.children[0].title] = tabElement.innerText.toLowerCase();
-                            }                           
-                        }
-                    },
-                )   
-            } else this.logError(title + " Not found");
-            this.waitingClose().then(() => {});  
-        }).then(() => console.log("Init finished"));  
-   }
+    */
+   initTests() { 
+       this.aepsKeys = {};
+       this.numberOfChange = +this.elementsClassName("remaining-changes-value")[0].innerText;
+       if (_AEPS) {
+            Object.values(_AEPS.categs).forEach(value => {
+                    Object.values(value.aeps).forEach(aep => {                    
+                            if (aep.category && value.name) 
+                                this.aepsKeys[aep.id] = aep.category;
+                });
+            });
+            return;
+        } else 
+            this.aepsKeys = {
+    "C.1.1": "tillage_management",
+    "C.1.2": "tillage_management",
+    "C.1.3": "tillage_management",
+    "C.2.1": "soil_cover",
+    "C.2.2": "soil_cover",
+    "C.2.3": "soil_cover",
+    "C.3.1": "residues_management",
+    "C.3.2": "residues_management",
+    "C.4.1": "fertilisation",
+    "C.4.2": "fertilisation",
+    "C.5.1": "crop_protection_against_diseases",
+    "C.5.2": "crop_protection_against_diseases",
+    "C.5.3": "crop_protection_against_diseases",
+    "C.5.4": "crop_protection_against_diseases",
+    "C.6.1": "weed_control",
+    "C.6.2": "weed_control",
+    "C.6.3": "weed_control",
+    "C.7.1": "crop_protection_against_animal_pests",
+    "C.7.2": "crop_protection_against_animal_pests",
+    "C.7.3": "crop_protection_against_animal_pests",
+    "C.7.4": "crop_protection_against_animal_pests",
+    "C.8.1": "cash_crop_cultivars",
+    "C.8.2": "cash_crop_cultivars",
+    "C.9.1": "temporary_grassland_composition",
+    "C.9.2": "temporary_grassland_composition",
+    "C.9.3": "temporary_grassland_composition",
+    "C.10.1": "permanent_grassland_area",
+    "C.10.2": "permanent_grassland_area",
+    "C.10.3": "permanent_grassland_area",
+    "C.11.1": "spatial_distribution_of_cash_crops",
+    "C.11.2": "spatial_distribution_of_cash_crops",
+    "C.12.1": "cropping_system_1",
+    "C.12.2": "cropping_system_1",
+    "C.12.3": "cropping_system_1",
+    "C.12.4": "cropping_system_1",
+    "C.12.5": "cropping_system_1",
+    "C.12.6": "cropping_system_1",
+    "C.12.7": "cropping_system_1",
+    "C.12.8": "cropping_system_1",
+    "C.12.9": "cropping_system_1",
+    "C.13.1": "cropping_system_2",
+    "C.13.2": "cropping_system_2",
+    "C.13.3": "cropping_system_2",
+    "C.13.4": "cropping_system_2",
+    "C.13.5": "cropping_system_2",
+    "C.13.6": "cropping_system_2",
+    "C.13.7": "cropping_system_2",
+    "C.13.8": "cropping_system_2",
+    "C.13.9": "cropping_system_2",
+    "C.14.1": "green_infrastructures",
+    "C.14.2": "green_infrastructures",
+    "C.14.3": "green_infrastructures",
+    "C.14.4": "green_infrastructures",
+    "C.14.5": "green_infrastructures",
+    "C.15.1": "agroforestry",
+    "C.15.2": "agroforestry",
+    "E.1.1": "distribution_of_farm_profit",
+    "E.1.2": "distribution_of_farm_profit",
+    "E.1.3": "distribution_of_farm_profit",
+    "G.1.1": "type_of_agriculture",
+    "G.1.2": "type_of_agriculture",
+    "A.1.1": "cattle_breed",
+    "A.1.2": "cattle_breed",
+    "A.1.3": "cattle_breed",
+    "A.2.1": "herd_size",
+    "A.2.2": "herd_size",
+    "A.2.3": "herd_size",
+    "A.2.4": "herd_size",
+    "A.2.5": "herd_size",
+    "A.2.6": "herd_size",
+    "A.3.1": "male_management",
+    "A.3.2": "male_management",
+    "A.3.3": "male_management",
+    "A.4.1": "cow_housing_system",
+    "A.4.2": "cow_housing_system",
+    "A.4.3": "cow_housing_system",
+    "A.4.4": "cow_housing_system",
+    "A.4.5": "cow_housing_system",
+    "A.5.1": "heifers_bulls_and_steers_housing_system",
+    "A.5.2": "heifers_bulls_and_steers_housing_system",
+    "A.5.3": "heifers_bulls_and_steers_housing_system",
+    "A.6.1": "feeding_system_for_cows",
+    "A.6.2": "feeding_system_for_cows",
+    "A.6.3": "feeding_system_for_cows",
+    "A.6.4": "feeding_system_for_cows",
+    "A.6.5": "feeding_system_for_cows",
+    "A.6.6": "feeding_system_for_cows",
+    "A.6.7": "feeding_system_for_cows",
+    "A.6.8": "feeding_system_for_cows",
+    "A.6.9": "feeding_system_for_cows",
+    "A.6.10": "feeding_system_for_cows",
+    "A.6.11": "feeding_system_for_cows",
+    "A.7.1": "concentrate_supply_for_lactating_dairy_cows",
+    "A.7.2": "concentrate_supply_for_lactating_dairy_cows",
+    "A.7.3": "concentrate_supply_for_lactating_dairy_cows",
+    "A.7.4": "concentrate_supply_for_lactating_dairy_cows",
+    "A.8.1": "feeding_system_for_heifers_age_at_first_calving",
+    "A.8.2": "feeding_system_for_heifers_age_at_first_calving",
+    "A.8.3": "feeding_system_for_heifers_age_at_first_calving",
+    "A.8.4": "feeding_system_for_heifers_age_at_first_calving",
+    "A.8.5": "feeding_system_for_heifers_age_at_first_calving",
+    "A.8.6": "feeding_system_for_heifers_age_at_first_calving",
+    "A.8.7": "feeding_system_for_heifers_age_at_first_calving",
+    "A.8.8": "feeding_system_for_heifers_age_at_first_calving",
+    "A.9.1": "management_of_the_risk_of_mastitis_at_the_dry_period",
+    "A.9.2": "management_of_the_risk_of_mastitis_at_the_dry_period",
+    "A.9.3": "management_of_the_risk_of_mastitis_at_the_dry_period",
+    "A.10.1": "anti_parasitic_management",
+    "A.10.2": "anti_parasitic_management",
+    "A.10.3": "anti_parasitic_management",
+    "A.11.1": "feeding_system_for_calves",
+    "A.11.2": "feeding_system_for_calves"
+}
+}
 }
 
 // create interval to catch year when it detect
@@ -319,8 +438,8 @@ function _test(imput, G, j) {
         var n = G.getIndicatorValue(e.id, !0);
         void 0 !== n && (z[e.name] = n);
     });
-
-
+    
+    
     
     _SKORE = {
         ...z, 
@@ -334,6 +453,8 @@ function _test(imput, G, j) {
         })
         _SKORE["aleas"] = a;
     }
-        
+    
 }
 
+
+ 
