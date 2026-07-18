@@ -1538,7 +1538,8 @@
                 if(!_HACK) { 
                     _AEPS = N;
                     _HACK = this; 
-                    console.log("Hacked Done"); } 
+                    console.log("Hacked Done"); 
+                } 
             }
             return Object(d.a)(e, [ {
                 key: "firstLoad",
@@ -1788,15 +1789,12 @@
             E.open(v.ADVISOR, e);
         }
         var ve = function(e) {    
+
+                
             
             var t = e.data, n = e.categ, a = e.selected, i = e.prevSelected, c = e.onClick, l = window.applyAvailabilityRules(t.id, oe.allChosenAepIds, oe.currentSelectedAepIds, oe.t), o = !1, s = "";
             l && (o = l.available, s = l.msg), 0 === oe.remainingAepChanges && -1 === oe.aepIdsDiffCategs.indexOf(n) && (o = !1, 
                 s = oe.t("no_remaining_changes"));
-                // console.log("##########################");
-                //        console.log(t.id)
-                //        console.log(oe.allChosenAepIds)
-                //        console.log(oe.currentSelectedAepIds)
-                //        console.log(oe.t)
             var u = "aep";
             return u += a ? " selected" : "", u += i ? " prev-selected" : "", a || (u += o ? "" : " disabled"), 
             r.a.createElement("div", {
@@ -1818,6 +1816,7 @@
             }, r.a.createElement(me.i, null)), !o && r.a.createElement("button", {
                 className: "lock",
                 onClick: function() {
+
                     fe(s);
                 }
             }, r.a.createElement(me.j, null)));

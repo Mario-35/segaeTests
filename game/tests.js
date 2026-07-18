@@ -25,6 +25,7 @@ class Test {
         this.numberOfYear = undefined; // var that indicate maximum of changes in a round
         this.gameNumber = 1; // index number of the game
         this.savedGames = {}; // store games
+        this.changeRandom = true;
         // start init
         this.initTests();
         // info for debbuging
@@ -33,7 +34,8 @@ class Test {
             console.log(this.aepsKeys);
             this.head("_HAKS");
             console.log(_HACK);
-        }        
+        } 
+             
     } 
 
     head(message) {
@@ -46,7 +48,7 @@ class Test {
         // if shots empty random it            
         if (shots.length < 1) {
             // max moves for the round
-            const max = this.getRandom(1, this.numberOfChange);
+            const max = this.changeRandom === true ? this.getRandom(1, this.numberOfChange) : this.numberOfChange;
             // loop to generate shots
             for (let i = 0; i < max ; i++) {
                 // create list key that not in the shots and not already selected
@@ -61,10 +63,14 @@ class Test {
             const coups = [];
             // loop shots
             shots.forEach(shot => {
-                // select option in segae
-                _HACK.setSelectedAep(this.aepsKeys[shot], shot);
-                // save shot
-                coups.push(shot);
+                // test if not locked by the rules
+                const test = window.applyAvailabilityRules(shot, _HACK.allChosenAepIds, _HACK.currentSelectedAepIds, _HACK.t);                
+                if (test && test.available === true) {
+                    // select option in segae
+                    _HACK.setSelectedAep(this.aepsKeys[shot], shot);
+                    // save shot
+                    coups.push(shot);
+                } else coups.push(shot + " locked");
             });
             // select next year in segae and segae calculate score
             _HACK.goToNextYear();
@@ -93,7 +99,7 @@ class Test {
 
         });
         
-        await this.finisheGame();
+        // await this.finisheGame();
     }
     
     // fnished actual game
@@ -129,7 +135,8 @@ class Test {
         
     async startTest() {
         // const datas =  [["A.6.4"]];
-        const datas =  [["C.5.3", "C.6.3", "C.7.3", "C.8.2", "A.2.5"], ["A.7.1", "A.9.3", "A.10.3", "C.4.2", "G.1.2"], ["C.1.2", "C.9.3", "C.10.3"] ];
+        // const datas =  [["C.5.3", "C.6.3", "C.7.3", "C.8.2", "A.2.5"], ["A.7.1", "A.9.3", "A.10.3", "C.4.2", "G.1.2"], ["C.1.2", "C.9.3", "C.10.3"] ];
+        const datas =  [["C.10.1"]];
         await this.playAllRounds(datas).then(tmp => { return tmp; }); 
     }
 
@@ -232,9 +239,15 @@ class Test {
     
     // start test
     async start() {
-        let nb = prompt("Nombre de partie", "5");       
+        let nb = prompt("Nombre de partie , mouvements", "5");       
         
         if (nb != null) {
+            if (nb.includes(',')) {
+                this.numberOfChange = +nb.split(',')[1];
+                this.changeRandom = false;
+
+                nb = +nb.split(',')[0];
+            }
             if (+nb === 0) {
                 this.startTest().then(tmp => {
                     this.downloadGames();                
@@ -319,7 +332,6 @@ function _test(imput, G, j) {
     _SKORE = {
         ...z, 
         "indicators" : G.getIndicatorValue,
-        "history": imput.allIndValuesHistory
     };
     if (j && j.length > 0) {
         const a = {}
