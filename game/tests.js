@@ -99,7 +99,7 @@ class Test {
 
         });
         
-        // await this.finisheGame();
+        await this.finisheGame();
     }
     
     // fnished actual game
