@@ -135,8 +135,8 @@ class Test {
         
     async startTest() {
         // const datas =  [["A.6.4"]];
-        // const datas =  [["C.5.3", "C.6.3", "C.7.3", "C.8.2", "A.2.5"], ["A.7.1", "A.9.3", "A.10.3", "C.4.2", "G.1.2"], ["C.1.2", "C.9.3", "C.10.3"] ];
-        const datas =  [["C.10.1"]];
+        const datas =  [["C.5.3", "C.6.3", "C.7.3", "C.8.2", "A.2.5"], ["A.7.1", "A.9.3", "A.10.3", "C.4.2", "G.1.2"], ["C.1.2", "C.9.3", "C.10.3"] ];
+        // const datas =  [["C.10.1"]];
         await this.playAllRounds(datas).then(tmp => { return tmp; }); 
     }
 
