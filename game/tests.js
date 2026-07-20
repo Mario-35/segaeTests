@@ -12,7 +12,8 @@ function logError(message) {
 
 class Test {
     constructor() {
-        /* *** ATTRIBUTS *** */
+        /* *** ATTRIBUTS *** */        
+        this.numberOfGame = undefined; // number of game
         this.numberOfChange = undefined; // var that indicate maximum of changes in a round
         this.numberOfYear = undefined; // var that indicate maximum of changes in a round
         this.gameNumber = 1; // index number of the game
@@ -185,28 +186,54 @@ class Test {
         }
         return true;        
     }
+
+    showForm() {
+        const newDiv = document.createElement("div");
+        newDiv.class = 'overlay';
+        newDiv.setAttribute("id", "testOverlay");
+        newDiv.innerHTML = `<div class="TreePopup">
+            <div class="TreePopup-title">Tests <div class="TreePopup-close"></div>
+            </div>
+            <div class="TreePopup-content">
+                <form>
+                    <label for="nbPartie">Nombre de partie:</label><br>
+                    <input type="text" id="nbPartie" name="nbPartie" value="20"><br>
+                    <input type="checkbox" id="aleatoireChangement" name="aleatoireChangement" checked>
+                    <label for="aleatoireChangement"> Nombre de changement aléatoire</label>
+                    <br>
+                    <label for="nbChangement">Nombre de changement:</label><br>
+                    <input type="text" id="nbChangement" name="nbChangement" value="${+this.elementsClassName("remaining-changes-value")[0].innerText}">
+                    <br>
+                    <input type="button" id="goTest" value="Lancer les tests">
+                </form>
+            </div>
+        </div>`;
+        document.getElementById("game").appendChild(newDiv);
+        goTest.addEventListener("click", () => {
+            this.numberOfGame = nbPartie.value;
+            this.numberOfChange = nbChangement.value;
+            this.changeRandom = aleatoireChangement.checked;
+            document.getElementById("testOverlay").remove();            
+
+
+            if (this.numberOfGame) {
+                if (+this.numberOfGame === 0) {
+                    this.startTest().then(tmp => {
+                        this.downloadGames();                
+                    });
+                } else {
+                    this.playAllGames(+this.numberOfGame).then(tmp => {
+                        this.downloadGames();                
+                    });
+                }
+            }
+        });
+    }
     
     // start test
     async start() {
-        let nb = prompt("Nombre de partie , mouvements", "5");       
-        
-        if (nb != null) {
-            if (nb.includes(',')) {
-                this.numberOfChange = +nb.split(',')[1];
-                this.changeRandom = false;
-
-                nb = +nb.split(',')[0];
-            }
-            if (+nb === 0) {
-                this.startTest().then(tmp => {
-                    this.downloadGames();                
-                });
-            } else {
-                this.playAllGames(+nb).then(tmp => {
-                    this.downloadGames();                
-                });
-            }
-        }
+        // let nb = prompt("Nombre de partie , mouvements", "5");       
+        this.showForm();
     }
 
     // download games file
@@ -232,10 +259,9 @@ class Test {
             this.numberOfYear = +_HACK.scenario.goals[5].value;
         else
             this.numberOfYear = 10;
-            
-        this.numberOfChange = +this.elementsClassName("remaining-changes-value")[0].innerText;
     }
 }
+
 
 // function catch score when sendScores segae is executed
 function _test(imput, G, j) {
