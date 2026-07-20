@@ -199,7 +199,7 @@ class Test {
                     <label for="nbPartie">Nombre de partie:</label><br>
                     <input type="text" id="nbPartie" name="nbPartie" value="20"><br>
                     <input type="checkbox" id="aleatoireChangement" name="aleatoireChangement" checked>
-                    <label for="aleatoireChangement"> Nombre de changement aléatoire</label>
+                    <label for="aleatoireChangement"> Changement aléatoire</label>
                     <br>
                     <label for="nbChangement">Nombre de changement:</label><br>
                     <input type="text" id="nbChangement" name="nbChangement" value="${+this.elementsClassName("remaining-changes-value")[0].innerText}">
@@ -218,7 +218,6 @@ class Test {
             this.changeRandom = aleatoireChangement.checked;
             if (debug.checked) _DEBUG = debug.checked;
             document.getElementById("testOverlay").remove();
-
             if (this.numberOfGame) {
                 if (+this.numberOfGame === 0) {
                     this.startTest().then(tmp => {
