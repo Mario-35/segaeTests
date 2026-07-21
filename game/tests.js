@@ -3,6 +3,7 @@ let test = undefined; // global var to know if test is initialised
 let _SKORE = undefined; // global var for catch score from segae code
 let _HACK = undefined; // global var to expose segae functions
 let _DEBUG = undefined; // set to true for debug
+let _INDICATORS = undefined; // set to true for debug
 
 const _AEPS =  {}; // sore aeps keys and category 
 
@@ -19,7 +20,6 @@ class Test {
         this.gameNumber = 1; // index number of the game
         this.savedGames = {}; // store games
         this.changeRandom = true; // indicate the number of change is randomize or fixed
-        this.indicators= true;
 
         // start init
         this.initTests();
@@ -222,7 +222,7 @@ class Test {
             this.numberOfChange = nbChangement.value;
             this.changeRandom = aleatoireChangement.checked;
             if (debug.checked) _DEBUG = debug.checked;
-            if (indicators.checked) this.indicators = true;
+            if (indicators.checked) _INDICATORS = true;
             
             document.getElementById("testOverlay").remove();
             if (this.numberOfGame) {
@@ -279,9 +279,8 @@ function _test(imput, G, j) {
         var n = G.getIndicatorValue(e.id, !0);
         void 0 !== n && (_SKORE[e.name] = n);
     });
-    console.log(this.indicators);
     
-    if(this.indicators === true) _SKORE["indicators"] = G.indicatorsRoundedValues;
+    if(_INDICATORS) _SKORE["indicators"] = G.indicatorsRoundedValues;
 
     // get aleas
     if (j && j.length > 0) {
@@ -317,7 +316,7 @@ const interval = setInterval(() => {
     const elements = document.getElementsByClassName("label");
     for (let element of elements) { 
         // get year item
-        if (element.innerHTML.startsWith("Year")) {
+        if (element.innerHTML.startsWith(_HACK.t("year") )) {
             // init tests
             if (!test) test = new Test();
             element.addEventListener("click", function() {
