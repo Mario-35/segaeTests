@@ -210,7 +210,7 @@ class Test {
                     <br>
                     <input type="checkbox" id="csv" name="csv">
                     <label for="csv"> Fichier csv</label>                    
-
+                    <br>
                     <input type="checkbox" id="debug" name="debug">
                     <label for="debug"> Mode debug</label>
                     <br>
@@ -272,12 +272,11 @@ class Test {
     generateCsv() {
         let head = [];
         const lines = [];
-
         head.push("partie");
         const keys = Object.keys(this.savedGames["partie 1"][0]).filter(e => !['coups','indicators','aleas'].includes(e));
         head.push(... keys);
         head.push('aleas');
-        for (let i = 0; i < 5; i++) head.push(`coup :${i+1}`);
+        for (let i = 0; i < this.numberOfChange; i++) head.push(`coup :${i+1}`);
         if(_INDICATORS) head.push(... Object.keys(this.savedGames["partie 1"][0].indicators));
 
         lines.push(head.join(";"));
@@ -286,7 +285,7 @@ class Test {
             line.push(partie);
             keys.forEach(key => line.push(this.savedGames[partie][0][key]));
             line.push(this.savedGames[partie][0]["aleas"] ? JSON.stringify(this.savedGames[partie][0]["aleas"]) : "");
-            for (let i = 0; i < 5; i++) {
+            for (let i = 0; i < this.numberOfChange; i++) {
                 line.push(this.savedGames[partie][0].coups[i] || '');
             }
             if(_INDICATORS) line.push(... Object.values(this.savedGames[partie][0].indicators));
