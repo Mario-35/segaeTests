@@ -19,6 +19,8 @@ class Test {
         this.gameNumber = 1; // index number of the game
         this.savedGames = {}; // store games
         this.changeRandom = true; // indicate the number of change is randomize or fixed
+        this.indicators= true;
+
         // start init
         this.initTests();
         // info for debbuging
@@ -204,6 +206,9 @@ class Test {
                     <label for="nbChangement">Nombre de changement:</label><br>
                     <input type="text" id="nbChangement" name="nbChangement" value="${+this.elementsClassName("remaining-changes-value")[0].innerText}">
                     <br>
+                    <input type="checkbox" id="indicators" name="indicators">
+                    <label for="indicators"> Indicateurs</label>
+
                     <input type="checkbox" id="debug" name="debug">
                     <label for="debug"> Mode debug</label>
                     <br>
@@ -217,6 +222,8 @@ class Test {
             this.numberOfChange = nbChangement.value;
             this.changeRandom = aleatoireChangement.checked;
             if (debug.checked) _DEBUG = debug.checked;
+            if (indicators.checked) this.indicators = true;
+            
             document.getElementById("testOverlay").remove();
             if (this.numberOfGame) {
                 if (+this.numberOfGame === 0) {
@@ -267,16 +274,15 @@ class Test {
 
 // function catch score when sendScores segae is executed
 function _test(imput, G, j) {
-    var z = [];
+    _SKORE = [];
     imput.scenario.Scores.forEach(function(e) {
         var n = G.getIndicatorValue(e.id, !0);
-        void 0 !== n && (z[e.name] = n);
+        void 0 !== n && (_SKORE[e.name] = n);
     });
+    console.log(this.indicators);
+    
+    if(this.indicators === true) _SKORE["indicators"] = G.indicatorsRoundedValues;
 
-    _SKORE = {
-        ...z, 
-        "indicators" : G.getIndicatorValue,
-    };
     // get aleas
     if (j && j.length > 0) {
         const a = {}
