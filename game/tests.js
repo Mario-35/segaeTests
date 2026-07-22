@@ -14,7 +14,6 @@ function logError(message) {
 class Test {
     constructor() {
         /* *** ATTRIBUTS *** */        
-        this.csv = undefined; // result as csv file
         this.numberOfGame = undefined; // number of game
         this.numberOfChange = undefined; // var that indicate maximum of changes in a round
         this.numberOfYear = undefined; // var that indicate maximum of changes in a round
@@ -180,6 +179,8 @@ class Test {
             while (_HACK.gameState == "INGAME") {
                 await this.playOneRound().then(tmp => {
                     this.addToGames(tmp);
+                // if (+tmp["Game won"] == -1) this.savedGames = {};
+                // if (+tmp["Game won"] == 1)  console.log(this.savedGames );                    
                 });                
             }
             _HACK.restartGame();
@@ -208,9 +209,6 @@ class Test {
                     <input type="checkbox" id="indicators" name="indicators">
                     <label for="indicators"> Indicateurs</label>
                     <br>
-                    <input type="checkbox" id="csv" name="csv">
-                    <label for="csv"> Fichier csv</label>                    
-                    <br>
                     <input type="checkbox" id="debug" name="debug">
                     <label for="debug"> Mode debug</label>
                     <br>
@@ -225,23 +223,16 @@ class Test {
             this.changeRandom = aleatoireChangement.checked;
             if (debug.checked) _DEBUG = debug.checked;
             if (indicators.checked) _INDICATORS = true;
-            if (csv.checked) this.csv = true;
             
             document.getElementById("testOverlay").remove();
             if (this.numberOfGame) {
                 if (+this.numberOfGame === 0) {
                     this.startTest().then(tmp => {
-                        if (this.csv)
-                            this.downloadCsv();
-                        else
-                            this.downloadJson();                
+                        this.downloadJson();                
                     });
                 } else {
                     this.playAllGames(+this.numberOfGame).then(tmp => {
-                        if (this.csv)
-                            this.downloadCsv();
-                        else
-                            this.downloadJson();                 
+                        this.downloadJson();                 
                     });
                 }
             }
@@ -264,46 +255,6 @@ class Test {
         const downloadAnchorNode = document.createElement('a');
         downloadAnchorNode.setAttribute("href",     dataStr);
         downloadAnchorNode.setAttribute("download", "resultats.json");
-        document.body.appendChild(downloadAnchorNode); // required for firefox
-        downloadAnchorNode.click();
-        downloadAnchorNode.remove();
-    }
-
-    generateCsv() {
-        let head = [];
-        const lines = [];
-        head.push("partie");
-        const keys = Object.keys(this.savedGames["partie 1"][0]).filter(e => !['coups','indicators','aleas'].includes(e));
-        head.push(... keys);
-        head.push('aleas');
-        for (let i = 0; i < this.numberOfChange; i++) head.push(`coup :${i+1}`);
-        if(_INDICATORS) head.push(... Object.keys(this.savedGames["partie 1"][0].indicators));
-
-        lines.push(head.join(";"));
-        Object.keys(this.savedGames).forEach(partie => {
-            const line = []
-            line.push(partie);
-            keys.forEach(key => line.push(this.savedGames[partie][0][key]));
-            line.push(this.savedGames[partie][0]["aleas"] ? JSON.stringify(this.savedGames[partie][0]["aleas"]) : "");
-            for (let i = 0; i < this.numberOfChange; i++) {
-                line.push(this.savedGames[partie][0].coups[i] || '');
-            }
-            if(_INDICATORS) line.push(... Object.values(this.savedGames[partie][0].indicators));
-            lines.push(line.join(";"));
-        });
-        return lines.join("\n");
-    }
-
-        // download games file
-    downloadCsv() {
-        if (_DEBUG) {
-            console.log(this.generateCsv());
-            return;
-        }
-        const dataStr = "data:text/json;charset=utf-8," + encodeURIComponent(this.generateCsv());
-        const downloadAnchorNode = document.createElement('a');
-        downloadAnchorNode.setAttribute("href",     dataStr);
-        downloadAnchorNode.setAttribute("download", "resultats.csv");
         document.body.appendChild(downloadAnchorNode); // required for firefox
         downloadAnchorNode.click();
         downloadAnchorNode.remove();
