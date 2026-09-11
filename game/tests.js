@@ -4,6 +4,7 @@ let _SKORE = undefined; // global var for catch score from segae code
 let _HACK = undefined; // global var to expose segae functions
 let _DEBUG = undefined; // set to true for debug
 let _INDICATORS = undefined; // set to true for debug
+let _BAK = undefined; // set to true for debug
 
 const _AEPS =  {}; // sore aeps keys and category 
 
@@ -279,8 +280,21 @@ function _test(imput, G, j) {
         var n = G.getIndicatorValue(e.id, !0);
         void 0 !== n && (_SKORE[e.name] = n);
     });
-    
-    if(_INDICATORS) _SKORE["indicators"] = G.indicatorsRoundedValues;
+    if (_INDICATORS) {
+        if (!_BAK) {
+            _BAK = G.indicatorsRoundedValues;
+            _SKORE["indicators"] = G.indicatorsRoundedValues;
+        } else {
+            const temp = {};
+            Object.keys(G.indicatorsRoundedValues).forEach((e) => {                
+                if (!_BAK[e] || _BAK[e] !== G.indicatorsRoundedValues[e])
+                    temp[e] = G.indicatorsRoundedValues[e];        
+            });
+            _BAK = temp;
+            _SKORE["indicators"] = temp;
+        }
+    }
+
 
     // get aleas
     if (j && j.length > 0) {
