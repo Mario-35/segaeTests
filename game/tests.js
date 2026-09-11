@@ -264,12 +264,10 @@ class Test {
      * Create list object
     */
    initTests() { 
-        console.log("##########################################");
-        console.log(_HACK);
-    
-
-        if (_HACK && _HACK.scenario && _HACK.scenario.goals && _HACK.scenario.goals[5].group === "duration")
-            this.numberOfYear = +_HACK.scenario.goals[5].value;
+        if (_HACK && _HACK.scenario && _HACK.scenario.goals) {
+            const temp = Object(_HACK.scenario.goals).filter(e => e.group === "duration");
+            this.numberOfYear = temp ? temp.value : 10;            
+        } 
         else
             this.numberOfYear = 10;
     }
