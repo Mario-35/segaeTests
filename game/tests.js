@@ -264,7 +264,11 @@ class Test {
      * Create list object
     */
    initTests() { 
-        if (_HACK.scenario.goals[5].group === "duration")
+        console.log("##########################################");
+        console.log(_HACK);
+    
+
+        if (_HACK && _HACK.scenario && _HACK.scenario.goals && _HACK.scenario.goals[5].group === "duration")
             this.numberOfYear = +_HACK.scenario.goals[5].value;
         else
             this.numberOfYear = 10;
