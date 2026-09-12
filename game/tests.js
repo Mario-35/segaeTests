@@ -67,15 +67,25 @@ class Test {
         return new Promise((resolve) => {
             const coups = [];
             // loop shots
-            shots.forEach(shot => {
+            shots.forEach((shot, index) => {
                 // test if not locked by the rules
-                const test = window.applyAvailabilityRules(shot, _HACK.allChosenAepIds, _HACK.currentSelectedAepIds, _HACK.t);                
+                let test = window.applyAvailabilityRules(shot, _HACK.allChosenAepIds, _HACK.currentSelectedAepIds, _HACK.t);
+                // replay if locked option                
+                if (this.replayLocked === true) {                    
+                    while (test && test.available !== true) {
+                        const keyList = Object.keys(_AEPS).filter(e => !shots.includes(e) && !_HACK.currentSelectedAepIds.includes(e));
+                        shot = keyList[this.getRandom(0, Object.keys(keyList).length)];
+                        test = window.applyAvailabilityRules(shot, _HACK.allChosenAepIds, _HACK.currentSelectedAepIds, _HACK.t);
+                        shots[index] = shot;
+                    }
+                } 
                 if (test && test.available === true) {
                     // select option in segae
                     _HACK.setSelectedAep(_AEPS[shot], shot);
                     // save shot
                     coups.push(shot);
                 } else coups.push(shot + " locked");
+
             });
             // select next year in segae and segae calculate score
             _HACK.goToNextYear();
@@ -203,13 +213,16 @@ class Test {
                     <input type="text" id="nbPartie" name="nbPartie" value="20"><br>
                     <input type="checkbox" id="aleatoireChangement" name="aleatoireChangement" checked>
                     <label for="aleatoireChangement"> Changement aléatoire</label>
-                    <br>
+                    <br>                    
                     <label for="nbChangement">Nombre de changement:</label><br>
                     <input type="text" id="nbChangement" name="nbChangement" value="${+this.elementsClassName("remaining-changes-value")[0].innerText}">
                     <br>
-                    <input type="checkbox" id="indicators" name="indicators">
-                    <label for="indicators"> Indicateurs</label>
+                    <input type="checkbox" id="lockedReplay" name="lockedReplay">
+                    <label for="lockedReplay"> Locked replay</label>
                     <br>
+                    <label for="indicatorList">Liste des Indicateurs (all tout):</label><br>
+                    <input type="text" id="indicatorList" name="indicatorList" value="">
+                    <br>                    
                     <input type="checkbox" id="debug" name="debug">
                     <label for="debug"> Mode debug</label>
                     <br>
@@ -222,9 +235,9 @@ class Test {
             this.numberOfGame = nbPartie.value;
             this.numberOfChange = nbChangement.value;
             this.changeRandom = aleatoireChangement.checked;
+            this.replayLocked = lockedReplay.checked;
             if (debug.checked) _DEBUG = debug.checked;
-            if (indicators.checked) _INDICATORS = true;
-            
+            _INDICATORS = indicatorList.value.trim() === "" ? undefined : indicatorList.value;
             document.getElementById("testOverlay").remove();
             if (this.numberOfGame) {
                 if (+this.numberOfGame === 0) {
@@ -274,24 +287,39 @@ class Test {
 
 
 // function catch score when sendScores segae is executed
-function _test(imput, G, j) {
+function _test(input, G, j) {
+    // global variable init
     _SKORE = [];
-    imput.scenario.Scores.forEach(function(e) {
+    // lopp screnario scores
+    input.scenario.Scores.forEach(function(e) {
         var n = G.getIndicatorValue(e.id, !0);
         void 0 !== n && (_SKORE[e.name] = n);
     });
-    if (_INDICATORS) {
-        if (!_BAK) {
-            _BAK = G.indicatorsRoundedValues;
-            _SKORE["indicators"] = G.indicatorsRoundedValues;
+    // if indicators
+    if (_INDICATORS) {        
+        if (_INDICATORS.toUpperCase() === "ALL") {
+            if (!_BAK) {
+                _BAK = G.indicatorsRoundedValues;
+                _SKORE["indicators"] = G.indicatorsRoundedValues;
+            } else {
+                const temp = {};
+                Object.keys(G.indicatorsRoundedValues).forEach((e) => {                
+                    if (!_BAK[e] || _BAK[e] !== G.indicatorsRoundedValues[e])
+                        temp[e] = G.indicatorsRoundedValues[e];        
+                });
+                _BAK = temp;
+                _SKORE["indicators"] = temp;
+            }
         } else {
+            // create blank object
             const temp = {};
-            Object.keys(G.indicatorsRoundedValues).forEach((e) => {                
-                if (!_BAK[e] || _BAK[e] !== G.indicatorsRoundedValues[e])
-                    temp[e] = G.indicatorsRoundedValues[e];        
+            // loop on indicators list
+            Object.keys(_INDICATORS.split(',')).forEach((e) => {
+                e = e.trim();
+                temp[e] = G.indicatorsRoundedValues[e];        
             });
-            _BAK = temp;
-            _SKORE["indicators"] = temp;
+            // save it
+            _SKORE["indicators"] = temp;            
         }
     }
 
