@@ -200,6 +200,12 @@ class Test {
         return true;        
     }
 
+    getNbChangement() {
+        const pipo = +this.elementsClassName("remaining-changes-value")[0].innerText;
+        console.log(pipo);
+        
+    }
+
     showForm() {
         const newDiv = document.createElement("div");
         newDiv.class = 'overlay';
@@ -358,7 +364,7 @@ const interval = setInterval(() => {
     const elements = document.getElementsByClassName("label");
     for (let element of elements) { 
         // get year item
-        if (element.innerHTML.startsWith(_HACK.t("year") )) {
+        if (element.innerHTML.startsWith(_HACK.t("year")) && !isNaN(element.innerHTML.split(_HACK.t("year"))[1])) {
             // init tests
             if (!test) test = new Test();
             element.addEventListener("click", function() {
