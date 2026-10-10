@@ -96,27 +96,7 @@ class Test {
             });
         });
     };   
-      
-    // Play all rounds
-    async playAllRounds(arrayOfShots) {        
-        // game finished
-        let finished = undefined;
-        this.savedGames = {};        
-        // loop async rounds
-        await this.asyncForEach(arrayOfShots, shots => {
-            // if (!finished) 
-                this.playOneRound(shots).then(tmp => {
-                    this.addToGames(tmp);                
-                    if (_HACK.gameState != "INGAME") {
-                        finished = true;
-                    }
-                });
-
-        });
-        
-        await this.finisheGame();
-    }
-    
+         
     // fnished actual game
     async finisheGame() {
         // for testingg continue        
@@ -146,14 +126,6 @@ class Test {
             });
         });
     };    
-     
-    // test for a win game
-    async startTest() {
-        // const datas =  [["A.6.4"]];
-        const datas =  [["C.5.3", "C.6.3", "C.7.3", "C.8.2", "A.2.5"], ["A.7.1", "A.9.3", "A.10.3", "C.4.2", "G.1.2"], ["C.1.2", "C.9.3", "C.10.3"] ];
-        // const datas =  [["C.10.1"]];
-        await this.playAllRounds(datas).then(tmp => { return tmp; }); 
-    }
 
     // return random number
     getRandom(min, max) {
@@ -176,10 +148,27 @@ class Test {
     
     addToGames(input) {
         const name = "partie " + this.gameNumber ;
+        if (input["Game won"] != 0)  {
+            input["history"] =_HACK.selectedActions;
+
+
+            console.log("############################################");
+            console.log(_HACK);
+            console.log(`remainingAepChanges : ${_HACK.remainingAepChanges}`);
+            console.log(`aepActiveState : ${_HACK.aepActiveState}`);
+            console.log(`gameState : ${_HACK.gameState}`);
+            console.log(`language : ${_HACK.language}`);
+            console.log(`yearNumber : ${_HACK.yearNumber}`);            
+
+
+        }
         if( this.savedGames[name])
             this.savedGames[name].push(input);
         else 
             this.savedGames[name] = [input];
+
+
+                // if (+tmp["Game won"] == -1) this.savedGames = {};
     }     
     
     
@@ -189,11 +178,10 @@ class Test {
         for (this.gameNumber  = 1; this.gameNumber <= max; this.gameNumber++) {
             while (_HACK.gameState == "INGAME") {
                 await this.playOneRound().then(tmp => {
-                    this.addToGames(tmp);
-                // if (+tmp["Game won"] == -1) this.savedGames = {};
-                // if (+tmp["Game won"] == 1)  console.log(this.savedGames );                    
+                    this.addToGames(tmp);                   
                 });                
             }
+            
             _HACK.restartGame();
             this.clickOnScreen();            
         }
@@ -289,6 +277,59 @@ class Test {
             this.numberOfYear = temp ? temp.value : 10;            
         } else this.numberOfYear = 10;
     }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    // test for a win game
+    async startTest() {
+        // const datas =  [["A.6.4"]];
+        const datas =  [["C.5.3", "C.6.3", "C.7.3", "C.8.2", "A.2.5"], ["A.7.1", "A.9.3", "A.10.3", "C.4.2", "G.1.2"], ["C.1.2", "C.9.3", "C.10.3"] ];
+        // const datas =  [["C.10.1"]];
+        await this.playAllRounds(datas).then(tmp => { return tmp; }); 
+    }
+
+    // Play all rounds
+    async playAllRounds(arrayOfShots) {        
+        // game finished
+        let finished = undefined;
+        this.savedGames = {};        
+        // loop async rounds
+        await this.asyncForEach(arrayOfShots, shots => {
+            // if (!finished) 
+                this.playOneRound(shots).then(tmp => {
+                    this.addToGames(tmp);                    
+                    if (_HACK.gameState != "INGAME") {
+                        finished = true;
+                tmp["history"] =  _HACK.selectedActions;
+
+                    }
+                });
+
+        });
+        
+        await this.finisheGame();
+    }
+
+
+
+
+
+
+
+
 }
 
 
