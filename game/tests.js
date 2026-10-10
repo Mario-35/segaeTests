@@ -150,17 +150,6 @@ class Test {
         const name = "partie " + this.gameNumber ;
         if (input["Game won"] != 0)  {
             input["history"] =_HACK.selectedActions;
-
-
-            console.log("############################################");
-            console.log(_HACK);
-            console.log(`remainingAepChanges : ${_HACK.remainingAepChanges}`);
-            console.log(`aepActiveState : ${_HACK.aepActiveState}`);
-            console.log(`gameState : ${_HACK.gameState}`);
-            console.log(`language : ${_HACK.language}`);
-            console.log(`yearNumber : ${_HACK.yearNumber}`);            
-
-
         }
         if( this.savedGames[name])
             this.savedGames[name].push(input);
