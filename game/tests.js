@@ -155,9 +155,7 @@ class Test {
             // console.log(_HACK.maxAepDiff);
             // console.log(_HACK.aepIdsDiff.length);
             // console.log(_HACK.remainingAepChanges);
-            
-            // return this.maxAepDiff - this.aepIdsDiff.length;
-            console.log(`${this.gameNumber } => ${_HACK.remainingAepChanges}`);
+            // console.log(`${this.gameNumber } => ${_HACK.remainingAepChanges}`);
         // if game Not continue add history
         if (input["Game won"] != 0)  {
             input["history"] =_HACK.selectedActions;
