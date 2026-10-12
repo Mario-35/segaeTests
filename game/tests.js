@@ -147,42 +147,41 @@ class Test {
     } 
     
     addToGames(input) {
+        // create name
         const name = "partie " + this.gameNumber ;
+        // if game Not continue add history
         if (input["Game won"] != 0)  {
             input["history"] =_HACK.selectedActions;
         }
-        if( this.savedGames[name])
+        // add to saved games
+        if(this.savedGames[name])
             this.savedGames[name].push(input);
         else 
             this.savedGames[name] = [input];
-
-
-                // if (+tmp["Game won"] == -1) this.savedGames = {};
     }     
     
-    
+    // play all games
     async playAllGames(max) {
+        // init save games Object
         this.savedGames = {};
-
-        for (this.gameNumber  = 1; this.gameNumber <= max; this.gameNumber++) {
+        // loop game number
+        for (this.gameNumber = 1; this.gameNumber <= max; this.gameNumber++) {
+            // while game continue
             while (_HACK.gameState == "INGAME") {
+                // play one round
                 await this.playOneRound().then(tmp => {
                     this.addToGames(tmp);                   
                 });                
             }
-            
+            // new game
             _HACK.restartGame();
+            // click on screen to clean opened window
             this.clickOnScreen();            
         }
         return true;        
     }
 
-    getNbChangement() {
-        const pipo = +this.elementsClassName("remaining-changes-value")[0].innerText;
-        console.log(pipo);
-        
-    }
-
+    // Show Form tests
     showForm() {
         const newDiv = document.createElement("div");
         newDiv.class = 'overlay';
@@ -225,11 +224,17 @@ class Test {
             if (this.numberOfGame) {
                 if (+this.numberOfGame === 0) {
                     this.startTest().then(tmp => {
-                        this.downloadJson();                
+                        if (_DEBUG) 
+                            console.log(this.savedGames);
+                        else 
+                            this.downloadJson();                
                     });
                 } else {
                     this.playAllGames(+this.numberOfGame).then(tmp => {
-                        this.downloadJson();                 
+                        if (_DEBUG) 
+                            console.log(this.savedGames);
+                        else 
+                            this.downloadJson();                
                     });
                 }
             }
@@ -237,18 +242,15 @@ class Test {
     }
     
     // start test
-    async start() {
-        // let nb = prompt("Nombre de partie , mouvements", "5");       
+    async start() {   
         this.showForm();
     }
 
     // download games file
     downloadJson() {
-        if (_DEBUG) {
-            console.log(this.savedGames);
-            return;
-        }
+        // create dtat string
         const dataStr = "data:text/json;charset=utf-8," + encodeURIComponent(JSON.stringify(this.savedGames));
+        // create hidden hmtl element
         const downloadAnchorNode = document.createElement('a');
         downloadAnchorNode.setAttribute("href",     dataStr);
         downloadAnchorNode.setAttribute("download", "resultats.json");
@@ -266,22 +268,7 @@ class Test {
             this.numberOfYear = temp ? temp.value : 10;            
         } else this.numberOfYear = 10;
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    
     // test for a win game
     async startTest() {
         // const datas =  [["A.6.4"]];
@@ -298,27 +285,16 @@ class Test {
         // loop async rounds
         await this.asyncForEach(arrayOfShots, shots => {
             // if (!finished) 
-                this.playOneRound(shots).then(tmp => {
-                    this.addToGames(tmp);                    
-                    if (_HACK.gameState != "INGAME") {
-                        finished = true;
-                tmp["history"] =  _HACK.selectedActions;
-
-                    }
-                });
-
-        });
-        
+            this.playOneRound(shots).then(tmp => {
+                this.addToGames(tmp);                    
+                if (_HACK.gameState != "INGAME") {
+                    finished = true;
+                    tmp["history"] =  _HACK.selectedActions;
+                }
+            });
+        });        
         await this.finisheGame();
     }
-
-
-
-
-
-
-
-
 }
 
 
