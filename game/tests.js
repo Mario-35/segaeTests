@@ -149,6 +149,15 @@ class Test {
     addToGames(input) {
         // create name
         const name = "partie " + this.gameNumber ;
+
+            // console.log("################################################");
+            // console.log(_HACK);
+            // console.log(_HACK.maxAepDiff);
+            // console.log(_HACK.aepIdsDiff.length);
+            // console.log(_HACK.remainingAepChanges);
+            
+            // return this.maxAepDiff - this.aepIdsDiff.length;
+            console.log(`${this.gameNumber } => ${_HACK.remainingAepChanges}`);
         // if game Not continue add history
         if (input["Game won"] != 0)  {
             input["history"] =_HACK.selectedActions;
