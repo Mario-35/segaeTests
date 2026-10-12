@@ -383,5 +383,5 @@ const interval = setInterval(() => {
     }
 }, 100);
 
-console.log("test v1.1 du 11/09/2026 @ADAM Mario");
+console.log("test v1.2 du 12/10/2026 @ADAM Mario");
 
