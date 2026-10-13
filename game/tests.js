@@ -64,9 +64,9 @@ class Test {
         // if shots empty random it            
         if (shots.length < 1) {
             // max moves for the round
-            const max = this.changeRandom === true ? this.getRandom(1, this.numberOfChange) : this.numberOfChange;
+            const max = this.changeRandom === true ? this.getRandom(1, this.numberOfChange ) : this.numberOfChange;
             // loop to generate shots
-            for (let i = 0; i < max ; i++) {
+            for (let i = 0; i <= max ; i++) {
                 // create list key that not in the shots and not already selected
                 const keyList = Object.keys(_AEPS).filter(e => !shots.includes(e) && !_HACK.currentSelectedAepIds.includes(e));
                 // random shot in list key
@@ -78,7 +78,7 @@ class Test {
         return new Promise((resolve) => {
             const coups = [];
             // loop shots
-            shots.forEach((shot, index) => {
+            shots.forEach((shot, index) => {                
                 // test if not locked by the rules
                 let test = window.applyAvailabilityRules(shot, _HACK.allChosenAepIds, _HACK.currentSelectedAepIds, _HACK.t);
                 // replay if locked option                
@@ -90,7 +90,7 @@ class Test {
                         shots[index] = shot;
                     }
                 } 
-                if (test && test.available === true) {
+                if (test && test.available === true && +_HACK.remainingAepChanges > 0) {
                     // select option in segae
                     _HACK.setSelectedAep(_AEPS[shot], shot);
                     // save shot
@@ -388,5 +388,5 @@ const interval = setInterval(() => {
     }
 }, 100);
 
-console.log("test v1.2 du 12/10/2026 @ADAM Mario");
+console.log("test v1.3 du 13/10/2026 @ADAM Mario");
 
