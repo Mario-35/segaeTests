@@ -3,8 +3,9 @@ let test = undefined; // global var to know if test is initialised
 let _SKORE = undefined; // global var for catch score from segae code
 let _HACK = undefined; // global var to expose segae functions
 let _DEBUG = undefined; // set to true for debug
-let _INDICATORS = undefined; // set to true for debug
 let _BAK = undefined; // set to true for debug
+let _INDICATORS = undefined; // indicators json load
+let listIndicators = false;
 
 const _AEPS =  {}; // sore aeps keys and category 
 
@@ -14,7 +15,7 @@ function logError(message) {
 
 class Test {
     constructor() {
-        /* *** ATTRIBUTS *** */        
+        /* *** ATTRIBUTS *** */
         this.numberOfGame = undefined; // number of game
         this.numberOfChange = undefined; // var that indicate maximum of changes in a round
         this.numberOfYear = undefined; // var that indicate maximum of changes in a round
@@ -28,8 +29,18 @@ class Test {
             this.head("_HAKS");
             console.log(_HACK);
         } 
-             
     } 
+
+    async loadJSON() {
+        try {
+            const response = await fetch("https://raw.githubusercontent.com/Mario-35/segaeTests/refs/heads/main/game/indicators.json");
+            _INDICATORS = await response.json();
+            _INDICATORS = Array.from(_INDICATORS.inDicators);                         
+        } catch (error) {
+            _INDICATORS = undefined;
+        }
+
+    }  
 
     head(message) {
         console.log(`================ ${message} ================`);
@@ -209,8 +220,8 @@ class Test {
                     <input type="checkbox" id="lockedReplay" name="lockedReplay">
                     <label for="lockedReplay"> Locked replay</label>
                     <br>
-                    <label for="indicatorList">Liste des Indicateurs (all tout):</label><br>
-                    <input type="text" id="indicatorList" name="indicatorList" value="">
+                    <input type="checkbox" id="indicators" name="indicators">
+                    <label for="indicators"> Indicators</label>
                     <br>                    
                     <input type="checkbox" id="debug" name="debug">
                     <label for="debug"> Mode debug</label>
@@ -220,13 +231,15 @@ class Test {
             </div>
         </div>`;
         document.getElementById("game").appendChild(newDiv);
-        goTest.addEventListener("click", () => {
+        goTest.addEventListener("click", async () => {
             this.numberOfGame = nbPartie.value;
             this.numberOfChange = nbChangement.value;
             this.changeRandom = aleatoireChangement.checked;
             this.replayLocked = lockedReplay.checked;
+            // listIndicators = indicators.checked;
+            if (indicators.checked) await this.loadJSON();
+            
             if (debug.checked) _DEBUG = debug.checked;
-            _INDICATORS = indicatorList.value.trim() === "" ? undefined : indicatorList.value;
             document.getElementById("testOverlay").remove();
             if (this.numberOfGame) {
                 if (+this.numberOfGame === 0) {
@@ -309,37 +322,22 @@ class Test {
 function _test(input, G, j) {
     // global variable init
     _SKORE = [];
-    // lopp screnario scores
+    // loop screnario scores
     input.scenario.Scores.forEach(function(e) {
         var n = G.getIndicatorValue(e.id, !0);
         void 0 !== n && (_SKORE[e.name] = n);
     });
     // if indicators
-    if (_INDICATORS) {        
-        if (_INDICATORS.toUpperCase() === "ALL") {
-            if (!_BAK) {
-                _BAK = G.indicatorsRoundedValues;
-                _SKORE["indicators"] = G.indicatorsRoundedValues;
-            } else {
-                const temp = {};
-                Object.keys(G.indicatorsRoundedValues).forEach((e) => {                
-                    if (!_BAK[e] || _BAK[e] !== G.indicatorsRoundedValues[e])
-                        temp[e] = G.indicatorsRoundedValues[e];        
-                });
-                _BAK = temp;
-                _SKORE["indicators"] = temp;
-            }
-        } else {
+    if (_INDICATORS) {
             // create blank object
             const temp = {};
             // loop on indicators list
-            Object.keys(_INDICATORS.split(',')).forEach((e) => {
+            _INDICATORS.forEach((e) => {
                 e = e.trim();
                 temp[e] = G.indicatorsRoundedValues[e];        
             });
             // save it
-            _SKORE["indicators"] = temp;            
-        }
+            _SKORE["indicators"] = temp;
     }
 
 
