@@ -58,46 +58,57 @@ class Test {
         }
     }
 
+    getShot(shots) {
+        const keyList = Object.keys(_AEPS).filter(e => !shots.includes(e) && !_HACK.currentSelectedAepIds.includes(e));
+        return keyList[this.getRandom(0, Object.keys(keyList).length)];
+    }
+
     // Play one round
     async playOneRound(shots) {
         shots = shots || [];
         // if shots empty random it            
-        if (shots.length < 1) {
-            // max moves for the round
-            const max = this.changeRandom === true ? this.getRandom(1, this.numberOfChange ) : this.numberOfChange;
-            // loop to generate shots
-            for (let i = 0; i <= max ; i++) {
-                // create list key that not in the shots and not already selected
-                const keyList = Object.keys(_AEPS).filter(e => !shots.includes(e) && !_HACK.currentSelectedAepIds.includes(e));
-                // random shot in list key
-                shots.push(keyList[this.getRandom(0, Object.keys(keyList).length)]);
-            }                
-        }
+        // if (shots.length < 1) {
+        //     // max moves for the round
+        //     const max = this.changeRandom === true ? this.getRandom(1, this.numberOfChange ) : this.numberOfChange;
+        //     // loop to generate shots
+        //     for (let i = 0; i <= max ; i++) {
+        //         // create list key that not in the shots and not already selected
+        //         const keyList = Object.keys(_AEPS).filter(e => !shots.includes(e) && !_HACK.currentSelectedAepIds.includes(e));
+        //         // random shot in list key
+        //         shots.push(keyList[this.getRandom(0, Object.keys(keyList).length)]);
+        //     }                
+        // }
             
         // return create promise of all shots to execute
         return new Promise((resolve) => {
+            const max = this.changeRandom === true ? this.getRandom(1, this.numberOfChange ) : this.numberOfChange;
             const coups = [];
+            const shots = [];
+            let stop = false;
             // loop shots
-            shots.forEach((shot, index) => {                
-                // test if not locked by the rules
-                let test = window.applyAvailabilityRules(shot, _HACK.allChosenAepIds, _HACK.currentSelectedAepIds, _HACK.t);
-                // replay if locked option                
-                if (this.replayLocked === true) {                    
-                    while (test && test.available !== true) {
-                        const keyList = Object.keys(_AEPS).filter(e => !shots.includes(e) && !_HACK.currentSelectedAepIds.includes(e));
-                        shot = keyList[this.getRandom(0, Object.keys(keyList).length)];
-                        test = window.applyAvailabilityRules(shot, _HACK.allChosenAepIds, _HACK.currentSelectedAepIds, _HACK.t);
-                        shots[index] = shot;
-                    }
-                } 
-                if (test && test.available === true && +_HACK.remainingAepChanges > 0) {
-                    // select option in segae
-                    _HACK.setSelectedAep(_AEPS[shot], shot);
-                    // save shot
-                    coups.push(shot);
-                } else coups.push(shot + " locked");
+            while (stop === false) {
+                let shot = this.getShot(shots);
+                if (shot) {
+                    // test if not locked by the rules
+                    let test = window.applyAvailabilityRules(shot, _HACK.allChosenAepIds, _HACK.currentSelectedAepIds, _HACK.t);
+                    // replay if locked option                
+                    if (this.replayLocked === true) {                    
+                        while (test && test.available !== true) {
+                            shot = this.getShot(shots);
+                            test = window.applyAvailabilityRules(shot, _HACK.allChosenAepIds, _HACK.currentSelectedAepIds, _HACK.t);
+                        }
+                    } 
+                    shots.push(shot);
+                    if (test && test.available === true && +_HACK.remainingAepChanges > 0) {
+                        // select option in segae
+                        _HACK.setSelectedAep(_AEPS[shot], shot);
+                        // save shot
+                        coups.push(shot);
+                    } else coups.push(shot + " locked");
 
-            });
+                };
+                stop = (+_HACK.remainingAepChanges < shots.length);
+            };                
             // select next year in segae and segae calculate score
             _HACK.goToNextYear();
             // resolve segae generated score
@@ -106,7 +117,7 @@ class Test {
                 ... _SKORE,
             });
         });
-    };   
+    }
          
     // fnished actual game
     async finisheGame() {
