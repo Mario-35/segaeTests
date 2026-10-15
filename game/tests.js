@@ -6,7 +6,14 @@ let _DEBUG = undefined; // set to true for debug
 let _BAK = undefined; // set to true for debug
 let _INDICATORS = undefined; // indicators json load
 let listIndicators = false;
-
+const STATS = {
+    "coups 0" : 0,
+    "coups 1" : 0,
+    "coups 2" : 0,
+    "coups 3" : 0,
+    "coups 4" : 0,
+    "coups 5" : 0,
+};
 const _AEPS =  {}; // sore aeps keys and category 
 
 function logError(message) {
@@ -65,23 +72,10 @@ class Test {
 
     // Play one round
     async playOneRound(shots) {
-        shots = shots || [];
-        // if shots empty random it            
-        // if (shots.length < 1) {
-        //     // max moves for the round
-        //     const max = this.changeRandom === true ? this.getRandom(1, this.numberOfChange ) : this.numberOfChange;
-        //     // loop to generate shots
-        //     for (let i = 0; i <= max ; i++) {
-        //         // create list key that not in the shots and not already selected
-        //         const keyList = Object.keys(_AEPS).filter(e => !shots.includes(e) && !_HACK.currentSelectedAepIds.includes(e));
-        //         // random shot in list key
-        //         shots.push(keyList[this.getRandom(0, Object.keys(keyList).length)]);
-        //     }                
-        // }
-            
+        shots = shots || [];            
         // return create promise of all shots to execute
         return new Promise((resolve) => {
-            const max = this.changeRandom === true ? this.getRandom(1, this.numberOfChange ) : this.numberOfChange;
+            const max = this.changeRandom === true ? this.getRandom(1, +this.numberOfChange + 1) : +this.numberOfChange;
             const coups = [];
             const shots = [];
             let stop = false;
@@ -107,11 +101,13 @@ class Test {
                     } else coups.push(shot + " locked");
 
                 };
-                stop = (+_HACK.remainingAepChanges < shots.length);
+                stop = (shots.length === max);
+                // stop = (+_HACK.remainingAepChanges <= shots.length || shots.length === max);
             };                
             // select next year in segae and segae calculate score
             _HACK.goToNextYear();
             // resolve segae generated score
+            STATS[`coups ${shots.length}`] = +STATS[`coups ${shots.length}`] + 1;
             resolve({
                 coups: coups,
                 ... _SKORE,
@@ -267,6 +263,8 @@ class Test {
                         else 
                             this.downloadJson();                
                     });
+            console.log(STATS);
+
                 }
             }
         });
